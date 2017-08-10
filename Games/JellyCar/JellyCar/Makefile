@@ -46,8 +46,8 @@ OBJS   = 	../../../Andromeda/FileSystem/FileManager.o \
 			../../../Andromeda/System/SystemManager.o \
 			../../../Andromeda/System/MemoryManager.o \
 			../../../Andromeda/System/Timer.o \
-			../../../Andromeda/System/Gxm/GameLoaderGxm.o \
-			../../../Andromeda/System/Gxm/MemoryManagerGxm.o \
+			../../../Andromeda/System/GXM/GameLoaderGxm.o \
+			../../../Andromeda/System/GXM/MemoryManagerGxm.o \
 			../../../Andromeda/Utils/Logger.o \
 			../../../Andromeda/Utils/debugnet.o \
 			../../../Libs/freetype_gl/distance-field.o \
