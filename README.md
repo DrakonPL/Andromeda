@@ -13,3 +13,7 @@ Windows
 - Open Andromeda.sln with VisualStudio 2015
 - Compile Release version
 - Copy Build/Andromeda/Release/JellyCar.exe to Games/Data
+
+Tested with latest Vita SDK from https://vitasdk.org/
+Windows version is not great... I'was using it for gameplay testing.
+In theory booth - vita and windows version should compile without problems.
