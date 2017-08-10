@@ -1,0 +1,13 @@
+<SoftBody name="chz2_tiny_plat" massPerPoint="0" edgeK="0" edgeDamping="0" colorR="0.6784314" colorG="1" colorB="0.1843137" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="-0.5209398" y="1.099635" />
+    <Point x="7.499998" y="0.5" />
+    <Point x="7.470852" y="-0.4101712" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="2" pt2="3" />
+    <Poly pt0="3" pt1="0" pt2="1" />
+  </Polygons>
+</SoftBody>

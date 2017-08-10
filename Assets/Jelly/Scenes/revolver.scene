@@ -1,0 +1,37 @@
+<Scene name="Revolver">
+  <Objects>
+    <Object name="Revoler_01" posX="-3.999999" posY="6.362499" angle="2" scaleX="1" scaleY="1" material="1" />
+    <Object name="Revolver_stat1" posX="-30.98184" posY="-0.8727272" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="Revolver_stat1" posX="32.32178" posY="-4.424673" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="Revoler_01" posX="59.125" posY="2.987499" angle="2" scaleX="1" scaleY="1" material="1" />
+    <Object name="Revolver_stat1" posX="77.22156" posY="-26.45804" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="Revolver_stat1" posX="91.38822" posY="-20.54135" angle="90" scaleX="0.5" scaleY="1" material="0" />
+    <Object name="Revolver_stat1" posX="53.1215" posY="-25.42468" angle="346" scaleX="1" scaleY="1" material="0" />
+    <Object name="Revoler_01" posX="27.75533" posY="-24.86372" angle="311" scaleX="0.7" scaleY="0.7" material="1" />
+    <Object name="Revolver_stat1" posX="2.343804" posY="-25.94692" angle="6" scaleX="1" scaleY="1" material="0" />
+    <Object name="Revolver_slide" posX="-19.2" posY="-58.40011" angle="272" scaleX="3" scaleY="0.5" material="4" />
+    <Object name="Revolver_slide" posX="-11.59999" posY="-58.40011" angle="268" scaleX="3" scaleY="0.5" material="4" />
+    <Object name="Revolver_slide" posX="-6.400013" posY="-211.2" angle="290" scaleX="0.5" scaleY="0.5" material="4" />
+    <Object name="Revolver_slide" posX="-3.1" posY="-217.6999" angle="313" scaleX="0.5" scaleY="0.5" material="4" />
+    <Object name="Revolver_slide" posX="1.400004" posY="-221.9997" angle="337" scaleX="0.5" scaleY="0.5" material="4" />
+    <Object name="Revolver_slide" posX="7.700002" posY="-223.9996" angle="360" scaleX="0.5" scaleY="0.5" material="4" />
+    <Object name="Revolver_slide" posX="14.50002" posY="-223.2996" angle="25" scaleX="0.5" scaleY="0.5" material="4" />
+    <Object name="Revolver_slide" posX="19.80002" posY="-220.0997" angle="55" scaleX="0.5" scaleY="0.5" material="4" />
+    <Object name="Revolver_slide" posX="23.00002" posY="-214.4997" angle="81" scaleX="0.5" scaleY="0.5" material="4" />
+    <Object name="Revolver_slide" posX="-10.19999" posY="-118.2" angle="95" scaleX="3" scaleY="0.5" material="4" />
+    <Object name="Revolver_slide" posX="-15.79999" posY="-118.0001" angle="275" scaleX="3" scaleY="0.5" material="4" />
+    <Object name="Revolver_slide" posX="-10.59999" posY="-177" angle="275" scaleX="3" scaleY="0.5" material="4" />
+    <Object name="Revolver_slide" posX="-4.999991" posY="-177.1999" angle="95" scaleX="3" scaleY="0.5" material="4" />
+    <Object name="Revolver_slide" posX="9.336366" posY="-208.6489" angle="360" scaleX="1.071429" scaleY="0.9220777" material="4" />
+    <Object name="Revolver_stat1" posX="36.83732" posY="-207.8431" angle="180" scaleX="1" scaleY="1" material="0" />
+    <Object name="Revolver_slide" posX="-11.39999" posY="-9.800107" angle="6" scaleX="3" scaleY="0.5" material="4" />
+    <Object name="Revolver_arrow" posX="-29.99074" posY="-0.949074" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="Revolver_arrow" posX="32.09853" posY="-4.502645" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="Revolver_arrow" posX="77.47241" posY="-26.38959" angle="180" scaleX="1" scaleY="1" material="0" />
+    <Object name="Revolver_arrow" posX="53.13166" posY="-25.38957" angle="166" scaleX="1" scaleY="1" material="0" />
+    <Object name="Revolver_arrow" posX="-10.67787" posY="-29.88164" angle="269" scaleX="1" scaleY="1" material="0" />
+    <Object name="Revolver_arrow" posX="28.96607" posY="-207.8297" angle="0" scaleX="1" scaleY="1" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-35" posY="3" />
+  <Settings finishX="42" finishY="-206" fallLine="-225" />
+</Scene>

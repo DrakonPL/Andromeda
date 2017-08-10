@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{419D2A84-9838-41C6-AEC7-2897156519BD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Andromeda_Tests</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>ANDROMEDA_PC;ANDROMEDA_GLFW;ANDROMEDA_GL3;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\;..\..\..\Libs;..\..\..\Libs\freetype\include;..\..\..\Libs\freetype_gl;..\..\..\Libs\glew\include;..\..\..\Libs\glfw\include;..\..\..\Libs\glm;..\..\..\Libs\stb;..\..\..\Libs\tiny_obj_loader;..\..\..\Libs\JellyPhysic;..\..\..\Libs\tinyxml;..\..\..\Libs\dirent;..\..\..\Libs\irrKlang\include;..\..\..\Libs\ffmpeg\include;..\..\..\Libs\portaudio\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\..\Libs\glew\lib;..\..\..\Libs\glfw\lib;..\..\..\Libs\freetype\lib;..\..\..\Libs\irrKlang\lib;..\..\..\Libs\ffmpeg\lib;..\..\..\Libs\portaudio\Debug;..\..\..\Build\Andromeda\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;freetype263.lib;irrKlang.lib;avcodec.lib;avformat.lib;avutil.lib;avdevice.lib;avfilter.lib;postproc.lib;swresample.lib;swscale.lib;portaudio_x86.lib;Andromeda.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ENTRY:"mainCRTStartup" %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>ANDROMEDA_PC;ANDROMEDA_GLFW;ANDROMEDA_GL3;WIN32;NDEBUG;_WINDOWS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\;..\..\..\Libs;..\..\..\Libs\freetype\include;..\..\..\Libs\freetype_gl;..\..\..\Libs\glew\include;..\..\..\Libs\glfw\include;..\..\..\Libs\glm;..\..\..\Libs\stb;..\..\..\Libs\tiny_obj_loader;..\..\..\Libs\JellyPhysic;..\..\..\Libs\tinyxml;..\..\..\Libs\dirent;..\..\..\Libs\irrKlang\include;..\..\..\Libs\ffmpeg\include;..\..\..\Libs\portaudio\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;freetype263.lib;irrKlang.lib;avcodec.lib;avformat.lib;avutil.lib;avdevice.lib;avfilter.lib;postproc.lib;swresample.lib;swscale.lib;portaudio_x86.lib;Andromeda.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Libs\glew\lib;..\..\..\Libs\glfw\lib;..\..\..\Libs\freetype\lib;..\..\..\Libs\irrKlang\lib;..\..\..\Libs\ffmpeg\lib;..\..\..\Libs\portaudio\Release;..\..\..\Build\Andromeda\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ENTRY:"mainCRTStartup" %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="JellyCar.cpp" />
+    <ClCompile Include="Jelly\Car\Car.cpp" />
+    <ClCompile Include="Jelly\Car\Chassis.cpp" />
+    <ClCompile Include="Jelly\Car\GameBallonBody.cpp" />
+    <ClCompile Include="Jelly\Car\SuspensionShock.cpp" />
+    <ClCompile Include="Jelly\Car\Tire.cpp" />
+    <ClCompile Include="Jelly\JellyGameManager.cpp" />
+    <ClCompile Include="Jelly\Game\AudioHelper.cpp" />
+    <ClCompile Include="Jelly\Game\InputHelper.cpp" />
+    <ClCompile Include="Jelly\Game\JellyCore.cpp" />
+    <ClCompile Include="Jelly\Game\JellyGame.cpp" />
+    <ClCompile Include="Jelly\Game\JellyIntro.cpp" />
+    <ClCompile Include="Jelly\Game\JellyMenuBetter.cpp" />
+    <ClCompile Include="Jelly\Game\JellyOptions.cpp" />
+    <ClCompile Include="Jelly\Game\JellySplash.cpp" />
+    <ClCompile Include="Jelly\Levels\GamePressureBody.cpp" />
+    <ClCompile Include="Jelly\Levels\GameSpringBody.cpp" />
+    <ClCompile Include="Jelly\Levels\KinematicControl.cpp" />
+    <ClCompile Include="Jelly\Levels\KinematicMotor.cpp" />
+    <ClCompile Include="Jelly\Levels\KinematicPlatform.cpp" />
+    <ClCompile Include="Jelly\Levels\LevelManager.cpp" />
+    <ClCompile Include="Jelly\Levels\LevelSoftBody.cpp" />
+    <ClCompile Include="Jelly\Utils\JellyHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Jelly\Car\Car.h" />
+    <ClInclude Include="Jelly\Car\Chassis.h" />
+    <ClInclude Include="Jelly\Car\GameBallonBody.h" />
+    <ClInclude Include="Jelly\Car\SuspensionShock.h" />
+    <ClInclude Include="Jelly\Car\Tire.h" />
+    <ClInclude Include="Jelly\JellyGameManager.h" />
+    <ClInclude Include="Jelly\Game\AudioHelper.h" />
+    <ClInclude Include="Jelly\Game\InputHelper.h" />
+    <ClInclude Include="Jelly\Game\JellyCore.h" />
+    <ClInclude Include="Jelly\Game\JellyGame.h" />
+    <ClInclude Include="Jelly\Game\JellyIntro.h" />
+    <ClInclude Include="Jelly\Game\JellyMenuBetter.h" />
+    <ClInclude Include="Jelly\Game\JellyOptions.h" />
+    <ClInclude Include="Jelly\Game\JellySplash.h" />
+    <ClInclude Include="Jelly\Levels\GamePressureBody.h" />
+    <ClInclude Include="Jelly\Levels\GameSpringBody.h" />
+    <ClInclude Include="Jelly\Levels\InputHelper.h" />
+    <ClInclude Include="Jelly\Levels\KinematicControl.h" />
+    <ClInclude Include="Jelly\Levels\KinematicMotor.h" />
+    <ClInclude Include="Jelly\Levels\KinematicPlatform.h" />
+    <ClInclude Include="Jelly\Levels\LevelInfo.h" />
+    <ClInclude Include="Jelly\Levels\LevelManager.h" />
+    <ClInclude Include="Jelly\Levels\LevelSoftBody.h" />
+    <ClInclude Include="Jelly\Levels\ObjectInfo.h" />
+    <ClInclude Include="Jelly\Levels\SimpleStruct\BodyObject.h" />
+    <ClInclude Include="Jelly\Levels\SimpleStruct\BodyObjectInfo.h" />
+    <ClInclude Include="Jelly\Levels\SimpleStruct\BodyPoint.h" />
+    <ClInclude Include="Jelly\Levels\SimpleStruct\BodyPolygon.h" />
+    <ClInclude Include="Jelly\Levels\SimpleStruct\BodySpring.h" />
+    <ClInclude Include="Jelly\Levels\SimpleStruct\GameObject.h" />
+    <ClInclude Include="Jelly\Levels\SkinInfo.h" />
+    <ClInclude Include="Jelly\Utils\JellyHelper.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="JellyCar.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

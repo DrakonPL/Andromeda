@@ -1,0 +1,18 @@
+<SoftBody name="snake_platform" massPerPoint="1" edgeK="800" edgeDamping="50" colorR="0" colorG="1" colorB="1" kinematic="True" shapeMatching="True" shapeK="800" shapeDamping="50">
+  <Points>
+    <Point x="-2" y="-1" />
+    <Point x="-2" y="1" />
+    <Point x="2" y="0.9921875" />
+    <Point x="2" y="-0.9921875" />
+  </Points>
+  <Springs>
+    <Spring pt1="3" pt2="2" k="300" damp="30" />
+    <Spring pt1="0" pt2="1" k="300" damp="30" />
+    <Spring pt1="3" pt2="1" k="300" damp="30" />
+    <Spring pt1="0" pt2="2" k="300" damp="30" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="2" pt1="3" pt2="0" />
+    <Poly pt0="2" pt1="1" pt2="0" />
+  </Polygons>
+</SoftBody>

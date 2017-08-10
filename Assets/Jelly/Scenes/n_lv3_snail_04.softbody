@@ -1,0 +1,49 @@
+<SoftBody name="n_lv3_snail_04" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.5019608" colorG="0.5019608" colorB="1" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="0.7129226" y="1.026949" />
+    <Point x="0.4067366" y="0.9135454" />
+    <Point x="0.5877852" y="0.809017" />
+    <Point x="0.7431448" y="0.6691306" />
+    <Point x="0.8660254" y="0.5" />
+    <Point x="0.9510565" y="0.309017" />
+    <Point x="0.9945219" y="0.1045285" />
+    <Point x="0.9945219" y="-0.1045284" />
+    <Point x="0.9510565" y="-0.309017" />
+    <Point x="0.9136444" y="-0.4473016" />
+    <Point x="0.8701289" y="-0.4469084" />
+    <Point x="0.8222144" y="-0.2856839" />
+    <Point x="0.8549507" y="-0.09770194" />
+    <Point x="0.8577843" y="0.09523807" />
+    <Point x="0.8251345" y="0.2719353" />
+    <Point x="0.7435737" y="0.4430906" />
+    <Point x="0.6245258" y="0.5950047" />
+    <Point x="0.4679912" y="0.7233027" />
+    <Point x="0.214927" y="0.8523812" />
+    <Point x="-0.2394412" y="0.8987601" />
+    <Point x="-1.283024" y="0.8979058" />
+    <Point x="-1.647882" y="1.016653" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="11" pt1="10" pt2="9" />
+    <Poly pt0="9" pt1="8" pt2="11" />
+    <Poly pt0="11" pt1="12" pt2="8" />
+    <Poly pt0="8" pt1="7" pt2="12" />
+    <Poly pt0="12" pt1="13" pt2="7" />
+    <Poly pt0="7" pt1="6" pt2="13" />
+    <Poly pt0="14" pt1="13" pt2="6" />
+    <Poly pt0="6" pt1="5" pt2="14" />
+    <Poly pt0="15" pt1="4" pt2="14" />
+    <Poly pt0="14" pt1="5" pt2="4" />
+    <Poly pt0="4" pt1="3" pt2="15" />
+    <Poly pt0="15" pt1="3" pt2="16" />
+    <Poly pt0="16" pt1="2" pt2="3" />
+    <Poly pt0="16" pt1="2" pt2="17" />
+    <Poly pt0="18" pt1="1" pt2="17" />
+    <Poly pt0="17" pt1="2" pt2="1" />
+    <Poly pt0="19" pt1="18" pt2="1" />
+    <Poly pt0="21" pt1="20" pt2="19" />
+    <Poly pt0="21" pt1="1" pt2="0" />
+    <Poly pt0="19" pt1="1" pt2="21" />
+  </Polygons>
+</SoftBody>

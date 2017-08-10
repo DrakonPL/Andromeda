@@ -1,0 +1,74 @@
+<Scene name="Spiral">
+  <Objects>
+    <Object name="n_lv3_snail_01" posX="0" posY="0" angle="0" scaleX="8" scaleY="8" material="0" />
+    <Object name="n_lv3_v_01" posX="0.08333334" posY="0" angle="182" scaleX="6" scaleY="6" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv3_snail_03" posX="-8.200003" posY="-9.400002" angle="0" scaleX="40" scaleY="40" material="0" />
+    <Object name="n_lv3_snail_04" posX="-1.399999" posY="5.400002" angle="0" scaleX="15" scaleY="10" material="0" />
+    <Object name="itemstick" posX="-9.857142" posY="2.619048" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="n_lv3_snail_05" posX="-0.03690434" posY="1.257143" angle="0" scaleX="27" scaleY="27" material="0" />
+    <Object name="n_lv3_snail_02" posX="-8.34465E-08" posY="1.2" angle="0" scaleX="27" scaleY="27" material="0" />
+    <Object name="checkpoint" posX="-13.11303" posY="17.47441" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="n_lv3_snail_06" posX="-8.263636" posY="-9.40909" angle="0" scaleX="40" scaleY="40" material="0" />
+    <Object name="n_lv3_snail_07" posX="53.37571" posY="-39.50476" angle="0" scaleX="10" scaleY="10" material="0" />
+    <Object name="n_lv3_snail_08" posX="31.26139" posY="-31.54848" angle="0" scaleX="10" scaleY="3.8" material="0" />
+    <Object name="itemballoon" posX="58.22223" posY="-45.22223" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="n_lv3_snail_09" posX="44.30386" posY="-31.15091" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="18" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv3_snail_10" posX="47.63598" posY="-28.61304" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="18" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv3_snail_11" posX="-22.74286" posY="-45.18571" angle="0" scaleX="30" scaleY="8.6" material="0" />
+    <Object name="n_lv3_halfcircle_01" posX="-17.85714" posY="-5.488095" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.3" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv3_halfcircle_02" posX="-5.348044" posY="-14.58823" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv3_circle_01" posX="13.46969" posY="-7.295454" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv3_flat_01" posX="-42.71501" posY="-8.298395" angle="0" scaleX="7" scaleY="3" material="0" />
+    <Object name="n_lv3_ob_01" posX="-37.7647" posY="-18.51765" angle="27" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="10" offsetY="5" secondsPerLoop="6" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv3_ob_01" posX="-30.9647" posY="-31.71765" angle="39" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="11" offsetY="8" secondsPerLoop="6" startOffset="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv3_ob_01" posX="-8.1647" posY="-31.71765" angle="270" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-12" secondsPerLoop="6" startOffset="0.1" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv3_ob_01" posX="4.235301" posY="-31.71765" angle="270" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-12" secondsPerLoop="6" startOffset="0.3" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv3_ob_02" posX="24.51618" posY="-40.80368" angle="90" scaleX="10" scaleY="6.6" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="1" />
+      </KinematicControls>
+    </Object>
+  </Objects>
+  <Car name="car_and_truck" posX="8" posY="3" />
+  <Settings finishX="56" finishY="-27" fallLine="-55" />
+</Scene>

@@ -1,0 +1,13 @@
+<SoftBody name="DETECTOR_S" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="1" colorG="0.3568628" colorB="0.3568628" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="1.5" y="-0.5" />
+    <Point x="-1.5" y="-0.5" />
+    <Point x="-1.5" y="0.5" />
+    <Point x="1.5" y="0.5" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="2" pt1="1" pt2="0" />
+    <Poly pt0="0" pt1="3" pt2="2" />
+  </Polygons>
+</SoftBody>

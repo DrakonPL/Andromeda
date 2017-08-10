@@ -1,0 +1,91 @@
+<Scene name="Factory">
+  <Objects>
+    <Object name="scene4_01" posX="-100" posY="0" angle="0" scaleX="10" scaleY="1" material="0" />
+    <Object name="scene4_01" posX="-40" posY="0" angle="0" scaleX="10" scaleY="1" material="0" />
+    <Object name="scene5_01" posX="-70.01183" posY="-0.5176473" angle="0" scaleX="2" scaleY="1" material="0" />
+    <Object name="scene5_bag" posX="-70.03531" posY="4" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="scene5_bag" posX="-78.94104" posY="4" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="scene5_bag" posX="-60.99999" posY="4" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="scene5_bag" posX="-74.2353" posY="4" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="scene5_bag" posX="-65.17646" posY="4" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="scene5_plat1" posX="-24.82737" posY="-0.04166628" angle="318" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_plat1" posX="-15.5" posY="-2.160668E-08" angle="296" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="4.499999" posY="2.111112" angle="8" scaleX="15" scaleY="1" material="0" />
+    <Object name="scene5_wheel1" posX="24.79859" posY="-1.696505" angle="0" scaleX="9" scaleY="9" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-3.9" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel1" posX="19.10001" posY="16.13845" angle="0" scaleX="9" scaleY="9" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="3.9" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="78.61824" posY="2.290915" angle="355" scaleX="20" scaleY="1" material="0" />
+    <Object name="scene5_wheel2" posX="100.8091" posY="-0.6272726" angle="0" scaleX="3" scaleY="3" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="105.5999" posY="-0.6000001" angle="0" scaleX="3" scaleY="3" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="110.2" posY="-0.6" angle="0" scaleX="3" scaleY="3" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="114.8" posY="-0.4" angle="0" scaleX="3" scaleY="3" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="119.4" posY="-0.6" angle="0" scaleX="3" scaleY="3" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="123.8" posY="-0.1999989" angle="0" scaleX="3" scaleY="3" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="140.7999" posY="0.7999998" angle="0" scaleX="15" scaleY="1" material="0" />
+    <Object name="scene5_plat2" posX="150.8618" posY="5.238096" angle="0" scaleX="0.7" scaleY="0.7" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="25" offsetY="15" secondsPerLoop="25" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="193.9996" posY="10.99999" angle="0" scaleX="22" scaleY="1" material="0" />
+    <Object name="scene5_plat1" posX="226.0749" posY="10.58331" angle="0" scaleX="2" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="20" secondsPerLoop="18" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel1" posX="216.8" posY="38.60002" angle="0" scaleX="9" scaleY="9" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="5" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel1" posX="237.2001" posY="34.6" angle="0" scaleX="9" scaleY="9" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-5" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="252.8001" posY="64.20005" angle="355" scaleX="15" scaleY="0.8" material="0" />
+    <Object name="scene4_01" posX="248.4001" posY="13" angle="10" scaleX="12" scaleY="1" material="0" />
+    <Object name="scene4_01" posX="269.2385" posY="26.27777" angle="50" scaleX="15" scaleY="1" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-104" posY="3" />
+  <Settings finishX="260" finishY="66" fallLine="-35" />
+</Scene>

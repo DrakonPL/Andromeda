@@ -1,0 +1,17 @@
+<SoftBody name="chz2_platform7" massPerPoint="0" edgeK="0" edgeDamping="0" colorR="0.6784314" colorG="1" colorB="0.1843137" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="5.596995" y="-1.677564" />
+    <Point x="-7.138349" y="-3.674958" />
+    <Point x="-12.53495" y="-1.044999" />
+    <Point x="-14.60959" y="2.819694" />
+    <Point x="-3.412097" y="2.910053" />
+    <Point x="10.64887" y="5.091231" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="5" pt1="0" pt2="4" />
+    <Poly pt0="4" pt1="0" pt2="1" />
+    <Poly pt0="1" pt1="4" pt2="2" />
+    <Poly pt0="3" pt1="2" pt2="4" />
+  </Polygons>
+</SoftBody>

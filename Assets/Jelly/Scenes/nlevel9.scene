@@ -1,0 +1,150 @@
+<Scene name="Up">
+  <Objects>
+    <Object name="n_lv9_ground_01" posX="-0.009411717" posY="-4.905881" angle="0" scaleX="25" scaleY="4" material="0" />
+    <Object name="itemstick" posX="34.04138" posY="1.193104" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="itemballoon" posX="-34.11724" posY="1.724138" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="n_lv9_flat_01" posX="-53.01765" posY="21.85883" angle="0" scaleX="19" scaleY="5.599999" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="30" offsetY="-30" secondsPerLoop="20" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_flat_02" posX="52.25455" posY="22.04547" angle="0" scaleX="18.4" scaleY="5.6" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="-30" offsetY="-30" secondsPerLoop="20" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_ground_01" posX="-35.00941" posY="66" angle="90" scaleX="80" scaleY="4" material="0" />
+    <Object name="n_lv9_flat_03" posX="47.0549" posY="44.50982" angle="0" scaleX="11.73333" scaleY="3.8" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="30" secondsPerLoop="20" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_ground_01" posX="37.79059" posY="66" angle="90" scaleX="80" scaleY="4" material="0" />
+    <Object name="n_lv9_ground_01" posX="75.44854" posY="60" angle="90" scaleX="120" scaleY="4" material="0" />
+    <Object name="n_lv9_ground_02" posX="63.75001" posY="41.43333" angle="0" scaleX="19.23334" scaleY="11" material="0" />
+    <Object name="n_lv9_ground_03" posX="351.8341" posY="49.07862" angle="0" scaleX="20.05883" scaleY="10.82353" material="0" />
+    <Object name="n_lv9_flat_03" posX="46.79211" posY="91.38432" angle="0" scaleX="11.73333" scaleY="3.8" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="20" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_ground_02" posX="63.75001" posY="88.43333" angle="0" scaleX="19.23334" scaleY="11" material="0" />
+    <Object name="n_lv9_circle_01" posX="-50.99999" posY="44" angle="27" scaleX="13" scaleY="13" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_ground_01" posX="-82.00941" posY="74.6" angle="90" scaleX="100" scaleY="4" material="0" />
+    <Object name="n_lv9_ground_03" posX="-66.76515" posY="54.76919" angle="0" scaleX="26.45883" scaleY="12.82353" material="0" />
+    <Object name="n_lv9_circle_01" posX="-65.19998" posY="78.39999" angle="335" scaleX="13" scaleY="13" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_ground_02" posX="-51.72613" posY="90.22961" angle="0" scaleX="29.43334" scaleY="18.6" material="0" />
+    <Object name="n_lv9_circle_01" posX="-48.39999" posY="122.8" angle="313" scaleX="18" scaleY="18" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.1" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_ground_01" posX="-24.01425" posY="106.1311" angle="0" scaleX="18" scaleY="10" material="0" />
+    <Object name="n_lv9_ground_01" posX="26.7903" posY="106.5311" angle="0" scaleX="18" scaleY="10" material="0" />
+    <Object name="n_lv9_ground_01" posX="1.507829" posY="128.1884" angle="0" scaleX="11.5" scaleY="4" material="0" />
+    <Object name="n_lv9_flat_03" posX="-9.691218" posY="109.4259" angle="0" scaleX="10" scaleY="3" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="20" secondsPerLoop="12" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_flat_03" posX="12.50878" posY="109.5593" angle="0" scaleX="10" scaleY="3" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="20" secondsPerLoop="12" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="checkpoint" posX="1.981573" posY="132.059" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="n_lv9_bridge_01" posX="2.557232" posY="103.6784" angle="0" scaleX="30" scaleY="5.692308" material="0" />
+    <Object name="n_lv9_wheel_01" posX="-12" posY="83.4" angle="0" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_wheel_01" posX="-12" posY="83.4" angle="245" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_wheel_01" posX="-12" posY="83.4" angle="122" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_wheel_02" posX="4.033333" posY="74.08333" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_wheel_02" posX="5.096592" posY="74.08333" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_wheel_02" posX="6.13318" posY="74.08333" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_wheel_02" posX="7.157573" posY="74.08333" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_wheel_02" posX="8.194157" posY="74.08333" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_wheel_02" posX="9.252981" posY="74.08333" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_wheel_02" posX="10.31181" posY="74.08333" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_wheel_02" posX="11.40314" posY="74.08333" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_wheel_02" posX="12.47563" posY="74.08333" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_wheel_02" posX="13.56575" posY="74.08333" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_wheel_02" posX="14.64052" posY="74.08333" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_flat_03" posX="21.39212" posY="70.48431" angle="0" scaleX="11.73333" scaleY="3.8" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="-10" offsetY="-25" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv9_bridge_01" posX="19.44307" posY="28.95399" angle="0" scaleX="32.53848" scaleY="5.692308" material="0" />
+    <Object name="n_lv9_bridge_01" posX="-16.04694" posY="36.17537" angle="180" scaleX="33.68133" scaleY="8.263736" material="0" />
+    <Object name="n_lv9_ground_01" posX="49.39059" posY="140.8" angle="147" scaleX="120" scaleY="4" material="0" />
+    <Object name="n_lv9_ground_01" posX="-55.4094" posY="143.6" angle="210" scaleX="120" scaleY="4" material="0" />
+    <Object name="n_lv9_ground_02" posX="63.75001" posY="67.83334" angle="0" scaleX="19.23334" scaleY="11" material="0" />
+    <Object name="n_lv9_ground_01" posX="37.84911" posY="108.4723" angle="0" scaleX="4" scaleY="6" material="0" />
+    <Object name="n_lv9_ground_02" posX="68.425" posY="16.50833" angle="0" scaleX="10" scaleY="11" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="0" posY="0" />
+  <Settings finishX="-25" finishY="40" fallLine="-20" />
+</Scene>

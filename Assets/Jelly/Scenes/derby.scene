@@ -1,0 +1,55 @@
+<Scene name="Jelly Derby">
+  <Objects>
+    <Object name="jellyDerby_chassis1" posX="-11.39129" posY="4.150384" angle="9" scaleX="2.2" scaleY="1.8" material="0" />
+    <Object name="jellyDerby_plat1" posX="44.00006" posY="1.6" angle="0" scaleX="31.60003" scaleY="1" material="0" />
+    <Object name="jellyDerby_tire1" posX="-14.58888" posY="3.931115" angle="0" scaleX="2.000001" scaleY="2.000001" material="0" />
+    <Object name="jellyDerby_tire1" posX="-8.893644" posY="3.921406" angle="0" scaleX="2.000001" scaleY="2.000001" material="0" />
+    <Object name="jellyDerby_tire1" posX="-5.123384" posY="3.276377" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+    <Object name="jellyDerby_tire1" posX="0.9436102" posY="3.15873" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+    <Object name="jellyDerby_chassis1" posX="7.158708" posY="4.150384" angle="355" scaleX="2.2" scaleY="1.8" material="0" />
+    <Object name="jellyDerby_tire1" posX="3.994456" posY="3.847781" angle="0" scaleX="2.000001" scaleY="2.000001" material="0" />
+    <Object name="jellyDerby_tire1" posX="9.773027" posY="3.921406" angle="0" scaleX="2.000001" scaleY="2.000001" material="0" />
+    <Object name="jellyDerby_chassis2" posX="14.52223" posY="3.722221" angle="4" scaleX="0.9444444" scaleY="1.333333" material="0" />
+    <Object name="jellyDerby_tire1" posX="13.27858" posY="3.269841" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+    <Object name="jellyDerby_tire1" posX="15.83413" posY="3.325397" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+    <Object name="jellyDerby_chassis1" posX="22.33395" posY="4.150384" angle="4" scaleX="2.2" scaleY="1.8" material="0" />
+    <Object name="jellyDerby_tire1" posX="20.06365" posY="3.690637" angle="0" scaleX="2.000001" scaleY="2.000001" material="0" />
+    <Object name="jellyDerby_tire1" posX="24.67395" posY="3.881969" angle="0" scaleX="2.000001" scaleY="2.000001" material="0" />
+    <Object name="jellyDerby_chassis2" posX="41.79277" posY="3.806762" angle="355" scaleX="0.9879227" scaleY="1.333333" material="0" />
+    <Object name="jellyDerby_tire1" posX="40.68679" posY="3.349552" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+    <Object name="jellyDerby_tire1" posX="43.17229" posY="3.257764" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+    <Object name="scene5_wheel1" posX="-37.39997" posY="17.24442" angle="0" scaleX="8.999996" scaleY="8.999996" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="5" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel1" posX="-29.19997" posY="0.6888946" angle="0" scaleX="8.999996" scaleY="8.999996" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-5" />
+      </KinematicControls>
+    </Object>
+    <Object name="jellyDerby_plat1" posX="-57" posY="1.600004" angle="0" scaleX="9.199999" scaleY="0.8" material="0" />
+    <Object name="jellyDerby_plat1" posX="-43.71106" posY="3.644449" angle="15" scaleX="3.77778" scaleY="0.7111111" material="0" />
+    <Object name="jellyDerby_chassis2" posX="-4.270262" posY="3.735293" angle="353" scaleX="0.9444444" scaleY="1.333333" material="0" />
+    <Object name="jellyDerby_tire1" posX="-1.115213" posY="3.099906" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+    <Object name="jellyDerby_chassis2" posX="-0.09379101" posY="3.617646" angle="4" scaleX="0.9444444" scaleY="1.333333" material="0" />
+    <Object name="jellyDerby_tire1" posX="-3.056391" posY="3.276377" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+    <Object name="jellyDerby_chassis1" posX="32.50059" posY="4.150383" angle="350" scaleX="2.2" scaleY="1.8" material="0" />
+    <Object name="jellyDerby_tire1" posX="34.34062" posY="3.881969" angle="0" scaleX="2.000001" scaleY="2.000001" material="0" />
+    <Object name="jellyDerby_tire1" posX="29.7295" posY="4.048636" angle="0" scaleX="2.000001" scaleY="2.000001" material="0" />
+    <Object name="jellyDerby_chassis2" posX="47.96673" posY="3.763283" angle="5" scaleX="0.9879227" scaleY="1.333333" material="0" />
+    <Object name="jellyDerby_chassis2" posX="53.35805" posY="3.58937" angle="355" scaleX="0.9879227" scaleY="1.333333" material="0" />
+    <Object name="jellyDerby_chassis2" posX="59.01023" posY="3.676327" angle="9" scaleX="0.9879227" scaleY="1.333333" material="0" />
+    <Object name="jellyDerby_chassis2" posX="64.05371" posY="3.632849" angle="355" scaleX="0.9879227" scaleY="1.333333" material="0" />
+    <Object name="jellyDerby_tire1" posX="46.95489" posY="3.301242" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+    <Object name="jellyDerby_tire1" posX="49.12883" posY="3.301242" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+    <Object name="jellyDerby_tire1" posX="52.04189" posY="3.301242" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+    <Object name="jellyDerby_tire1" posX="54.34625" posY="3.301242" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+    <Object name="jellyDerby_tire1" posX="57.95494" posY="3.214285" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+    <Object name="jellyDerby_tire1" posX="60.34626" posY="3.214285" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+    <Object name="jellyDerby_tire1" posX="62.95495" posY="3.214285" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+    <Object name="jellyDerby_tire1" posX="65.30282" posY="3.127329" angle="0" scaleX="1.000001" scaleY="1.000001" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-70" posY="10" />
+  <Settings finishX="100" finishY="5" fallLine="-20" />
+</Scene>

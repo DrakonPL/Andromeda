@@ -1,0 +1,21 @@
+<SoftBody name="n_lv2_gun_01" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="1" colorG="0" colorB="0" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.2121711" />
+    <Point x="-0.5520715" y="-0.02860102" />
+    <Point x="-0.5522735" y="0.3285811" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="0.4758016" y="0.5" />
+    <Point x="0.6221923" y="0.6491932" />
+    <Point x="0.6137816" y="0.05800544" />
+    <Point x="0.4772876" y="-0.2089216" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="3" pt1="2" pt2="1" />
+    <Poly pt0="1" pt1="3" pt2="0" />
+    <Poly pt0="0" pt1="3" pt2="4" />
+    <Poly pt0="4" pt1="5" pt2="6" />
+    <Poly pt0="7" pt1="4" pt2="6" />
+    <Poly pt0="4" pt1="7" pt2="0" />
+  </Polygons>
+</SoftBody>

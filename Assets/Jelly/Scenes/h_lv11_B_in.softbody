@@ -1,0 +1,23 @@
+<SoftBody name="h_lv11_B_in" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.5019608" colorG="1" colorB="1" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="0.8333335" y="0.7" />
+    <Point x="0.7949956" y="-0.2371489" />
+    <Point x="0.7237734" y="-0.6571068" />
+    <Point x="0.4449959" y="-0.9038156" />
+    <Point x="0.03333325" y="-1" />
+    <Point x="-0.3550034" y="-0.9038155" />
+    <Point x="-0.5904402" y="-0.7071068" />
+    <Point x="-0.6883367" y="-0.2538156" />
+    <Point x="-0.6833333" y="0.6999999" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="8" pt2="0" />
+    <Poly pt0="2" pt1="8" pt2="1" />
+    <Poly pt0="3" pt1="8" pt2="2" />
+    <Poly pt0="4" pt1="8" pt2="3" />
+    <Poly pt0="5" pt1="8" pt2="4" />
+    <Poly pt0="6" pt1="7" pt2="5" />
+    <Poly pt0="5" pt1="8" pt2="7" />
+  </Polygons>
+</SoftBody>

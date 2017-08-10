@@ -1,0 +1,21 @@
+<SoftBody name="kinematic_obj0" massPerPoint="0" edgeK="0" edgeDamping="0" colorR="0.5019608" colorG="1" colorB="0" kinematic="False" shapeMatching="False" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-4" y="-2" />
+    <Point x="-7" y="-1" />
+    <Point x="-7" y="0" />
+    <Point x="-4" y="1" />
+    <Point x="4" y="1" />
+    <Point x="7" y="0" />
+    <Point x="7" y="-1" />
+    <Point x="4" y="-2" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="3" pt1="2" pt2="1" />
+    <Poly pt0="1" pt1="0" pt2="3" />
+    <Poly pt0="3" pt1="0" pt2="7" />
+    <Poly pt0="7" pt1="4" pt2="3" />
+    <Poly pt0="4" pt1="7" pt2="6" />
+    <Poly pt0="6" pt1="5" pt2="4" />
+  </Polygons>
+</SoftBody>

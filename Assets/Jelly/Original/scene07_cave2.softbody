@@ -1,0 +1,43 @@
+<SoftBody name="scene07_cave2" massPerPoint="0" edgeK="0" edgeDamping="0" colorR="0" colorG="1" colorB="1" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-5.631314" y="1.368687" />
+    <Point x="-7.700422" y="3.122539" />
+    <Point x="-15.91413" y="4.277777" />
+    <Point x="-13.88224" y="15.09999" />
+    <Point x="4.636362" y="3.964655" />
+    <Point x="9.476343" y="-4.276455" />
+    <Point x="15.25413" y="-11.33201" />
+    <Point x="21.64302" y="-12.94312" />
+    <Point x="23.38743" y="-14.99867" />
+    <Point x="22.44298" y="-17.32091" />
+    <Point x="19.5006" y="-19.22192" />
+    <Point x="16.31271" y="-19.74512" />
+    <Point x="10.31412" y="-19.98978" />
+    <Point x="5.411907" y="-19.68755" />
+    <Point x="3.936354" y="-19.21199" />
+    <Point x="2.512859" y="-18.35551" />
+    <Point x="1.401064" y="-17.22154" />
+    <Point x="0.544723" y="-15.71119" />
+    <Point x="-3.599411" y="-3.392613" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="2" pt2="3" />
+    <Poly pt0="3" pt1="4" pt2="1" />
+    <Poly pt0="1" pt1="0" pt2="4" />
+    <Poly pt0="4" pt1="0" pt2="18" />
+    <Poly pt0="18" pt1="5" pt2="4" />
+    <Poly pt0="5" pt1="18" pt2="17" />
+    <Poly pt0="17" pt1="5" pt2="6" />
+    <Poly pt0="6" pt1="17" pt2="16" />
+    <Poly pt0="16" pt1="15" pt2="6" />
+    <Poly pt0="6" pt1="15" pt2="14" />
+    <Poly pt0="14" pt1="13" pt2="6" />
+    <Poly pt0="6" pt1="13" pt2="12" />
+    <Poly pt0="12" pt1="11" pt2="6" />
+    <Poly pt0="6" pt1="11" pt2="10" />
+    <Poly pt0="10" pt1="7" pt2="6" />
+    <Poly pt0="7" pt1="8" pt2="9" />
+    <Poly pt0="9" pt1="10" pt2="7" />
+  </Polygons>
+</SoftBody>

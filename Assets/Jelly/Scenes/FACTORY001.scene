@@ -1,0 +1,47 @@
+<Scene name="FACTORY_01">
+  <Objects>
+    <Object name="BucketL" posX="-6.5" posY="-10" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="BucketR" posX="-5.5" posY="-10" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="BucketL" posX="-18.5" posY="-10" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="BucketR" posX="-17.5" posY="-10" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="BucketL" posX="5.5" posY="-10" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="BucketR" posX="6.5" posY="-10" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="BucketL" posX="17.5" posY="-10" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="BucketR" posX="18.5" posY="-10" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="SPINNER_Y" posX="0" posY="23" angle="20" scaleX="1" scaleY="1" material="1" />
+    <Object name="SPINNER_X" posX="-12" posY="3" angle="20" scaleX="1" scaleY="1" material="1" />
+    <Object name="SPINNER_B" posX="12" posY="3" angle="20" scaleX="1" scaleY="1" material="1" />
+    <Object name="GuideLB" posX="-2.7" posY="14" angle="0" scaleX="1" scaleY="1.25" material="1" />
+    <Object name="GuideRB" posX="2.7" posY="14" angle="0" scaleX="1" scaleY="1.25" material="1" />
+    <Object name="GuideLB" posX="-9.5" posY="19" angle="14" scaleX="1" scaleY="1.5" material="1" />
+    <Object name="GuideRB" posX="9.5" posY="19" angle="345" scaleX="1" scaleY="1.5" material="1" />
+    <Object name="GuideB" posX="0" posY="-7" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="GuideB" posX="12" posY="-7" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="GuideB" posX="-12" posY="-7" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="Wall" posX="0" posY="-1" angle="0" scaleX="0.25" scaleY="1" material="1" />
+    <Object name="Wall" posX="22" posY="-3" angle="0" scaleX="0.4" scaleY="1.5" material="1" />
+    <Object name="Wall" posX="-22" posY="-3" angle="0" scaleX="0.4" scaleY="1.5" material="1" />
+    <Object name="Wall" posX="-33" posY="10" angle="0" scaleX="2" scaleY="10" material="1" />
+    <Object name="Wall" posX="33" posY="10" angle="0" scaleX="2" scaleY="10" material="1" />
+    <Object name="DETECTOR_L" posX="-18" posY="-24" angle="0" scaleX="1" scaleY="1" material="7" />
+    <Object name="DETECTOR_S" posX="-6" posY="-24" angle="0" scaleX="1" scaleY="1" material="7" />
+    <Object name="DETECTOR_T" posX="6" posY="-24" angle="0" scaleX="1" scaleY="1" material="7" />
+    <Object name="DETECTOR_U" posX="18" posY="-24" angle="0" scaleX="1" scaleY="1" material="7" />
+    <Object name="PROMPT_L" posX="-17.43484" posY="-15.38721" angle="0" scaleX="2.2" scaleY="2.2" material="5" />
+    <Object name="PROMPT_T" posX="5.455196" posY="-16.49316" angle="0" scaleX="2.2" scaleY="2.2" material="5" />
+    <Object name="PROMPT_S" posX="-6.549711" posY="-15.32649" angle="0" scaleX="2.2" scaleY="2.2" material="5" />
+    <Object name="PROMPT_U" posX="17.48337" posY="-15.3972" angle="0" scaleX="2.2" scaleY="2.2" material="5" />
+    <Object name="Wall" posX="27.5" posY="-23" angle="0" scaleX="7" scaleY="1" material="7" />
+    <Object name="Wall" posX="-27.5" posY="-23" angle="0" scaleX="7" scaleY="1" material="7" />
+    <Object name="Wall" posX="0" posY="-23" angle="0" scaleX="3.5" scaleY="1" material="0" />
+    <Object name="Wall" posX="-12" posY="-23" angle="0" scaleX="3.5" scaleY="1" material="0" />
+    <Object name="Wall" posX="12" posY="-23" angle="0" scaleX="3.5" scaleY="1" material="0" />
+    <Object name="prompt_arrow" posX="18" posY="-18" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="prompt_arrow" posX="6" posY="-18" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="prompt_arrow" posX="-6" posY="-18" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="prompt_arrow" posX="-18" posY="-18" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="Wall" posX="-17.46904" posY="32.52632" angle="345" scaleX="14" scaleY="0.1" material="4" />
+  </Objects>
+  <Car name="car_and_truck" posX="-22" posY="37" />
+  <Settings finishX="100" finishY="0" fallLine="-20" />
+</Scene>

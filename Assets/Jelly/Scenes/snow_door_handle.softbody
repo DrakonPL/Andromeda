@@ -1,0 +1,15 @@
+<SoftBody name="door handle" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="1" colorG="1" colorB="0" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.2" y="1.166667" />
+    <Point x="0.8999999" y="0.2666667" />
+    <Point x="0.5" y="-0.8333332" />
+    <Point x="-0.7666666" y="-0.8333336" />
+    <Point x="-1.20894" y="0.2909505" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="4" pt1="3" pt2="2" />
+    <Poly pt0="4" pt1="2" pt2="1" />
+    <Poly pt0="4" pt1="1" pt2="0" />
+  </Polygons>
+</SoftBody>

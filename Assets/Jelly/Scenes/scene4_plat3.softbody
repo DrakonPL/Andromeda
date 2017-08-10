@@ -1,0 +1,16 @@
+<SoftBody name="scene4_plat3" massPerPoint="1" edgeK="650" edgeDamping="25" colorR="1" colorG="0" colorB="0.5019608" kinematic="True" shapeMatching="True" shapeK="350" shapeDamping="10">
+  <Points>
+    <Point x="-1" y="-2" />
+    <Point x="-1" y="2" />
+    <Point x="1" y="2" />
+    <Point x="1" y="-2" />
+  </Points>
+  <Springs>
+    <Spring pt1="2" pt2="0" k="650" damp="25" />
+    <Spring pt1="3" pt2="1" k="650" damp="25" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="0" pt1="3" pt2="2" />
+    <Poly pt0="2" pt1="1" pt2="0" />
+  </Polygons>
+</SoftBody>

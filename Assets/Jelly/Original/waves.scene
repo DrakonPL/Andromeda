@@ -1,0 +1,79 @@
+<Scene name="Cogs">
+  <Objects>
+    <Object name="level6_01" posX="0" posY="0" angle="0" scaleX="10" scaleY="2" material="0" />
+    <Object name="level6_01" posX="-40.07696" posY="-0.07692271" angle="0" scaleX="10" scaleY="2" material="0" />
+    <Object name="waves_circle16" posX="24.17644" posY="-9.893167" angle="0" scaleX="4" scaleY="4" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="8" secondsPerLoop="4" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="waves_circle16" posX="32.17643" posY="-9.321736" angle="0" scaleX="4" scaleY="4" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="8" secondsPerLoop="4" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="waves_circle16" posX="40.17642" posY="-8.750306" angle="0" scaleX="4" scaleY="4" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="8" secondsPerLoop="4" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="waves_circle16" posX="48.17641" posY="-8.036018" angle="0" scaleX="4" scaleY="4" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="8" secondsPerLoop="4" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="waves_circle16" posX="56.17638" posY="-7.321733" angle="0" scaleX="4" scaleY="4" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="8" secondsPerLoop="4" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="waves_circle16" posX="63.89065" posY="-5.893162" angle="0" scaleX="4" scaleY="4" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="8" secondsPerLoop="4" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="waves_circle16" posX="71.605" posY="-4.321734" angle="0" scaleX="4" scaleY="4" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="8" secondsPerLoop="4" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="level6_01" posX="94.51433" posY="13.77142" angle="17" scaleX="10" scaleY="2" material="0" />
+    <Object name="waves_circle16" posX="116.205" posY="7.078264" angle="0" scaleX="6" scaleY="6" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="8" secondsPerLoop="4" startOffset="0.6" />
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="waves_circle16" posX="123.805" posY="9.078262" angle="0" scaleX="6" scaleY="6" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="8" secondsPerLoop="4" startOffset="0.4" />
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="waves_circle16" posX="132.4049" posY="12.87826" angle="0" scaleX="6" scaleY="6" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="8" secondsPerLoop="4" startOffset="0.2" />
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="waves_circle16" posX="140.6049" posY="17.67826" angle="0" scaleX="6" scaleY="6" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="8" secondsPerLoop="4" startOffset="0" />
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="waves_circle16" posX="172.4047" posY="23.07827" angle="0" scaleX="10" scaleY="10" material="0" />
+    <Object name="waves_circle16" posX="200.8045" posY="22.87827" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-20" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="waves_circle16" posX="230.2045" posY="22.27827" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-20" secondsPerLoop="10" startOffset="0.7" />
+      </KinematicControls>
+    </Object>
+  </Objects>
+  <Car name="car_and_truck" posX="-40" posY="5" />
+  <Settings finishX="230" finishY="33" fallLine="-15" />
+</Scene>

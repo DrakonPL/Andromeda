@@ -1,0 +1,16 @@
+<SoftBody name="chz2_elevator" massPerPoint="100" edgeK="500" edgeDamping="0" colorR="0.5019608" colorG="1" colorB="0.5019608" kinematic="True" shapeMatching="True" shapeK="500" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-2.318182" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="7.281815" y="0.4490909" />
+    <Point x="7.276155" y="-2.325528" />
+  </Points>
+  <Springs>
+    <Spring pt1="3" pt2="1" k="500" damp="10" />
+    <Spring pt1="0" pt2="2" k="500" damp="10" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="1" pt1="2" pt2="3" />
+    <Poly pt0="3" pt1="1" pt2="0" />
+  </Polygons>
+</SoftBody>

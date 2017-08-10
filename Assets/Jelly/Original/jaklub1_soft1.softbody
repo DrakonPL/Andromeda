@@ -1,0 +1,22 @@
+<SoftBody name="jaklub1_soft1" massPerPoint="1" edgeK="600" edgeDamping="30" colorR="0.7529412" colorG="0.7529412" colorB="0.7529412" kinematic="True" shapeMatching="True" shapeK="600" shapeDamping="30">
+  <Pressure amount="70" />
+  <Points>
+    <Point x="-0.5599555" y="-0.2712388" />
+    <Point x="-0.515" y="0.3200001" />
+    <Point x="0.1081907" y="0.5506557" />
+    <Point x="1.015508" y="0.9106557" />
+    <Point x="1.555323" y="1.073097" />
+    <Point x="1.579676" y="0.673638" />
+    <Point x="1.120374" y="-0.5591936" />
+    <Point x="0.2855957" y="-0.6952114" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="7" />
+    <Poly pt0="7" pt1="2" pt2="1" />
+    <Poly pt0="2" pt1="3" pt2="7" />
+    <Poly pt0="6" pt1="3" pt2="7" />
+    <Poly pt0="3" pt1="6" pt2="5" />
+    <Poly pt0="5" pt1="3" pt2="4" />
+  </Polygons>
+</SoftBody>

@@ -1,0 +1,19 @@
+<SoftBody name="n_lv7_ground_02" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0" colorG="1" colorB="1" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="-0.4996361" y="-0.3236452" />
+    <Point x="0.6752809" y="0.4196429" />
+    <Point x="1.526987" y="0.4186929" />
+    <Point x="1.52677" y="0.09979118" />
+    <Point x="1.180782" y="0.09944651" />
+    <Point x="0.6741573" y="0.2559523" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="2" />
+    <Poly pt0="2" pt1="6" pt2="0" />
+    <Poly pt0="2" pt1="6" pt2="3" />
+    <Poly pt0="3" pt1="4" pt2="5" />
+    <Poly pt0="6" pt1="3" pt2="5" />
+  </Polygons>
+</SoftBody>

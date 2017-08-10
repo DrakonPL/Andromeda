@@ -1,0 +1,23 @@
+<SoftBody name="plane4" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="1" colorG="0.5019608" colorB="0.2509804" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="-0.4592076" y="0.5388114" />
+    <Point x="-0.430296" y="0.6290891" />
+    <Point x="-0.4057036" y="0.764324" />
+    <Point x="-0.394582" y="0.9068667" />
+    <Point x="-0.3947125" y="2.999999" />
+    <Point x="0.007345883" y="3.004088" />
+    <Point x="-0.2092078" y="0.038811" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="8" pt1="7" pt2="6" />
+    <Poly pt0="6" pt1="5" pt2="8" />
+    <Poly pt0="8" pt1="5" pt2="4" />
+    <Poly pt0="4" pt1="8" pt2="3" />
+    <Poly pt0="3" pt1="2" pt2="8" />
+    <Poly pt0="8" pt1="1" pt2="2" />
+    <Poly pt0="1" pt1="0" pt2="8" />
+  </Polygons>
+</SoftBody>

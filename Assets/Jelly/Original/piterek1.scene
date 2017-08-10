@@ -1,0 +1,147 @@
+<Scene name="Piter Land1">
+  <Objects>
+    <Object name="scene5_plat1" posX="-64.06821" posY="0.80909" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="38" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel1" posX="106.7667" posY="48.33337" angle="0" scaleX="9" scaleY="9" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="3.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="192.0743" posY="25.71027" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="-39.60004" posY="-9.000003" angle="0" scaleX="19.4" scaleY="10.99999" material="0" />
+    <Object name="level06_plat2" posX="48.50002" posY="36.63333" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="41" offsetY="0" secondsPerLoop="25" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="5.371749" posY="-17.60275" angle="0" scaleX="25.39998" scaleY="2.4" material="0" />
+    <Object name="scene4_01" posX="-39.20005" posY="33.80005" angle="0" scaleX="19.4" scaleY="5.599999" material="0" />
+    <Object name="scene4_01" posX="37.16662" posY="8.466665" angle="270" scaleX="28.49999" scaleY="6.166666" material="0" />
+    <Object name="scene4_plat6" posX="-14.83334" posY="34.16666" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="40" offsetY="0" secondsPerLoop="25" startOffset="0" />
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="131.0718" posY="-17.83609" angle="0" scaleX="24.39998" scaleY="2.4" material="0" />
+    <Object name="scene4_01" posX="100.6666" posY="8.466665" angle="270" scaleX="28.49999" scaleY="6.166666" material="0" />
+    <Object name="scene5_wheel1" posX="114.1667" posY="31.40003" angle="0" scaleX="9" scaleY="9" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-3.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="103.005" posY="35.99732" angle="14" scaleX="5.233327" scaleY="0.5666668" material="0" />
+    <Object name="scene4_01" posX="-1.595035" posY="-7.602678" angle="336" scaleX="21.63334" scaleY="0.9666668" material="0" />
+    <Object name="scene4_01" posX="69.07173" posY="-17.83609" angle="0" scaleX="25.59998" scaleY="2.2" material="0" />
+    <Object name="piterek1_slope2" posX="195.6001" posY="-6.600018" angle="0" scaleX="18.4" scaleY="20.60001" material="0" />
+    <Object name="scene5_wheel2" posX="190.4743" posY="17.11025" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="piterek1_slope1" posX="172.2003" posY="-7.205784" angle="0" scaleX="16.37893" scaleY="19.8842" material="0" />
+    <Object name="scene5_wheel2" posX="187.6744" posY="9.310258" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="184.0744" posY="0.9102589" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="178.4745" posY="-7.089738" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="171.6745" posY="-14.48974" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="200.8742" posY="24.51027" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="198.8743" posY="14.71025" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="196.4743" posY="4.910257" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="193.8743" posY="-4.689743" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="187.6744" posY="-13.28974" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="180.8745" posY="-21.28973" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="155.6718" posY="-62.83614" angle="0" scaleX="58.20007" scaleY="2" material="0" />
+    <Object name="piterek1_hurt" posX="114.4" posY="-61.40005" angle="0" scaleX="4.6" scaleY="4.6" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="20" secondsPerLoop="5" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="piterek1_hurt" posX="144.7998" posY="-41.40003" angle="0" scaleX="4.6" scaleY="4.6" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-20" secondsPerLoop="5" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="93.87437" posY="-63.28975" angle="0" scaleX="4.000001" scaleY="4.000001" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="88.07444" posY="-63.08974" angle="0" scaleX="4.000001" scaleY="4.000001" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="81.67434" posY="-62.28974" angle="0" scaleX="4.000001" scaleY="4.000001" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="75.87435" posY="-61.28974" angle="0" scaleX="4.000001" scaleY="4.000001" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene5_wheel2" posX="70.27438" posY="-60.28973" angle="0" scaleX="4.000001" scaleY="4.000001" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="45.27175" posY="-64.63618" angle="0" scaleX="22.00004" scaleY="1.4" material="0" />
+    <Object name="cp_catapault" posX="15.79999" posY="-68.22856" angle="0" scaleX="1.333333" scaleY="1.095238" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="-58.80006" posY="-71.79996" angle="0" scaleX="30.20004" scaleY="10.79999" material="0" />
+    <Object name="scene4_01" posX="-78.59485" posY="-18.80268" angle="0" scaleX="21.63334" scaleY="0.9666668" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-40" posY="10" />
+  <Settings finishX="-60" finishY="-60" fallLine="-80" />
+</Scene>

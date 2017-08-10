@@ -1,0 +1,248 @@
+<Scene name="Float By">
+  <Objects>
+    <Object name="h_lv5_ground_01" posX="100.5657" posY="20.71066" angle="0" scaleX="220" scaleY="3" material="0" />
+    <Object name="h_lv5_ground_01" posX="8.55781" posY="-4.29082" angle="0" scaleX="20" scaleY="3" material="0" />
+    <Object name="itemballoon" posX="10.88235" posY="-1.470588" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="h_lv5_fan_01" posX="50" posY="3.6" angle="50" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-1" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_fan_01" posX="50" posY="3.6" angle="290" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-1" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_fan_01" posX="50" posY="3.6" angle="170" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-1" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="81.58293" posY="-4.09477" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="82.63056" posY="-4.09477" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="83.67093" posY="-4.09477" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="84.71581" posY="-4.09477" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="85.76963" posY="-4.09477" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="86.80105" posY="-4.09477" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="87.84144" posY="-4.09477" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="88.88631" posY="-4.09477" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="89.92669" posY="-4.09477" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="90.97154" posY="-4.09477" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="92.00293" posY="-4.09477" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="93.04332" posY="-4.09477" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="94.07471" posY="-4.09477" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_fan_01" posX="125" posY="3.6" angle="260" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="1" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_fan_01" posX="125" posY="3.6" angle="140" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="1" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_fan_01" posX="125" posY="3.6" angle="20" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="1" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="150" posY="-4.09477" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="3" secondsPerLoop="4" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="151.0713" posY="-4.106264" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="3" secondsPerLoop="4" startOffset="0.1" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="152.1345" posY="-4.09477" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="3" secondsPerLoop="4" startOffset="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="153.1734" posY="-4.133731" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="3" secondsPerLoop="4" startOffset="0.3" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="154.2011" posY="-4.119842" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="3" secondsPerLoop="4" startOffset="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="155.2429" posY="-4.126787" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="3" secondsPerLoop="4" startOffset="0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="156.2845" posY="-4.140676" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="3" secondsPerLoop="4" startOffset="0.6" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="157.3262" posY="-4.126787" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="158.3679" posY="-4.14762" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="159.4096" posY="-4.182343" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="160.4444" posY="-4.175398" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="161.486" posY="-4.175398" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="162.5435" posY="-4.201231" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_ground_01" posX="-2.948073" posY="6.669785" angle="90" scaleX="25" scaleY="3" material="0" />
+    <Object name="h_lv5_fan_01" posX="195" posY="3.6" angle="90" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-1" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_fan_01" posX="195" posY="3.6" angle="210" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-1" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_fan_01" posX="195" posY="3.6" angle="330" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-1" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_ground_01" posX="230.7657" posY="-8.689342" angle="0" scaleX="50" scaleY="3" material="0" />
+    <Object name="itemstick" posX="248.0839" posY="-5.781818" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="checkpoint" posX="231.2075" posY="-5.306209" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="h_lv5_ground_02" posX="283.3696" posY="-50.39602" angle="0" scaleX="55.2" scaleY="86.4" material="4" />
+    <Object name="h_lv5_ground_03" posX="386.6363" posY="-72.93334" angle="270" scaleX="30" scaleY="25" material="0" />
+    <Object name="h_lv5_ground_02" posX="400.7695" posY="-127.996" angle="0" scaleX="35.6" scaleY="61" material="4" />
+    <Object name="h_lv5_ground_01" posX="449.1657" posY="-59.32934" angle="0" scaleX="100" scaleY="3" material="0" />
+    <Object name="h_lv5_ground_01" posX="494.0726" posY="-98.43178" angle="90" scaleX="80" scaleY="3" material="0" />
+    <Object name="h_lv5_ground_01" posX="257.2657" posY="-130.0041" angle="90" scaleX="70" scaleY="3" material="0" />
+    <Object name="h_lv5_ground_01" posX="351.9658" posY="-17.80934" angle="90" scaleX="80" scaleY="3" material="0" />
+    <Object name="h_lv5_ground_01" posX="280.503" posY="20.68713" angle="0" scaleX="140" scaleY="3" material="0" />
+    <Object name="h_lv5_circle_01" posX="163.5912" posY="-4.207779" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="164.6125" posY="-4.250636" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="165.6339" posY="-4.264922" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="166.6657" posY="-4.296769" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="167.6784" posY="-4.315877" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="168.7064" posY="-4.334569" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="169.7231" posY="-4.362502" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="170.7397" posY="-4.373675" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="171.7621" posY="-4.384848" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_circle_01" posX="172.7789" posY="-4.429541" angle="0" scaleX="0.5" scaleY="0.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv5_ground_01" posX="378.4658" posY="-56.34743" angle="0" scaleX="50" scaleY="3" material="0" />
+    <Object name="h_lv5_ground_03" posX="479.6363" posY="-138.9333" angle="270" scaleX="30" scaleY="25" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="2" posY="0" />
+  <Settings finishX="470" finishY="-158" fallLine="-165" />
+</Scene>

@@ -1,0 +1,13 @@
+<SoftBody name="housemain" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.7529412" colorG="0.7529412" colorB="0.7529412" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="2.079167" y="1.875" />
+    <Point x="2.076056" y="-0.815983" />
+    <Point x="-2.025285" y="-0.8229059" />
+    <Point x="-2.030223" y="1.871517" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="3" />
+    <Poly pt0="3" pt1="2" pt2="1" />
+  </Polygons>
+</SoftBody>

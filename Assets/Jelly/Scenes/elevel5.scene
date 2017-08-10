@@ -1,0 +1,31 @@
+<Scene name="Lance">
+  <Objects>
+    <Object name="e_lv5_castle_01" posX="-16.6" posY="29.2" angle="0" scaleX="53" scaleY="93" material="0" />
+    <Object name="itemstick" posX="-5.800002" posY="2.6" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="e_lv5_castle_02" posX="-61.51304" posY="55.38261" angle="0" scaleX="45" scaleY="74.8" material="0" />
+    <Object name="e_lv5_wheel_01" posX="-6.320834" posY="46.16785" angle="95" scaleX="12" scaleY="12" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.3" />
+      </KinematicControls>
+    </Object>
+    <Object name="e_lv5_flag_01" posX="-64.39999" posY="117.4167" angle="0" scaleX="15.8" scaleY="15.4" material="0" />
+    <Object name="e_lv5_castle_03" posX="-51.68235" posY="71.58182" angle="0" scaleX="16.6" scaleY="18.6" material="0" />
+    <Object name="e_lv5_wheel_02" posX="-69.8" posY="32.6" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.3" />
+      </KinematicControls>
+    </Object>
+    <Object name="e_lv5_wheel_02" posX="-69.8" posY="32.6" angle="180" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.3" />
+      </KinematicControls>
+    </Object>
+    <Object name="e_lv5_ob_01" posX="-29.73333" posY="-0.6333329" angle="0" scaleX="20.6" scaleY="4.4" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="17" offsetY="0" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+  </Objects>
+  <Car name="car_and_truck" posX="0" posY="5" />
+  <Settings finishX="-20" finishY="68" fallLine="-17" />
+</Scene>

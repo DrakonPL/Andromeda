@@ -1,0 +1,11 @@
+<SoftBody name="hill_sta" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.5019608" colorG="0.2509804" colorB="0.2509804" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.3848485" y="-0.3969698" />
+    <Point x="-0.0333335" y="0.4212122" />
+    <Point x="0.2090911" y="-0.3969695" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="2" />
+  </Polygons>
+</SoftBody>

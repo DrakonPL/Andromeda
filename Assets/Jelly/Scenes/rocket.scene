@@ -1,0 +1,129 @@
+<Scene name="rocket">
+  <Objects>
+    <Object name="rockets_wheel" posX="50" posY="0" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_plat" posX="-30.00003" posY="-20" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="10" posY="-20" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="50" posY="-20" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="30" posY="-20" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="-10" posY="-20" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="-20.00003" posY="-20" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="0" posY="-20" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="20" posY="-20" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="50" posY="-10" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_wheel" posX="30" posY="0" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="4" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_plat_dynamic" posX="40" posY="-20" angle="0" scaleX="2.5" scaleY="2.5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="15" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_wheel" posX="30" posY="10" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="4.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_wheel" posX="50" posY="10" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-4.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_wheel" posX="31" posY="20" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="5" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_wheel" posX="49" posY="20" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-5" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_wheel" posX="32" posY="30" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="7" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_wheel" posX="48" posY="30" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-7" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_wheel" posX="48" posY="38" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-7" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_wheel" posX="32" posY="38" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="7" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_wheel" posX="33" posY="46" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="7" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_wheel" posX="47" posY="46" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-7" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_plat_dynamic" posX="35" posY="80" angle="0" scaleX="2.5" scaleY="2.5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="-10" offsetY="0" secondsPerLoop="5" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_plat_dynamic" posX="45" posY="80" angle="0" scaleX="2.5" scaleY="2.5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="10" offsetY="0" secondsPerLoop="5" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_plat" posX="25" posY="80" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="55" posY="80" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="15" posY="90" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="15" posY="100" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="15" posY="80" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="65" posY="55" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="75" posY="55" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="85" posY="55" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="95" posY="55" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="105" posY="55" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="105" posY="65" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="105" posY="75" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="105" posY="85" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="65" posY="80" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="75" posY="80" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="95" posY="80" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="105" posY="95" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat_dynamic" posX="85" posY="80" angle="0" scaleX="2.5" scaleY="2.5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="15" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_wheel" posX="65.16666" posY="73.49997" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-7" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_wheel" posX="60.00001" posY="56.50002" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="7" />
+      </KinematicControls>
+    </Object>
+    <Object name="rockets_plat" posX="-12" posY="32" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="-22" posY="30" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="-32" posY="30" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="-42" posY="30" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="-52" posY="30" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="-62" posY="30" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+    <Object name="rockets_plat" posX="-62" posY="40" angle="0" scaleX="2.5" scaleY="2.5" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-20" posY="-5" />
+  <Settings finishX="-40" finishY="40" fallLine="-30" />
+</Scene>

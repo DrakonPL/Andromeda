@@ -1,0 +1,36 @@
+<Scene name="carcustom">
+  <Objects>
+    <Object id="0" colorID="0" type="0" name="custom_ground01" posX="0" posY="10.44478" angle="0" scaleX="19" scaleY="1" material="0" />
+    <Object id="0" colorID="0" type="0" name="custom_ground01" posX="0" posY="2.657889" angle="0" scaleX="19" scaleY="1" material="0" />
+    <Object id="0" colorID="0" type="0" name="custom_ground01" posX="14.39243" posY="0.7632338" angle="270" scaleX="13.6" scaleY="1" material="0" />
+    <Object id="0" colorID="2" type="0" name="custom_ground02" posX="0" posY="-3.094533" angle="0" scaleX="1" scaleY="10" material="0" />
+    <Object id="0" colorID="0" type="0" name="custom_ground01" posX="0" posY="-8.239726" angle="0" scaleX="19" scaleY="1" material="0" />
+	
+    <Object id="0" colorID="0" type="1" name="chassis_1" posX="-8.835243" posY="0.3447298" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="1" type="1" name="chassis_1" posX="-12.00015" posY="-6.207177" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="2" type="1" name="chassis_1" posX="-7.151281" posY="-2.903314" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="3" type="1" name="chassis_1" posX="-2.16576" posY="-6.168762" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="4" type="1" name="chassis_1" posX="-3.851939" posY="-2.889485" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="5" type="1" name="chassis_1" posX="-10.3712" posY="-2.916942" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="6" type="1" name="chassis_1" posX="-12.11087" posY="0.3346494" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="7" type="1" name="chassis_1" posX="-2.441153" posY="0.325814" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="8" type="1" name="chassis_1" posX="-5.648457" posY="0.3264749" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="9" type="1" name="chassis_1" posX="-7.798499" posY="-6.10982" angle="0" scaleX="3" scaleY="3" material="1" />
+	
+    <Object id="0" colorID="0" type="2" name="chassis_1" posX="2.427186" posY="-6.136398" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="1" type="2" name="chassis_1" posX="6.228843" posY="0.3295142" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="2" type="2" name="chassis_1" posX="2.326772" posY="0.307276" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="3" type="2" name="chassis_1" posX="8.067307" posY="-2.842582" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="4" type="2" name="chassis_1" posX="11.7324" posY="-2.917217" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="5" type="2" name="chassis_1" posX="5.56404" posY="-6.216168" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="6" type="2" name="chassis_1" posX="11.99721" posY="-6.088837" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="7" type="2" name="chassis_1" posX="8.828758" posY="-6.152549" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object id="0" colorID="8" type="2" name="chassis_1" posX="3.277062" posY="-2.914021" angle="0" scaleX="3" scaleY="3" material="1" />
+	<Object id="0" colorID="9" type="2" name="chassis_1" posX="10.62528" posY="0.2403039" angle="0" scaleX="3" scaleY="3" material="1" />
+	
+	<Object id="0" colorID="0" type="0" name="custom_ground01" posX="-14.04316" posY="0.7739524" angle="270" scaleX="13.6" scaleY="1" material="0" />	
+
+  </Objects>
+  <Car name="car_and_truck" posX="0" posY="6" />
+  <Settings finishX="200" finishY="200" fallLine="-100" />
+</Scene>

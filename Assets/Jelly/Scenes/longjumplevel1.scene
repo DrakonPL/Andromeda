@@ -1,0 +1,24 @@
+<Scene name="Long jump level1">
+  <Objects>
+    <Object name="l_lv1_scene10_01" posX="-50" posY="100" angle="0" scaleX="5" scaleY="5" material="0" />
+    <Object name="l_lv1_scene10_02" posX="-50" posY="100" angle="0" scaleX="5" scaleY="5" material="0" />
+    <Object name="l_lv1_scene10_03" posX="-28" posY="85" angle="0" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv1_scene10_04" posX="-13" posY="60" angle="0" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv1_scene10_05" posX="27" posY="-40" angle="0" scaleX="2" scaleY="2" material="4" />
+    <Object name="l_lv1_scene10_06" posX="36.96664" posY="-48.79995" angle="0" scaleX="2" scaleY="2" material="4" />
+    <Object name="l_lv1_scene10_08" posX="50.925" posY="-50.01247" angle="0" scaleX="2" scaleY="2" material="4" />
+    <Object name="l_lv1_scene10_04" posX="-3" posY="35" angle="0" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv1_scene10_08" posX="60.83041" posY="-48.45953" angle="22" scaleX="2" scaleY="2" material="4" />
+    <Object name="l_lv1_scene10_04" posX="7" posY="10" angle="0" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv1_scene10_04" posX="17" posY="-15" angle="0" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv1_scene10_07" posX="-94.97376" posY="102" angle="0" scaleX="4" scaleY="4.3" material="0" />
+    <Object name="l_lv1_wheel" posX="49.79999" posY="-27.56665" angle="0" scaleX="21" scaleY="21" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="6" />
+      </KinematicControls>
+    </Object>
+    <Object name="longjump" posX="473.1999" posY="-49" angle="0" scaleX="800" scaleY="8.200001" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-85" posY="106" />
+  <Settings finishX="355" finishY="300" fallLine="-100" />
+</Scene>

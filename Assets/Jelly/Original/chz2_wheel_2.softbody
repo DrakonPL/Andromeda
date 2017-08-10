@@ -1,0 +1,35 @@
+<SoftBody name="chz2_wheel_2" massPerPoint="1000" edgeK="1000" edgeDamping="30" colorR="0.5019608" colorG="0.5019608" colorB="0.5019608" kinematic="True" shapeMatching="True" shapeK="1000" shapeDamping="10">
+  <Points>
+    <Point x="0.4527783" y="-0.1500001" />
+    <Point x="0.9103707" y="-0.3727082" />
+    <Point x="0.8660254" y="-0.5" />
+    <Point x="0.7136118" y="-0.4048686" />
+    <Point x="0.4136128" y="-0.2382019" />
+    <Point x="0.1820292" y="-0.1771579" />
+    <Point x="0.1711812" y="-0.1087037" />
+    <Point x="0.1548513" y="0.02312147" />
+    <Point x="0.1904066" y="0.2231215" />
+    <Point x="0.2704068" y="0.0008992513" />
+  </Points>
+  <Springs>
+    <Spring pt1="4" pt2="0" k="1000" damp="10" />
+    <Spring pt1="4" pt2="1" k="1000" damp="10" />
+    <Spring pt1="1" pt2="3" k="1000" damp="10" />
+    <Spring pt1="0" pt2="2" k="1000" damp="10" />
+    <Spring pt1="4" pt2="9" k="1000" damp="10" />
+    <Spring pt1="9" pt2="6" k="1000" damp="10" />
+    <Spring pt1="6" pt2="0" k="1000" damp="10" />
+    <Spring pt1="7" pt2="9" k="1000" damp="10" />
+    <Spring pt1="8" pt2="6" k="1000" damp="10" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="2" pt1="1" pt2="3" />
+    <Poly pt0="3" pt1="1" pt2="0" />
+    <Poly pt0="0" pt1="4" pt2="3" />
+    <Poly pt0="4" pt1="6" pt2="0" />
+    <Poly pt0="6" pt1="0" pt2="9" />
+    <Poly pt0="7" pt1="6" pt2="9" />
+    <Poly pt0="9" pt1="7" pt2="8" />
+    <Poly pt0="4" pt1="6" pt2="5" />
+  </Polygons>
+</SoftBody>

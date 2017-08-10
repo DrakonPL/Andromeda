@@ -1,0 +1,57 @@
+<SoftBody name="n_lv10_mov_01" massPerPoint="1" edgeK="5000" edgeDamping="15" colorR="1" colorG="1" colorB="0" kinematic="True" shapeMatching="True" shapeK="200" shapeDamping="10">
+  <Points>
+    <Point x="0.007168435" y="-0.5598039" />
+    <Point x="-0.06299123" y="0.1739945" />
+    <Point x="-0.1812201" y="0.05453435" />
+    <Point x="-0.3533141" y="-0.09071126" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="-0.3511218" y="0.4086964" />
+    <Point x="-0.1844491" y="0.3581412" />
+    <Point x="-0.005487192" y="0.4287833" />
+    <Point x="0.1558578" y="0.3503197" />
+    <Point x="0.3426174" y="0.3919695" />
+    <Point x="0.5" y="0.5" />
+    <Point x="0.3025999" y="-0.1495346" />
+    <Point x="0.1561918" y="0.04743531" />
+    <Point x="0.04991199" y="0.1739944" />
+  </Points>
+  <Springs>
+    <Spring pt1="5" pt2="3" k="5000" damp="15" />
+    <Spring pt1="6" pt2="2" k="5000" damp="15" />
+    <Spring pt1="7" pt2="0" k="5000" damp="15" />
+    <Spring pt1="8" pt2="12" k="5000" damp="15" />
+    <Spring pt1="9" pt2="11" k="5000" damp="15" />
+    <Spring pt1="4" pt2="10" k="5000" damp="15" />
+    <Spring pt1="5" pt2="7" k="5000" damp="15" />
+    <Spring pt1="7" pt2="9" k="5000" damp="15" />
+    <Spring pt1="8" pt2="11" k="5000" damp="15" />
+    <Spring pt1="9" pt2="12" k="5000" damp="15" />
+    <Spring pt1="6" pt2="3" k="5000" damp="15" />
+    <Spring pt1="5" pt2="2" k="5000" damp="15" />
+    <Spring pt1="1" pt2="7" k="5000" damp="15" />
+    <Spring pt1="1" pt2="6" k="5000" damp="15" />
+    <Spring pt1="2" pt2="7" k="5000" damp="15" />
+    <Spring pt1="7" pt2="13" k="5000" damp="15" />
+    <Spring pt1="7" pt2="12" k="5000" damp="15" />
+    <Spring pt1="8" pt2="13" k="5000" damp="15" />
+    <Spring pt1="1" pt2="13" k="5000" damp="15" />
+    <Spring pt1="2" pt2="12" k="5000" damp="15" />
+    <Spring pt1="3" pt2="11" k="5000" damp="15" />
+    <Spring pt1="11" pt2="0" k="5000" damp="15" />
+    <Spring pt1="3" pt2="0" k="5000" damp="15" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="4" pt1="3" pt2="5" />
+    <Poly pt0="5" pt1="3" pt2="6" />
+    <Poly pt0="6" pt1="2" pt2="3" />
+    <Poly pt0="6" pt1="2" pt2="7" />
+    <Poly pt0="1" pt1="7" pt2="2" />
+    <Poly pt0="1" pt1="7" pt2="13" />
+    <Poly pt0="13" pt1="1" pt2="0" />
+    <Poly pt0="13" pt1="7" pt2="8" />
+    <Poly pt0="8" pt1="12" pt2="13" />
+    <Poly pt0="12" pt1="8" pt2="9" />
+    <Poly pt0="9" pt1="12" pt2="11" />
+    <Poly pt0="11" pt1="9" pt2="10" />
+  </Polygons>
+</SoftBody>

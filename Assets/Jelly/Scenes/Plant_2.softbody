@@ -1,0 +1,16 @@
+<SoftBody name="Plant_2" massPerPoint="1" edgeK="9000" edgeDamping="10" colorR="1" colorG="0.5019608" colorB="1" kinematic="True" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.2115384" y="-0.06521743" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="0.5" y="0.5" />
+    <Point x="0.185821" y="-0.06008652" />
+  </Points>
+  <Springs>
+    <Spring pt1="1" pt2="3" k="100" damp="10" />
+    <Spring pt1="2" pt2="0" k="100" damp="10" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="1" pt1="2" pt2="3" />
+    <Poly pt0="1" pt1="0" pt2="3" />
+  </Polygons>
+</SoftBody>

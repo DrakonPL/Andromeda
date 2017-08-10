@@ -1,0 +1,28 @@
+<Scene name="Beware The Spikes">
+  <Objects>
+    <Object name="ziggy1_land_1" posX="-53.8" posY="40" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="ziggy1_circle1" posX="-13.07619" posY="24.18414" angle="338" scaleX="9.253982" scaleY="8.857155" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="ziggy1_platform_1" posX="0.02538622" posY="8.380952" angle="360" scaleX="13.85715" scaleY="13.85714" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="40" offsetY="40" secondsPerLoop="18" startOffset="0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="ziggy1_land_1" posX="1" posY="54.19996" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="ziggy1_land_3" posX="2.941174" posY="65.76474" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="ziggy1_platform_2" posX="1.407701" posY="75.29901" angle="89" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="-40" offsetY="40" secondsPerLoop="18" startOffset="0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="ziggy1_land_5" posX="-30.43637" posY="87.21813" angle="0" scaleX="28.94545" scaleY="1.454545" material="0" />
+    <Object name="ziggy1_land_4" posX="-34.99999" posY="105.7" angle="1" scaleX="1" scaleY="1" material="0" />
+    <Object name="ziggy1_spike_1" posX="-30.7" posY="106.1" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="ziggy1_spike_1" posX="-30.00001" posY="109" angle="0" scaleX="1" scaleY="1" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-50" posY="46" />
+  <Settings finishX="-31" finishY="90" fallLine="0" />
+</Scene>

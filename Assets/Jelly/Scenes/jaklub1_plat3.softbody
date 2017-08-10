@@ -1,0 +1,25 @@
+<SoftBody name="jaklub1_plat3" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.6784314" colorG="1" colorB="0.1843137" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.7692302" y="-0.2115383" />
+    <Point x="-0.8036518" y="0.1290976" />
+    <Point x="-0.9038458" y="0.4807692" />
+    <Point x="-0.3653847" y="0.5480769" />
+    <Point x="0.1867329" y="0.6002514" />
+    <Point x="0.9175021" y="0.5810207" />
+    <Point x="0.6867332" y="0.3502513" />
+    <Point x="0.7348101" y="0.01371296" />
+    <Point x="0.4463484" y="-0.2939793" />
+    <Point x="-0.2171133" y="-0.4862871" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="5" pt1="6" pt2="4" />
+    <Poly pt0="4" pt1="6" pt2="7" />
+    <Poly pt0="4" pt1="7" pt2="8" />
+    <Poly pt0="4" pt1="8" pt2="9" />
+    <Poly pt0="4" pt1="9" pt2="0" />
+    <Poly pt0="4" pt1="0" pt2="1" />
+    <Poly pt0="3" pt1="1" pt2="4" />
+    <Poly pt0="3" pt1="2" pt2="1" />
+  </Polygons>
+</SoftBody>

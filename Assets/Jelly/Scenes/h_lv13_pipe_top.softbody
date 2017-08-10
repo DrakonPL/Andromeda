@@ -1,0 +1,13 @@
+<SoftBody name="h_lv13_pipe_top" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.6784314" colorG="1" colorB="0.1803922" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="0.2823075" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="0.5015866" y="0.5" />
+    <Point x="0.5017549" y="0.2828116" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="2" pt1="0" pt2="3" />
+    <Poly pt0="0" pt1="1" pt2="2" />
+  </Polygons>
+</SoftBody>

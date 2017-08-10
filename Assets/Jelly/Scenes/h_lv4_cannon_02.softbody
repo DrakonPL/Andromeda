@@ -1,0 +1,25 @@
+<SoftBody name="h_lv4_cannon_02" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="1" colorG="0.5019608" colorB="0.2509804" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.4731306" y="-0.4307443" />
+    <Point x="-1.094506" y="-0.3325609" />
+    <Point x="-0.8815914" y="-0.2969553" />
+    <Point x="0.8208331" y="0.4053029" />
+    <Point x="0.841609" y="0.2795278" />
+    <Point x="0.838183" y="0.2329658" />
+    <Point x="0.8187298" y="0.2017764" />
+    <Point x="0.7924329" y="0.1971005" />
+    <Point x="0.7678269" y="0.2301972" />
+    <Point x="0.7585526" y="0.2923008" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="9" pt1="8" pt2="7" />
+    <Poly pt0="7" pt1="6" pt2="5" />
+    <Poly pt0="5" pt1="4" pt2="3" />
+    <Poly pt0="7" pt1="5" pt2="3" />
+    <Poly pt0="3" pt1="7" pt2="9" />
+    <Poly pt0="2" pt1="3" pt2="9" />
+    <Poly pt0="2" pt1="1" pt2="0" />
+    <Poly pt0="0" pt1="2" pt2="9" />
+  </Polygons>
+</SoftBody>

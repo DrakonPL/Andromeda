@@ -1,0 +1,46 @@
+<SoftBody name="e_lv5_ob_01" massPerPoint="1" edgeK="10000" edgeDamping="15" colorR="0.7529412" colorG="0.7529412" colorB="0.7529412" kinematic="True" shapeMatching="True" shapeK="10000" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="-0.500131" y="-0.1301302" />
+    <Point x="-0.7179561" y="-0.1277892" />
+    <Point x="-0.7179561" y="0.1329025" />
+    <Point x="-0.500131" y="0.1310357" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="-0.4615726" y="0.3720407" />
+    <Point x="-0.4074593" y="0.2902445" />
+    <Point x="-0.3453726" y="0.230956" />
+    <Point x="0.2326389" y="0.03116088" />
+    <Point x="-0.3427985" y="-0.2355074" />
+    <Point x="-0.4085674" y="-0.3014897" />
+    <Point x="-0.4564719" y="-0.369066" />
+  </Points>
+  <Springs>
+    <Spring pt1="8" pt2="10" k="10000" damp="15" />
+    <Spring pt1="7" pt2="11" k="10000" damp="15" />
+    <Spring pt1="6" pt2="12" k="10000" damp="15" />
+    <Spring pt1="4" pt2="1" k="10000" damp="15" />
+    <Spring pt1="3" pt2="1" k="10000" damp="15" />
+    <Spring pt1="4" pt2="2" k="10000" damp="15" />
+    <Spring pt1="5" pt2="12" k="10000" damp="15" />
+    <Spring pt1="6" pt2="0" k="10000" damp="15" />
+    <Spring pt1="6" pt2="11" k="10000" damp="15" />
+    <Spring pt1="7" pt2="12" k="10000" damp="15" />
+    <Spring pt1="7" pt2="10" k="10000" damp="15" />
+    <Spring pt1="8" pt2="11" k="10000" damp="15" />
+    <Spring pt1="9" pt2="5" k="10000" damp="15" />
+    <Spring pt1="9" pt2="0" k="10000" damp="15" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="3" pt1="2" pt2="1" />
+    <Poly pt0="1" pt1="4" pt2="3" />
+    <Poly pt0="4" pt1="5" pt2="6" />
+    <Poly pt0="6" pt1="4" pt2="12" />
+    <Poly pt0="12" pt1="0" pt2="1" />
+    <Poly pt0="1" pt1="4" pt2="12" />
+    <Poly pt0="6" pt1="12" pt2="11" />
+    <Poly pt0="7" pt1="6" pt2="11" />
+    <Poly pt0="11" pt1="7" pt2="10" />
+    <Poly pt0="10" pt1="8" pt2="7" />
+    <Poly pt0="8" pt1="10" pt2="9" />
+  </Polygons>
+</SoftBody>

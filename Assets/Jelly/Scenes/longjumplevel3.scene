@@ -1,0 +1,157 @@
+<Scene name="long jump level3">
+  <Objects>
+    <Object name="l_lv3_scene10_01" posX="-85.03999" posY="74.99999" angle="2" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv3_scene10_02" posX="-85.09206" posY="75.12513" angle="7" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv3_scene10_03" posX="-62.14285" posY="63.39993" angle="17" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv3_scene10_04" posX="-40.51525" posY="43.91187" angle="17" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv3_scene10_05" posX="27" posY="-40" angle="0" scaleX="2" scaleY="2" material="4" />
+    <Object name="l_lv3_scene10_06" posX="36.96664" posY="-48.79995" angle="0" scaleX="2" scaleY="2" material="4" />
+    <Object name="l_lv3_scene10_08" posX="50.925" posY="-50.01247" angle="0" scaleX="2" scaleY="2" material="4" />
+    <Object name="l_lv3_scene10_04" posX="-23.63333" posY="22.93333" angle="17" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv3_scene10_08" posX="60.83041" posY="-48.45953" angle="22" scaleX="2" scaleY="2" material="4" />
+    <Object name="l_lv3_scene10_04" posX="-6.761084" posY="1.978653" angle="17" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv3_scene10_04" posX="10.13333" posY="-19" angle="17" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv3_wheel" posX="49.87999" posY="-28.64665" angle="0" scaleX="21" scaleY="21" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="6" />
+      </KinematicControls>
+    </Object>
+    <Object name="longjump" posX="472.706" posY="-49.27171" angle="0" scaleX="800" scaleY="8.200001" material="0" />
+    <Object name="l_lv3_scene10_04" posX="-202.7521" posY="127.6236" angle="17" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv3_scene10_07" posX="-186.3363" posY="106.5054" angle="328" scaleX="1" scaleY="4.5" material="4" />
+    <Object name="l_lv3_scene10_07" posX="-188.6069" posY="109.1323" angle="315" scaleX="1" scaleY="4.5" material="4" />
+    <Object name="l_lv3_scene10_07" posX="-183.8204" posY="104.549" angle="344" scaleX="1" scaleY="4.5" material="4" />
+    <Object name="l_lv3_scene10_07" posX="-177.3745" posY="103.1801" angle="13" scaleX="1" scaleY="4.5" material="4" />
+    <Object name="l_lv3_scene10_04" posX="-219.6291" posY="148.6025" angle="17" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv3_scene10_04" posX="-236.4928" posY="169.5622" angle="17" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv3_wheel" posX="-193.9032" posY="136.9986" angle="0" scaleX="12" scaleY="12" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="5" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="-223.0616" posY="176.2486" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-3" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_scene10_04" posX="-253.3627" posY="190.551" angle="17" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv3_scene10_04" posX="-270.2323" posY="211.5172" angle="17" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv3_wheel" posX="-260.4181" posY="217.8834" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="5" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_scene10_04" posX="-287.0777" posY="232.4403" angle="17" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv3_scene10_04" posX="-320.8432" posY="274.4032" angle="17" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv3_scene10_04" posX="-303.9861" posY="253.421" angle="17" scaleX="5" scaleY="5" material="4" />
+    <Object name="l_lv3_scene10_02" posX="-345.875" posY="281.725" angle="17" scaleX="5" scaleY="5" material="0" />
+    <Object name="l_lv3_scene10_07" posX="-365.8431" posY="281.7105" angle="0" scaleX="4" scaleY="4.3" material="0" />
+    <Object name="l_lv3_wheel" posX="174.2" posY="-33.56665" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="222.6" posY="-28.56665" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="394.8" posY="-32.76665" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="464.2" posY="-32.96665" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="532.4" posY="-32.96665" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="606.2" posY="-32.36665" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="679.2" posY="-31.96665" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="760.8" posY="-33.56665" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="832.4" posY="-26.76665" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="20.38822" posY="-2.849003" angle="0" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="-21.15295" posY="57.93923" angle="0" scaleX="21" scaleY="21" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="-1.235303" posY="23.72746" angle="0" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_scene10_07" posX="-180.8216" posY="103.4037" angle="359" scaleX="1" scaleY="4.5" material="4" />
+    <Object name="l_lv3_scene10_07" posX="-173.0398" posY="104.1847" angle="15" scaleX="1" scaleY="4.5" material="4" />
+    <Object name="l_lv3_scene10_07" posX="-168.271" posY="105.4187" angle="16" scaleX="1" scaleY="4.5" material="4" />
+    <Object name="l_lv3_scene10_07" posX="-163.5342" posY="106.7455" angle="17" scaleX="1" scaleY="4.5" material="4" />
+    <Object name="l_lv3_scene10_01" posX="-130.4518" posY="93.98821" angle="192" scaleX="4" scaleY="5" material="4" />
+    <Object name="l_lv3_wheel" posX="233.7259" posY="-27.84072" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="244.637" posY="-27.7296" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="255.4799" posY="-27.97247" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="271.6" posY="-31.36665" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="319.6" posY="-31.76665" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="341.2" posY="-32.16665" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="152.8" posY="-33.16665" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="l_lv3_wheel" posX="195.2" posY="-33.56665" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+  </Objects>
+  <Car name="car_and_truck" posX="-362" posY="285" />
+  <Settings finishX="355" finishY="300" fallLine="-100" />
+</Scene>

@@ -1,0 +1,21 @@
+<SoftBody name="h_lv15_cup_03" massPerPoint="0" edgeK="10000" edgeDamping="15" colorR="1" colorG="0.5019608" colorB="0" kinematic="False" shapeMatching="True" shapeK="10000" shapeDamping="15">
+  <Points>
+    <Point x="0.50468" y="0.8917723" />
+    <Point x="0.05388322" y="0.2152394" />
+    <Point x="0.05396677" y="-0.8229408" />
+    <Point x="0.374975" y="-0.9893961" />
+    <Point x="-0.365303" y="-0.9898129" />
+    <Point x="-0.05102547" y="-0.8249995" />
+    <Point x="-0.05147832" y="0.2162206" />
+    <Point x="-0.5359566" y="0.8917723" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="6" pt1="1" pt2="5" />
+    <Poly pt0="5" pt1="2" pt2="1" />
+    <Poly pt0="7" pt1="0" pt2="6" />
+    <Poly pt0="1" pt1="6" pt2="0" />
+    <Poly pt0="5" pt1="2" pt2="4" />
+    <Poly pt0="4" pt1="2" pt2="3" />
+  </Polygons>
+</SoftBody>

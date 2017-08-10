@@ -1,0 +1,21 @@
+<SoftBody name="ziggy1_land_3" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.6784314" colorG="1" colorB="0.1843137" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="1.352941" y="1.647058" />
+    <Point x="4.765933" y="5.06005" />
+    <Point x="14.4706" y="5.058825" />
+    <Point x="14.413" y="3.234071" />
+    <Point x="-0.1764728" y="-0.764706" />
+    <Point x="-4.497024" y="-0.3835773" />
+    <Point x="-4.600842" y="0.4789916" />
+    <Point x="-0.7071068" y="0.7071068" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="6" pt1="5" pt2="7" />
+    <Poly pt0="5" pt1="4" pt2="7" />
+    <Poly pt0="4" pt1="0" pt2="7" />
+    <Poly pt0="4" pt1="3" pt2="0" />
+    <Poly pt0="3" pt1="2" pt2="0" />
+    <Poly pt0="0" pt1="2" pt2="1" />
+  </Polygons>
+</SoftBody>

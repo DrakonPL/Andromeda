@@ -1,0 +1,29 @@
+<SoftBody name="chz3_Bridge2" massPerPoint="1" edgeK="100" edgeDamping="10" colorR="0.5019608" colorG="0.5019608" colorB="0" kinematic="True" shapeMatching="True" shapeK="9900" shapeDamping="10">
+  <Points>
+    <Point x="-2.96875" y="-2.8875" />
+    <Point x="-3.784424" y="-0.9643817" />
+    <Point x="-3.784424" y="0.9731183" />
+    <Point x="-3.0625" y="3.03125" />
+    <Point x="-1.050049" y="3.723118" />
+    <Point x="0.9655762" y="3.723118" />
+    <Point x="2.993749" y="3.0625" />
+    <Point x="3.715576" y="0.9574933" />
+    <Point x="3.715576" y="-1.011257" />
+    <Point x="3.046482" y="-3.016724" />
+    <Point x="1.012451" y="-3.776882" />
+    <Point x="-1.034424" y="-3.776882" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="3" pt1="2" pt2="1" />
+    <Poly pt0="1" pt1="0" pt2="3" />
+    <Poly pt0="3" pt1="4" pt2="0" />
+    <Poly pt0="0" pt1="11" pt2="4" />
+    <Poly pt0="4" pt1="5" pt2="11" />
+    <Poly pt0="11" pt1="10" pt2="5" />
+    <Poly pt0="5" pt1="6" pt2="10" />
+    <Poly pt0="10" pt1="9" pt2="6" />
+    <Poly pt0="6" pt1="7" pt2="9" />
+    <Poly pt0="9" pt1="8" pt2="7" />
+  </Polygons>
+</SoftBody>

@@ -1,0 +1,37 @@
+<Scene name="Grass Lifts">
+  <Objects>
+    <Object name="e_lv2_ground_01" posX="13.80462" posY="-3.612903" angle="0" scaleX="21.10343" scaleY="2.30894" material="0" />
+    <Object name="e_lv2_flat_01" posX="28.11333" posY="-4.18622" angle="0" scaleX="6.842106" scaleY="3.105264" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="25" secondsPerLoop="18" startOffset="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="e_lv2_woodhouse_01" posX="38.27253" posY="22.31705" angle="0" scaleX="12.66667" scaleY="3.222222" material="0" />
+    <Object name="itemstick" posX="38.35714" posY="23.41905" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="e_lv2_flats_01" posX="50.96667" posY="-9.056865" angle="0" scaleX="23.6" scaleY="12.6" material="0" />
+    <Object name="e_lv2_flat_02" posX="83.55183" posY="21.16925" angle="0" scaleX="20" scaleY="4" material="0" />
+    <Object name="e_lv2_ob_01" posX="92.17772" posY="-65.10905" angle="90" scaleX="0.8" scaleY="1" material="1" />
+    <Object name="e_lv2_flat_02" posX="112.044" posY="21.25983" angle="0" scaleX="20" scaleY="4" material="0" />
+    <Object name="e_lv2_halfcircle_01" posX="144.0454" posY="21.4" angle="0" scaleX="22" scaleY="24.5" material="0" />
+    <Object name="e_lv2_ob_02" posX="144" posY="15.2" angle="0" scaleX="14.8" scaleY="14" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="e_lv2_bridge_01" posX="187.3151" posY="21.93923" angle="0" scaleX="42.4" scaleY="3.800001" material="0" />
+    <Object name="e_lv2_ob_03" posX="211.8" posY="10.3" angle="0" scaleX="26.6" scaleY="21.2" material="0" />
+    <Object name="e_lv2_ob_01" posX="74.7281" posY="-64.65747" angle="90" scaleX="0.8" scaleY="1" material="1" />
+    <Object name="e_lv2_flat_01" posX="97.75777" posY="21.92487" angle="0" scaleX="6.842106" scaleY="3.105264" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-10" secondsPerLoop="8" startOffset="0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="e_lv2_flat_01" posX="69.78741" posY="22.5545" angle="0" scaleX="6.842106" scaleY="3.105264" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-10" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+  </Objects>
+  <Car name="car_and_truck" posX="8" posY="2" />
+  <Settings finishX="212" finishY="10" fallLine="-10" />
+</Scene>

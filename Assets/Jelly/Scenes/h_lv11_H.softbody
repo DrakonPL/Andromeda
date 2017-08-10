@@ -1,0 +1,29 @@
+<SoftBody name="h_lv11_H" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.5019608" colorG="0.2509804" colorB="1" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-1.175925" y="0.01999994" />
+    <Point x="-1.175925" y="0.7400001" />
+    <Point x="2.096414" y="0.7375172" />
+    <Point x="2.248189" y="0.9846435" />
+    <Point x="2.218518" y="-8.940697E-08" />
+    <Point x="0.6314817" y="-2.980232E-08" />
+    <Point x="0.6314818" y="-2.286667" />
+    <Point x="2.209258" y="-2.286668" />
+    <Point x="2.209259" y="-2.953333" />
+    <Point x="-1.185185" y="-2.973333" />
+    <Point x="-1.177777" y="-2.3" />
+    <Point x="0.4148147" y="-2.293333" />
+    <Point x="0.414815" y="0.01333329" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="4" pt1="2" pt2="3" />
+    <Poly pt0="4" pt1="5" pt2="2" />
+    <Poly pt0="2" pt1="1" pt2="5" />
+    <Poly pt0="5" pt1="0" pt2="1" />
+    <Poly pt0="12" pt1="6" pt2="5" />
+    <Poly pt0="6" pt1="8" pt2="7" />
+    <Poly pt0="6" pt1="9" pt2="8" />
+    <Poly pt0="9" pt1="10" pt2="6" />
+    <Poly pt0="6" pt1="12" pt2="11" />
+  </Polygons>
+</SoftBody>

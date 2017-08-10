@@ -1,0 +1,50 @@
+<SoftBody name="G" massPerPoint="1" edgeK="600" edgeDamping="50" colorR="0.5019608" colorG="0.5019608" colorB="1" kinematic="True" shapeMatching="True" shapeK="600" shapeDamping="50">
+  <Pressure amount="150" />
+  <Points>
+    <Point x="-0.3240742" y="-0.9537038" />
+    <Point x="-0.8333337" y="-0.8518517" />
+    <Point x="-0.9784665" y="-0.3333299" />
+    <Point x="-1.024763" y="0.7592626" />
+    <Point x="-0.8766145" y="1.611115" />
+    <Point x="-0.7006885" y="1.944447" />
+    <Point x="-0.135874" y="1.981485" />
+    <Point x="0.2622742" y="1.777782" />
+    <Point x="0.3641261" y="1.027781" />
+    <Point x="0.01227429" y="1.009263" />
+    <Point x="-0.1173555" y="1.574077" />
+    <Point x="-0.4969849" y="1.518522" />
+    <Point x="-0.5895773" y="1.175929" />
+    <Point x="-0.645133" y="0.5092626" />
+    <Point x="-0.6173552" y="-0.1388855" />
+    <Point x="-0.496985" y="-0.5740707" />
+    <Point x="0.01227429" y="-0.4722188" />
+    <Point x="-0.01550349" y="0.04629969" />
+    <Point x="-0.2962962" y="0.064815" />
+    <Point x="-0.3117997" y="0.3055589" />
+    <Point x="0.402625" y="0.2871166" />
+    <Point x="0.4196817" y="-0.6759223" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="19" pt1="20" pt2="18" />
+    <Poly pt0="18" pt1="20" pt2="17" />
+    <Poly pt0="17" pt1="20" pt2="16" />
+    <Poly pt0="21" pt1="16" pt2="20" />
+    <Poly pt0="21" pt1="16" pt2="0" />
+    <Poly pt0="0" pt1="15" pt2="16" />
+    <Poly pt0="0" pt1="1" pt2="15" />
+    <Poly pt0="15" pt1="1" pt2="2" />
+    <Poly pt0="15" pt1="2" pt2="14" />
+    <Poly pt0="14" pt1="2" pt2="3" />
+    <Poly pt0="3" pt1="13" pt2="14" />
+    <Poly pt0="13" pt1="12" pt2="3" />
+    <Poly pt0="3" pt1="4" pt2="12" />
+    <Poly pt0="12" pt1="11" pt2="4" />
+    <Poly pt0="4" pt1="5" pt2="11" />
+    <Poly pt0="11" pt1="6" pt2="5" />
+    <Poly pt0="11" pt1="10" pt2="6" />
+    <Poly pt0="10" pt1="7" pt2="6" />
+    <Poly pt0="10" pt1="9" pt2="7" />
+    <Poly pt0="7" pt1="8" pt2="9" />
+  </Polygons>
+</SoftBody>

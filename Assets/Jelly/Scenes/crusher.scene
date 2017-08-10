@@ -1,0 +1,68 @@
+<Scene name="Crusher">
+  <Objects>
+    <Object name="scene11_01" posX="1" posY="-0.2" angle="0" scaleX="40" scaleY="1" material="0" />
+    <Object name="scene11_crusher" posX="0" posY="3.5" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="6" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene11_crusher" posX="10" posY="3.5" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="6" secondsPerLoop="8" startOffset="0.1" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene11_crusher" posX="20" posY="3.5" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="6" secondsPerLoop="8" startOffset="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene11_crusher" posX="30" posY="3.5" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="6" secondsPerLoop="8" startOffset="0.3" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene11_crusher" posX="40" posY="3.5" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="6" secondsPerLoop="8" startOffset="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene11_01" posX="49" posY="-0.2" angle="0" scaleX="40" scaleY="1" material="0" />
+    <Object name="scene11_02" posX="92.16653" posY="4.308826" angle="0" scaleX="3.404764" scaleY="2.305323" material="0" />
+    <Object name="scene11_02" posX="-13.61052" posY="14.07367" angle="0" scaleX="4.2" scaleY="2.400001" material="0" />
+    <Object name="scene11_01" posX="-21.31579" posY="6.315793" angle="0" scaleX="1" scaleY="10" material="0" />
+    <Object name="scene11_01" posX="-28.47367" posY="3" angle="0" scaleX="12" scaleY="1" material="0" />
+    <Object name="scene11_01" posX="-35.6842" posY="7.684206" angle="0" scaleX="1" scaleY="12" material="0" />
+    <Object name="scene11_01" posX="97" posY="-0.2" angle="0" scaleX="40" scaleY="1" material="0" />
+    <Object name="scene11_crusher" posX="50" posY="3.5" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="6" secondsPerLoop="8" startOffset="0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene11_crusher" posX="60" posY="3.5" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="6" secondsPerLoop="8" startOffset="0.6" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene11_crusher" posX="70" posY="3.5" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="6" secondsPerLoop="8" startOffset="0.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene11_crusher" posX="80" posY="3.5" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="6" secondsPerLoop="8" startOffset="0.9" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene11_crusher" posX="108.6193" posY="4.547617" angle="0" scaleX="5" scaleY="3" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="6" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene11_01" posX="114.5145" posY="6.761905" angle="0" scaleX="1" scaleY="12" material="0" />
+    <Object name="scene11_01" posX="90" posY="13.2" angle="0" scaleX="40" scaleY="1" material="0" />
+    <Object name="scene11_01" posX="42" posY="13.2" angle="0" scaleX="40" scaleY="1" material="0" />
+    <Object name="scene11_01" posX="11" posY="13.2" angle="0" scaleX="12" scaleY="1" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-17" posY="3" />
+  <Settings finishX="-28" finishY="4.5" fallLine="-15" />
+</Scene>

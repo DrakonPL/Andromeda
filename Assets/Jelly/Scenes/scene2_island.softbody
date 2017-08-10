@@ -1,0 +1,31 @@
+<SoftBody name="scene2_island" massPerPoint="0" edgeK="0" edgeDamping="0" colorR="1" colorG="0.5019608" colorB="0.2509804" kinematic="False" shapeMatching="False" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-2" y="-8" />
+    <Point x="-2" y="-7" />
+    <Point x="-0.8953481" y="-1.232558" />
+    <Point x="-1.058139" y="0.6976742" />
+    <Point x="-2.825582" y="2.627907" />
+    <Point x="-2.5" y="4" />
+    <Point x="-0.6162791" y="3.569767" />
+    <Point x="1.162791" y="3.662791" />
+    <Point x="3" y="4" />
+    <Point x="1.639535" y="1.686047" />
+    <Point x="2.325581" y="-0.1627907" />
+    <Point x="1.232558" y="-5.186048" />
+    <Point x="2.5" y="-8" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="4" pt1="5" pt2="6" />
+    <Poly pt0="6" pt1="4" pt2="3" />
+    <Poly pt0="3" pt1="7" pt2="6" />
+    <Poly pt0="7" pt1="9" pt2="3" />
+    <Poly pt0="7" pt1="9" pt2="8" />
+    <Poly pt0="9" pt1="10" pt2="11" />
+    <Poly pt0="11" pt1="9" pt2="3" />
+    <Poly pt0="3" pt1="2" pt2="11" />
+    <Poly pt0="11" pt1="2" pt2="1" />
+    <Poly pt0="1" pt1="11" pt2="12" />
+    <Poly pt0="12" pt1="1" pt2="0" />
+  </Polygons>
+</SoftBody>

@@ -1,0 +1,45 @@
+<SoftBody name="chz4_Ground1" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.6784314" colorG="1" colorB="0.1843137" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.3" y="-6.899998" />
+    <Point x="-0.4333333" y="0.7" />
+    <Point x="77.39354" y="0.7486489" />
+    <Point x="77.59998" y="-10.82079" />
+    <Point x="96.8" y="-10.82079" />
+    <Point x="97.39999" y="0.9792185" />
+    <Point x="105" y="1.179218" />
+    <Point x="161.0378" y="1.231452" />
+    <Point x="161.238" y="-9.911411" />
+    <Point x="168.7809" y="-11.85427" />
+    <Point x="175.7809" y="-9.054265" />
+    <Point x="177.038" y="1.431451" />
+    <Point x="201.3197" y="1.587994" />
+    <Point x="201.3197" y="0.1213274" />
+    <Point x="208.3864" y="0.7879937" />
+    <Point x="217.495" y="-124.5965" />
+    <Point x="168.3864" y="-124.5822" />
+    <Point x="105" y="-22.22078" />
+    <Point x="68.8" y="-21.42078" />
+    <Point x="67.59999" y="-6.420782" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="2" />
+    <Poly pt0="2" pt1="19" pt2="0" />
+    <Poly pt0="19" pt1="2" pt2="18" />
+    <Poly pt0="18" pt1="3" pt2="2" />
+    <Poly pt0="3" pt1="17" pt2="18" />
+    <Poly pt0="3" pt1="4" pt2="17" />
+    <Poly pt0="17" pt1="6" pt2="4" />
+    <Poly pt0="4" pt1="5" pt2="6" />
+    <Poly pt0="17" pt1="6" pt2="7" />
+    <Poly pt0="7" pt1="8" pt2="17" />
+    <Poly pt0="17" pt1="8" pt2="9" />
+    <Poly pt0="9" pt1="15" pt2="17" />
+    <Poly pt0="9" pt1="10" pt2="15" />
+    <Poly pt0="15" pt1="10" pt2="11" />
+    <Poly pt0="13" pt1="12" pt2="11" />
+    <Poly pt0="11" pt1="13" pt2="15" />
+    <Poly pt0="15" pt1="13" pt2="14" />
+    <Poly pt0="17" pt1="16" pt2="15" />
+  </Polygons>
+</SoftBody>

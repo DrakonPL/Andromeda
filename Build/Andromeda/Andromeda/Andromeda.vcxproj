@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CDD70FEF-A453-450C-813C-E7ADFC640A24}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Andromeda</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>ANDROMEDA_PC;ANDROMEDA_GLFW;ANDROMEDA_GL3;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\;..\..\..\Libs;..\..\..\Libs\freetype\include;..\..\..\Libs\freetype_gl;..\..\..\Libs\glew\include;..\..\..\Libs\glfw\include;..\..\..\Libs\glm;..\..\..\Libs\stb;..\..\..\Libs\tiny_obj_loader;..\..\..\Libs\JellyPhysic;..\..\..\Libs\tinyxml;..\..\..\Libs\dirent;..\..\..\Libs\irrKlang\include;..\..\..\Libs\ffmpeg\include;..\..\..\Libs\portaudio\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\..\Libs\glew\lib;..\..\..\Libs\glfw\lib;..\..\..\Libs\freetype\lib;..\..\..\Libs\irrKlang\lib;..\..\..\Libs\ffmpeg\lib;..\..\..\Libs\portaudio\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;freetype263.lib;irrKlang.lib;avcodec.lib;avformat.lib;avutil.lib;avdevice.lib;avfilter.lib;postproc.lib;swresample.lib;swscale.lib;portaudio_x86.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>ANDROMEDA_PC;ANDROMEDA_GLFW;ANDROMEDA_GL3;WIN32;NDEBUG;_WINDOWS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\;..\..\..\Libs;..\..\..\Libs\freetype\include;..\..\..\Libs\freetype_gl;..\..\..\Libs\glew\include;..\..\..\Libs\glfw\include;..\..\..\Libs\glm;..\..\..\Libs\stb;..\..\..\Libs\tiny_obj_loader;..\..\..\Libs\JellyPhysic;..\..\..\Libs\tinyxml;..\..\..\Libs\dirent;..\..\..\Libs\irrKlang\include;..\..\..\Libs\ffmpeg\include;..\..\..\Libs\portaudio\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;freetype263.lib;irrKlang.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Libs\glew\lib;..\..\..\Libs\glfw\lib;..\..\..\Libs\freetype\lib;..\..\..\Libs\irrKlang\lib;..\..\..\Libs\ffmpeg\lib;..\..\..\Libs\portaudio\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ENTRY:"mainCRTStartup" %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Andromeda\Audio\AudioManager.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Audio\IrrKlang\IrrAudioManager.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Audio\IrrKlang\IrrSound.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Audio\Sound.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\FileSystem\BaseDirectory.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\FileSystem\BaseFile.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\FileSystem\FileManager.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\FileSystem\Stdio\StdioDirectory.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\FileSystem\Stdio\StdioFile.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Camera3d.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\FrameBufferObject.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\GL\FrameBufferObjectGL3.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\GL\ShaderGlsl.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\GL\RenderManagerGL3.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\GL\VertexArrayObjectGL3.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\GL\VertexBufferObjectGL3.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Models\ModelMaterial.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Models\ModelObj.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Texture.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\RenderManager.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Shader.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\ShaderManager.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Sprite.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\TextureManager.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Text\TexturedFont.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Text\FontManager.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Text\TextureAtlas.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\VertexArrayObject.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Graphics\VertexBufferObject.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Input\GLFW\GamepadDeviceGlfw.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Input\GLFW\InputManagerGlfw.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Input\GLFW\KeyboardDeviceGlfw.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Input\GLFW\MouseDeviceGlfw.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Input\InputManager.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Network\NetworkManager.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Network\Packet.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Network\TcpSocket.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Network\WinSock\WinSockNetworkManager.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Network\WinSock\WinSockTcpSocket.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\System\GameLoader.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\System\GameManager.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\System\GameState.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\System\GLFW\GlfwGameLoader.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\System\GLFW\MemoryManagerGlfw.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\System\MemoryManager.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\System\SystemEnums.h" />
+    <ClCompile Include="..\..\..\Andromeda\System\SystemManager.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\System\Timer.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Threading\Lock.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Threading\Mutex.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Threading\Sleep.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Threading\Thread.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Threading\Win32\WinMutex.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Threading\Win32\WinThread.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Threading\WinSleep.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Utils\Logger.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Video\FFmpeg\AvUtils.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Video\FFmpeg\AvVideoPlayer.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Video\FFmpeg\FFmpegMovie.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Video\FFmpeg\FFmpegVideoManager.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Video\Movie.cpp" />
+    <ClCompile Include="..\..\..\Andromeda\Video\VideoManager.cpp" />
+    <ClCompile Include="..\..\..\Libs\freetype_gl\distance-field.c" />
+    <ClCompile Include="..\..\..\Libs\freetype_gl\edtaa3func.c" />
+    <ClCompile Include="..\..\..\Libs\freetype_gl\font-manager.c" />
+    <ClCompile Include="..\..\..\Libs\freetype_gl\platform.c" />
+    <ClCompile Include="..\..\..\Libs\freetype_gl\texture-atlas.c" />
+    <ClCompile Include="..\..\..\Libs\freetype_gl\texture-font.c" />
+    <ClCompile Include="..\..\..\Libs\freetype_gl\utf8-utils.c" />
+    <ClCompile Include="..\..\..\Libs\freetype_gl\vector.c" />
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\AABB.cpp" />
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\Body.cpp" />
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\ClosedShape.cpp" />
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\InternalSpring.cpp" />
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\PointMass.cpp" />
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\PressureBody.cpp" />
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\SpringBody.cpp" />
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\Vector2.cpp" />
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\VectorTools.cpp" />
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\World.cpp" />
+    <ClCompile Include="..\..\..\Libs\tinyxml\tinystr.cpp" />
+    <ClCompile Include="..\..\..\Libs\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\..\..\Libs\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\..\Libs\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="..\..\..\Libs\tiny_obj_loader\tiny_obj_loader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Andromeda\Audio\AudioManager.h" />
+    <ClInclude Include="..\..\..\Andromeda\Audio\IrrKlang\IrrAudioManager.h" />
+    <ClInclude Include="..\..\..\Andromeda\Audio\IrrKlang\IrrSound.h" />
+    <ClInclude Include="..\..\..\Andromeda\Audio\Sound.h" />
+    <ClInclude Include="..\..\..\Andromeda\FileSystem\BaseDirectory.h" />
+    <ClInclude Include="..\..\..\Andromeda\FileSystem\BaseFile.h" />
+    <ClInclude Include="..\..\..\Andromeda\FileSystem\FileManager.h" />
+    <ClInclude Include="..\..\..\Andromeda\FileSystem\Stdio\StdioDirectory.h" />
+    <ClInclude Include="..\..\..\Andromeda\FileSystem\Stdio\StdioFile.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Camera3d.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\FrameBufferObject.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\GL\FrameBufferObjectGL3.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\GL\ShaderGlsl.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\GL\RenderManagerGL3.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\GL\VertexArrayObjectGL3.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\GL\VertexBufferObjectGL3.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\GraphicsEnums.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Models\ModelMaterial.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Models\ModelMesh.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Models\ModelObj.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Texture.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\RenderManager.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Shader.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\ShaderManager.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Sprite.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\TextureManager.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Text\TextPart.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Text\TexturedFont.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Text\FontManager.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Text\TextureAtlas.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\VertexArrayObject.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\VertexBufferObject.h" />
+    <ClInclude Include="..\..\..\Andromeda\Graphics\VertexTypes.h" />
+    <ClInclude Include="..\..\..\Andromeda\Input\GamepadDevice.h" />
+    <ClInclude Include="..\..\..\Andromeda\Input\GLFW\GamepadDeviceGlfw.h" />
+    <ClInclude Include="..\..\..\Andromeda\Input\GLFW\InputManagerGlfw.h" />
+    <ClInclude Include="..\..\..\Andromeda\Input\GLFW\KeyboardDeviceGlfw.h" />
+    <ClInclude Include="..\..\..\Andromeda\Input\GLFW\MouseDeviceGlfw.h" />
+    <ClInclude Include="..\..\..\Andromeda\Input\InputDevice.h" />
+    <ClInclude Include="..\..\..\Andromeda\Input\InputEnums.h" />
+    <ClInclude Include="..\..\..\Andromeda\Input\InputManager.h" />
+    <ClInclude Include="..\..\..\Andromeda\Input\KeyboardDevice.h" />
+    <ClInclude Include="..\..\..\Andromeda\Input\MouseDevice.h" />
+    <ClInclude Include="..\..\..\Andromeda\Input\TouchDevice.h" />
+    <ClInclude Include="..\..\..\Andromeda\Network\NetworkManager.h" />
+    <ClInclude Include="..\..\..\Andromeda\Network\Packet.h" />
+    <ClInclude Include="..\..\..\Andromeda\Network\TcpSocket.h" />
+    <ClInclude Include="..\..\..\Andromeda\Network\WinSock\WinSockNetworkManager.h" />
+    <ClInclude Include="..\..\..\Andromeda\Network\WinSock\WinSockTcpSocket.h" />
+    <ClInclude Include="..\..\..\Andromeda\System\GameLoader.h" />
+    <ClInclude Include="..\..\..\Andromeda\System\GameManager.h" />
+    <ClInclude Include="..\..\..\Andromeda\System\GameState.h" />
+    <ClInclude Include="..\..\..\Andromeda\System\GLFW\GlfwGameLoader.h" />
+    <ClInclude Include="..\..\..\Andromeda\System\GLFW\MemoryManagerGlfw.h" />
+    <ClInclude Include="..\..\..\Andromeda\System\MemoryManager.h" />
+    <ClInclude Include="..\..\..\Andromeda\System\SystemManager.h" />
+    <ClInclude Include="..\..\..\Andromeda\System\Timer.h" />
+    <ClInclude Include="..\..\..\Andromeda\Threading\BaseMutex.h" />
+    <ClInclude Include="..\..\..\Andromeda\Threading\BaseThread.h" />
+    <ClInclude Include="..\..\..\Andromeda\Threading\Lock.h" />
+    <ClInclude Include="..\..\..\Andromeda\Threading\Mutex.h" />
+    <ClInclude Include="..\..\..\Andromeda\Threading\Sleep.h" />
+    <ClInclude Include="..\..\..\Andromeda\Threading\Thread.h" />
+    <ClInclude Include="..\..\..\Andromeda\Threading\Win32\WinMutex.h" />
+    <ClInclude Include="..\..\..\Andromeda\Threading\Win32\WinSleep.h" />
+    <ClInclude Include="..\..\..\Andromeda\Threading\Win32\WinThread.h" />
+    <ClInclude Include="..\..\..\Andromeda\Utils\Logger.h" />
+    <ClInclude Include="..\..\..\Andromeda\Utils\PlatformConfigurator.h" />
+    <ClInclude Include="..\..\..\Andromeda\Video\FFmpeg\AvUtils.h" />
+    <ClInclude Include="..\..\..\Andromeda\Video\FFmpeg\AvVideoPlayer.h" />
+    <ClInclude Include="..\..\..\Andromeda\Video\FFmpeg\FFmpegMovie.h" />
+    <ClInclude Include="..\..\..\Andromeda\Video\FFmpeg\FFmpegVideoManager.h" />
+    <ClInclude Include="..\..\..\Andromeda\Video\Movie.h" />
+    <ClInclude Include="..\..\..\Andromeda\Video\VideoManager.h" />
+    <ClInclude Include="..\..\..\Libs\freetype_gl\distance-field.h" />
+    <ClInclude Include="..\..\..\Libs\freetype_gl\edtaa3func.h" />
+    <ClInclude Include="..\..\..\Libs\freetype_gl\font-manager.h" />
+    <ClInclude Include="..\..\..\Libs\freetype_gl\markup.h" />
+    <ClInclude Include="..\..\..\Libs\freetype_gl\platform.h" />
+    <ClInclude Include="..\..\..\Libs\freetype_gl\texture-atlas.h" />
+    <ClInclude Include="..\..\..\Libs\freetype_gl\texture-font.h" />
+    <ClInclude Include="..\..\..\Libs\freetype_gl\utf8-utils.h" />
+    <ClInclude Include="..\..\..\Libs\freetype_gl\vec234.h" />
+    <ClInclude Include="..\..\..\Libs\freetype_gl\vector.h" />
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\AABB.h" />
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\Bitmask.h" />
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\Body.h" />
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\ClosedShape.h" />
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\InternalSpring.h" />
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\JellyPhysics.h" />
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\JellyPrerequisites.h" />
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\PointMass.h" />
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\PressureBody.h" />
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\SpringBody.h" />
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\Vector2.h" />
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\VectorTools.h" />
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\World.h" />
+    <ClInclude Include="..\..\..\Libs\tinyxml\tinystr.h" />
+    <ClInclude Include="..\..\..\Libs\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\..\..\Libs\tiny_obj_loader\tiny_obj_loader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Assets\Shaders\font.frag" />
+    <None Include="..\..\..\Assets\Shaders\font.vert" />
+    <None Include="..\..\..\Assets\Shaders\lightening1_cube.frag" />
+    <None Include="..\..\..\Assets\Shaders\lightening1_cube.vert" />
+    <None Include="..\..\..\Assets\Shaders\lightening1_lamp.frag" />
+    <None Include="..\..\..\Assets\Shaders\lightening1_lamp.vert" />
+    <None Include="..\..\..\Assets\Shaders\lightening2_cube.frag" />
+    <None Include="..\..\..\Assets\Shaders\lightening2_cube.vert" />
+    <None Include="..\..\..\Assets\Shaders\simple_color_transform.frag" />
+    <None Include="..\..\..\Assets\Shaders\simple_color_transform.vert" />
+    <None Include="..\..\..\Assets\Shaders\simple_color_uniform.frag" />
+    <None Include="..\..\..\Assets\Shaders\simple_triangle.frag" />
+    <None Include="..\..\..\Assets\Shaders\simple_triangle.vert" />
+    <None Include="..\..\..\Assets\Shaders\sprite.frag" />
+    <None Include="..\..\..\Assets\Shaders\sprite.vert" />
+    <None Include="..\..\..\Assets\Shaders\vertex_color.frag" />
+    <None Include="..\..\..\Assets\Shaders\vertex_color.vert" />
+    <None Include="..\..\..\Assets\Shaders\vertex_color_texture.frag" />
+    <None Include="..\..\..\Assets\Shaders\vertex_color_texture.vert" />
+    <None Include="..\..\..\Assets\Shaders\vertex_color_texture_transform.frag" />
+    <None Include="..\..\..\Assets\Shaders\vertex_color_texture_transform.vert" />
+    <None Include="..\..\..\Assets\Shaders\vertex_color_texture_transform_3d.vert" />
+    <None Include="..\..\..\Assets\Shaders\vertex_texture_transform.frag" />
+    <None Include="..\..\..\Assets\Shaders\vertex_texture_transform.vert" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,16 @@
+<SoftBody name="h_lv1_ob_01" massPerPoint="0.1" edgeK="1000" edgeDamping="10" colorR="0.5019608" colorG="1" colorB="1" kinematic="False" shapeMatching="True" shapeK="200" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="0.5" y="0.5" />
+    <Point x="0.4998484" y="-0.5003539" />
+  </Points>
+  <Springs>
+    <Spring pt1="1" pt2="3" k="1000" damp="10" />
+    <Spring pt1="2" pt2="0" k="1000" damp="10" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="2" />
+    <Poly pt0="2" pt1="3" pt2="0" />
+  </Polygons>
+</SoftBody>

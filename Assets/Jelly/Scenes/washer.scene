@@ -1,0 +1,62 @@
+<Scene name="The Dryer optimized">
+  <Objects>
+    <Object name="washer_ball" posX="0.1677517" posY="0.8554044" angle="0" scaleX="2.5" scaleY="2.5" material="1" />
+    <Object name="washer_ball" posX="8.019694" posY="-10.1212" angle="0" scaleX="2.5" scaleY="2.5" material="1" />
+    <Object name="washer_cube" posX="14.71559" posY="0.7324666" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object name="washer_cube" posX="-12.71882" posY="4.806494" angle="0" scaleX="3" scaleY="3" material="1" />
+    <Object name="washer_plat5" posX="9.785721" posY="7.285714" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="washer_plat4" posX="0" posY="0" angle="0" scaleX="3" scaleY="3" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.6" />
+      </KinematicControls>
+    </Object>
+    <Object name="washer_01" posX="-35.59319" posY="4.617772" angle="354" scaleX="10" scaleY="0.7" material="0" />
+    <Object name="washer_01" posX="-61.83693" posY="-0.7690541" angle="0" scaleX="22" scaleY="1" material="0" />
+    <Object name="washer_plat5" posX="-46.38325" posY="5.863925" angle="0" scaleX="1.2" scaleY="1.2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.6" />
+      </KinematicControls>
+    </Object>
+    <Object name="washer_plat5" posX="-58.71827" posY="5.778787" angle="0" scaleX="1.2" scaleY="1.2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.6" />
+      </KinematicControls>
+    </Object>
+    <Object name="washer_drum1" posX="0" posY="0" angle="0" scaleX="1" scaleY="1" material="0">
+	<KinematicControls>
+        <Motor radiansPerSecond="0.1" />
+      </KinematicControls>
+    </Object>
+    <Object name="washer_drum2" posX="0" posY="0" angle="0" scaleX="1" scaleY="1" material="0">
+	<KinematicControls>
+        <Motor radiansPerSecond="0.1" />
+      </KinematicControls>
+    </Object>
+    <Object name="washer_drum2" posX="0" posY="0" angle="294" scaleX="1" scaleY="1" material="0">
+	<KinematicControls>
+        <Motor radiansPerSecond="0.1" />
+      </KinematicControls>
+    </Object>
+    <Object name="washer_drum2" posX="0" posY="0" angle="228" scaleX="1" scaleY="1" material="0">
+	<KinematicControls>
+        <Motor radiansPerSecond="0.1" />
+      </KinematicControls>
+    </Object>
+    <Object name="washer_drum2" posX="0" posY="0" angle="163" scaleX="1" scaleY="1" material="0">
+	<KinematicControls>
+        <Motor radiansPerSecond="0.1" />
+      </KinematicControls>
+    </Object>
+    <Object name="washer_drum2" posX="0" posY="0" angle="97" scaleX="1" scaleY="1" material="0">
+	<KinematicControls>
+        <Motor radiansPerSecond="0.1" />
+      </KinematicControls>
+    </Object>
+  </Objects>
+  <Car name="car_and_truck" posX="-74" posY="3" />
+  <Settings finishX="0" finishY="0" fallLine="-35" />
+</Scene>

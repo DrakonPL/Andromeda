@@ -1,0 +1,37 @@
+<SoftBody name="h_lv2_turn_01" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="1" colorG="0" colorB="0" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="-0.4999514" y="-0.4305745" />
+    <Point x="0.3915771" y="-0.4294831" />
+    <Point x="0.4094287" y="-0.4208991" />
+    <Point x="0.4256886" y="-0.4052741" />
+    <Point x="0.4370709" y="-0.3854824" />
+    <Point x="0.4476399" y="-0.3542324" />
+    <Point x="0.4480466" y="0.3301426" />
+    <Point x="0.4443878" y="0.3718093" />
+    <Point x="0.434632" y="0.3978509" />
+    <Point x="0.4143067" y="0.4166009" />
+    <Point x="0.3896031" y="0.4202792" />
+    <Point x="-0.5000473" y="0.4196874" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="0.5" y="0.5" />
+    <Point x="0.4997854" y="-0.5010371" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="2" pt1="15" pt2="0" />
+    <Poly pt0="2" pt1="1" pt2="0" />
+    <Poly pt0="2" pt1="3" pt2="15" />
+    <Poly pt0="15" pt1="3" pt2="4" />
+    <Poly pt0="4" pt1="5" pt2="15" />
+    <Poly pt0="15" pt1="5" pt2="6" />
+    <Poly pt0="15" pt1="6" pt2="14" />
+    <Poly pt0="7" pt1="6" pt2="14" />
+    <Poly pt0="14" pt1="7" pt2="8" />
+    <Poly pt0="8" pt1="9" pt2="14" />
+    <Poly pt0="9" pt1="10" pt2="14" />
+    <Poly pt0="14" pt1="10" pt2="11" />
+    <Poly pt0="13" pt1="12" pt2="11" />
+    <Poly pt0="11" pt1="14" pt2="13" />
+  </Polygons>
+</SoftBody>

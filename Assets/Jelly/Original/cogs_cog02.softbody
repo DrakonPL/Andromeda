@@ -1,0 +1,62 @@
+<SoftBody name="cogs_cog02" massPerPoint="10" edgeK="4000" edgeDamping="30" colorR="1" colorG="0.5019608" colorB="0" kinematic="True" shapeMatching="True" shapeK="4000" shapeDamping="30">
+  <Points>
+    <Point x="-7.511326" y="-29.52063" />
+    <Point x="-7.511326" y="-24.52063" />
+    <Point x="-2.511327" y="-19.52063" />
+    <Point x="-2.511327" y="-2.020627" />
+    <Point x="-2.511327" y="12.97937" />
+    <Point x="2.488673" y="12.97937" />
+    <Point x="2.488673" y="-2.020627" />
+    <Point x="2.488673" y="-19.52063" />
+    <Point x="4.988674" y="-19.52063" />
+    <Point x="3.723967" y="-21.10888" />
+    <Point x="-1.261327" y="-22.02063" />
+    <Point x="-5.011326" y="-25.77063" />
+    <Point x="-5.011326" y="-28.27063" />
+    <Point x="-1.261327" y="-32.02063" />
+    <Point x="4.371026" y="-33.10884" />
+    <Point x="4.988674" y="-34.52063" />
+    <Point x="-2.511327" y="-34.52063" />
+  </Points>
+  <Springs>
+    <Spring pt1="3" pt2="6" k="4000" damp="30" />
+    <Spring pt1="6" pt2="4" k="4000" damp="30" />
+    <Spring pt1="5" pt2="3" k="4000" damp="30" />
+    <Spring pt1="3" pt2="7" k="4000" damp="30" />
+    <Spring pt1="7" pt2="2" k="4000" damp="30" />
+    <Spring pt1="2" pt2="6" k="4000" damp="30" />
+    <Spring pt1="9" pt2="7" k="4000" damp="30" />
+    <Spring pt1="7" pt2="10" k="4000" damp="30" />
+    <Spring pt1="10" pt2="2" k="4000" damp="30" />
+    <Spring pt1="2" pt2="11" k="4000" damp="30" />
+    <Spring pt1="11" pt2="1" k="4000" damp="30" />
+    <Spring pt1="1" pt2="12" k="4000" damp="30" />
+    <Spring pt1="12" pt2="0" k="4000" damp="30" />
+    <Spring pt1="0" pt2="13" k="4000" damp="30" />
+    <Spring pt1="13" pt2="16" k="4000" damp="30" />
+    <Spring pt1="16" pt2="14" k="4000" damp="30" />
+    <Spring pt1="15" pt2="13" k="4000" damp="30" />
+    <Spring pt1="16" pt2="12" k="4000" damp="30" />
+    <Spring pt1="0" pt2="11" k="4000" damp="30" />
+    <Spring pt1="1" pt2="10" k="4000" damp="30" />
+    <Spring pt1="2" pt2="9" k="4000" damp="30" />
+    <Spring pt1="8" pt2="10" k="4000" damp="30" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="13" pt1="16" pt2="15" />
+    <Poly pt0="15" pt1="14" pt2="13" />
+    <Poly pt0="16" pt1="13" pt2="12" />
+    <Poly pt0="12" pt1="0" pt2="16" />
+    <Poly pt0="0" pt1="12" pt2="11" />
+    <Poly pt0="0" pt1="11" pt2="1" />
+    <Poly pt0="1" pt1="11" pt2="10" />
+    <Poly pt0="10" pt1="2" pt2="1" />
+    <Poly pt0="2" pt1="10" pt2="9" />
+    <Poly pt0="9" pt1="8" pt2="7" />
+    <Poly pt0="2" pt1="9" pt2="7" />
+    <Poly pt0="7" pt1="6" pt2="2" />
+    <Poly pt0="2" pt1="6" pt2="3" />
+    <Poly pt0="3" pt1="6" pt2="5" />
+    <Poly pt0="5" pt1="4" pt2="3" />
+  </Polygons>
+</SoftBody>

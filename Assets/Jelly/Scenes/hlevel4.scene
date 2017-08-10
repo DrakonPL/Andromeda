@@ -1,0 +1,84 @@
+<Scene name="Boulders 2">
+  <Objects>
+    <Object name="h_lv4_ground_01" posX="28" posY="-4.196969" angle="0" scaleX="150" scaleY="3" material="0" />
+    <Object name="h_lv4_ground_01" posX="56.45019" posY="11.45368" angle="0" scaleX="30" scaleY="1" material="0" />
+    <Object name="h_lv4_ground_02" posX="23.8" posY="4.672719" angle="180" scaleX="35.28572" scaleY="14.8" material="0" />
+    <Object name="h_lv4_circle_01" posX="74.1" posY="4.428575" angle="0" scaleX="7" scaleY="7" material="1" />
+    <Object name="h_lv4_ground_01" posX="65.40473" posY="4.099136" angle="90" scaleX="13.66" scaleY="1" material="0" />
+    <Object name="h_lv4_ground_01" posX="101.2929" posY="-11.3741" angle="90" scaleX="11.4" scaleY="3" material="0" />
+    <Object name="h_lv4_ground_01" posX="110.0429" posY="-18.5541" angle="0" scaleX="20.5" scaleY="3" material="0" />
+    <Object name="h_lv4_ground_01" posX="118.7929" posY="-11.3491" angle="90" scaleX="11.4" scaleY="3" material="0" />
+    <Object name="h_lv4_ground_01" posX="152.2934" posY="-4.15135" angle="0" scaleX="70" scaleY="3" material="0" />
+    <Object name="h_lv4_cannon_01" posX="160.7987" posY="4.962837" angle="0" scaleX="19.8" scaleY="7.8" material="0" />
+    <Object name="h_lv4_cannon_02" posX="158.6278" posY="1.8" angle="5" scaleX="16" scaleY="8.800001" material="0" />
+    <Object name="h_lv4_cannon_03" posX="158.7293" posY="-0.2000003" angle="0" scaleX="2.4" scaleY="2.4" material="0" />
+    <Object name="h_lv4_ground_01" posX="191.6579" posY="-11.77817" angle="317" scaleX="15" scaleY="3" material="0" />
+    <Object name="h_lv4_ground_01" posX="213.1119" posY="-17.34939" angle="0" scaleX="30" scaleY="3" material="0" />
+    <Object name="h_lv4_ground_01" posX="234.6924" posY="-11.92988" angle="42" scaleX="15" scaleY="3" material="0" />
+    <Object name="h_lv4_ground_01" posX="249" posY="-4.15135" angle="0" scaleX="20" scaleY="3" material="0" />
+    <Object name="h_lv4_ground_01" posX="260.4655" posY="9.310192" angle="90" scaleX="30" scaleY="3" material="0" />
+    <Object name="itemstick" posX="254.8571" posY="-1.085714" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="h_lv4_flat_01" posX="179.0182" posY="0.8082727" angle="163" scaleX="8" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-6" />
+      </KinematicControls>
+    </Object>
+    <Object name="checkpoint" posX="274.1714" posY="26.111" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="h_lv4_ground_01" posX="274.4766" posY="22.73685" angle="0" scaleX="25" scaleY="3" material="0" />
+    <Object name="h_lv4_circus_01" posX="377.8" posY="15.8" angle="0" scaleX="120" scaleY="100" material="0" />
+    <Object name="h_lv4_circus_02" posX="325.2392" posY="36.65608" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_03" posX="432.5738" posY="35.73152" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_02" posX="328.5999" posY="23.25" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_03" posX="331.4786" posY="21.56111" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_04" posX="334.3778" posY="19.96667" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_02" posX="337.3665" posY="18.9" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_03" posX="340.5119" posY="18.17777" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_04" posX="343.7111" posY="17.96667" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_02" posX="346.9665" posY="18.16666" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_03" posX="350.2786" posY="18.17777" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_04" posX="353.4612" posY="18.66667" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_02" posX="356.8832" posY="19.33333" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_03" posX="360.0285" posY="19.84444" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_04" posX="362.8777" posY="21" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_02" posX="365.9665" posY="22.33332" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_03" posX="368.612" posY="24.17777" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_04" posX="371.0444" posY="26.08333" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_02" posX="373.6331" posY="27.99998" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_03" posX="376.0286" posY="30.17776" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_04" posX="378.0443" posY="32.66665" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_03" posX="380.2" posY="30.23491" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_02" posX="382.7046" posY="28.21427" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_04" posX="385.3302" posY="26.22618" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_03" posX="387.8977" posY="24.53491" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_02" posX="390.7522" posY="22.90475" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_04" posX="393.5206" posY="21.35714" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_03" posX="396.6001" posY="20.27301" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_02" posX="399.6272" posY="19.15475" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_04" posX="402.6206" posY="18.25714" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_03" posX="405.7001" posY="17.57301" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_02" posX="408.8091" posY="17.12444" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_04" posX="411.9237" posY="16.9238" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_03" posX="415.0941" posY="16.89119" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_02" posX="418.2125" posY="17.54635" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_04" posX="421.2036" posY="18.32473" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_03" posX="424.171" posY="19.33591" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_02" posX="426.8375" posY="20.8276" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circus_04" posX="427.9223" posY="23.73098" angle="0" scaleX="1.5" scaleY="1.5" material="0" />
+    <Object name="h_lv4_circusball_01" posX="389.0093" posY="4.10353" angle="25" scaleX="10" scaleY="10" material="1" />
+    <Object name="h_lv4_balance_01" posX="378" posY="-7.536026" angle="3" scaleX="45" scaleY="22.4" material="0" />
+    <Object name="h_lv4_circle_02" posX="193.1778" posY="-7.100004" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv4_circle_03" posX="225.7" posY="-10.9" angle="0" scaleX="5" scaleY="5" material="0" />
+    <Object name="h_lv4_circle_04" posX="219.5" posY="-13.8" angle="0" scaleX="2" scaleY="2" material="0" />
+    <Object name="h_lv4_circle_04" posX="230.5" posY="-6.2" angle="0" scaleX="2" scaleY="2" material="0" />
+    <Object name="h_lv4_circle_04" posX="234.6" posY="-7.299999" angle="0" scaleX="2" scaleY="2" material="0" />
+    <Object name="h_lv4_circle_03" posX="200.2" posY="-10.6" angle="0" scaleX="5" scaleY="5" material="0" />
+    <Object name="h_lv4_circle_04" posX="206.5" posY="-13.8" angle="0" scaleX="2" scaleY="2" material="0" />
+    <Object name="h_lv4_circle_02" posX="218.0778" posY="-9.100005" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv4_circle_04" posX="207.2" posY="-10" angle="0" scaleX="2" scaleY="2" material="0" />
+    <Object name="h_lv4_circle_02" posX="211.5778" posY="-12.90001" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv4_circle_04" posX="213.3" posY="-8.299999" angle="0" scaleX="2" scaleY="2" material="0" />
+    <Object name="h_lv4_circle_04" posX="210.2" posY="-9.199999" angle="0" scaleX="1" scaleY="1" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-25" posY="0" />
+  <Settings finishX="430" finishY="-5" fallLine="-30" />
+</Scene>

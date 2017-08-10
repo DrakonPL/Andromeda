@@ -1,0 +1,32 @@
+<Scene name="Forest_optimized">
+  <Objects>
+    <Object name="fronds_stat1" posX="-54" posY="0" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_stat1" posX="-100" posY="0" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_bridge" posX="-77" posY="-1" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_stat2" posX="-39.2059" posY="-1.058824" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_frond" posX="33" posY="9" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_trunk" posX="-12" posY="4" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_frond" posX="12" posY="9" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_trunk" posX="0" posY="4" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_frond" posX="0" posY="9" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_trunk" posX="12" posY="4" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_island" posX="22" posY="5" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_trunk" posX="33" posY="4" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_frond" posX="-12" posY="9" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_trunk" posX="45" posY="4.55" angle="0" scaleX="1" scaleY="1.11" material="0" />
+    <Object name="fronds_frond" posX="45" posY="10" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_trunk" posX="57" posY="5.1" angle="0" scaleX="1" scaleY="1.23" material="0" />
+    <Object name="fronds_frond" posX="57" posY="11" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_stat3" posX="68" posY="5" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_stat4" posX="108.3333" posY="10" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_stat4" posX="118" posY="10" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_stat4" posX="127.6667" posY="10" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_pressureCircle" posX="103.5724" posY="13.11623" angle="0" scaleX="2" scaleY="2" material="1" />
+    <Object name="fronds_pressureCircle" posX="113.5385" posY="13.40172" angle="0" scaleX="2" scaleY="2" material="1" />
+    <Object name="fronds_pressureCircle" posX="123.1282" posY="13.25642" angle="0" scaleX="2" scaleY="2" material="1" />
+    <Object name="fronds_stat2" posX="138.7644" posY="3.930155" angle="320" scaleX="1" scaleY="1" material="0" />
+    <Object name="fronds_stat1" posX="173.7525" posY="-5.902347" angle="0" scaleX="1.5" scaleY="1" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-100" posY="4" />
+  <Settings finishX="177" finishY="-4" fallLine="-25" />
+</Scene>

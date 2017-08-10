@@ -1,0 +1,26 @@
+<Scene name="Box Towers">
+  <Objects>
+    <Object name="chz4_Ground1" posX="-18.59999" posY="-5.6" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="chz4_Block" posX="55.75242" posY="-2.666667" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz4_Block" posX="55.75242" posY="1.000702" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz4_Block" posX="55.75242" posY="4.662556" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz4_Block" posX="55.72016" posY="8.312824" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz4_Block" posX="47.85027" posY="0.958427" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz4_Block" posX="47.85027" posY="-2.699066" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz4_Block" posX="55.81693" posY="15.58198" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz4_Block" posX="55.72016" posY="11.92619" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz4_Ground2" posX="110.0714" posY="1.857149" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="chz4_Ground3" posX="127.7286" posY="-0.185715" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="chz4_Boulder" posX="123.4" posY="10.2" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz4_Block" posX="47.85027" posY="4.603805" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz4_Block" posX="47.85027" posY="8.254143" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz4_Block" posX="47.85027" posY="11.89557" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz4_Block" posX="40.02638" posY="-2.741421" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz4_Block" posX="40.01698" posY="0.9183066" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz4_Block" posX="40.03416" posY="4.576887" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz4_LeftBridge" posX="197.5891" posY="-3.164648" angle="0" scaleX="1" scaleY="1" material="1" />
+    <Object name="chz3_Ground4" posX="210.5718" posY="-4.714285" angle="0" scaleX="1" scaleY="1" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="0" posY="-3" />
+  <Settings finishX="200" finishY="-135" fallLine="-150" />
+</Scene>

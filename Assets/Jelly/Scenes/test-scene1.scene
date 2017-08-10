@@ -1,0 +1,23 @@
+<Scene name="Cave Escape">
+  <Objects>
+    <Object name="Ground1" posX="-101.0846" posY="5.498439" angle="0" scaleX="2.23077" scaleY="1.076923" material="0" />
+    <Object name="Ground2" posX="-87.63837" posY="4.186161" angle="358" scaleX="2.153847" scaleY="1.538462" material="0" />
+    <Object name="Ground" posX="-69.74969" posY="6.669344" angle="3" scaleX="2.7" scaleY="1.1" material="0" />
+    <Object name="Ground3" posX="-44.51713" posY="8.100144" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="Ground3" posX="-40.68651" posY="7.853103" angle="352" scaleX="1" scaleY="1" material="0" />
+    <Object name="Ground3" posX="-36.50713" posY="8.363354" angle="358" scaleX="1" scaleY="1" material="0" />
+    <Object name="Ground3" posX="-33.05231" posY="9.438696" angle="354" scaleX="1" scaleY="1" material="0" />
+    <Object name="Ground" posX="-2.843388" posY="11.96265" angle="185" scaleX="3.384617" scaleY="1.615385" material="0" />
+    <Object name="Ground4" posX="-2.085781" posY="12.06223" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="Ground5" posX="47.3125" posY="1.251792" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="Ground6" posX="54.30951" posY="-6.56906" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="Body1" posX="55.37915" posY="6.396452" angle="90" scaleX="1.1" scaleY="1.1" material="1" />
+    <Object name="Body1" posX="65.98799" posY="6.830218" angle="90" scaleX="1.1" scaleY="1.1" material="1" />
+    <Object name="Body1" posX="62.5899" posY="6.538066" angle="90" scaleX="1.1" scaleY="1.1" material="1" />
+    <Object name="Body1" posX="58.80521" posY="6.597402" angle="0" scaleX="1.1" scaleY="1.1" material="1" />
+    <Object name="Ground7" posX="126.375" posY="-14.75" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="Body1" posX="51.72726" posY="6.181817" angle="0" scaleX="1.1" scaleY="1.1" material="1" />
+  </Objects>
+  <Car name="car_and_truck" posX="-100" posY="8" />
+  <Settings finishX="152" finishY="0" fallLine="-45" />
+</Scene>

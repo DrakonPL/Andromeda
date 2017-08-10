@@ -1,0 +1,277 @@
+<Scene name="Storm the Castle">
+  <Objects>
+    <Object name="checkpoint2" posX="275.5288" posY="41.36457" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="checkpoint1" posX="191.1119" posY="37.1179" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="h_lv10_ground_01" posX="2.6" posY="-4" angle="0" scaleX="15" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_01" posX="-7.707126" posY="-6.032184" angle="40" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_01" posX="-5.499221" posY="-4.530304" angle="28" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_01" posX="8.62781" posY="-18" angle="90" scaleX="25" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_01" posX="-13.45313" posY="-18.88693" angle="68" scaleX="27" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_01" posX="9.800001" posY="-32" angle="0" scaleX="65" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_01" posX="40.81364" posY="-48.51387" angle="90" scaleX="30" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_01" posX="87.8" posY="-32" angle="0" scaleX="40" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="78.54266" posY="-7.72381" angle="88" scaleX="30" scaleY="3" material="0" />
+    <Object name="h_lv10_shooter_01" posX="20.8" posY="-10.6" angle="0" scaleX="18" scaleY="1.8" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_rock_01" posX="7.592302" posY="0.5271853" angle="358" scaleX="3" scaleY="3" material="1" />
+    <Object name="h_lv10_ground_01" posX="69.32791" posY="-48.57101" angle="90" scaleX="30" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="96.56101" posY="-8.109131" angle="92" scaleX="30" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="75.97601" posY="9.709523" angle="315" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="99.03781" posY="9.475889" angle="227" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="72.87743" posY="17.16228" angle="90" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="102.0362" posY="17.10723" angle="90" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="76.916" posY="20.62767" angle="0" scaleX="5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="98.04226" posY="20.62767" angle="0" scaleX="5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="87.51586" posY="20.60705" angle="0" scaleX="8.5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="97.04265" posY="16.60757" angle="90" scaleX="5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="90.25692" posY="16.60757" angle="90" scaleX="5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="84.78424" posY="16.60757" angle="90" scaleX="5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="77.93558" posY="16.60757" angle="90" scaleX="5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="81.36701" posY="15.58595" angle="0" scaleX="3.8" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="93.65133" posY="15.59648" angle="0" scaleX="3.8" scaleY="3" material="0" />
+    <Object name="h_lv10_axe_01" posX="88" posY="-19.525" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="22" secondsPerLoop="6" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_ground_02" posX="117.1763" posY="-5.524875" angle="90" scaleX="30" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_01" posX="157.8104" posY="-32" angle="0" scaleX="100" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="153.9402" posY="-10.49633" angle="90" scaleX="40" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_01" posX="135.9215" posY="-25.97191" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="h_lv10_ground_01" posX="129.9097" posY="-27.60645" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="h_lv10_ground_01" posX="132.9118" posY="-26.77849" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="h_lv10_sword_01" posX="129.0256" posY="-24.16925" angle="270" scaleX="8" scaleY="8" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="20" secondsPerLoop="20" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_ground_02" posX="144.9339" posY="-25.16227" angle="0" scaleX="15" scaleY="1" material="0" />
+    <Object name="h_lv10_ground_01" posX="126.9097" posY="-28.46756" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="h_lv10_ground_01" posX="123.9119" posY="-29.25789" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="h_lv10_ground_01" posX="120.9047" posY="-30.00184" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="h_lv10_ground_01" posX="117.9148" posY="-30.30416" angle="0" scaleX="3" scaleY="0.4" material="0" />
+    <Object name="checkpoint" posX="145.4653" posY="-22.78014" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="itemballoon" posX="144.6" posY="-7.399999" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="h_lv10_sword_01" posX="143.5685" posY="8.37361" angle="45" scaleX="8" scaleY="8" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-1" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_sword_01" posX="128.5685" posY="17.57361" angle="145" scaleX="8" scaleY="8" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.6" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_ground_02" posX="157.2752" posY="15.39656" angle="62" scaleX="15" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="113.8242" posY="15.39656" angle="118" scaleX="15" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="110.5148" posY="26.29919" angle="90" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="160.6237" posY="26.29919" angle="90" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="114.0023" posY="32.816" angle="0" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="157.1205" posY="32.78613" angle="0" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="120.5176" posY="38.79672" angle="90" scaleX="15" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="119.8882" posY="46.41576" angle="132" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="118.2566" posY="48.5947" angle="122" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="117.3198" posY="50.8789" angle="103" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="117.0241" posY="59.46597" angle="90" scaleX="15" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="153.8027" posY="44.94657" angle="90" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="154.4059" posY="46.2938" angle="41" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="155.8471" posY="48.15867" angle="64" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="156.5524" posY="50.49765" angle="83" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="156.7265" posY="59.31962" angle="90" scaleX="15" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="121.0519" posY="65.45332" angle="0" scaleX="5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="152.7186" posY="65.28664" angle="0" scaleX="5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="122.0526" posY="61.46039" angle="90" scaleX="5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="151.7503" posY="61.25164" angle="90" scaleX="5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="125.0886" posY="60.42595" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="130.8872" posY="65.37104" angle="0" scaleX="8.5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="128.1194" posY="61.3868" angle="90" scaleX="5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="133.6339" posY="61.34567" angle="90" scaleX="5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="148.757" posY="60.25058" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="142.977" posY="65.23878" angle="0" scaleX="8.5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="145.7503" posY="61.23258" angle="90" scaleX="5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="140.2433" posY="61.32873" angle="90" scaleX="5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="136.9626" posY="60.34261" angle="0" scaleX="3.6" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="136.6872" posY="68.2087" angle="0" scaleX="50" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="123.5872" posY="76.25871" angle="33" scaleX="30" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="149.9122" posY="76.11703" angle="327" scaleX="30" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="136.7015" posY="84.06584" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv10_flag_01" posX="141.219" posY="90.55221" angle="0" scaleX="10" scaleY="10" material="0" />
+    <Object name="h_lv10_stonebridge_01" posX="189.7409" posY="28.24545" angle="0" scaleX="55" scaleY="14" material="0" />
+    <Object name="h_lv10_ground_01" posX="242.8393" posY="-32.04163" angle="0" scaleX="70" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="218.7994" posY="47.63051" angle="90" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="216.8195" posY="56.54356" angle="295" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="242.1019" posY="56.55532" angle="245" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="217.3506" posY="61.89052" angle="0" scaleX="8" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="241.5839" posY="61.91135" angle="0" scaleX="8" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="224.7531" posY="74.06518" angle="70" scaleX="28" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="234.2146" posY="73.98825" angle="110" scaleX="28" scaleY="3" material="0" />
+    <Object name="h_lv10_flag_01" posX="234.019" posY="91.95221" angle="0" scaleX="10" scaleY="10" material="0" />
+    <Object name="h_lv10_ground_02" posX="223.3994" posY="24.65273" angle="141" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="235.8439" posY="11.3194" angle="41" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="223.3994" posY="-2.347268" angle="141" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="235.7328" posY="-13.90282" angle="41" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="240.1161" posY="20.07217" angle="90" scaleX="65" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="218.7994" posY="1.947176" angle="90" scaleX="65" scaleY="3" material="0" />
+    <Object name="h_lv10_wheel_01" posX="222.7858" posY="-28.07143" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="4" secondsPerLoop="6" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_wheel_01" posX="226.9534" posY="-28.07143" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="4" secondsPerLoop="6" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_wheel_01" posX="231.1075" posY="-28.07143" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="4" secondsPerLoop="6" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_wheel_01" posX="235.255" posY="-28.07143" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="4" secondsPerLoop="6" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_wheel_01" posX="239.3862" posY="-28.07143" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="4" secondsPerLoop="6" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_wheel_01" posX="243.4846" posY="-28.07143" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="4" secondsPerLoop="6" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_sword_01" posX="262.0108" posY="-27.78592" angle="90" scaleX="8" scaleY="8" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="25" secondsPerLoop="20" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_shield_01" posX="249" posY="15.4" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-25" secondsPerLoop="20" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_wheel_01" posX="247.5711" posY="-28.07143" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="4" secondsPerLoop="6" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_wheel_01" posX="251.6826" posY="-28.07143" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="4" secondsPerLoop="6" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_ground_02" posX="246.601" posY="44.70248" angle="0" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="272.5328" posY="4.505507" angle="90" scaleX="70" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="250.1046" posY="56.10412" angle="90" scaleX="20" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="247.5934" posY="67.60225" angle="0" scaleX="8" scaleY="3" material="0" />
+    <Object name="h_lv10_sword_01" posX="262.0108" posY="12.21408" angle="90" scaleX="8" scaleY="8" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="30" secondsPerLoop="20" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_ground_02" posX="279.0609" posY="37.97953" angle="0" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="315.6174" posY="-0.55" angle="90" scaleX="60" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_01" posX="360.1411" posY="-32.04514" angle="0" scaleX="100" scaleY="3" material="0" />
+    <Object name="h_lv10_sword_01" posX="285.3568" posY="46.39786" angle="180" scaleX="8" scaleY="8" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="15" secondsPerLoop="6" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_sword_01" posX="295.8858" posY="46.1888" angle="180" scaleX="8" scaleY="8" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="15" secondsPerLoop="8" startOffset="0.1" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_sword_01" posX="306.4255" posY="46.17048" angle="180" scaleX="8" scaleY="8" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="15" secondsPerLoop="7" startOffset="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_ground_02" posX="268.2879" posY="83.28745" angle="32" scaleX="60" scaleY="3" material="0" />
+    <Object name="itemstick" posX="295.8333" posY="29.65" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="h_lv10_ground_02" posX="340.201" posY="44.70248" angle="0" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="346.6815" posY="10.69174" angle="90" scaleX="65" scaleY="3" material="0" />
+    <Object name="h_lv10_wheel_01" posX="331.2826" posY="31.72857" angle="0" scaleX="5" scaleY="5" material="0" />
+    <Object name="h_lv10_shield_01" posX="321.6" posY="14.8" angle="0" scaleX="5" scaleY="5" material="0" />
+    <Object name="h_lv10_sword_01" posX="334.4108" posY="14.81408" angle="0" scaleX="8" scaleY="8" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-1.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_shield_01" posX="340.6942" posY="-2.2" angle="0" scaleX="5" scaleY="5" material="0" />
+    <Object name="h_lv10_sword_01" posX="322.493" posY="0.6729044" angle="270" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="9.5" offsetY="0" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_sword_01" posX="322.493" posY="-3.621214" angle="270" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="9.5" offsetY="0" secondsPerLoop="10" startOffset="0.3" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_sword_01" posX="330.8108" posY="-19.38592" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.7" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_ground_02" posX="336.6956" posY="56.10412" angle="90" scaleX="20" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="339.2162" posY="67.60225" angle="0" scaleX="8" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="318.608" posY="83.20745" angle="328" scaleX="60" scaleY="3" material="0" />
+    <Object name="h_lv10_flag_01" posX="298.0857" posY="105.2855" angle="0" scaleX="10" scaleY="10" material="0" />
+    <Object name="h_lv10_ground_02" posX="353.3419" posY="44.63368" angle="0" scaleX="16.3" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_01" posX="350.4446" posY="-30.03442" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="h_lv10_ground_01" posX="353.4716" posY="-29.08847" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="h_lv10_ground_01" posX="356.4986" posY="-28.19658" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="h_lv10_ground_01" posX="359.5526" posY="-27.30468" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="h_lv10_sword_01" posX="358.0251" posY="-23.62877" angle="270" scaleX="8" scaleY="8" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="25" secondsPerLoop="15" startOffset="0.3" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_ground_01" posX="362.5527" posY="-26.39945" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="h_lv10_ground_01" posX="365.5822" posY="-25.5171" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="h_lv10_ground_01" posX="368.6115" posY="-24.63475" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="h_lv10_ground_01" posX="375.1275" posY="-23.91584" angle="0" scaleX="10" scaleY="1" material="0" />
+    <Object name="h_lv10_ground_02" posX="381.6389" posY="1.935354" angle="90" scaleX="65" scaleY="3" material="0" />
+    <Object name="h_lv10_shield_01" posX="372.2942" posY="11" angle="90" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-20" secondsPerLoop="15" startOffset="0.3" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_sword_01" posX="358.6251" posY="8.771233" angle="270" scaleX="8" scaleY="8" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="25" secondsPerLoop="15" startOffset="0.3" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_shield_01" posX="371.2942" posY="47" angle="90" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-20" secondsPerLoop="15" startOffset="0.3" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv10_ground_02" posX="381.6389" posY="49.47172" angle="90" scaleX="30" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="376.8956" posY="72.42413" angle="120" scaleX="20" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="367.7588" posY="72.4136" angle="240" scaleX="20" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="372.3376" posY="80.83469" angle="0" scaleX="2" scaleY="2" material="0" />
+    <Object name="h_lv10_flag_01" posX="376.8634" posY="86.84109" angle="0" scaleX="10" scaleY="10" material="0" />
+    <Object name="h_lv10_ground_02" posX="363.0921" posY="53.88028" angle="90" scaleX="21.5" scaleY="3" material="0" />
+    <Object name="h_lv10_trangle_01" posX="286.3594" posY="37.9897" angle="180" scaleX="0.5" scaleY="3" material="0" />
+    <Object name="h_lv10_trangle_01" posX="284.3282" posY="37.97894" angle="90" scaleX="3" scaleY="0.5" material="0" />
+    <Object name="h_lv10_ground_02" posX="290.6216" posY="37.97954" angle="0" scaleX="8" scaleY="3" material="0" />
+    <Object name="h_lv10_trangle_01" posX="294.8531" posY="37.97894" angle="90" scaleX="3" scaleY="0.5" material="0" />
+    <Object name="h_lv10_trangle_01" posX="296.9035" posY="37.98571" angle="180" scaleX="0.5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="301.1625" posY="37.97954" angle="0" scaleX="8" scaleY="3" material="0" />
+    <Object name="h_lv10_trangle_01" posX="305.4188" posY="37.97076" angle="90" scaleX="3" scaleY="0.5" material="0" />
+    <Object name="h_lv10_trangle_01" posX="307.4752" posY="37.90615" angle="180" scaleX="0.5" scaleY="3" material="0" />
+    <Object name="h_lv10_ground_02" posX="310.9251" posY="37.91704" angle="0" scaleX="6.4" scaleY="3" material="0" />
+    <Object name="h_lv10_sword_01" posX="284.1441" posY="11.48075" angle="240" scaleX="10" scaleY="10" material="0" />
+    <Object name="h_lv10_sword_01" posX="304.3441" posY="11.61408" angle="120" scaleX="10" scaleY="10" material="0" />
+    <Object name="h_lv10_ground_02" posX="315.6472" posY="36.19881" angle="90" scaleX="6.4" scaleY="3" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="0" posY="0" />
+  <Settings finishX="372.3376" finishY="71" fallLine="-35" />
+</Scene>

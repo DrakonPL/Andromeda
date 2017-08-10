@@ -1,0 +1,28 @@
+<Scene name="Slide">
+  <Objects>
+    <Object name="easy_lv2_ground01" posX="0.159091" posY="-4.522726" angle="0" scaleX="20" scaleY="3" material="0" />
+    <Object name="easy_lv2_ground02" posX="22.64007" posY="-4.534805" angle="0" scaleX="25" scaleY="3" material="0" />
+    <Object name="easy_lv2_ground02" posX="47.65674" posY="-4.540402" angle="0" scaleX="25" scaleY="3" material="0" />
+    <Object name="easy_lv2_ground01" posX="70.18625" posY="-4.530613" angle="0" scaleX="20" scaleY="3" material="0" />
+    <Object name="easy_lv2_ob01" posX="22.52" posY="-0.1999987" angle="0" scaleX="3" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="15" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="easy_lv2_ob01" posX="47.50518" posY="-0.2666652" angle="0" scaleX="3" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="15" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="easy_lv2_flat01" posX="87.65" posY="-5.025" angle="0" scaleX="12" scaleY="3" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="15" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="easy_lv2_ground01" posX="102.8956" posY="10.1927" angle="0" scaleX="15" scaleY="2" material="0" />
+    <Object name="easy_lv2_ground03" posX="127.2815" posY="-4.814813" angle="0" scaleX="33.85556" scaleY="32.12222" material="4" />
+    <Object name="easy_lv2_ground04" posX="153.2" posY="-24.8" angle="0" scaleX="12" scaleY="10" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="0" posY="0" />
+  <Settings finishX="153" finishY="-24" fallLine="-30" />
+</Scene>

@@ -1,0 +1,51 @@
+<SoftBody name="Ground7" massPerPoint="0" edgeK="0" edgeDamping="0" colorR="0.5568628" colorG="0.7176471" colorB="0.5333334" kinematic="False" shapeMatching="False" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-18.42391" y="-2.877717" />
+    <Point x="-17.58152" y="0.4293478" />
+    <Point x="-14.20109" y="0.2282613" />
+    <Point x="-13.24456" y="1.619565" />
+    <Point x="-10.94022" y="1.836956" />
+    <Point x="-9.635864" y="3.315217" />
+    <Point x="-7.722824" y="3.48913" />
+    <Point x="-6.027168" y="5.228261" />
+    <Point x="-3.940216" y="5.48913" />
+    <Point x="-2.983696" y="6.793478" />
+    <Point x="-0.722822" y="7.01087" />
+    <Point x="0.7119578" y="8.358696" />
+    <Point x="3.320652" y="8.315218" />
+    <Point x="8.755433" y="9.315218" />
+    <Point x="11.01631" y="10.79348" />
+    <Point x="12.12397" y="12.15787" />
+    <Point x="14.61051" y="12.14545" />
+    <Point x="14.2337" y="13.46222" />
+    <Point x="30.95729" y="13.49798" />
+    <Point x="29.26535" y="10.97529" />
+    <Point x="22.93726" y="9.603751" />
+    <Point x="15.2337" y="-0.07608679" />
+    <Point x="4.543478" y="0.3260869" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="0" pt1="1" pt2="2" />
+    <Poly pt0="2" pt1="3" pt2="4" />
+    <Poly pt0="4" pt1="5" pt2="6" />
+    <Poly pt0="6" pt1="7" pt2="8" />
+    <Poly pt0="8" pt1="9" pt2="10" />
+    <Poly pt0="10" pt1="11" pt2="12" />
+    <Poly pt0="12" pt1="13" pt2="22" />
+    <Poly pt0="13" pt1="14" pt2="21" />
+    <Poly pt0="14" pt1="15" pt2="16" />
+    <Poly pt0="16" pt1="17" pt2="18" />
+    <Poly pt0="0" pt1="2" pt2="22" />
+    <Poly pt0="22" pt1="2" pt2="4" />
+    <Poly pt0="4" pt1="6" pt2="22" />
+    <Poly pt0="22" pt1="6" pt2="8" />
+    <Poly pt0="8" pt1="10" pt2="22" />
+    <Poly pt0="22" pt1="10" pt2="12" />
+    <Poly pt0="13" pt1="21" pt2="22" />
+    <Poly pt0="14" pt1="16" pt2="21" />
+    <Poly pt0="21" pt1="16" pt2="20" />
+    <Poly pt0="20" pt1="16" pt2="19" />
+    <Poly pt0="19" pt1="16" pt2="18" />
+  </Polygons>
+</SoftBody>

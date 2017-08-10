@@ -1,0 +1,28 @@
+<SoftBody name="cp_take_off" massPerPoint="0" edgeK="10000" edgeDamping="100" colorR="0.5019608" colorG="1" colorB="0" kinematic="True" shapeMatching="False" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-1.8" y="-0.2" />
+    <Point x="-1.8" y="0" />
+    <Point x="0.1426466" y="-0.007352946" />
+    <Point x="0.9496833" y="0.0576869" />
+    <Point x="1.662069" y="0.1914873" />
+    <Point x="2.035294" y="0.347059" />
+    <Point x="1.8" y="-0.2" />
+  </Points>
+  <Springs>
+    <Spring pt1="2" pt2="6" k="100" damp="10" />
+    <Spring pt1="3" pt2="6" k="100" damp="10" />
+    <Spring pt1="4" pt2="6" k="100" damp="10" />
+    <Spring pt1="0" pt2="2" k="100" damp="10" />
+    <Spring pt1="6" pt2="1" k="100" damp="10" />
+    <Spring pt1="5" pt2="1" k="100" damp="10" />
+    <Spring pt1="4" pt2="1" k="100" damp="10" />
+    <Spring pt1="3" pt2="1" k="100" damp="10" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="6" pt1="5" pt2="4" />
+    <Poly pt0="6" pt1="4" pt2="3" />
+    <Poly pt0="6" pt1="3" pt2="2" />
+    <Poly pt0="6" pt1="2" pt2="1" />
+    <Poly pt0="1" pt1="0" pt2="6" />
+  </Polygons>
+</SoftBody>

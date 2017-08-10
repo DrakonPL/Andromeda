@@ -1,0 +1,36 @@
+<SoftBody name="ziggy1_platform_2" massPerPoint="3" edgeK="100" edgeDamping="10" colorR="0.6784314" colorG="1" colorB="0.1843137" kinematic="True" shapeMatching="True" shapeK="1000" shapeDamping="20">
+  <Points>
+    <Point x="-0.07692306" y="0.4230769" />
+    <Point x="-0.1660577" y="-5.644751" />
+    <Point x="-1.666058" y="-5.721672" />
+    <Point x="-0.8199036" y="-4.760134" />
+    <Point x="-1.127595" y="-0.5293673" />
+    <Point x="-3.627596" y="-0.7985916" />
+    <Point x="-4.012211" y="-4.606286" />
+    <Point x="-3.435288" y="-5.683212" />
+    <Point x="-4.666058" y="-5.644753" />
+    <Point x="-4.858366" y="0.2398682" />
+  </Points>
+  <Springs>
+    <Spring pt1="6" pt2="9" k="100" damp="10" />
+    <Spring pt1="6" pt2="8" k="100" damp="10" />
+    <Spring pt1="8" pt2="7" k="100" damp="10" />
+    <Spring pt1="7" pt2="6" k="100" damp="10" />
+    <Spring pt1="2" pt2="3" k="100" damp="10" />
+    <Spring pt1="2" pt2="1" k="100" damp="10" />
+    <Spring pt1="1" pt2="3" k="100" damp="10" />
+    <Spring pt1="3" pt2="0" k="100" damp="10" />
+    <Spring pt1="3" pt2="4" k="100" damp="10" />
+    <Spring pt1="5" pt2="6" k="100" damp="10" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="8" pt1="7" pt2="6" />
+    <Poly pt0="8" pt1="6" pt2="9" />
+    <Poly pt0="6" pt1="5" pt2="9" />
+    <Poly pt0="5" pt1="0" pt2="9" />
+    <Poly pt0="5" pt1="4" pt2="0" />
+    <Poly pt0="4" pt1="3" pt2="1" />
+    <Poly pt0="4" pt1="1" pt2="0" />
+    <Poly pt0="2" pt1="1" pt2="3" />
+  </Polygons>
+</SoftBody>

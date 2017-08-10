@@ -1,0 +1,15 @@
+<SoftBody name="n_lv2_plane_02" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.5019608" colorG="1" colorB="0" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="0.8659522" y="-3.653846" />
+    <Point x="1.612106" y="-3.653847" />
+    <Point x="0.7461543" y="-3.942306" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="2" />
+    <Poly pt0="0" pt1="4" pt2="2" />
+    <Poly pt0="2" pt1="3" pt2="4" />
+  </Polygons>
+</SoftBody>

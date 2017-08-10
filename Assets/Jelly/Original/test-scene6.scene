@@ -1,0 +1,53 @@
+<Scene name="Kerplunk">
+  <Objects>
+    <Object name="level6_01" posX="0" posY="88" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="level6_01" posX="16" posY="88" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="level6_01" posX="-16" posY="88" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="level6_01" posX="32" posY="88" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="level6_01" posX="-32" posY="88" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="level06_plinko_orange" posX="8" posY="76" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_orange" posX="-8" posY="76" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_orange" posX="24" posY="76" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_orange" posX="-24" posY="76" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_yellow" posX="0" posY="68" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_yellow" posX="16" posY="68" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_yellow" posX="32" posY="68" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_yellow" posX="-16" posY="68" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_yellow" posX="-32" posY="68" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_orange" posX="8" posY="60" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_orange" posX="24" posY="60" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_orange" posX="-8" posY="60" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_orange" posX="-24" posY="60" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_yellow" posX="0" posY="52" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_yellow" posX="16" posY="52" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_yellow" posX="32" posY="52" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_yellow" posX="-16" posY="52" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plinko_yellow" posX="-32" posY="52" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="level06_plat1" posX="0" posY="38" angle="0" scaleX="1.5" scaleY="1" material="0" />
+    <Object name="level06_plat1" posX="24" posY="35" angle="0" scaleX="1.5" scaleY="1" material="0" />
+    <Object name="level06_plat1" posX="-24" posY="35" angle="0" scaleX="1.5" scaleY="1" material="0" />
+    <Object name="level06_plat1" posX="-12" posY="18" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="level06_plat1" posX="12" posY="18" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="level06_plat1" posX="32" posY="24" angle="45" scaleX="1.3" scaleY="1" material="0" />
+    <Object name="level06_plat1" posX="-32" posY="24" angle="315" scaleX="1.3" scaleY="1" material="0" />
+    <Object name="level6_01" posX="-40" posY="44" angle="90" scaleX="22" scaleY="3" material="0" />
+    <Object name="level6_01" posX="40" posY="44" angle="270" scaleX="22" scaleY="3" material="0" />
+    <Object name="level6_01" posX="0" posY="0" angle="180" scaleX="2" scaleY="1" material="0" />
+    <Object name="level6_01" posX="-4" posY="3" angle="90" scaleX="1.5" scaleY="1" material="0" />
+    <Object name="level6_01" posX="4" posY="3" angle="270" scaleX="1.5" scaleY="1" material="0" />
+    <Object name="level6_01" posX="26" posY="-8" angle="180" scaleX="8" scaleY="3" material="0" />
+    <Object name="level6_01" posX="-26" posY="-8" angle="180" scaleX="8" scaleY="3" material="0" />
+    <Object name="level06_plat2" posX="48" posY="-6" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="-2" offsetY="96" secondsPerLoop="28" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="level06_plat2" posX="-48" posY="-6" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="2" offsetY="96" secondsPerLoop="28" startOffset="0" />
+      </KinematicControls>
+    </Object>
+  </Objects>
+  <Car name="car_and_truck" posX="0" posY="90" />
+  <Settings finishX="0" finishY="2" fallLine="-24" />
+</Scene>

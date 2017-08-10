@@ -1,0 +1,36 @@
+<SoftBody name="h_lv2_wheel_03" massPerPoint="1" edgeK="10000" edgeDamping="15" colorR="1" colorG="0" colorB="0" kinematic="True" shapeMatching="True" shapeK="10000" shapeDamping="15">
+  <Points>
+    <Point x="0" y="1" />
+    <Point x="0.0906937" y="0.9080588" />
+    <Point x="0.1386466" y="0.776982" />
+    <Point x="0.04658303" y="0.8076732" />
+    <Point x="0.0008571653" y="0.01163143" />
+    <Point x="-0.04843491" y="0.8076729" />
+    <Point x="-0.133091" y="0.7714266" />
+    <Point x="-0.09023079" y="0.9085218" />
+  </Points>
+  <Springs>
+    <Spring pt1="6" pt2="2" k="10000" damp="15" />
+    <Spring pt1="5" pt2="3" k="10000" damp="15" />
+    <Spring pt1="7" pt2="1" k="10000" damp="15" />
+    <Spring pt1="0" pt2="5" k="10000" damp="15" />
+    <Spring pt1="3" pt2="0" k="10000" damp="15" />
+    <Spring pt1="7" pt2="5" k="10000" damp="15" />
+    <Spring pt1="1" pt2="3" k="10000" damp="15" />
+    <Spring pt1="2" pt2="7" k="10000" damp="15" />
+    <Spring pt1="6" pt2="1" k="10000" damp="15" />
+    <Spring pt1="0" pt2="6" k="10000" damp="15" />
+    <Spring pt1="0" pt2="2" k="10000" damp="15" />
+    <Spring pt1="0" pt2="4" k="10000" damp="15" />
+    <Spring pt1="4" pt2="6" k="10000" damp="15" />
+    <Spring pt1="2" pt2="4" k="10000" damp="15" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="5" pt1="7" pt2="6" />
+    <Poly pt0="0" pt1="7" pt2="5" />
+    <Poly pt0="5" pt1="3" pt2="0" />
+    <Poly pt0="1" pt1="0" pt2="3" />
+    <Poly pt0="2" pt1="1" pt2="3" />
+    <Poly pt0="4" pt1="5" pt2="3" />
+  </Polygons>
+</SoftBody>

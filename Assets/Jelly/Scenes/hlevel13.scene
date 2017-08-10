@@ -1,0 +1,242 @@
+<Scene name="hard level13">
+  <Objects>
+    <Object name="checkpoint" posX="94.36556" posY="-107.461" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="itemballoon" posX="50.70769" posY="-55.55386" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="itemstick" posX="33.58097" posY="-136.8047" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="h_lv13_ground_01" posX="-1.05" posY="-4.649999" angle="0" scaleX="16" scaleY="4" material="0" />
+    <Object name="h_lv13_pipe_top" posX="52.72089" posY="1.936218" angle="0" scaleX="91" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="14.11477" posY="-0.9125001" angle="180" scaleX="14" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="38.40411" posY="-0.8720239" angle="180" scaleX="13" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="71.404" posY="-1.904167" angle="180" scaleX="32" scaleY="5" material="0" />
+    <Object name="h_lv13_arc_circle" posX="26.53573" posY="-8.142861" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_arc_circle" posX="26.53573" posY="-8.142861" angle="126" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_arc_circle" posX="26.53573" posY="-8.142861" angle="246" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_pipe_top" posX="48.24458" posY="-16.99585" angle="90" scaleX="27" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="56.55412" posY="-21.39879" angle="90" scaleX="32" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="47.62801" posY="-68.36695" angle="90" scaleX="18" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="101.663" posY="-24.46803" angle="90" scaleX="55" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="24.01126" posY="-31.80057" angle="90" scaleX="34" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="33.3945" posY="-23.61473" angle="90" scaleX="16" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="42.80342" posY="-37.28288" angle="180" scaleX="21" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="38.90318" posY="-30.64413" angle="180" scaleX="12" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="33.42034" posY="-58.97385" angle="90" scaleX="38" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="10.05053" posY="-48.11846" angle="180" scaleX="22" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="14.30369" posY="-56.25141" angle="180" scaleX="12" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="8.867433" posY="-64.98743" angle="90" scaleX="11" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="14.28124" posY="-69.70029" angle="180" scaleX="13" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="10.03149" posY="-77.44215" angle="180" scaleX="22" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="0.08276796" posY="-65.08314" angle="90" scaleX="27" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="23.73193" posY="-64.93345" angle="90" scaleX="12" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="38.57259" posY="-76.80235" angle="180" scaleX="12" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="38.69341" posY="-85.74706" angle="180" scaleX="11" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="24.09278" posY="-109.4084" angle="90" scaleX="57" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="40.18589" posY="-137.1241" angle="180" scaleX="32" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="64.80406" posY="-55.97916" angle="180" scaleX="36" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="90.67302" posY="-28.51132" angle="90" scaleX="46" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="69.92706" posY="-66.73301" angle="180" scaleX="25" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="57.73979" posY="-83.11121" angle="90" scaleX="26" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="47.58978" posY="-98.2613" angle="90" scaleX="19" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="54.00405" posY="-106.5792" angle="180" scaleX="15" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="72.34686" posY="-94.9791" angle="180" scaleX="30" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="90.61127" posY="-84.58263" angle="90" scaleX="22" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="101.5517" posY="-85.53619" angle="90" scaleX="24" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="48.00406" posY="-124.5292" angle="180" scaleX="30" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="33.9527" posY="-107.4037" angle="90" scaleX="36" scaleY="5" material="0" />
+    <Object name="h_lv13_wheel" posX="63.91441" posY="-117.7001" angle="0" scaleX="8" scaleY="8" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_wheel" posX="80.83342" posY="-118.4001" angle="0" scaleX="8" scaleY="8" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_pipe_top" posX="91.03741" posY="-107.8959" angle="180" scaleX="19" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="108.4112" posY="-96.59576" angle="180" scaleX="15" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="153.1398" posY="-128.5112" angle="90" scaleX="29" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="116.5398" posY="-123.9111" angle="90" scaleX="18" scaleY="5" material="0" />
+    <Object name="h_lv13_move" posX="103.4741" posY="-111.6918" angle="0" scaleX="11" scaleY="4" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="-8" offsetY="0" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_move" posX="113.1411" posY="-111.7781" angle="0" scaleX="11" scaleY="4" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="8" offsetY="0" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_pipe_top" posX="125.404" posY="-108.2457" angle="180" scaleX="24" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="132.1892" posY="-142.8584" angle="180" scaleX="35" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="193.364" posY="-174.4629" angle="180" scaleX="181" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="125.7653" posY="-132.1208" angle="180" scaleX="19" scaleY="5" material="0" />
+    <Object name="h_lv13_move" posX="139.7775" posY="-111.9412" angle="0" scaleX="11" scaleY="4" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="-8" offsetY="0" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_move" posX="149.4917" posY="-111.957" angle="0" scaleX="11" scaleY="4" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="8" offsetY="0" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_pipe_top" posX="138.3398" posY="-123.7111" angle="90" scaleX="18" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="102.7396" posY="-144.911" angle="90" scaleX="61" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="115.2263" posY="-152.211" angle="90" scaleX="12" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="142.604" posY="-157.3788" angle="180" scaleX="57" scaleY="5" material="0" />
+    <Object name="h_lv13_move" posX="141.2" posY="-175.3998" angle="0" scaleX="6" scaleY="8" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="11" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_lock" posX="134.6742" posY="-168.1443" angle="0" scaleX="6" scaleY="4" material="0" />
+    <Object name="h_lv13_lock" posX="147.063" posY="-168.0888" angle="0" scaleX="6" scaleY="4" material="0" />
+    <Object name="h_lv13_lock" posX="212.4107" posY="-168.9999" angle="0" scaleX="6" scaleY="4" material="0" />
+    <Object name="h_lv13_lock" posX="224.6106" posY="-168.7999" angle="0" scaleX="6" scaleY="4" material="0" />
+    <Object name="h_lv13_move" posX="175.3099" posY="-112.0088" angle="0" scaleX="11" scaleY="4" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="-8" offsetY="0" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_move" posX="185.075" posY="-112.1093" angle="0" scaleX="11" scaleY="4" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="8" offsetY="0" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_pipe_top" posX="162.6041" posY="-108.281" angle="180" scaleX="24" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="188.5397" posY="-135.3111" angle="90" scaleX="44" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="174.1398" posY="-135.9111" angle="90" scaleX="44" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="225.404" posY="-156.5788" angle="180" scaleX="76" scaleY="5" material="0" />
+    <Object name="h_lv13_move" posX="126.2334" posY="-110.0665" angle="0" scaleX="18" scaleY="28" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="21" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_move" posX="162.5667" posY="-88.86655" angle="0" scaleX="18" scaleY="26" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-21" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_pipe_top" posX="216.0914" posY="-108.408" angle="180" scaleX="59" scaleY="5" material="0" />
+    <Object name="h_lv13_move" posX="199.3665" posY="-110.1165" angle="0" scaleX="18" scaleY="26" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="21" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_pipe_top" posX="248.6112" posY="-87.13973" angle="90" scaleX="44" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="230.3731" posY="-72.7113" angle="90" scaleX="46" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="217.1612" posY="-95.21427" angle="180" scaleX="20" scaleY="5" material="0" />
+    <Object name="h_lv13_move" posX="218.9999" posY="-175.5998" angle="0" scaleX="6" scaleY="8" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="11" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_pipe_top" posX="287.0276" posY="-134.6873" angle="90" scaleX="81" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="266.9403" posY="-111.3109" angle="90" scaleX="92" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="255.8915" posY="-62.12094" angle="180" scaleX="16" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="256.7722" posY="-46.27385" angle="180" scaleX="54" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="287.3397" posY="-61.31129" angle="90" scaleX="24" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="298.2035" posY="-91.08095" angle="180" scaleX="24" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="309.1732" posY="-72.11794" angle="180" scaleX="44" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="334.2487" posY="-92.04974" angle="90" scaleX="33" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="314.0321" posY="-101.7112" angle="90" scaleX="14" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="324.8033" posY="109.681" angle="180" scaleX="24" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="321.3398" posY="-66.51129" angle="90" scaleX="14" scaleY="24" material="0" />
+    <Object name="h_lv13_pipe_02" posX="305.4623" posY="-57.01538" angle="0" scaleX="14" scaleY="2" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="43.88855" posY="-30.14701" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="52.25218" posY="-36.96521" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="19.53855" posY="-69.29691" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="9.138555" posY="-69.39692" angle="270" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="19.43856" posY="-60.44688" angle="90" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="9.205221" posY="-60.4636" angle="180" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="0.3718897" posY="-52.39696" angle="180" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="0.3674993" posY="-77.16155" angle="270" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="19.84481" posY="-81.76222" angle="90" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="19.66355" posY="-47.7719" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="33.74641" posY="-41.51064" angle="180" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="33.63855" posY="-30.20942" angle="270" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="34.30939" posY="-89.96281" angle="180" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="43.33855" posY="-90.02184" angle="90" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="34.23483" posY="-124.0858" angle="270" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="24.424" posY="-136.6936" angle="270" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="43.33856" posY="-76.50274" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="33.73857" posY="-76.4302" angle="270" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="56.8964" posY="-6.06065" angle="180" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="86.4165" posY="-6.198395" angle="90" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_spin_U" posX="93.8" posY="-62.50478" angle="359" scaleX="11" scaleY="11" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_pipe_arc" posX="47.97884" posY="-60.21281" angle="180" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="58.04553" posY="-70.8794" angle="180" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_spin_U" posX="93.8" posY="-62.60002" angle="241" scaleX="11" scaleY="11" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_spin_U" posX="93.8" posY="-62.60002" angle="118" scaleX="11" scaleY="11" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_pipe_arc" posX="97.49983" posY="1.668272" angle="90" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="44.05935" posY="-5.11506" angle="90" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="58.13861" posY="-94.63017" angle="270" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="48.00527" posY="-106.2968" angle="270" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_bridge" posX="70.1588" posY="-138.9682" angle="0" scaleX="14.71429" scaleY="1.285714" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="103.0719" posY="-174.0634" angle="270" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="115.5829" posY="-157.0636" angle="270" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="116.9014" posY="-131.7045" angle="270" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="134.1014" posY="-131.7268" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="148.9196" posY="-142.5722" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="115.6066" posY="-147.1222" angle="180" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="169.8568" posY="-157.1278" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="188.8663" posY="-156.2302" angle="270" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="262.6862" posY="-156.2603" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="282.7396" posY="-174.2072" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="244.329" posY="-108.1365" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="226.0862" posY="-94.86035" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="230.7035" posY="-50.34731" angle="180" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="283.1705" posY="-50.61398" angle="90" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="248.9434" posY="-66.30732" angle="180" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="262.6934" posY="-66.36982" angle="90" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="309.76" posY="-95.43642" angle="90" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="287.3597" posY="-95.33646" angle="180" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="287.6865" posY="-71.72025" angle="270" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="329.9401" posY="-76.41667" angle="90" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_top" posX="143.2873" posY="-96.59576" angle="180" scaleX="19" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_top" posX="180.0872" posY="-96.99575" angle="180" scaleX="19" scaleY="5" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="101.8507" posY="-96.27117" angle="270" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_pipe_arc" posX="86.3243" posY="-94.67414" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="h_lv13_spin" posX="275.3997" posY="-127.3999" angle="270" scaleX="9" scaleY="9" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_spin" posX="275.1997" posY="-104.6" angle="90" scaleX="9" scaleY="9" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv13_spin" posX="274.9997" posY="-149.5999" angle="90" scaleX="9" scaleY="9" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+  </Objects>
+  <Car name="car_and_truck" posX="0" posY="0" />
+  <Settings finishX="322" finishY="-124" fallLine="-178" />
+</Scene>

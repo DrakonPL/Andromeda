@@ -1,0 +1,49 @@
+<SoftBody name="h_lv12_half_ear" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.6784314" colorG="1" colorB="0.1803922" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="0" y="1" />
+    <Point x="0.1599729" y="0.9894468" />
+    <Point x="0.3420201" y="0.9396926" />
+    <Point x="0.506564" y="0.8701286" />
+    <Point x="0.6427876" y="0.7660444" />
+    <Point x="0.755264" y="0.6625116" />
+    <Point x="0.8660254" y="0.5" />
+    <Point x="0.9357711" y="0.3565676" />
+    <Point x="0.9848077" y="0.1736482" />
+    <Point x="1.00133" y="0.01041365" />
+    <Point x="0.9848077" y="-0.1736482" />
+    <Point x="0.9436383" y="-0.3453557" />
+    <Point x="0.8660254" y="-0.5000001" />
+    <Point x="0.7679273" y="-0.6298715" />
+    <Point x="0.6427876" y="-0.7660444" />
+    <Point x="0.5183392" y="-0.4086933" />
+    <Point x="0.3988383" y="-0.1101473" />
+    <Point x="0.2342486" y="0.2276704" />
+    <Point x="0.06175777" y="0.47059" />
+    <Point x="-0.0952971" y="0.6708522" />
+    <Point x="-0.3420204" y="0.9396926" />
+    <Point x="-0.1638908" y="0.9837649" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="14" pt1="15" pt2="12" />
+    <Poly pt0="12" pt1="16" pt2="15" />
+    <Poly pt0="16" pt1="10" pt2="12" />
+    <Poly pt0="16" pt1="8" pt2="10" />
+    <Poly pt0="16" pt1="17" pt2="8" />
+    <Poly pt0="8" pt1="6" pt2="17" />
+    <Poly pt0="17" pt1="4" pt2="6" />
+    <Poly pt0="17" pt1="18" pt2="4" />
+    <Poly pt0="4" pt1="18" pt2="2" />
+    <Poly pt0="18" pt1="19" pt2="2" />
+    <Poly pt0="2" pt1="19" pt2="0" />
+    <Poly pt0="0" pt1="20" pt2="19" />
+    <Poly pt0="14" pt1="12" pt2="13" />
+    <Poly pt0="12" pt1="10" pt2="11" />
+    <Poly pt0="10" pt1="8" pt2="9" />
+    <Poly pt0="6" pt1="7" pt2="8" />
+    <Poly pt0="6" pt1="4" pt2="5" />
+    <Poly pt0="4" pt1="2" pt2="3" />
+    <Poly pt0="2" pt1="0" pt2="1" />
+    <Poly pt0="0" pt1="20" pt2="21" />
+  </Polygons>
+</SoftBody>

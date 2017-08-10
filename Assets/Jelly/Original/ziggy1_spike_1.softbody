@@ -1,0 +1,19 @@
+<SoftBody name="ziggy1_spike_1" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.7529412" colorG="0.7529412" colorB="0.7529412" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="0.15" y="2.15" />
+    <Point x="3.597852" y="0.1095753" />
+    <Point x="0.3" y="1.2" />
+    <Point x="3.247852" y="-0.7404252" />
+    <Point x="0.1978519" y="0.3595764" />
+    <Point x="2.897852" y="-1.640427" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="0" pt1="6" pt2="5" />
+    <Poly pt0="5" pt1="4" pt2="3" />
+    <Poly pt0="3" pt1="2" pt2="1" />
+    <Poly pt0="3" pt1="1" pt2="0" />
+    <Poly pt0="0" pt1="5" pt2="3" />
+  </Polygons>
+</SoftBody>

@@ -1,0 +1,32 @@
+<SoftBody name="scene4_plat6" massPerPoint="1" edgeK="600" edgeDamping="35" colorR="0.5372549" colorG="0.8901961" colorB="0.2745098" kinematic="True" shapeMatching="True" shapeK="350" shapeDamping="25">
+  <Pressure amount="55" />
+  <Points>
+    <Point x="-3" y="-4.5" />
+    <Point x="-4.5" y="-3" />
+    <Point x="-5" y="0" />
+    <Point x="-4.5" y="3" />
+    <Point x="-3" y="4.5" />
+    <Point x="0" y="5" />
+    <Point x="3" y="4.5" />
+    <Point x="4.5" y="3" />
+    <Point x="5" y="0" />
+    <Point x="4.5" y="-3" />
+    <Point x="3" y="-4.5" />
+    <Point x="0" y="-5" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="5" pt1="11" pt2="10" />
+    <Poly pt0="10" pt1="6" pt2="5" />
+    <Poly pt0="5" pt1="11" pt2="0" />
+    <Poly pt0="0" pt1="4" pt2="5" />
+    <Poly pt0="6" pt1="7" pt2="0" />
+    <Poly pt0="0" pt1="1" pt2="6" />
+    <Poly pt0="4" pt1="9" pt2="10" />
+    <Poly pt0="10" pt1="3" pt2="4" />
+    <Poly pt0="3" pt1="8" pt2="9" />
+    <Poly pt0="9" pt1="2" pt2="3" />
+    <Poly pt0="2" pt1="1" pt2="8" />
+    <Poly pt0="8" pt1="7" pt2="2" />
+  </Polygons>
+</SoftBody>

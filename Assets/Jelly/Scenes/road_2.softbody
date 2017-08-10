@@ -1,0 +1,27 @@
+<SoftBody name="road_2" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.6784314" colorG="1" colorB="0.1843137" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="2.908334" y="-0.8858265" />
+    <Point x="2.415211" y="-0.2271973" />
+    <Point x="1.923545" y="0.2137477" />
+    <Point x="1.356878" y="0.5680783" />
+    <Point x="0.6652114" y="0.8672909" />
+    <Point x="-0.05978861" y="1.016897" />
+    <Point x="-0.8597885" y="1.111385" />
+    <Point x="-1.616666" y="1.145669" />
+    <Point x="-1.301455" y="1.379102" />
+    <Point x="3.316668" y="0.9881887" />
+    <Point x="4.202618" y="-0.8948807" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="0" pt1="10" pt2="9" />
+    <Poly pt0="0" pt1="1" pt2="9" />
+    <Poly pt0="1" pt1="2" pt2="9" />
+    <Poly pt0="3" pt1="2" pt2="9" />
+    <Poly pt0="3" pt1="4" pt2="9" />
+    <Poly pt0="5" pt1="4" pt2="9" />
+    <Poly pt0="6" pt1="7" pt2="8" />
+    <Poly pt0="6" pt1="8" pt2="5" />
+    <Poly pt0="5" pt1="8" pt2="9" />
+  </Polygons>
+</SoftBody>

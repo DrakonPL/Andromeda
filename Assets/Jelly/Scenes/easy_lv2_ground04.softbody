@@ -1,0 +1,21 @@
+<SoftBody name="easy_lv2_ground04" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.5019608" colorG="1" colorB="1" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="-0.3614371" y="0.5004936" />
+    <Point x="-0.3575444" y="-0.3482484" />
+    <Point x="0.3488552" y="-0.3453913" />
+    <Point x="0.3490466" y="0.500291" />
+    <Point x="0.5" y="0.5" />
+    <Point x="0.5022596" y="-0.4998307" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="0" pt1="2" pt2="1" />
+    <Poly pt0="0" pt1="3" pt2="2" />
+    <Poly pt0="3" pt1="0" pt2="7" />
+    <Poly pt0="7" pt1="4" pt2="3" />
+    <Poly pt0="4" pt1="5" pt2="6" />
+    <Poly pt0="6" pt1="4" pt2="7" />
+  </Polygons>
+</SoftBody>

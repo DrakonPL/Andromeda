@@ -1,0 +1,179 @@
+<Scene name="hard level15">
+  <Objects>
+    <Object name="h_lv15_ground_01" posX="2.735269" posY="-4.266232" angle="0" scaleX="15" scaleY="2" material="0" />
+    <Object name="itemstick" posX="7.608333" posY="-2.025" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="h_lv15_ground_01" posX="11.24174" posY="9.741571" angle="90" scaleX="30" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-7.245744" posY="23.72776" angle="0" scaleX="35" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-5.764372" posY="4.724646" angle="90" scaleX="20" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-23.74374" posY="2.714856" angle="90" scaleX="40" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-6.176784" posY="15.7049" angle="0" scaleX="20" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-5.228086" posY="-16.29497" angle="0" scaleX="35" scaleY="2" material="0" />
+    <Object name="h_lv15_teeterboard_01" posX="25.33688" posY="-15.44753" angle="6" scaleX="25" scaleY="2" material="1" />
+    <Object name="h_lv15_teeterboard_02" posX="14.59409" posY="-22.7706" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_teeterboard_02" posX="36.92002" posY="-22.7706" angle="20" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_teeterboard_02" posX="14.59409" posY="-22.7706" angle="120" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_teeterboard_02" posX="14.59409" posY="-22.7706" angle="240" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_teeterboard_02" posX="36.92002" posY="-22.7706" angle="140" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_teeterboard_02" posX="36.92002" posY="-22.7706" angle="260" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_ground_01" posX="52.10524" posY="-16.69497" angle="0" scaleX="25" scaleY="2" material="0" />
+    <Object name="h_lv15_candy_01" posX="73.4" posY="-19.8" angle="0" scaleX="14.2" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="40" offsetY="50" secondsPerLoop="40" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_icecream_01" posX="97.4" posY="48.6" angle="0" scaleX="20" scaleY="30" material="0" />
+    <Object name="h_lv15_ground_01" posX="71.10524" posY="42.70503" angle="0" scaleX="25" scaleY="2" material="0" />
+    <Object name="h_lv15_candy_01" posX="39.8" posY="42" angle="345" scaleX="14.2" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_ground_02" posX="23.76667" posY="44" angle="283" scaleX="8" scaleY="8" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_ground_02" posX="10.36667" posY="34.2" angle="103" scaleX="8" scaleY="8" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="itemballoon" posX="-18.57447" posY="26.80425" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="checkpoint" posX="-10.72727" posY="26.60448" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="h_lv15_ground_01" posX="-23.57678" posY="61.9049" angle="90" scaleX="20" scaleY="2" material="0" />
+    <Object name="h_lv15_fork_01" posX="-29.6" posY="74.8" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="15" offsetY="0" secondsPerLoop="4" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_ground_01" posX="-4.176781" posY="61.5049" angle="90" scaleX="20" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-9.443449" posY="89.17158" angle="90" scaleX="20" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-28.44345" posY="88.90495" angle="90" scaleX="20" scaleY="2" material="0" />
+    <Object name="h_lv15_fork_01" posX="-3.199989" posY="102.2666" angle="180" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="-15" offsetY="0" secondsPerLoop="4" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_ground_01" posX="-25.22123" posY="109.9769" angle="90" scaleX="10" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-5.643448" posY="115.5716" angle="90" scaleX="20" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-25.809" posY="115.8272" angle="118" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-27.40683" posY="117.7837" angle="140" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-29.68004" posY="119.213" angle="155" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-34.61664" posY="119.7572" angle="0" scaleX="8" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-39.62588" posY="120.2283" angle="160" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-42.1837" posY="121.4203" angle="149" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-44.41756" posY="123.0655" angle="138" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-46.1812" posY="125.1564" angle="123" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-47.19939" posY="127.5018" angle="104" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-47.57765" posY="130.2438" angle="92" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-47.33175" posY="132.9323" angle="77" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-46.47111" posY="135.6209" angle="67" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-45.06947" posY="137.8913" angle="50" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-43.08588" posY="139.793" angle="36" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-40.69052" posY="141.1743" angle="24" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-38.12191" posY="141.8606" angle="7" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-35.31797" posY="141.9489" angle="356" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-32.73954" posY="141.3802" angle="339" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-30.21994" posY="140.1545" angle="329" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-28.22975" posY="138.4583" angle="310" scaleX="3" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-22.62059" posY="130.8616" angle="0" scaleX="32" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-5.643459" posY="126.8768" angle="90" scaleX="10" scaleY="2" material="0" />
+    <Object name="h_lv15_circle_01" posX="-36.475" posY="130.925" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_circle_01" posX="-36.475" posY="130.925" angle="180" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_ground_01" posX="-12.01052" posY="137.6542" angle="0" scaleX="32" scaleY="2" material="0" />
+    <Object name="h_lv15_bridge_01" posX="7.898726" posY="130.0715" angle="0" scaleX="25" scaleY="3.5" material="0" />
+    <Object name="h_lv15_ground_01" posX="30.42623" posY="130.8169" angle="0" scaleX="20" scaleY="2" material="0" />
+    <Object name="checkpoint1" posX="30" posY="133.6667" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="h_lv15_circle_02" posX="46.47226" posY="121.2236" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_circle_02" posX="46.47226" posY="121.2236" angle="180" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_ground_01" posX="65.01445" posY="128.2287" angle="0" scaleX="20" scaleY="2" material="0" />
+    <Object name="h_lv15_cup_01" posX="81.58837" posY="119.0635" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.3" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_champagne_01" posX="80.4" posY="96.8" angle="270" scaleX="12" scaleY="12" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="30" offsetY="0" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_cup_02" posX="127.2357" posY="84.76429" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-10" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_cup_02" posX="134.9215" posY="84.73573" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-10" secondsPerLoop="10" startOffset="0.1" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_cup_02" posX="142.4929" posY="84.67859" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-10" secondsPerLoop="10" startOffset="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_cup_02" posX="150.093" posY="84.67859" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-10" secondsPerLoop="10" startOffset="0.3" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_champagne_01" posX="165.0206" posY="71.72672" angle="0" scaleX="12" scaleY="12" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="1" offsetY="0" secondsPerLoop="1" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv15_pop_01" posX="164.801" posY="88.9814" angle="0" scaleX="20" scaleY="10" material="0" />
+    <Object name="h_lv15_cup_03" posX="202.3788" posY="86.89251" angle="0" scaleX="10" scaleY="7" material="0" />
+    <Object name="h_lv15_ground_01" posX="185.4811" posY="92.36205" angle="0" scaleX="20" scaleY="2" material="0" />
+    <Object name="h_lv15_cup_03" posX="197.1346" posY="73.55487" angle="0" scaleX="10" scaleY="7" material="0" />
+    <Object name="h_lv15_cup_03" posX="208.0835" posY="73.54014" angle="0" scaleX="10" scaleY="7" material="0" />
+    <Object name="h_lv15_cup_03" posX="192.0569" posY="60.25485" angle="0" scaleX="10" scaleY="7" material="0" />
+    <Object name="h_lv15_cup_03" posX="202.8013" posY="60.29929" angle="0" scaleX="10" scaleY="7" material="0" />
+    <Object name="h_lv15_cup_03" posX="213.8235" posY="60.27707" angle="0" scaleX="10" scaleY="7" material="0" />
+    <Object name="h_lv15_ground_01" posX="1.837971" posY="52.48082" angle="0" scaleX="10" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="-126.2433" posY="105.9979" angle="0" scaleX="200" scaleY="2" material="0" />
+    <Object name="h_lv15_ground_01" posX="7.85144" posY="47.98249" angle="90" scaleX="11" scaleY="2" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="0" posY="0" />
+  <Settings finishX="202.37" finishY="97" fallLine="-30" />
+</Scene>

@@ -1,0 +1,97 @@
+<Scene name="The Big Wheel">
+  <Objects>
+    <Object name="chz2_Platform" posX="-149.5998" posY="-53.20012" angle="360" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="chz2_wheel1" posX="-52.04346" posY="-4.786901" angle="15" scaleX="1.5" scaleY="1.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.075" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_wheel1" posX="-52.04346" posY="-4.786901" angle="200" scaleX="1.5" scaleY="1.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.075" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_wheel1" posX="-52.04346" posY="-4.786901" angle="285" scaleX="1.5" scaleY="1.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.075" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_wheel1" posX="-52.04346" posY="-4.786901" angle="105" scaleX="1.5" scaleY="1.5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.075" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_elevator" posX="14.4" posY="-2.599995" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-42" secondsPerLoop="18" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_platform2" posX="-108.5999" posY="10.39999" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="chz2_platform2" posX="-0.2" posY="-4.8" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="chz2_tiny_plat" posX="-55.40005" posY="-6.8" angle="358" scaleX="1.2" scaleY="1" material="0" />
+    <Object name="chz2_elevator" posX="-122.1999" posY="40.19999" angle="1" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-32" secondsPerLoop="17" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_platform3" posX="-110.9999" posY="37.79998" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="chz2_platform4" posX="-21.6" posY="30.79997" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="chz2_wheel_2" posX="123.8313" posY="82.00411" angle="25" scaleX="45" scaleY="45" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.075" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_wheel_2" posX="123.8317" posY="82.00445" angle="115" scaleX="45" scaleY="45" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.075" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_wheel_2" posX="123.8317" posY="82.00446" angle="295" scaleX="45" scaleY="45" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.075" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_wheel_2" posX="123.8312" posY="82.0043" angle="205" scaleX="45" scaleY="45" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.075" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_platform5" posX="151.9999" posY="34.20001" angle="359" scaleX="1" scaleY="1" material="0" />
+    <Object name="chz2_elevator" posX="192.3996" posY="71.39993" angle="1" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-35" secondsPerLoop="16" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_platform6" posX="169.7999" posY="68.99995" angle="360" scaleX="1" scaleY="1" material="0" />
+    <Object name="chz2_wheel_2b" posX="123.8317" posY="72.00413" angle="25" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.075" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_wheel_2b" posX="123.8318" posY="72.00414" angle="115" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.075" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_wheel_2b" posX="123.8313" posY="72.00443" angle="295" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.075" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_wheel_2b" posX="123.8315" posY="72.0043" angle="205" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.075" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_platform7" posX="68.19997" posY="87.40007" angle="356" scaleX="1" scaleY="1" material="0" />
+    <Object name="chz2_elevator" posX="45.99999" posY="113.0001" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-20" secondsPerLoop="20" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="chz2_platform8" posX="54.60001" posY="111.1999" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="chz2_platform9" posX="146.1998" posY="110.2" angle="0" scaleX="1" scaleY="1" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-200" posY="-47" />
+  <Settings finishX="225" finishY="126" fallLine="-100" />
+</Scene>

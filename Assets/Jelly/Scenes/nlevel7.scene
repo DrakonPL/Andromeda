@@ -1,0 +1,77 @@
+<Scene name="Lemons">
+  <Objects>
+    <Object name="n_lv7_ground_01" posX="0.3999999" posY="-6.449999" angle="0" scaleX="20" scaleY="6" material="0" />
+    <Object name="n_lv7_ground_02" posX="28.24" posY="7.360001" angle="0" scaleX="35.6" scaleY="33.6" material="0" />
+    <Object name="n_lv7_box_01" posX="79.38384" posY="25.51452" angle="0" scaleX="8" scaleY="8" material="1" />
+    <Object name="n_lv7_ground_01" posX="87.11563" posY="11.95097" angle="0" scaleX="9" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="104.1638" posY="15.95908" angle="0" scaleX="25" scaleY="10.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="121.1869" posY="11.96393" angle="0" scaleX="9" scaleY="2.5" material="0" />
+    <Object name="n_lv7_box_01" posX="113.4187" posY="25.25039" angle="0" scaleX="8" scaleY="8" material="1" />
+    <Object name="n_lv7_ground_01" posX="138.2242" posY="15.95908" angle="0" scaleX="25" scaleY="10.5" material="0" />
+    <Object name="itemstick" posX="144.275" posY="22.575" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="n_lv7_ground_01" posX="149.4397" posY="-24.34745" angle="90" scaleX="70" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="182.1869" posY="-19.23607" angle="90" scaleX="80" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="173.4276" posY="-1.636069" angle="0" scaleX="15" scaleY="2.5" material="0" />
+    <Object name="n_lv7_wheel_01" posX="158.2333" posY="-14" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="25" secondsPerLoop="6" startOffset="0" />
+        <Motor radiansPerSecond="2" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv7_ground_01" posX="158.2026" posY="-29.45481" angle="0" scaleX="15" scaleY="2.5" material="0" />
+    <Object name="n_lv7_wheel_01" posX="173.2833" posY="-17" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-25" secondsPerLoop="6" startOffset="0" />
+        <Motor radiansPerSecond="-2" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv7_ground_01" posX="173.4082" posY="-55.31593" angle="0" scaleX="15" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="142.3415" posY="-64.44927" angle="31" scaleX="15" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="164.4215" posY="-70.64927" angle="31" scaleX="40" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="121.646" posY="-81.14566" angle="0" scaleX="50" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="127.7082" posY="-68.41592" angle="0" scaleX="15" scaleY="2.5" material="0" />
+    <Object name="n_lv7_wheel_01" posX="112.8444" posY="-72.5" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="15" secondsPerLoop="4" startOffset="0" />
+        <Motor radiansPerSecond="2" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv7_ground_01" posX="97.73978" posY="-68.48711" angle="0" scaleX="15" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="121.4695" posY="-57.13671" angle="90" scaleX="20" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="112.7141" posY="-48.43214" angle="0" scaleX="15" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="103.9761" posY="-57.19938" angle="90" scaleX="20" scaleY="2.5" material="0" />
+    <Object name="n_lv7_wheel_01" posX="82.8444" posY="-72.5" angle="0" scaleX="7" scaleY="7" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="15" secondsPerLoop="4" startOffset="0.2" />
+        <Motor radiansPerSecond="2" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv7_ground_01" posX="68.75928" posY="-68.50111" angle="0" scaleX="13" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="91.50023" posY="-57.23553" angle="90" scaleX="20" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="82.75517" posY="-48.48074" angle="0" scaleX="15" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="74.01051" posY="-57.23078" angle="90" scaleX="20" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="76.62475" posY="-81.16256" angle="0" scaleX="40" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="57.87671" posY="-97.41321" angle="90" scaleX="30" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="60.98909" posY="-54.78202" angle="90" scaleX="30" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="22.0176" posY="-81.16256" angle="0" scaleX="40" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="40.78206" posY="-97.43642" angle="90" scaleX="30" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="40.72243" posY="-54.07296" angle="90" scaleX="30" scaleY="2.5" material="0" />
+    <Object name="n_lv7_nail_01" posX="49.3467" posY="-54.4" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-35" secondsPerLoop="20" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv7_ground_03" posX="-24.54167" posY="-64.96391" angle="0" scaleX="35" scaleY="35" material="0" />
+    <Object name="checkpoint" posX="144.9877" posY="-78.02533" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="n_lv7_ground_01" posX="16.62127" posY="-34.95964" angle="90" scaleX="10" scaleY="2.5" material="0" />
+    <Object name="n_lv7_ground_01" posX="27.44007" posY="-41.33958" angle="0" scaleX="24" scaleY="2.5" material="0" />
+    <Object name="n_lv7_move_01" posX="-1.233316" posY="-59.68332" angle="90" scaleX="9" scaleY="9.6" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="-40" offsetY="0" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv7_ground_01" posX="-29.49327" posY="-24.53958" angle="34" scaleX="50" scaleY="2.5" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="0" posY="0" />
+  <Settings finishX="-25" finishY="-60" fallLine="-110" />
+</Scene>

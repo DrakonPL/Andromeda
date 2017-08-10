@@ -1,0 +1,9 @@
+<Scene name="editor">
+  <Objects> 
+  </Objects>
+
+  <Car name="car_and_truck" posX="0" posY="0" />
+
+  <Settings finishX="306" finishY="66" fallLine="-5" />
+
+</Scene>

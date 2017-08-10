@@ -1,0 +1,30 @@
+<SoftBody name="chz4_Boulder" massPerPoint="1" edgeK="800" edgeDamping="10" colorR="0.5019608" colorG="0.5019608" colorB="0.5019608" kinematic="False" shapeMatching="True" shapeK="600" shapeDamping="10">
+  <Points>
+    <Point x="-5.899999" y="-6.299999" />
+    <Point x="-6.099998" y="0.3" />
+    <Point x="-2.5" y="5.899999" />
+    <Point x="3.838074" y="6.631451" />
+    <Point x="7.838078" y="2.231453" />
+    <Point x="7.838074" y="-3.968547" />
+    <Point x="3.438072" y="-7.368547" />
+    <Point x="-1.961929" y="-8.768544" />
+  </Points>
+  <Springs>
+    <Spring pt1="7" pt2="3" k="100" damp="10" />
+    <Spring pt1="2" pt2="6" k="100" damp="10" />
+    <Spring pt1="4" pt2="0" k="100" damp="10" />
+    <Spring pt1="1" pt2="5" k="100" damp="10" />
+    <Spring pt1="1" pt2="4" k="100" damp="10" />
+    <Spring pt1="5" pt2="0" k="100" damp="10" />
+    <Spring pt1="2" pt2="7" k="100" damp="10" />
+    <Spring pt1="6" pt2="3" k="100" damp="10" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="0" pt1="1" pt2="7" />
+    <Poly pt0="7" pt1="6" pt2="1" />
+    <Poly pt0="1" pt1="2" pt2="6" />
+    <Poly pt0="6" pt1="5" pt2="2" />
+    <Poly pt0="2" pt1="3" pt2="5" />
+    <Poly pt0="5" pt1="4" pt2="3" />
+  </Polygons>
+</SoftBody>

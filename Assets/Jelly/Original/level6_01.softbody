@@ -1,0 +1,21 @@
+<SoftBody name="level6_01" massPerPoint="0" edgeK="0" edgeDamping="0" colorR="1" colorG="0" colorB="0" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-2" y="0" />
+    <Point x="-1.6" y="0.4" />
+    <Point x="1.6" y="0.4" />
+    <Point x="2" y="0" />
+    <Point x="2" y="-0.8" />
+    <Point x="1.6" y="-0.4" />
+    <Point x="-1.6" y="-0.4" />
+    <Point x="-2" y="-0.8" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="4" pt1="5" pt2="3" />
+    <Poly pt0="3" pt1="2" pt2="5" />
+    <Poly pt0="5" pt1="6" pt2="2" />
+    <Poly pt0="6" pt1="2" pt2="1" />
+    <Poly pt0="1" pt1="0" pt2="6" />
+    <Poly pt0="6" pt1="7" pt2="0" />
+  </Polygons>
+</SoftBody>

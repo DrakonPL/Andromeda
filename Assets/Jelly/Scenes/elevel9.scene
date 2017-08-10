@@ -1,0 +1,27 @@
+<Scene name="Mouse">
+  <Objects>
+    <Object name="e_lv1_mickeyear_01" posX="-0.3999991" posY="-10" angle="0" scaleX="16" scaleY="16" material="0" />
+    <Object name="e_lv1_mickeyear_02" posX="62.26667" posY="-10.2" angle="21" scaleX="16" scaleY="16" material="0" />
+    <Object name="e_lv1_mickeyhead_01" posX="30.8" posY="-45" angle="0" scaleX="30" scaleY="30" material="0" />
+    <Object name="e_lv1_ob_01" posX="-0.3391711" posY="-10.00747" angle="318" scaleX="13" scaleY="13" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.1" />
+      </KinematicControls>
+    </Object>
+    <Object name="e_lv1_mickeybrain_01" posX="30.8" posY="-43.2" angle="0" scaleX="28" scaleY="28" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.1" />
+      </KinematicControls>
+    </Object>
+    <Object name="e_lv1_mickeyhead_02" posX="30.83334" posY="-44.99999" angle="0" scaleX="30" scaleY="30" material="0" />
+    <Object name="e_lv1_flat_01" posX="62.26667" posY="-10.2" angle="153" scaleX="6.4" scaleY="4.4" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="itemballoon" posX="31" posY="-67.4" angle="2" scaleX="1" scaleY="1" material="5" />
+    <Object name="e_lv1_ob_01" posX="30.92399" posY="-72.86009" angle="90" scaleX="7" scaleY="6" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="0" posY="0" />
+  <Settings finishX="62" finishY="0" fallLine="-80" />
+</Scene>

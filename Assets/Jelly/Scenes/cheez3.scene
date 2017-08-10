@@ -1,0 +1,70 @@
+<Scene name="Jello Fortress">
+  <Objects>
+    <Object name="castle_Bridge" posX="-70.42542" posY="-12.25143" angle="360" scaleX="1" scaleY="1" material="0" />
+    <Object name="castle_Rock" posX="245.6205" posY="-45.01898" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="10" secondsPerLoop="4" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="castle_Rock" posX="305.5793" posY="-44.9778" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="10" secondsPerLoop="4" startOffset="0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="castle_Rock" posX="285.5968" posY="-45.01113" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="10" secondsPerLoop="4" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="castle_Rock" posX="325.7223" posY="-45.06989" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-10" secondsPerLoop="4" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="castle_Rock" posX="265.7232" posY="-44.94448" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-10" secondsPerLoop="4" startOffset="0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="castle_Rock" posX="345.6931" posY="-54.76108" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="20" secondsPerLoop="6" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="castle_Ground2" posX="504.6003" posY="-20.6" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="castle_Bridge2" posX="475.4994" posY="-13.16656" angle="0" scaleX="0.75" scaleY="0.75" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="1" />
+      </KinematicControls>
+    </Object>
+    <Object name="castle_Bridge2" posX="484.9997" posY="-13.09991" angle="0" scaleX="0.75" scaleY="0.75" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="1" />
+      </KinematicControls>
+    </Object>
+    <Object name="castle_Bridge2" posX="465.7497" posY="-13.06664" angle="0" scaleX="0.75" scaleY="0.75" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="1" />
+      </KinematicControls>
+    </Object>
+    <Object name="castle_Bridge2" posX="456.0006" posY="-13.08338" angle="0" scaleX="0.75" scaleY="0.75" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="1" />
+      </KinematicControls>
+    </Object>
+    <Object name="castle_Bridge2" posX="446.458" posY="-13.04175" angle="0" scaleX="0.75" scaleY="0.75" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="1" />
+      </KinematicControls>
+    </Object>
+    <Object name="castle_ground1b" posX="10" posY="-30" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="castle_ground1c" posX="160" posY="-80" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="castle_ground1d" posX="90" posY="0" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="castle_ground1e" posX="260.722" posY="-70" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="castle_ground1f" posX="280.611" posY="-20" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="castle_ground1g" posX="421.2269" posY="-30.22727" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="castle_ground1a" posX="-121" posY="-2.980232E-09" angle="0" scaleX="1" scaleY="1" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-140" posY="-8" />
+  <Settings finishX="530" finishY="-8" fallLine="-400" />
+</Scene>

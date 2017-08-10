@@ -1,0 +1,16 @@
+<SoftBody name="Scene12_box" massPerPoint="3" edgeK="2000" edgeDamping="15" colorR="1" colorG="0.5019608" colorB="0.2509804" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-1" y="-1" />
+    <Point x="-1" y="1" />
+    <Point x="1" y="1" />
+    <Point x="1" y="-1" />
+  </Points>
+  <Springs>
+    <Spring pt1="2" pt2="0" k="2000" damp="15" />
+    <Spring pt1="3" pt2="1" k="2000" damp="15" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="3" pt1="2" pt2="1" />
+    <Poly pt0="1" pt1="0" pt2="3" />
+  </Polygons>
+</SoftBody>

@@ -1,0 +1,49 @@
+<Scene name="Snaky Snake">
+  <Objects>
+    <Object name="snake_belk" posX="-14.81589" posY="5.688639" angle="360" scaleX="8.838633" scaleY="0.4999999" material="0" />
+    <Object name="snake_1" posX="-29.12471" posY="9.971052" angle="270" scaleX="1.902565" scaleY="3.230769" material="0" />
+    <Object name="snake_belk" posX="-10.08163" posY="13.53567" angle="0" scaleX="11.0694" scaleY="0.451923" material="0" />
+    <Object name="snake_belk" posX="11.60144" posY="-5.775232" angle="270" scaleX="9.963633" scaleY="0.4999999" material="0" />
+    <Object name="snake_belk" posX="3.362052" posY="-13.63054" angle="270" scaleX="9.963633" scaleY="0.4999999" material="0" />
+    <Object name="snake_belk" posX="5.270417" posY="3.554711" angle="0" scaleX="0.7184889" scaleY="0.29198" material="0" />
+    <Object name="snake_belk" posX="9.687081" posY="-0.7577896" angle="0" scaleX="0.7184889" scaleY="0.29198" material="0" />
+    <Object name="snake_belk" posX="5.268476" posY="-4.664768" angle="0" scaleX="0.7184889" scaleY="0.29198" material="0" />
+    <Object name="snake_belk" posX="9.756846" posY="-9.548479" angle="0" scaleX="0.7184889" scaleY="0.29198" material="0" />
+    <Object name="snake_belk" posX="5.175453" posY="-15.33916" angle="0" scaleX="0.7184889" scaleY="0.29198" material="0" />
+    <Object name="snake_belk" posX="9.756844" posY="-20.24614" angle="0" scaleX="0.7184889" scaleY="0.29198" material="0" />
+    <Object name="snake_1" posX="7.875293" posY="-31.17177" angle="360" scaleX="2.545422" scaleY="2.445055" material="0" />
+    <Object name="snake_1" posX="18.37529" posY="-31.17177" angle="360" scaleX="2.545422" scaleY="2.445055" material="0" />
+    <Object name="snake_1" posX="28.89532" posY="-31.17177" angle="360" scaleX="2.545422" scaleY="2.445055" material="0" />
+    <Object name="snake_1" posX="39.49534" posY="-31.17178" angle="360" scaleX="2.545422" scaleY="2.445055" material="0" />
+    <Object name="snake_belk" posX="25.04409" posY="-24.61136" angle="180" scaleX="6.89924" scaleY="0.5096969" material="0" />
+    <Object name="snake_belk" posX="38.19541" posY="-5.197208" angle="270" scaleX="9.963633" scaleY="0.4999999" material="0" />
+    <Object name="snake_belk" posX="53.18429" posY="-15.25831" angle="270" scaleX="9.50808" scaleY="0.4999999" material="0" />
+    <Object name="snake_belk" posX="58.04128" posY="3.402925" angle="360" scaleX="5.981489" scaleY="0.4999999" material="0" />
+    <Object name="snake_belk" posX="5.175453" posY="-27.62486" angle="0" scaleX="0.7184889" scaleY="0.29198" material="0" />
+    <Object name="snake_belk" posX="45.46986" posY="14.11722" angle="360" scaleX="3.838633" scaleY="0.4999999" material="0" />
+    <Object name="snake_belk" posX="56.04129" posY="11.97436" angle="323" scaleX="2.124348" scaleY="0.4999999" material="0" />
+    <Object name="snake_belk" posX="73.46986" posY="4.545784" angle="17" scaleX="2.124348" scaleY="0.4999999" material="0" />
+    <Object name="level06_plat2" posX="49.12576" posY="-33.81277" angle="0" scaleX="0.6666665" scaleY="0.6666665" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="10" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="level06_plat2" posX="49.30758" posY="-14.63096" angle="0" scaleX="0.6666665" scaleY="0.6666665" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="10" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="level06_plat2" posX="42.30758" posY="-13.72187" angle="0" scaleX="0.6666665" scaleY="0.6666665" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-10" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="level06_plat2" posX="42.4894" posY="5.369037" angle="0" scaleX="0.6666665" scaleY="0.6666665" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-10" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+  </Objects>
+  <Car name="car_and_truck" posX="-28" posY="10" />
+  <Settings finishX="83" finishY="6" fallLine="-50" />
+</Scene>

@@ -1,0 +1,19 @@
+<SoftBody name="e_lv5_castle_03" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="1" colorG="0" colorB="0" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.471537" />
+    <Point x="-0.5" y="0.532258" />
+    <Point x="0.1179914" y="0.53141" />
+    <Point x="-0.288175" y="0.3870404" />
+    <Point x="-0.2872178" y="-0.265772" />
+    <Point x="0.47236" y="-0.268501" />
+    <Point x="0.478579" y="-0.4745644" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="3" pt2="2" />
+    <Poly pt0="3" pt1="1" pt2="0" />
+    <Poly pt0="3" pt1="4" pt2="0" />
+    <Poly pt0="4" pt1="0" pt2="6" />
+    <Poly pt0="6" pt1="5" pt2="4" />
+  </Polygons>
+</SoftBody>

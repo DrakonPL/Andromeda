@@ -1,0 +1,35 @@
+<SoftBody name="rockets_plat" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.5019608" colorG="0.5019608" colorB="0.5019608" kinematic="False" shapeMatching="False" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="1.9" y="-1.9" />
+    <Point x="1.6" y="-2" />
+    <Point x="-1.6" y="-2" />
+    <Point x="-1.9" y="-1.9" />
+    <Point x="-2" y="-1.6" />
+    <Point x="-2" y="1.6" />
+    <Point x="-1.9" y="1.9" />
+    <Point x="-1.6" y="2" />
+    <Point x="1.6" y="2" />
+    <Point x="1.9" y="1.9" />
+    <Point x="2" y="1.6" />
+    <Point x="2" y="-1.6" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="7" pt1="8" pt2="9" />
+    <Poly pt0="9" pt1="6" pt2="7" />
+    <Poly pt0="9" pt1="10" pt2="11" />
+    <Poly pt0="11" pt1="0" pt2="9" />
+    <Poly pt0="0" pt1="1" pt2="2" />
+    <Poly pt0="2" pt1="3" pt2="0" />
+    <Poly pt0="3" pt1="4" pt2="5" />
+    <Poly pt0="5" pt1="6" pt2="3" />
+    <Poly pt0="5" pt1="6" pt2="7" />
+    <Poly pt0="8" pt1="9" pt2="10" />
+    <Poly pt0="11" pt1="0" pt2="1" />
+    <Poly pt0="2" pt1="3" pt2="4" />
+    <Poly pt0="2" pt1="4" pt2="8" />
+    <Poly pt0="8" pt1="10" pt2="2" />
+    <Poly pt0="5" pt1="7" pt2="11" />
+    <Poly pt0="11" pt1="1" pt2="5" />
+  </Polygons>
+</SoftBody>

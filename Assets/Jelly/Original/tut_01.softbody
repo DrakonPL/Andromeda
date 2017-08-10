@@ -1,0 +1,19 @@
+<SoftBody name="tut_01" massPerPoint="0" edgeK="0" edgeDamping="0" colorR="0.5019608" colorG="1" colorB="0" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-1.8" y="-0.2" />
+    <Point x="-1.8" y="0" />
+    <Point x="1.4" y="0" />
+    <Point x="1.567331" y="0.02827514" />
+    <Point x="1.691481" y="0.095899" />
+    <Point x="1.8" y="0.2" />
+    <Point x="1.8" y="-0.2" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="6" pt1="5" pt2="4" />
+    <Poly pt0="6" pt1="4" pt2="3" />
+    <Poly pt0="6" pt1="3" pt2="2" />
+    <Poly pt0="6" pt1="2" pt2="1" />
+    <Poly pt0="1" pt1="0" pt2="6" />
+  </Polygons>
+</SoftBody>

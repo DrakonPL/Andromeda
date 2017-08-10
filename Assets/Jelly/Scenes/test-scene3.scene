@@ -1,0 +1,27 @@
+<Scene name="Circus">
+  <Objects>
+    <Object name="scene3_01" posX="-93.87493" posY="-0.3263806" angle="0" scaleX="1" scaleY="1.4" material="0" />
+    <Object name="scene3_02" posX="-50" posY="-1" angle="0" scaleX="0.5" scaleY="1" material="0" />
+    <Object name="scene3_ball" posX="-88.50179" posY="3.100804" angle="0" scaleX="4" scaleY="4" material="1" />
+    <Object name="scene3_02" posX="48.85448" posY="-4.294996" angle="357" scaleX="0.5" scaleY="1" material="0" />
+    <Object name="scene3_01" posX="5.441271" posY="-1.486773" angle="357" scaleX="1" scaleY="1.4" material="0" />
+    <Object name="scene3_ball" posX="12.51733" posY="2.248421" angle="0" scaleX="4" scaleY="4" material="1" />
+    <Object name="scene3_03" posX="-3.278671" posY="1.353969" angle="0" scaleX="0.6" scaleY="0.7" material="0" />
+    <Object name="scene3_03" posX="95.61086" posY="-4.263992" angle="357" scaleX="0.6" scaleY="0.7" material="0" />
+    <Object name="scene3_02" posX="10.25925" posY="-1.888888" angle="1" scaleX="0.08" scaleY="0.6" material="0" />
+    <Object name="scene3_02" posX="118.7949" posY="0.5315795" angle="0" scaleX="0.2" scaleY="1" material="0" />
+    <Object name="scene3_ball2" posX="114.0823" posY="13.8392" angle="46" scaleX="12" scaleY="12" material="1" />
+    <Object name="scene3_04" posX="132.9363" posY="-59.36114" angle="0" scaleX="0.9" scaleY="1" material="0" />
+    <Object name="scene3_02" posX="82.87779" posY="-54.2" angle="0" scaleX="0.2" scaleY="0.3" material="0" />
+    <Object name="scene3_02" posX="-0.1636617" posY="-54.30909" angle="0" scaleX="0.6" scaleY="0.3" material="0" />
+    <Object name="scene3_01" posX="-51.76373" posY="-52.64551" angle="0" scaleX="1.4" scaleY="3.800001" material="0" />
+    <Object name="scene3_02" posX="61.29483" posY="-64.96857" angle="103" scaleX="0.1" scaleY="0.2" material="0" />
+    <Object name="scene3_02" posX="64.62498" posY="-62.9625" angle="102" scaleX="0.08" scaleY="0.2" material="0" />
+    <Object name="scene3_02" posX="94.53231" posY="-79.00932" angle="0" scaleX="0.25" scaleY="0.2" material="0" />
+    <Object name="scene3_02" posX="66.56363" posY="-77.25458" angle="140" scaleX="0.04" scaleY="0.2" material="0" />
+    <Object name="scene3_05" posX="165.8998" posY="-16.92498" angle="0" scaleX="3" scaleY="3" material="0" />
+    <Object name="scene3_05" posX="154" posY="-32.20001" angle="0" scaleX="3" scaleY="3" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-96" posY="10" />
+  <Settings finishX="111" finishY="-77" fallLine="-100" />
+</Scene>

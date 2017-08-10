@@ -1,0 +1,65 @@
+<Scene name="The Grinder">
+  <Objects>
+    <Object name="grinder_01" posX="51.03431" posY="5.731416" angle="0" scaleX="6" scaleY="6" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="grinder_plat1" posX="0" posY="-1.5" angle="0" scaleX="1" scaleY="0.5" material="0" />
+    <Object name="grinder_plat1" posX="4.000001" posY="-1.5" angle="180" scaleX="1" scaleY="0.5" material="0" />
+    <Object name="grinder_plat1" posX="8" posY="-1.5" angle="0" scaleX="1" scaleY="0.5" material="0" />
+    <Object name="grinder_plat1" posX="12" posY="-1.5" angle="180" scaleX="1" scaleY="0.5" material="0" />
+    <Object name="grinder_plat1" posX="16" posY="-1.5" angle="0" scaleX="1" scaleY="0.5" material="0" />
+    <Object name="grinder_plat1" posX="-4.000001" posY="-1.5" angle="180" scaleX="1" scaleY="0.5" material="0" />
+    <Object name="grinder_plat1" posX="20.77332" posY="-0.2777766" angle="29" scaleX="1" scaleY="0.5" material="0" />
+    <Object name="grinder_plat1" posX="29.21774" posY="-0.1666655" angle="337" scaleX="1" scaleY="0.5" material="0" />
+    <Object name="grinder_plat1" posX="35" posY="-1.6" angle="0" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="43" posY="-1.6" angle="180" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="51" posY="-1.6" angle="0" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="59" posY="-1.6" angle="180" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="67" posY="-1.6" angle="0" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="75" posY="-1.6" angle="180" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="83" posY="-1.6" angle="0" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="91" posY="-1.6" angle="180" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="99" posY="-1.6" angle="0" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="75" posY="2.5" angle="180" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="83" posY="2.4" angle="0" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="91" posY="2.3" angle="180" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="99" posY="2.2" angle="0" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="83" posY="7" angle="0" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="91" posY="7" angle="180" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="99" posY="7" angle="0" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="91" posY="12" angle="180" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="107" posY="-1.6" angle="180" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="115" posY="-1.6" angle="0" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="107" posY="2.3" angle="180" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="124.4666" posY="-1.466667" angle="0" scaleX="1.5" scaleY="2" material="0" />
+    <Object name="grinder_plat1" posX="131.2666" posY="-1.2" angle="0" scaleX="1.5" scaleY="2" material="0" />
+    <Object name="grinder_plat1" posX="138.1331" posY="-0.8666663" angle="0" scaleX="1.5" scaleY="2" material="0" />
+    <Object name="grinder_plat1" posX="144.933" posY="0.2000004" angle="0" scaleX="1.5" scaleY="2" material="0" />
+    <Object name="grinder_plat1" posX="152.3551" posY="1.777778" angle="180" scaleX="1.5" scaleY="2" material="0" />
+    <Object name="grinder_plat1" posX="159.0884" posY="4.400001" angle="180" scaleX="1.5" scaleY="2" material="0" />
+    <Object name="grinder_01" posX="140.8342" posY="18.53143" angle="0" scaleX="14" scaleY="14" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="grinder_plat1" posX="166.8" posY="4.6" angle="0" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="176.8625" posY="4.6125" angle="180" scaleX="3" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="189.925" posY="4.6" angle="0" scaleX="3.5" scaleY="1.5" material="0" />
+    <Object name="grinder_plat1" posX="204.0626" posY="4.6125" angle="180" scaleX="3.5" scaleY="1.5" material="0" />
+    <Object name="grinder_01" posX="215.3069" posY="14.78596" angle="314" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-1.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="grinder_01" posX="194.5981" posY="15.91323" angle="40" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="1.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="grinder_arrow" posX="204.0542" posY="5.40571" angle="0" scaleX="0.96" scaleY="1.679999" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-4" posY="-0.5" />
+  <Settings finishX="206" finishY="37" fallLine="-20" />
+</Scene>

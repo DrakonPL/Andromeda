@@ -1,0 +1,21 @@
+<SoftBody name="PROMPT_U" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.7529412" colorG="0.7529412" colorB="0.7529412" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="0" y="0.5" />
+    <Point x="0" y="0" />
+    <Point x="0.5" y="0" />
+    <Point x="0.5" y="0.5" />
+    <Point x="1" y="0.5" />
+    <Point x="1" y="-0.5" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="0" pt1="2" pt2="1" />
+    <Poly pt0="0" pt1="3" pt2="2" />
+    <Poly pt0="0" pt1="4" pt2="3" />
+    <Poly pt0="4" pt1="0" pt2="7" />
+    <Poly pt0="7" pt1="6" pt2="4" />
+    <Poly pt0="4" pt1="6" pt2="5" />
+  </Polygons>
+</SoftBody>

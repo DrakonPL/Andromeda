@@ -1,0 +1,35 @@
+<SoftBody name="scene3_04" massPerPoint="0" edgeK="0" edgeDamping="0" colorR="0.5019608" colorG="0.5019608" colorB="1" kinematic="False" shapeMatching="False" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="8.875003" y="18.25002" />
+    <Point x="10.42816" y="16.01481" />
+    <Point x="4.497604" y="11.13981" />
+    <Point x="-2.252396" y="5.556479" />
+    <Point x="-9.252396" y="2.389811" />
+    <Point x="-18.2524" y="-0.1101875" />
+    <Point x="-28.16906" y="-0.1101875" />
+    <Point x="-34.56489" y="1.243979" />
+    <Point x="-34.58573" y="5.014811" />
+    <Point x="-27.91906" y="5.056477" />
+    <Point x="-23.75239" y="4.306478" />
+    <Point x="-17.83571" y="4.306478" />
+    <Point x="-11.41905" y="5.223145" />
+    <Point x="-5.669052" y="7.306479" />
+    <Point x="2.414276" y="12.55648" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="14" />
+    <Poly pt0="14" pt1="2" pt2="1" />
+    <Poly pt0="2" pt1="14" pt2="13" />
+    <Poly pt0="13" pt1="3" pt2="2" />
+    <Poly pt0="3" pt1="13" pt2="12" />
+    <Poly pt0="12" pt1="4" pt2="3" />
+    <Poly pt0="4" pt1="12" pt2="11" />
+    <Poly pt0="11" pt1="5" pt2="4" />
+    <Poly pt0="5" pt1="11" pt2="10" />
+    <Poly pt0="10" pt1="6" pt2="5" />
+    <Poly pt0="6" pt1="10" pt2="9" />
+    <Poly pt0="9" pt1="8" pt2="6" />
+    <Poly pt0="6" pt1="8" pt2="7" />
+  </Polygons>
+</SoftBody>

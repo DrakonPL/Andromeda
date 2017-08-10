@@ -1,0 +1,13 @@
+<SoftBody name="n_lv8_ground_02" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.5019608" colorG="0.5019608" colorB="1" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="0.5" y="0.5" />
+    <Point x="0.5012891" y="-0.5006498" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="2" pt1="3" pt2="0" />
+    <Poly pt0="0" pt1="1" pt2="2" />
+  </Polygons>
+</SoftBody>

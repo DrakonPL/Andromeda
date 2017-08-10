@@ -1,0 +1,16 @@
+<SoftBody name="scene9_movingplat1" massPerPoint="1" edgeK="500" edgeDamping="15" colorR="0" colorG="0.2509804" colorB="0.5019608" kinematic="True" shapeMatching="True" shapeK="500" shapeDamping="15">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="0.5" y="0.5" />
+    <Point x="0.5" y="-0.5" />
+  </Points>
+  <Springs>
+    <Spring pt1="3" pt2="1" k="700" damp="15" />
+    <Spring pt1="2" pt2="0" k="700" damp="15" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="0" pt1="3" pt2="2" />
+    <Poly pt0="2" pt1="1" pt2="0" />
+  </Polygons>
+</SoftBody>

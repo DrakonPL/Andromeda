@@ -1,0 +1,15 @@
+<Scene name="carcustom">
+  <Objects>
+    <Object name="custom_ground01_menu" posX="0" posY="10.44478" angle="0" scaleX="19" scaleY="1" material="0" />
+    <Object name="custom_ground01_menu" posX="14.39243" posY="0.7632338" angle="270" scaleX="13.6" scaleY="1" material="0" />
+    <Object name="custom_ground01_menu" posX="0" posY="-8.239726" angle="0" scaleX="19" scaleY="1" material="0" />
+    <Object name="custom_ground01_menu" posX="-14.04316" posY="0.7739524" angle="270" scaleX="13.6" scaleY="1" material="0" />
+    <Object name="options_secret" posX="0.1577454" posY="-4.891391" angle="0" scaleX="4" scaleY="4" material="1" />
+    <Object name="options_libs" posX="-2.849968" posY="0.1470279" angle="0" scaleX="4" scaleY="4" material="1" />
+    <Object name="options_credits" posX="-5.324817" posY="5.31123" angle="0" scaleX="4" scaleY="4" material="1" />
+    <Object name="options_keys" posX="3.385965" posY="-0.03508662" angle="0" scaleX="4" scaleY="4" material="1" />
+    <Object name="options_sound" posX="6.280696" posY="5.122804" angle="0" scaleX="4" scaleY="4" material="1" />
+  </Objects>
+  <Car name="car_and_truck" posX="0" posY="6" />
+  <Settings finishX="200" finishY="200" fallLine="-100" />
+</Scene>

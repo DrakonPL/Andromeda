@@ -1,0 +1,99 @@
+<Scene name="homeward bound">
+  <Objects>
+    <Object name="homewardlift" posX="0.01086151" posY="-2.207253" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="homewardground" posX="10.65966" posY="59.91311" angle="0" scaleX="1.5" scaleY="1" material="0" />
+    <Object name="homewardground" posX="-10.94035" posY="59.91294" angle="360" scaleX="1.5" scaleY="1" material="0" />
+    <Object name="homewardarrow" posX="-8.09683" posY="27.12541" angle="360" scaleX="1" scaleY="1" material="0" />
+    <Object name="homewardarrow" posX="8.179354" posY="39.29044" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="homewardarrow" posX="0.6355224" posY="70.80457" angle="269" scaleX="1" scaleY="1" material="0" />
+    <Object name="homewardarrow" posX="8.169827" posY="27.27777" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="homewardarrow" posX="-8.280965" posY="39.37777" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="homewardarrow" posX="-7.255664" posY="56.39014" angle="325" scaleX="1" scaleY="1" material="0" />
+    <Object name="homewardground" posX="26.12704" posY="57.53716" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="homewardground" posX="82.61944" posY="76.58856" angle="0" scaleX="2" scaleY="1" material="0" />
+    <Object name="homewardlift" posX="38.58679" posY="57.189" angle="0" scaleX="0.9" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="20" secondsPerLoop="5" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="homewardlift" posX="63.73323" posY="56.92828" angle="0" scaleX="0.9" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="20" secondsPerLoop="5" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="homewardarrow" posX="7.516653" posY="56.58609" angle="34" scaleX="1" scaleY="1" material="0" />
+    <Object name="homewardground" posX="-8.213079" posY="70.18571" angle="270" scaleX="1.5" scaleY="1" material="0" />
+    <Object name="homewardlift" posX="110.6902" posY="63.95687" angle="90" scaleX="2" scaleY="3" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="20" secondsPerLoop="8" startOffset="0.6" />
+      </KinematicControls>
+    </Object>
+    <Object name="homewardlift" posX="116.9829" posY="63.89259" angle="90" scaleX="2" scaleY="3" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="20" secondsPerLoop="8" startOffset="1" />
+      </KinematicControls>
+    </Object>
+    <Object name="homewardlift" posX="98.233" posY="64.18554" angle="90" scaleX="2" scaleY="3" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="20" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="homewardlift" posX="104.4188" posY="64.08551" angle="90" scaleX="2" scaleY="3" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="20" secondsPerLoop="8" startOffset="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="homewardground" posX="136.9528" posY="75.41263" angle="128" scaleX="4" scaleY="1" material="4" />
+    <Object name="homewardground" posX="187.1762" posY="41.99376" angle="90" scaleX="2" scaleY="1" material="4" />
+    <Object name="homewardground" posX="214.1761" posY="41.77557" angle="90" scaleX="2" scaleY="1" material="4" />
+    <Object name="homewardground" posX="200.6851" posY="30.77564" angle="0" scaleX="2" scaleY="1" material="4" />
+    <Object name="homewardground" posX="231.6488" posY="55.24833" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="homeward_cube" posX="182.053" posY="67.93887" angle="0" scaleX="11" scaleY="11" material="1" />
+    <Object name="homewardground" posX="170.0098" posY="55.17561" angle="0" scaleX="3" scaleY="1" material="0" />
+    <Object name="homewardground" posX="287.0394" posY="55.10192" angle="0" scaleX="3.5" scaleY="1" material="0" />
+    <Object name="homewardlift" posX="235.9886" posY="55.28386" angle="0" scaleX="0.9" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="18" secondsPerLoop="7" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="homeward_bridge" posX="246.2533" posY="66.9035" angle="0" scaleX="1" scaleY="1.5" material="1" />
+    <Object name="homewardhome" posX="302.2998" posY="63.30014" angle="90" scaleX="2.5" scaleY="3" material="0" />
+    <Object name="homewardhome" posX="304.8996" posY="70.30015" angle="40" scaleX="4" scaleY="3" material="0" />
+    <Object name="homewardhome" posX="318.6181" posY="69.80012" angle="140" scaleX="4" scaleY="3" material="0" />
+    <Object name="homewardhome" posX="320.9127" posY="60.10007" angle="90" scaleX="4" scaleY="3" material="0" />
+    <Object name="homewardhome" posX="307.6007" posY="63.6763" angle="0" scaleX="2" scaleY="1" material="0" />
+    <Object name="homewardhome" posX="308.8389" posY="56.6375" angle="0" scaleX="0.5" scaleY="1" material="0" />
+    <Object name="homewardhome" posX="310.2599" posY="57.24276" angle="0" scaleX="0.5" scaleY="1" material="0" />
+    <Object name="homewardhome" posX="311.7335" posY="57.82171" angle="0" scaleX="0.5" scaleY="1" material="0" />
+    <Object name="homewardhome" posX="312.9968" posY="58.40066" angle="0" scaleX="0.5" scaleY="1" material="0" />
+    <Object name="homewardhome" posX="314.4705" posY="58.97959" angle="0" scaleX="0.5" scaleY="1" material="0" />
+    <Object name="homewardhome" posX="315.8125" posY="59.55853" angle="0" scaleX="0.5" scaleY="1" material="0" />
+    <Object name="homewardhome" posX="318.3439" posY="60.13747" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="homewardhome" posX="312.0231" posY="63.03225" angle="0" scaleX="0.5" scaleY="1" material="0" />
+    <Object name="homewardhome" posX="313.4177" posY="62.37436" angle="0" scaleX="0.5" scaleY="1" material="0" />
+    <Object name="homewardground" posX="307.7742" posY="64.82254" angle="90" scaleX="0.15" scaleY="0.1" material="0" />
+    <Object name="homewardground" posX="304.0117" posY="64.82249" angle="90" scaleX="0.15" scaleY="0.1" material="0" />
+    <Object name="homewardlift" posX="305.8928" posY="64.55511" angle="0" scaleX="0.26" scaleY="0.6" material="0" />
+    <Object name="homewardlift" posX="304.9402" posY="65.49925" angle="0" scaleX="0.1" scaleY="0.3" material="0" />
+    <Object name="homewardhome" posX="314.1233" posY="55.43701" angle="0" scaleX="4" scaleY="3" material="0" />
+    <Object name="homewardground" posX="307.3518" posY="74.15877" angle="90" scaleX="0.4" scaleY="1" material="0" />
+    <Object name="homewardhome" posX="311.9641" posY="75.14162" angle="0" scaleX="0.6" scaleY="3" material="0" />
+    <Object name="homewardlift" posX="13.75823" posY="-2.196726" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="20" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="homewardlift" posX="-13.44177" posY="-1.996726" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="20" secondsPerLoop="10" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="homewardlift" posX="0.1582276" posY="17.80328" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="40" secondsPerLoop="20" startOffset="0" />
+      </KinematicControls>
+    </Object>
+  </Objects>
+  <Car name="car_and_truck" posX="0" posY="2" />
+  <Settings finishX="306" finishY="66" fallLine="-5" />
+</Scene>

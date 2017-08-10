@@ -1,0 +1,17 @@
+<SoftBody name="n_lv3_flat_01" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.5019608" colorG="0.5019608" colorB="0" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="0.5" y="0.5" />
+    <Point x="0.5266576" y="2.34759" />
+    <Point x="0.8266573" y="2.569811" />
+    <Point x="0.8266388" y="-0.502761" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="2" />
+    <Poly pt0="2" pt1="5" pt2="0" />
+    <Poly pt0="2" pt1="3" pt2="5" />
+    <Poly pt0="5" pt1="3" pt2="4" />
+  </Polygons>
+</SoftBody>

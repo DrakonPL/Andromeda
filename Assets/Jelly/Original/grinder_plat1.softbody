@@ -1,0 +1,25 @@
+<SoftBody name="grinder_plat1" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.2862745" colorG="0.2901961" colorB="0.282353" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-2" y="-0.6" />
+    <Point x="-2" y="0.6" />
+    <Point x="-1" y="0.2" />
+    <Point x="0" y="0.1" />
+    <Point x="1" y="0.2" />
+    <Point x="2" y="0.6" />
+    <Point x="2" y="-0.6" />
+    <Point x="1" y="-1" />
+    <Point x="0" y="-1.1" />
+    <Point x="-1" y="-1" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="6" pt1="5" pt2="4" />
+    <Poly pt0="4" pt1="7" pt2="6" />
+    <Poly pt0="7" pt1="4" pt2="3" />
+    <Poly pt0="3" pt1="8" pt2="7" />
+    <Poly pt0="8" pt1="3" pt2="2" />
+    <Poly pt0="2" pt1="9" pt2="8" />
+    <Poly pt0="9" pt1="2" pt2="1" />
+    <Poly pt0="1" pt1="0" pt2="9" />
+  </Polygons>
+</SoftBody>

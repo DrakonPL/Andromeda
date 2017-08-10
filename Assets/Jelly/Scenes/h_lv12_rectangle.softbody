@@ -1,0 +1,13 @@
+<SoftBody name="h_lv12_rectangle" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.6784314" colorG="1" colorB="0.1803922" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="3.04286" y="0.5" />
+    <Point x="2.864487" y="-0.4720485" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="3" pt1="1" pt2="2" />
+    <Poly pt0="3" pt1="0" pt2="1" />
+  </Polygons>
+</SoftBody>

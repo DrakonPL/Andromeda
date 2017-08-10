@@ -1,0 +1,25 @@
+<SoftBody name="Scene12_plunger" massPerPoint="15" edgeK="3000" edgeDamping="20" colorR="0.5019608" colorG="0.5019608" colorB="0.5019608" kinematic="True" shapeMatching="True" shapeK="3000" shapeDamping="20">
+  <Points>
+    <Point x="-0.2" y="-0.6" />
+    <Point x="-0.6" y="0.6" />
+    <Point x="-0.6" y="2" />
+    <Point x="0.6" y="2" />
+    <Point x="0.6" y="0.6" />
+    <Point x="0.2" y="-0.6" />
+  </Points>
+  <Springs>
+    <Spring pt1="1" pt2="4" k="3000" damp="20" />
+    <Spring pt1="4" pt2="2" k="3000" damp="20" />
+    <Spring pt1="3" pt2="1" k="3000" damp="20" />
+    <Spring pt1="0" pt2="4" k="3000" damp="20" />
+    <Spring pt1="5" pt2="1" k="3000" damp="20" />
+    <Spring pt1="0" pt2="3" k="3000" damp="20" />
+    <Spring pt1="5" pt2="2" k="3000" damp="20" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="3" pt1="4" pt2="1" />
+    <Poly pt0="1" pt1="2" pt2="3" />
+    <Poly pt0="4" pt1="5" pt2="0" />
+    <Poly pt0="0" pt1="1" pt2="4" />
+  </Polygons>
+</SoftBody>

@@ -1,0 +1,716 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Andromeda">
+      <UniqueIdentifier>{615ec6b1-0b46-432c-b1a8-a2b097532ffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\System">
+      <UniqueIdentifier>{3b6e9578-7272-47fe-abed-2a0efa31b687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\System\GLFW">
+      <UniqueIdentifier>{90cf1ae6-9191-4b5c-8976-f77273fa1ba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\Graphics">
+      <UniqueIdentifier>{1ed6815e-0fa3-4cca-acac-2f5d9cd11c08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\FileSystem">
+      <UniqueIdentifier>{dc01c5aa-e0d6-4777-a85b-ec0a9314ed76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\Utils">
+      <UniqueIdentifier>{83390f2a-a9e5-4131-844a-cb33bb24c932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\Graphics\GL">
+      <UniqueIdentifier>{0b8f4741-a452-4007-8345-114ef22eb3ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\FileSystem\Stdio">
+      <UniqueIdentifier>{5f3d2498-6a25-49fa-99d7-b4a0f1de16d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\Input">
+      <UniqueIdentifier>{54ad5325-2d19-4c2a-a16c-136ef0cc5942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\Input\GLFW">
+      <UniqueIdentifier>{679abf06-fb37-4b52-b044-4e8424650dea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{959fcc2a-58fc-40a8-91e0-eda043ab0a48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\Graphics\Text">
+      <UniqueIdentifier>{5b3ad458-0fa1-4a24-be69-12fd5af88c07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{b74eb000-0468-4056-8e82-7a23ac790edc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\FTGL">
+      <UniqueIdentifier>{668e3bbf-f50e-4e85-863d-93ba1b88d5be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\Graphics\Models">
+      <UniqueIdentifier>{8c089469-3460-4b9c-8017-962b7d4ddbee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\JellyPhysic">
+      <UniqueIdentifier>{ab4731c6-238f-4540-9afb-a5b9374f22cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\TinyXml">
+      <UniqueIdentifier>{76cbb47a-2846-417c-b645-0d2c70f398dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\Audio">
+      <UniqueIdentifier>{391e0940-294f-4619-93f7-e15e4ae067fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\Audio\IrrKlang">
+      <UniqueIdentifier>{99d10189-4f9c-4c2b-9cc3-893a53589cc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\Threading">
+      <UniqueIdentifier>{27046ba8-4a80-41da-b2bb-b3f3cb6e3835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\Threading\Windows">
+      <UniqueIdentifier>{de087661-6ec5-4abc-a59f-c4cf9a9ab53c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\tiny_obj_loader">
+      <UniqueIdentifier>{956ec4f8-bdf6-4dae-9057-8c5db3d6394a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\Network">
+      <UniqueIdentifier>{6f6d509c-8ca0-40f0-88e9-fc183b58c790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\Network\WinSock">
+      <UniqueIdentifier>{f15d77a1-1c83-4771-9221-900c2125bafc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\Video">
+      <UniqueIdentifier>{3e019f4e-cc43-4ee4-8642-821cc1f67c7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andromeda\Video\FFmpeg">
+      <UniqueIdentifier>{abbab878-3844-4929-a078-231fbf6c54c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Andromeda\System\GameManager.cpp">
+      <Filter>Andromeda\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\System\GameState.cpp">
+      <Filter>Andromeda\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\System\GameLoader.cpp">
+      <Filter>Andromeda\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\System\SystemManager.cpp">
+      <Filter>Andromeda\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\System\GLFW\GlfwGameLoader.cpp">
+      <Filter>Andromeda\System\GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\RenderManager.cpp">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Shader.cpp">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Sprite.cpp">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\TextureManager.cpp">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\FileSystem\BaseFile.cpp">
+      <Filter>Andromeda\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\FileSystem\FileManager.cpp">
+      <Filter>Andromeda\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Utils\Logger.cpp">
+      <Filter>Andromeda\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\GL\RenderManagerGL3.cpp">
+      <Filter>Andromeda\Graphics\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\VertexBufferObject.cpp">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\VertexArrayObject.cpp">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\GL\ShaderGlsl.cpp">
+      <Filter>Andromeda\Graphics\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\ShaderManager.cpp">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\GL\VertexArrayObjectGL3.cpp">
+      <Filter>Andromeda\Graphics\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\GL\VertexBufferObjectGL3.cpp">
+      <Filter>Andromeda\Graphics\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\FileSystem\Stdio\StdioFile.cpp">
+      <Filter>Andromeda\FileSystem\Stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Input\InputManager.cpp">
+      <Filter>Andromeda\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Input\GLFW\MouseDeviceGlfw.cpp">
+      <Filter>Andromeda\Input\GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Input\GLFW\KeyboardDeviceGlfw.cpp">
+      <Filter>Andromeda\Input\GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Input\GLFW\InputManagerGlfw.cpp">
+      <Filter>Andromeda\Input\GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Texture.cpp">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\System\SystemEnums.h">
+      <Filter>Andromeda\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\System\MemoryManager.cpp">
+      <Filter>Andromeda\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\System\GLFW\MemoryManagerGlfw.cpp">
+      <Filter>Andromeda\System\GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Camera3d.cpp">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\System\Timer.cpp">
+      <Filter>Andromeda\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\FrameBufferObject.cpp">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\GL\FrameBufferObjectGL3.cpp">
+      <Filter>Andromeda\Graphics\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Text\TextureAtlas.cpp">
+      <Filter>Andromeda\Graphics\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\freetype_gl\distance-field.c">
+      <Filter>Libs\FTGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\freetype_gl\edtaa3func.c">
+      <Filter>Libs\FTGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\freetype_gl\font-manager.c">
+      <Filter>Libs\FTGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\freetype_gl\platform.c">
+      <Filter>Libs\FTGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\freetype_gl\texture-atlas.c">
+      <Filter>Libs\FTGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\freetype_gl\texture-font.c">
+      <Filter>Libs\FTGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\freetype_gl\utf8-utils.c">
+      <Filter>Libs\FTGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\freetype_gl\vector.c">
+      <Filter>Libs\FTGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Text\FontManager.cpp">
+      <Filter>Andromeda\Graphics\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Text\TexturedFont.cpp">
+      <Filter>Andromeda\Graphics\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Models\ModelObj.cpp">
+      <Filter>Andromeda\Graphics\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\AABB.cpp">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\Body.cpp">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\ClosedShape.cpp">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\InternalSpring.cpp">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\PointMass.cpp">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\PressureBody.cpp">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\SpringBody.cpp">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\Vector2.cpp">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\VectorTools.cpp">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\JellyPhysics\World.cpp">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\tinyxml\tinyxml.cpp">
+      <Filter>Libs\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\tinyxml\tinystr.cpp">
+      <Filter>Libs\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\tinyxml\tinyxmlerror.cpp">
+      <Filter>Libs\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\tinyxml\tinyxmlparser.cpp">
+      <Filter>Libs\TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\FileSystem\Stdio\StdioDirectory.cpp">
+      <Filter>Andromeda\FileSystem\Stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\FileSystem\BaseDirectory.cpp">
+      <Filter>Andromeda\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Audio\AudioManager.cpp">
+      <Filter>Andromeda\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Threading\Mutex.cpp">
+      <Filter>Andromeda\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Threading\Thread.cpp">
+      <Filter>Andromeda\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Threading\Lock.cpp">
+      <Filter>Andromeda\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Threading\Win32\WinMutex.cpp">
+      <Filter>Andromeda\Threading\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Threading\Win32\WinThread.cpp">
+      <Filter>Andromeda\Threading\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Threading\Sleep.cpp">
+      <Filter>Andromeda\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Threading\WinSleep.cpp">
+      <Filter>Andromeda\Threading\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Audio\Sound.cpp">
+      <Filter>Andromeda\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Audio\IrrKlang\IrrAudioManager.cpp">
+      <Filter>Andromeda\Audio\IrrKlang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Audio\IrrKlang\IrrSound.cpp">
+      <Filter>Andromeda\Audio\IrrKlang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\tiny_obj_loader\tiny_obj_loader.cpp">
+      <Filter>Libs\tiny_obj_loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Network\TcpSocket.cpp">
+      <Filter>Andromeda\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Network\NetworkManager.cpp">
+      <Filter>Andromeda\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Network\WinSock\WinSockNetworkManager.cpp">
+      <Filter>Andromeda\Network\WinSock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Network\WinSock\WinSockTcpSocket.cpp">
+      <Filter>Andromeda\Network\WinSock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Network\Packet.cpp">
+      <Filter>Andromeda\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Input\GLFW\GamepadDeviceGlfw.cpp">
+      <Filter>Andromeda\Input\GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Video\FFmpeg\AvUtils.cpp">
+      <Filter>Andromeda\Video\FFmpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Video\FFmpeg\AvVideoPlayer.cpp">
+      <Filter>Andromeda\Video\FFmpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Video\Movie.cpp">
+      <Filter>Andromeda\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Video\VideoManager.cpp">
+      <Filter>Andromeda\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Video\FFmpeg\FFmpegMovie.cpp">
+      <Filter>Andromeda\Video\FFmpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Video\FFmpeg\FFmpegVideoManager.cpp">
+      <Filter>Andromeda\Video\FFmpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Andromeda\Graphics\Models\ModelMaterial.cpp">
+      <Filter>Andromeda\Graphics\Models</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Andromeda\System\GameManager.h">
+      <Filter>Andromeda\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\System\GameState.h">
+      <Filter>Andromeda\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\System\GameLoader.h">
+      <Filter>Andromeda\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\System\SystemManager.h">
+      <Filter>Andromeda\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\System\GLFW\GlfwGameLoader.h">
+      <Filter>Andromeda\System\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\RenderManager.h">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Shader.h">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Sprite.h">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\TextureManager.h">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\FileSystem\BaseFile.h">
+      <Filter>Andromeda\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\FileSystem\FileManager.h">
+      <Filter>Andromeda\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Utils\Logger.h">
+      <Filter>Andromeda\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Utils\PlatformConfigurator.h">
+      <Filter>Andromeda\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\GL\RenderManagerGL3.h">
+      <Filter>Andromeda\Graphics\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\VertexBufferObject.h">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\VertexArrayObject.h">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\VertexTypes.h">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\GL\ShaderGlsl.h">
+      <Filter>Andromeda\Graphics\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\ShaderManager.h">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\GL\VertexArrayObjectGL3.h">
+      <Filter>Andromeda\Graphics\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\GL\VertexBufferObjectGL3.h">
+      <Filter>Andromeda\Graphics\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\FileSystem\Stdio\StdioFile.h">
+      <Filter>Andromeda\FileSystem\Stdio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\GraphicsEnums.h">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Input\InputDevice.h">
+      <Filter>Andromeda\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Input\InputManager.h">
+      <Filter>Andromeda\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Input\InputEnums.h">
+      <Filter>Andromeda\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Input\KeyboardDevice.h">
+      <Filter>Andromeda\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Input\MouseDevice.h">
+      <Filter>Andromeda\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Input\TouchDevice.h">
+      <Filter>Andromeda\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Input\GamepadDevice.h">
+      <Filter>Andromeda\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Input\GLFW\KeyboardDeviceGlfw.h">
+      <Filter>Andromeda\Input\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Input\GLFW\InputManagerGlfw.h">
+      <Filter>Andromeda\Input\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Input\GLFW\MouseDeviceGlfw.h">
+      <Filter>Andromeda\Input\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Texture.h">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\System\MemoryManager.h">
+      <Filter>Andromeda\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\System\GLFW\MemoryManagerGlfw.h">
+      <Filter>Andromeda\System\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Camera3d.h">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\System\Timer.h">
+      <Filter>Andromeda\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\FrameBufferObject.h">
+      <Filter>Andromeda\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\GL\FrameBufferObjectGL3.h">
+      <Filter>Andromeda\Graphics\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Text\TextureAtlas.h">
+      <Filter>Andromeda\Graphics\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\freetype_gl\distance-field.h">
+      <Filter>Libs\FTGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\freetype_gl\edtaa3func.h">
+      <Filter>Libs\FTGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\freetype_gl\font-manager.h">
+      <Filter>Libs\FTGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\freetype_gl\markup.h">
+      <Filter>Libs\FTGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\freetype_gl\platform.h">
+      <Filter>Libs\FTGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\freetype_gl\texture-atlas.h">
+      <Filter>Libs\FTGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\freetype_gl\texture-font.h">
+      <Filter>Libs\FTGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\freetype_gl\utf8-utils.h">
+      <Filter>Libs\FTGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\freetype_gl\vec234.h">
+      <Filter>Libs\FTGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\freetype_gl\vector.h">
+      <Filter>Libs\FTGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Text\FontManager.h">
+      <Filter>Andromeda\Graphics\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Text\TexturedFont.h">
+      <Filter>Andromeda\Graphics\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Models\ModelObj.h">
+      <Filter>Andromeda\Graphics\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Models\ModelMesh.h">
+      <Filter>Andromeda\Graphics\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Models\ModelMaterial.h">
+      <Filter>Andromeda\Graphics\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Graphics\Text\TextPart.h">
+      <Filter>Andromeda\Graphics\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\AABB.h">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\Bitmask.h">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\Body.h">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\ClosedShape.h">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\InternalSpring.h">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\JellyPhysics.h">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\JellyPrerequisites.h">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\PointMass.h">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\PressureBody.h">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\SpringBody.h">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\Vector2.h">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\VectorTools.h">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\JellyPhysics\World.h">
+      <Filter>Libs\JellyPhysic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\tinyxml\tinyxml.h">
+      <Filter>Libs\TinyXml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\tinyxml\tinystr.h">
+      <Filter>Libs\TinyXml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\FileSystem\BaseDirectory.h">
+      <Filter>Andromeda\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\FileSystem\Stdio\StdioDirectory.h">
+      <Filter>Andromeda\FileSystem\Stdio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Audio\AudioManager.h">
+      <Filter>Andromeda\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Audio\Sound.h">
+      <Filter>Andromeda\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Audio\IrrKlang\IrrSound.h">
+      <Filter>Andromeda\Audio\IrrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Threading\Mutex.h">
+      <Filter>Andromeda\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Threading\Thread.h">
+      <Filter>Andromeda\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Threading\Lock.h">
+      <Filter>Andromeda\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Threading\BaseThread.h">
+      <Filter>Andromeda\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Threading\BaseMutex.h">
+      <Filter>Andromeda\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Threading\Win32\WinMutex.h">
+      <Filter>Andromeda\Threading\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Threading\Win32\WinThread.h">
+      <Filter>Andromeda\Threading\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Threading\Win32\WinSleep.h">
+      <Filter>Andromeda\Threading\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Threading\Sleep.h">
+      <Filter>Andromeda\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Audio\IrrKlang\IrrAudioManager.h">
+      <Filter>Andromeda\Audio\IrrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libs\tiny_obj_loader\tiny_obj_loader.h">
+      <Filter>Libs\tiny_obj_loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Network\TcpSocket.h">
+      <Filter>Andromeda\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Network\NetworkManager.h">
+      <Filter>Andromeda\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Network\WinSock\WinSockNetworkManager.h">
+      <Filter>Andromeda\Network\WinSock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Network\WinSock\WinSockTcpSocket.h">
+      <Filter>Andromeda\Network\WinSock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Network\Packet.h">
+      <Filter>Andromeda\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Input\GLFW\GamepadDeviceGlfw.h">
+      <Filter>Andromeda\Input\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Video\FFmpeg\AvUtils.h">
+      <Filter>Andromeda\Video\FFmpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Video\FFmpeg\AvVideoPlayer.h">
+      <Filter>Andromeda\Video\FFmpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Video\Movie.h">
+      <Filter>Andromeda\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Video\VideoManager.h">
+      <Filter>Andromeda\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Video\FFmpeg\FFmpegMovie.h">
+      <Filter>Andromeda\Video\FFmpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Andromeda\Video\FFmpeg\FFmpegVideoManager.h">
+      <Filter>Andromeda\Video\FFmpeg</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Assets\Shaders\font.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\lightening1_cube.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\lightening1_lamp.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\lightening2_cube.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\simple_color_transform.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\simple_color_uniform.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\simple_triangle.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\sprite.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\vertex_color.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\vertex_color_texture.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\vertex_color_texture_transform.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\vertex_texture_transform.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\font.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\lightening1_cube.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\lightening1_lamp.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\lightening2_cube.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\simple_color_transform.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\simple_triangle.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\sprite.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\vertex_color.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\vertex_color_texture.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\vertex_color_texture_transform.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\vertex_color_texture_transform_3d.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\vertex_texture_transform.vert">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

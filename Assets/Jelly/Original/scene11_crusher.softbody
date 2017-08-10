@@ -1,0 +1,25 @@
+<SoftBody name="scene11_crusher" massPerPoint="20" edgeK="3000" edgeDamping="20" colorR="0" colorG="0.5019608" colorB="0.7529412" kinematic="True" shapeMatching="True" shapeK="3000" shapeDamping="20">
+  <Points>
+    <Point x="-0.8" y="-0.6" />
+    <Point x="-1" y="-0.4" />
+    <Point x="-1" y="0.6" />
+    <Point x="1" y="0.6" />
+    <Point x="1" y="-0.4" />
+    <Point x="0.8" y="-0.6" />
+  </Points>
+  <Springs>
+    <Spring pt1="4" pt2="1" k="1500" damp="20" />
+    <Spring pt1="0" pt2="3" k="1500" damp="20" />
+    <Spring pt1="5" pt2="2" k="1500" damp="20" />
+    <Spring pt1="1" pt2="3" k="1500" damp="20" />
+    <Spring pt1="4" pt2="2" k="1500" damp="20" />
+    <Spring pt1="0" pt2="2" k="1500" damp="20" />
+    <Spring pt1="5" pt2="3" k="1500" damp="20" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="5" pt1="3" pt2="4" />
+    <Poly pt0="5" pt1="3" pt2="2" />
+    <Poly pt0="2" pt1="0" pt2="5" />
+    <Poly pt0="0" pt1="1" pt2="2" />
+  </Polygons>
+</SoftBody>

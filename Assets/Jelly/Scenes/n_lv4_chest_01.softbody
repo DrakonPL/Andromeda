@@ -1,0 +1,16 @@
+<SoftBody name="n_lv4_chest_01" massPerPoint="1" edgeK="10000" edgeDamping="15" colorR="1" colorG="0" colorB="0" kinematic="False" shapeMatching="True" shapeK="10000" shapeDamping="15">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="0.5" y="0.5" />
+    <Point x="0.4994441" y="-0.4996172" />
+  </Points>
+  <Springs>
+    <Spring pt1="2" pt2="0" k="10000" damp="15" />
+    <Spring pt1="1" pt2="3" k="10000" damp="15" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="2" />
+    <Poly pt0="2" pt1="3" pt2="0" />
+  </Polygons>
+</SoftBody>

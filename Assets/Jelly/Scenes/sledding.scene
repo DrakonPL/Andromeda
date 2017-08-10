@@ -1,0 +1,84 @@
+<Scene name="Gone Sledding!">
+  <Objects>
+    <Object name="sledding_sled" posX="0.4793917" posY="-0.4608243" angle="0" scaleX="1.4" scaleY="1.4" material="3" />
+    <Object name="sledding_curve" posX="-0.2714234" posY="-3.407144" angle="354" scaleX="3" scaleY="1" material="4" />
+    <Object name="sledding_curve" posX="148.7571" posY="-65.85705" angle="171" scaleX="5" scaleY="1" material="4" />
+    <Object name="sledding_bump" posX="202.9014" posY="-81.75761" angle="163" scaleX="5" scaleY="2" material="4" />
+    <Object name="sledding_bump" posX="297.732" posY="-111.0981" angle="163" scaleX="5" scaleY="2" material="4" />
+    <Object name="sledding_bump" posX="392.7589" posY="-140.4365" angle="163" scaleX="5" scaleY="2" material="4" />
+    <Object name="sledding_bump" posX="478.2002" posY="-164.8733" angle="166" scaleX="4" scaleY="2" material="4" />
+    <Object name="sledding_bump" posX="545.6346" posY="-179.6473" angle="171" scaleX="3" scaleY="2" material="4" />
+    <Object name="sledding_flat" posX="613.2009" posY="-184.1999" angle="356" scaleX="12" scaleY="2" material="4" />
+    <Object name="sledding_conveyorwheel" posX="638.2057" posY="-185.4528" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-2.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="sledding_conveyorwheel" posX="640.4413" posY="-185.041" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-2.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="sledding_conveyorwheel" posX="643.1179" posY="-184.6879" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-2.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="sledding_conveyorwheel" posX="645.324" posY="-183.9231" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-2.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="sledding_conveyorwheel" posX="647.3297" posY="-183.0966" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-2.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="sledding_conveyorwheel" posX="649.3142" posY="-181.914" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-2.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="sledding_conveyorwheel" posX="651.7318" posY="-180.4651" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-2.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="sledding_conveyorwheel" posX="653.8621" posY="-179.1338" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-2.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="sledding_conveyorwheel" posX="655.8403" posY="-178.041" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-2.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="sledding_conveyorwheel" posX="657.7474" posY="-176.7128" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-2.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="sledding_conveyorwheel" posX="659.673" posY="-175.397" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-2.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="sledding_conveyorwheel" posX="661.0786" posY="-174.0162" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-2.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="sledding_conveyorwheel" posX="662.5613" posY="-172.1322" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-2.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="sledding_flat" posX="672.2479" posY="-194.4571" angle="294" scaleX="12" scaleY="2" material="4" />
+    <Object name="sledding_curve" posX="799.5295" posY="-325.5459" angle="204" scaleX="3" scaleY="3" material="4" />
+    <Object name="sledding_curve" posX="817.528" posY="-291.9453" angle="263" scaleX="2" scaleY="2" material="4" />
+    <Object name="sledding_flat" posX="699.4483" posY="-246.257" angle="300" scaleX="18" scaleY="2" material="4" />
+  </Objects>
+  <Car name="car_and_truck" posX="0" posY="0" />
+  <Settings finishX="809" finishY="-280" fallLine="-800" />
+</Scene>

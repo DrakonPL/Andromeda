@@ -1,0 +1,128 @@
+<Scene name="Launch">
+  <Objects>
+    <Object name="checkpoint" posX="112" posY="-11.20967" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="h_lv14_cannon_01" posX="2.009899" posY="4.340605" angle="0" scaleX="19.8" scaleY="7.8" material="0" />
+    <Object name="h_lv14_cannon_02" posX="0" posY="0" angle="5" scaleX="16" scaleY="8.8" material="0" />
+    <Object name="h_lv14_cannon_03" posX="0.35" posY="-2.1" angle="0" scaleX="2.4" scaleY="2.4" material="0" />
+    <Object name="h_lv14_fan_01" posX="6.62406" posY="9.175805" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="8" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_ground_01" posX="-7.598292" posY="-5.981215" angle="0" scaleX="50" scaleY="3" material="0" />
+    <Object name="h_lv14_u_01" posX="7.8" posY="4" angle="255" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_u_02" posX="7.8" posY="4" angle="160" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_fan_01" posX="225.2" posY="-18.67273" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-1" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_fan_01" posX="210.8" posY="-13.07273" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="1" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_flat_01" posX="243.4" posY="-27.2" angle="185" scaleX="25" scaleY="5" material="0" />
+    <Object name="h_lv14_ground_01" posX="121.2017" posY="-14.58121" angle="0" scaleX="70" scaleY="3" material="0" />
+    <Object name="h_lv14_cannon_01" posX="145.2596" posY="-4.269199" angle="0" scaleX="19.8" scaleY="7.8" material="0" />
+    <Object name="h_lv14_cannon_02" posX="143.5583" posY="-8.608335" angle="5" scaleX="16" scaleY="8.8" material="0" />
+    <Object name="h_lv14_fan_01" posX="149.8232" posY="0.3152593" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="8" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_cannon_03" posX="144.35" posY="-10.70833" angle="0" scaleX="2.4" scaleY="2.4" material="0" />
+    <Object name="h_lv14_flat_02" posX="264.0833" posY="-38.50833" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="50" secondsPerLoop="30" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_fan_01" posX="9.777975" posY="-0.7165576" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-8" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_fan_01" posX="153.7262" posY="-9.475038" angle="0" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-8" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_scene10_04" posX="13.51177" posY="4.705883" angle="85" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="18.68684" posY="6.211486" angle="77" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="24.01377" posY="7.019179" angle="75" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="29.3698" posY="7.631759" angle="70" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="34.72272" posY="7.780937" angle="67" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="157.1442" posY="-3.788545" angle="80" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="162.4167" posY="-2.694992" angle="80" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_flat_02" posX="271.1874" posY="-31.35919" angle="90" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="50" secondsPerLoop="30" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_flat_02" posX="264.1278" posY="-24.30833" angle="0" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="50" secondsPerLoop="30" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_scene10_04" posX="167.6917" posY="-1.62277" angle="75" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="173.0371" posY="-1.008528" angle="71" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="178.4144" posY="-0.7519017" angle="66" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="183.796" posY="-0.9638261" angle="64" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="189.171" posY="-1.401326" angle="62" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="194.5143" posY="-1.997088" angle="59" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="199.8172" posY="-2.860877" angle="57" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="40.09876" posY="7.644573" angle="65" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="45.44699" posY="7.302824" angle="63" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_u_01" posX="7.8" posY="4" angle="160" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_u_02" posX="7.8" posY="4" angle="255" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_u_02" posX="7.8" posY="4" angle="342" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_u_01" posX="7.8" posY="4" angle="342" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_u_01" posX="7.8" posY="4" angle="70" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_u_02" posX="7.8" posY="4" angle="70" scaleX="15" scaleY="15" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_flat_02" posX="52.61353" posY="-12.40833" angle="90" scaleX="10" scaleY="10" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="40" secondsPerLoop="20" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv14_scene10_04" posX="55.30415" posY="5.445681" angle="49" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="60.37558" posY="3.630554" angle="49" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="70.14478" posY="-0.2925231" angle="46" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="75.12913" posY="-2.350985" angle="41" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="79.91483" posY="-4.850985" angle="38" scaleX="1" scaleY="1" material="4" />
+    <Object name="h_lv14_scene10_04" posX="84.54853" posY="-7.581183" angle="38" scaleX="1" scaleY="1" material="4" />
+  </Objects>
+  <Car name="car_and_truck" posX="-25" posY="0" />
+  <Settings finishX="264" finishY="5.9" fallLine="-65" />
+</Scene>

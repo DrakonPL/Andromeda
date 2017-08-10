@@ -1,0 +1,21 @@
+<SoftBody name="h_lv1_snow_sbowqpipe" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.5019608" colorG="1" colorB="1" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="1" y="1.420719" />
+    <Point x="0.9047248" y="0.6767926" />
+    <Point x="0.6423161" y="0.06416167" />
+    <Point x="0.217403" y="-0.445566" />
+    <Point x="-0.3388673" y="-0.7617193" />
+    <Point x="-0.9295577" y="-0.9120093" />
+    <Point x="-1.696186" y="-1.023256" />
+    <Point x="1.006709" y="-1.026626" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="6" pt1="7" pt2="5" />
+    <Poly pt0="5" pt1="7" pt2="4" />
+    <Poly pt0="4" pt1="7" pt2="3" />
+    <Poly pt0="2" pt1="7" pt2="3" />
+    <Poly pt0="7" pt1="2" pt2="1" />
+    <Poly pt0="0" pt1="1" pt2="7" />
+  </Polygons>
+</SoftBody>

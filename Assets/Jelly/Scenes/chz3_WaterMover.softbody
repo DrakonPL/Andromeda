@@ -1,0 +1,12 @@
+<SoftBody name="chz3_WaterMover" massPerPoint="10" edgeK="8888" edgeDamping="10" colorR="0.6784314" colorG="1" colorB="0.1843137" kinematic="True" shapeMatching="True" shapeK="8888" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.5" />
+    <Point x="-0.5" y="0.5" />
+    <Point x="1.650568" y="1.875009" />
+    <Point x="0.4150925" y="-0.4727764" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="3" pt2="2" />
+  </Polygons>
+</SoftBody>

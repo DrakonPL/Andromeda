@@ -1,0 +1,49 @@
+<SoftBody name="chz3_Water" massPerPoint="1" edgeK="80" edgeDamping="10" colorR="1" colorG="0" colorB="0" kinematic="False" shapeMatching="True" shapeK="166" shapeDamping="10">
+  <Points>
+    <Point x="-19.94469" y="-4.453243" mass="0" />
+    <Point x="-19.94469" y="5.003778" mass="0" />
+    <Point x="-14.86776" y="4.388391" />
+    <Point x="-9.872906" y="4.263802" />
+    <Point x="-5.488286" y="4.494571" />
+    <Point x="-0.1036724" y="4.186879" />
+    <Point x="4.665561" y="4.494571" />
+    <Point x="10.1271" y="4.263802" />
+    <Point x="15.43479" y="4.72534" />
+    <Point x="20.06828" y="4.340724" mass="0" />
+    <Point x="20.05018" y="-4.324437" mass="0" />
+    <Point x="15.58864" y="-3.609504" />
+    <Point x="9.991351" y="-4.473757" />
+    <Point x="4.688185" y="-4.19774" />
+    <Point x="0.1859174" y="-4.804075" />
+    <Point x="-5.43399" y="-4.433034" />
+    <Point x="-9.986023" y="-5.071043" />
+    <Point x="-15.15796" y="-4.795025" />
+  </Points>
+  <Springs>
+    <Spring pt1="17" pt2="2" k="100" damp="10" />
+    <Spring pt1="3" pt2="16" k="100" damp="10" />
+    <Spring pt1="15" pt2="4" k="100" damp="10" />
+    <Spring pt1="14" pt2="5" k="100" damp="10" />
+    <Spring pt1="13" pt2="6" k="100" damp="10" />
+    <Spring pt1="12" pt2="7" k="100" damp="10" />
+    <Spring pt1="11" pt2="8" k="100" damp="10" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="2" />
+    <Poly pt0="2" pt1="17" pt2="0" />
+    <Poly pt0="17" pt1="3" pt2="2" />
+    <Poly pt0="3" pt1="16" pt2="17" />
+    <Poly pt0="16" pt1="15" pt2="3" />
+    <Poly pt0="3" pt1="4" pt2="15" />
+    <Poly pt0="15" pt1="5" pt2="4" />
+    <Poly pt0="15" pt1="14" pt2="5" />
+    <Poly pt0="5" pt1="6" pt2="14" />
+    <Poly pt0="14" pt1="13" pt2="6" />
+    <Poly pt0="6" pt1="7" pt2="13" />
+    <Poly pt0="13" pt1="12" pt2="7" />
+    <Poly pt0="7" pt1="8" pt2="12" />
+    <Poly pt0="12" pt1="11" pt2="8" />
+    <Poly pt0="8" pt1="9" pt2="11" />
+    <Poly pt0="11" pt1="10" pt2="9" />
+  </Polygons>
+</SoftBody>

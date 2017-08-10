@@ -1,0 +1,59 @@
+<Scene name="snowboarding">
+  <Objects>
+    <Object name="snow" posX="9.57123" posY="-6.592449" angle="346" scaleX="1.3" scaleY="1" material="4" />
+    <Object name="snowboard1" posX="5.039834" posY="0.274408" angle="0" scaleX="1.5" scaleY="1.5" material="3" />
+    <Object name="snowramp" posX="75.74287" posY="-144.6287" angle="159" scaleX="1" scaleY="1" material="4" />
+    <Object name="snow" posX="47.59621" posY="-128.1926" angle="294" scaleX="7" scaleY="5" material="4" />
+    <Object name="snow" posX="258.6382" posY="-220.9756" angle="333" scaleX="0.5" scaleY="5" material="4" />
+    <Object name="snow" posX="348.3963" posY="-299.5927" angle="323" scaleX="3" scaleY="5" material="4" />
+    <Object name="snowramp" posX="374.9424" posY="-293.2286" angle="194" scaleX="1" scaleY="1" material="4" />
+    <Object name="snow_FIRE" posX="151" posY="-165" angle="343" scaleX="0.5" scaleY="0.5" material="0" />
+    <Object name="snow_dead_tree" posX="408.5667" posY="-268.9668" angle="343" scaleX="1" scaleY="1" material="4" />
+    <Object name="snow" posX="497.1963" posY="-358.7935" angle="314" scaleX="6" scaleY="5" material="4" />
+    <Object name="snow_FIRE" posX="124.4" posY="-157.2001" angle="0" scaleX="0.5" scaleY="0.5" material="0" />
+    <Object name="snow" posX="516.1959" posY="-375.1933" angle="324" scaleX="1" scaleY="5" material="4" />
+    <Object name="snow" posX="530.1958" posY="-380.7931" angle="339" scaleX="1" scaleY="5" material="4" />
+    <Object name="snow" posX="545.3962" posY="-383.3933" angle="351" scaleX="1" scaleY="5" material="4" />
+    <Object name="snow" posX="588.1962" posY="-383.5934" angle="360" scaleX="3" scaleY="5" material="4" />
+    <Object name="snowwedge" posX="578.6392" posY="-373.5383" angle="356" scaleX="1" scaleY="1" material="4" />
+    <Object name="snow" posX="622.9963" posY="-384.5933" angle="360" scaleX="2" scaleY="3" material="4" />
+    <Object name="snow" posX="604.6567" posY="-355.3415" angle="28" scaleX="1" scaleY="0.5" material="4" />
+    <Object name="snow" posX="608.8308" posY="-354.523" angle="152" scaleX="1" scaleY="0.5" material="4" />
+    <Object name="snow_house_roof" posX="598.428" posY="-359.8371" angle="28" scaleX="3.5" scaleY="0.5" material="0" />
+    <Object name="snow_house_roof" posX="614.3936" posY="-359.9581" angle="152" scaleX="3.5" scaleY="0.5" material="0" />
+    <Object name="snow_housemain" posX="606.3842" posY="-372.6847" angle="0" scaleX="4.4" scaleY="6" material="0" />
+    <Object name="snow" posX="603.8419" posY="-367.7775" angle="0" scaleX="0.3" scaleY="1.5" material="4" />
+    <Object name="snow" posX="612.8176" posY="-367.8544" angle="0" scaleX="0.3" scaleY="1.5" material="4" />
+    <Object name="snow_housedoor" posX="604.5781" posY="-374.7045" angle="0" scaleX="2" scaleY="1.5" material="0" />
+    <Object name="snow_door_handle" posX="608.6669" posY="-373.8" angle="0" scaleX="0.5" scaleY="0.5" material="0" />
+    <Object name="snow" posX="697.6187" posY="-476.7061" angle="308" scaleX="8" scaleY="5" material="4" />
+    <Object name="snow" posX="715.9951" posY="-495.793" angle="327" scaleX="0.5" scaleY="5" material="4" />
+    <Object name="snow" posX="724.8735" posY="-499.7747" angle="338" scaleX="0.5" scaleY="5" material="4" />
+    <Object name="snow" posX="733.9952" posY="-502.1446" angle="347" scaleX="0.5" scaleY="5" material="4" />
+    <Object name="snow" posX="741.9954" posY="-503.393" angle="352" scaleX="0.5" scaleY="5" material="4" />
+    <Object name="snow" posX="750.8256" posY="-503.8957" angle="358" scaleX="0.5" scaleY="5" material="4" />
+    <Object name="snow" posX="759.426" posY="-532.3162" angle="0" scaleX="0.5" scaleY="17" material="4" />
+    <Object name="snow" posX="781.7142" posY="-505.6655" angle="0" scaleX="0.8" scaleY="5" material="4" />
+    <Object name="snow_sbowqpipe" posX="765.2852" posY="-548.9764" angle="0" scaleX="-5" scaleY="6" material="4" />
+    <Object name="snow_sbowqpipe" posX="791.9091" posY="-488.9817" angle="90" scaleX="-5" scaleY="6" material="4" />
+    <Object name="snow_sbowqpipe" posX="793.0417" posY="-472.1392" angle="180" scaleX="-5" scaleY="6" material="4" />
+    <Object name="snow" posX="711.4062" posY="-492.5575" angle="316" scaleX="0.5" scaleY="5" material="4" />
+    <Object name="snow" posX="243.9298" posY="-212.6591" angle="329" scaleX="5" scaleY="5" material="4" />
+    <Object name="snow" posX="355.5213" posY="-303.3427" angle="335" scaleX="0.5" scaleY="5" material="4" />
+    <Object name="snow_sbowqpipe" posX="782.364" posY="-557.5967" angle="180" scaleX="-5" scaleY="6" material="4" />
+    <Object name="snow_sbowqpipe" posX="781.3168" posY="-574.5013" angle="90" scaleX="-5" scaleY="6" material="4" />
+    <Object name="snow_sbowqpipe" posX="764.8898" posY="-581.3242" angle="269" scaleX="-5" scaleY="6" material="4" />
+    <Object name="snow_sbowqpipe" posX="763.5773" posY="-598.1367" angle="0" scaleX="-5" scaleY="6" material="4" />
+    <Object name="snow" posX="800.9962" posY="-616.1711" angle="0" scaleX="2" scaleY="5" material="4" />
+    <Object name="snow" posX="814.9963" posY="-614.0604" angle="15" scaleX="0.5" scaleY="5" material="4" />
+    <Object name="snow_ground" posX="877.9966" posY="-618.5706" angle="0" scaleX="5" scaleY="0.4" material="0" />
+    <Object name="snow_jellyballs" posX="822.239" posY="-612.1566" angle="89" scaleX="4" scaleY="4" material="1" />
+    <Object name="snow_jellyballs" posX="831.2238" posY="-612.4019" angle="89" scaleX="4" scaleY="4" material="1" />
+    <Object name="snow_jellyballs" posX="839.9811" posY="-612.4933" angle="89" scaleX="4" scaleY="4" material="1" />
+    <Object name="snow_jellyballs" posX="848.7209" posY="-612.7093" angle="89" scaleX="4" scaleY="4" material="1" />
+    <Object name="snow_jellyballs" posX="857.3782" posY="-612.8241" angle="89" scaleX="4" scaleY="4" material="1" />
+    <Object name="snow_ground" posX="887.9965" posY="-589.7124" angle="90" scaleX="2" scaleY="0.4" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="5" posY="0.5" />
+  <Settings finishX="877" finishY="-615" fallLine="-650" />
+</Scene>

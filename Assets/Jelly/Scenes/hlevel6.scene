@@ -1,0 +1,57 @@
+<Scene name="Grapes">
+  <Objects>
+    <Object name="checkpoint" posX="92.5173" posY="-7.753245" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="hd_lv6_arc" posX="19.96583" posY="5.241028" angle="337" scaleX="10" scaleY="10" material="0" />
+    <Object name="hd_lv6_arc" posX="42.51874" posY="-4.739133" angle="336" scaleX="10" scaleY="10" material="0" />
+    <Object name="hd_ground" posX="1.09267" posY="7.065002" angle="350" scaleX="15" scaleY="3" material="4" />
+    <Object name="hd_ground" posX="57.8927" posY="-12.59905" angle="0" scaleX="15" scaleY="3" material="0" />
+    <Object name="hd_lv6_spin" posX="76.39997" posY="-8.599997" angle="250" scaleX="11" scaleY="11" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.25" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv6_arc_bridge" posX="124.2001" posY="-17.59996" angle="355" scaleX="18" scaleY="16" material="4" />
+    <Object name="hd_lv6_bridge_01" posX="101.8133" posY="-14.61656" angle="360" scaleX="10" scaleY="10" material="0" />
+    <Object name="h_lv6_arc_bridge" posX="117.6001" posY="-30.19998" angle="355" scaleX="18" scaleY="16" material="4" />
+    <Object name="h_lv6_arc_bridge1" posX="197.2856" posY="-44.97141" angle="355" scaleX="15" scaleY="10" material="4" />
+    <Object name="h_lv6_arc_bridge1" posX="201.8856" posY="-28.57144" angle="350" scaleX="15" scaleY="10" material="4" />
+    <Object name="h_lv6_circle" posX="237.0669" posY="-71.26669" angle="0" scaleX="6" scaleY="6" material="1">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv6_circle" posX="246.8667" posY="-76.59992" angle="0" scaleX="5" scaleY="5" material="1">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv6_circle" posX="261.4669" posY="-87.59975" angle="0" scaleX="4" scaleY="4" material="1">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv6_circle" posX="269.7339" posY="-99.33292" angle="0" scaleX="3" scaleY="3" material="1">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv6_circle" posX="255.0666" posY="-81.66647" angle="0" scaleX="4.5" scaleY="4.5" material="1">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv6_circle" posX="266.4005" posY="-93.46638" angle="0" scaleX="3.5" scaleY="3.5" material="1">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="h_lv6_ground_01" posX="252.6" posY="-51.39995" angle="0" scaleX="10" scaleY="3" material="0" />
+    <Object name="h_lv6_ground_02" posX="92.12698" posY="-11.03072" angle="1" scaleX="10" scaleY="3" material="0" />
+    <Object name="hd_ground" posX="-13.86447" posY="9.712626" angle="350" scaleX="15" scaleY="3" material="4" />
+    <Object name="hd_lv6_arc" posX="-29.57471" posY="18.78697" angle="337" scaleX="10" scaleY="10" material="0" />
+    <Object name="hd_ground" posX="-48.44869" posY="20.5719" angle="350" scaleX="15" scaleY="3" material="0" />
+    <Object name="hd_ground" posX="-63.22602" posY="21.8198" angle="0" scaleX="15" scaleY="3" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-58" posY="28" />
+  <Settings finishX="276" finishY="-99" fallLine="-110" />
+</Scene>

@@ -1,0 +1,13 @@
+<SoftBody name="snow_ground" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.3" colorG="0.3" colorB="0.3" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-14.54762" y="-0.5" />
+    <Point x="-14.54761" y="2.357142" />
+    <Point x="2.023808" y="2.357143" />
+    <Point x="1.999461" y="-0.4924636" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="2" />
+    <Poly pt0="2" pt1="0" pt2="3" />
+  </Polygons>
+</SoftBody>

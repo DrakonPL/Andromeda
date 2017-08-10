@@ -1,0 +1,16 @@
+<SoftBody name="chz4_Block" massPerPoint="0.5" edgeK="5000" edgeDamping="10" colorR="0" colorG="0" colorB="1" kinematic="False" shapeMatching="True" shapeK="9999" shapeDamping="10">
+  <Points>
+    <Point x="-2.100001" y="-2.020001" />
+    <Point x="-1.5" y="1.620001" />
+    <Point x="2.125615" y="1.62079" />
+    <Point x="2.699608" y="-2.023391" />
+  </Points>
+  <Springs>
+    <Spring pt1="1" pt2="3" k="100" damp="10" />
+    <Spring pt1="2" pt2="0" k="100" damp="10" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="2" />
+    <Poly pt0="2" pt1="3" pt2="0" />
+  </Polygons>
+</SoftBody>

@@ -1,0 +1,17 @@
+<SoftBody name="scene3_02" massPerPoint="0" edgeK="0" edgeDamping="0" colorR="1" colorG="1" colorB="0" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-100" y="-4" />
+    <Point x="-100" y="0" />
+    <Point x="0" y="0" />
+    <Point x="100" y="0" />
+    <Point x="100" y="-4" />
+    <Point x="0" y="-4" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="5" />
+    <Poly pt0="5" pt1="2" pt2="1" />
+    <Poly pt0="2" pt1="5" pt2="4" />
+    <Poly pt0="4" pt1="3" pt2="2" />
+  </Polygons>
+</SoftBody>

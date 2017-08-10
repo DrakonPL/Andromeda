@@ -1,0 +1,13 @@
+<SoftBody name="hd_ground" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.8627451" colorG="0.227451" colorB="1" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.5" y="-0.03086418" />
+    <Point x="-0.5" y="0.574074" />
+    <Point x="0.52301" y="0.5677698" />
+    <Point x="0.5245328" y="-0.03968094" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="2" pt1="1" pt2="0" />
+    <Poly pt0="0" pt1="3" pt2="2" />
+  </Polygons>
+</SoftBody>

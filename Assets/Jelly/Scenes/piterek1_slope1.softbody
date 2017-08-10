@@ -1,0 +1,33 @@
+<SoftBody name="piterek1_slope1" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.6784314" colorG="1" colorB="0.1843137" kinematic="False" shapeMatching="False" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-0.4398496" y="-0.6127822" />
+    <Point x="-0.7857139" y="-0.6879702" />
+    <Point x="-1.011107" y="-0.6968017" />
+    <Point x="-0.9960692" y="1.987408" />
+    <Point x="0.9962406" y="1.988721" />
+    <Point x="1.199419" y="1.806956" />
+    <Point x="1.199418" y="1.603948" />
+    <Point x="1.101674" y="1.197935" />
+    <Point x="0.9663367" y="0.8219953" />
+    <Point x="0.8009234" y="0.5588375" />
+    <Point x="0.6129532" y="0.2355292" />
+    <Point x="0.3573143" y="0.009965316" />
+    <Point x="0.1693443" y="-0.1780046" />
+    <Point x="-0.1314075" y="-0.463719" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="3" pt1="4" pt2="5" />
+    <Poly pt0="3" pt1="5" pt2="6" />
+    <Poly pt0="3" pt1="6" pt2="7" />
+    <Poly pt0="3" pt1="7" pt2="8" />
+    <Poly pt0="3" pt1="8" pt2="9" />
+    <Poly pt0="3" pt1="9" pt2="10" />
+    <Poly pt0="3" pt1="10" pt2="11" />
+    <Poly pt0="3" pt1="11" pt2="12" />
+    <Poly pt0="3" pt1="12" pt2="13" />
+    <Poly pt0="3" pt1="13" pt2="0" />
+    <Poly pt0="3" pt1="0" pt2="1" />
+    <Poly pt0="3" pt1="1" pt2="2" />
+  </Polygons>
+</SoftBody>

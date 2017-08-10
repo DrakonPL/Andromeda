@@ -1,0 +1,32 @@
+<SoftBody name="h_lv4_circle_02" massPerPoint="0" edgeK="800" edgeDamping="10" colorR="0" colorG="1" colorB="1" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="0" y="1" />
+    <Point x="0.5877852" y="0.809017" />
+    <Point x="0.9510565" y="0.309017" />
+    <Point x="0.9510565" y="-0.309017" />
+    <Point x="0.5877852" y="-0.809017" />
+    <Point x="2.433593E-08" y="-1" />
+    <Point x="-0.5877852" y="-0.809017" />
+    <Point x="-0.9510565" y="-0.309017" />
+    <Point x="-0.9510565" y="0.3090169" />
+    <Point x="-0.5877853" y="0.8090169" />
+  </Points>
+  <Springs>
+    <Spring pt1="0" pt2="5" k="800" damp="10" />
+    <Spring pt1="1" pt2="6" k="800" damp="10" />
+    <Spring pt1="7" pt2="2" k="800" damp="10" />
+    <Spring pt1="3" pt2="8" k="800" damp="10" />
+    <Spring pt1="9" pt2="4" k="800" damp="10" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="9" pt1="0" pt2="5" />
+    <Poly pt0="5" pt1="6" pt2="7" />
+    <Poly pt0="7" pt1="8" pt2="9" />
+    <Poly pt0="9" pt1="0" pt2="1" />
+    <Poly pt0="1" pt1="2" pt2="3" />
+    <Poly pt0="3" pt1="4" pt2="5" />
+    <Poly pt0="5" pt1="7" pt2="1" />
+    <Poly pt0="1" pt1="9" pt2="7" />
+    <Poly pt0="5" pt1="1" pt2="3" />
+  </Polygons>
+</SoftBody>

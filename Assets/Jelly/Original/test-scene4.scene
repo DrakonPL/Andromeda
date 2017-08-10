@@ -1,0 +1,115 @@
+<Scene name="Platformer">
+  <Objects>
+    <Object name="scene4_01" posX="-100" posY="0" angle="0" scaleX="10" scaleY="1" material="0" />
+    <Object name="scene4_plat1" posX="-80" posY="-4" angle="90" scaleX="5" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_plat1" posX="-44" posY="-8" angle="0" scaleX="2.5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="8" secondsPerLoop="7" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_plat1" posX="-32" posY="-8" angle="0" scaleX="2.5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-8" secondsPerLoop="7" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="-60" posY="0" angle="0" scaleX="10" scaleY="1" material="0" />
+    <Object name="scene4_02" posX="-16" posY="-13" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene4_plat2" posX="23.8" posY="-3" angle="0" scaleX="0.7" scaleY="2" material="1">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-2" secondsPerLoop="5" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_plat2" posX="26.9" posY="-3" angle="0" scaleX="0.7" scaleY="2" material="1">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-2" secondsPerLoop="5" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_plat3" posX="25.3" posY="-5" angle="0" scaleX="0.7" scaleY="2" material="1">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="2" secondsPerLoop="5" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_plat3" posX="28.5" posY="-5" angle="0" scaleX="0.7" scaleY="2" material="1">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="2" secondsPerLoop="5" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_plat2" posX="30.1" posY="-3" angle="0" scaleX="0.7" scaleY="2" material="1">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-2" secondsPerLoop="5" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_plat3" posX="31.7" posY="-5" angle="0" scaleX="0.7" scaleY="2" material="1">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="2" secondsPerLoop="5" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="38.57504" posY="-2.009108" angle="0" scaleX="6" scaleY="1" material="0" />
+    <Object name="scene4_plat4" posX="49.60004" posY="0.5" angle="270" scaleX="3" scaleY="3" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_plat4" posX="58.16211" posY="-0.4090909" angle="89" scaleX="3" scaleY="3" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_plat4" posX="70.21124" posY="-2.504547" angle="267" scaleX="5" scaleY="5" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="97.77783" posY="-10.75064" angle="0" scaleX="20" scaleY="2" material="0" />
+    <Object name="scene4_plat1" posX="124" posY="-10" angle="0" scaleX="2.5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="10" secondsPerLoop="6" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_plat1" posX="156.0799" posY="-5.112304" angle="0" scaleX="2.5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="10" secondsPerLoop="5" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_plat5" posX="140.3524" posY="-0.342105" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <Motor radiansPerSecond="-0.25" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_plat1" posX="166.7384" posY="10.13846" angle="0" scaleX="2.5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="-10" secondsPerLoop="7" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_plat1" posX="177.8001" posY="4.999996" angle="0" scaleX="2.5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="10" secondsPerLoop="8" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_plat6" posX="210.7249" posY="9.666677" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="35" offsetY="0" secondsPerLoop="25" startOffset="0" />
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="195.6" posY="14.21665" angle="4" scaleX="12" scaleY="0.8" material="0" />
+    <Object name="scene4_01" posX="261.5087" posY="10.34167" angle="4" scaleX="10" scaleY="0.8" material="0" />
+    <Object name="scene4_plat6" posX="275.4" posY="6.599997" angle="0" scaleX="1" scaleY="1" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="35" offsetY="0" secondsPerLoop="25" startOffset="1" />
+        <Motor radiansPerSecond="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene4_01" posX="335.6002" posY="8" angle="0" scaleX="20" scaleY="1" material="0" />
+    <Object name="scene4_01" posX="242" posY="-5.199996" angle="0" scaleX="80" scaleY="1" material="0" />
+    <Object name="scene4_sign" posX="163.2999" posY="-5.291665" angle="269" scaleX="0.6086957" scaleY="0.4637682" material="0" />
+    <Object name="scene4_sign" posX="292.9196" posY="-5.239998" angle="0" scaleX="0.6250004" scaleY="0.4500005" material="0" />
+    <Object name="scene4_sign" posX="229.3396" posY="-5.176744" angle="0" scaleX="0.6375003" scaleY="0.4875005" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-104" posY="3" />
+  <Settings finishX="350" finishY="9.5" fallLine="-40" />
+</Scene>

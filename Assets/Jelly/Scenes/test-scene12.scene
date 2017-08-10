@@ -1,0 +1,49 @@
+<Scene name="Boulders">
+  <Objects>
+    <Object name="scene12_01" posX="1.3" posY="0" angle="0" scaleX="2" scaleY="2" material="0" />
+    <Object name="Scene12_02" posX="1.3" posY="0" angle="0" scaleX="2" scaleY="2" material="0" />
+    <Object name="Scene12_plunger" posX="1.3" posY="-0.3090912" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="8" secondsPerLoop="16" startOffset="1" />
+      </KinematicControls>
+    </Object>
+    <Object name="Scene12_03" posX="-21.85" posY="-0.4" angle="0" scaleX="20" scaleY="1.6" material="0" />
+    <Object name="Scene12_03" posX="18.24444" posY="-21.73335" angle="171" scaleX="30" scaleY="1" material="0" />
+    <Object name="Scene12_03" posX="10.5" posY="-0.4" angle="0" scaleX="6" scaleY="1.6" material="0" />
+    <Object name="scene12_01" posX="19.7" posY="0" angle="0" scaleX="2" scaleY="2" material="0" />
+    <Object name="Scene12_02" posX="19.7" posY="0" angle="0" scaleX="2" scaleY="2" material="0" />
+    <Object name="Scene12_plunger" posX="19.7" posY="-0.3" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="6" secondsPerLoop="8" startOffset="0.9" />
+      </KinematicControls>
+    </Object>
+    <Object name="Scene12_03" posX="28.85" posY="-0.4" angle="0" scaleX="6" scaleY="1.6" material="0" />
+    <Object name="scene12_01" posX="38" posY="0" angle="0" scaleX="2" scaleY="2" material="0" />
+    <Object name="Scene12_02" posX="38" posY="0" angle="0" scaleX="2" scaleY="2" material="0" />
+    <Object name="Scene12_plunger" posX="38" posY="-0.3" angle="0" scaleX="2" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="8" secondsPerLoop="16" startOffset="1" />
+      </KinematicControls>
+    </Object>
+    <Object name="Scene12_03" posX="53.2" posY="-0.4" angle="0" scaleX="12" scaleY="1.6" material="0" />
+    <Object name="Scene12_04" posX="65.37878" posY="-35.04545" angle="0" scaleX="9" scaleY="9" material="0" />
+    <Object name="Scene12_ball" posX="44.62871" posY="-14.25559" angle="0" scaleX="8.5" scaleY="8.5" material="1" />
+    <Object name="Scene12_04" posX="97.00329" posY="-39.35971" angle="0" scaleX="9" scaleY="9" material="0" />
+    <Object name="Scene12_03" posX="49.03991" posY="-24.70528" angle="50" scaleX="3" scaleY="1" material="0" />
+    <Object name="Scene12_ball" posX="26.86664" posY="-11.93334" angle="0" scaleX="8.5" scaleY="8.5" material="1" />
+    <Object name="Scene12_03" posX="-35.80003" posY="-17.2" angle="0" scaleX="25" scaleY="1" material="0" />
+    <Object name="Scene12_03" posX="9.066669" posY="-13.99999" angle="160" scaleX="1" scaleY="6" material="0" />
+    <Object name="Scene12_plat" posX="-62.86429" posY="-14.34999" angle="0" scaleX="3" scaleY="3" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="19" offsetY="19" secondsPerLoop="12" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="Scene12_04" posX="130.6001" posY="-35.99996" angle="0" scaleX="8.5" scaleY="2" material="0" />
+    <Object name="Scene12_ball" posX="130.1999" posY="-29.40002" angle="0" scaleX="7" scaleY="7" material="1" />
+    <Object name="Scene12_plat2" posX="200.4001" posY="-59.80008" angle="0" scaleX="6" scaleY="6" material="0" />
+    <Object name="Scene12_03" posX="208" posY="-31.6" angle="0" scaleX="10" scaleY="1" material="0" />
+    <Object name="Scene12_03" posX="166.3022" posY="-41.69743" angle="160" scaleX="20" scaleY="1" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-17" posY="3" />
+  <Settings finishX="215" finishY="-30" fallLine="-90" />
+</Scene>

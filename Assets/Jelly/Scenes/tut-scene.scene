@@ -1,0 +1,18 @@
+<Scene name="Tutorial">
+  <Objects>
+    <Object name="tut_01" posX="-32.66663" posY="0.3809524" angle="0" scaleX="4" scaleY="4" material="0" />
+    <Object name="tut_01" posX="-15.63807" posY="-0.3666667" angle="349" scaleX="4" scaleY="4" material="0" />
+    <Object name="tut_02" posX="-5.190475" posY="-1.619048" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="tut_02" posX="-1" posY="-0.9523811" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="tut_02" posX="3.647622" posY="0.6095232" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="tut_02" posX="7.54285" posY="2.619047" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="tut_01" posX="16.67619" posY="-0.047619" angle="0" scaleX="4" scaleY="4" material="0" />
+    <Object name="tut_03" posX="40.81676" posY="0.06388888" angle="0" scaleX="2" scaleY="1" material="0" />
+    <Object name="tut_bridge" posX="19.54314" posY="7.021224" angle="0" scaleX="0.8" scaleY="1" material="1" />
+    <Object name="tut_02" posX="11.53333" posY="4.533332" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="tut_02" posX="9.599998" posY="3.533333" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="tut_02" posX="13.66666" posY="5.266666" angle="0" scaleX="1" scaleY="1" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-36" posY="2" />
+  <Settings finishX="45" finishY="2" fallLine="-10" />
+</Scene>

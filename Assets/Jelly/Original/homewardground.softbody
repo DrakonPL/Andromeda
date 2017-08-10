@@ -1,0 +1,17 @@
+<SoftBody name="homewardground" massPerPoint="0" edgeK="4000" edgeDamping="100" colorR="0.5019608" colorG="0.5019608" colorB="0.5019608" kinematic="True" shapeMatching="False" shapeK="100" shapeDamping="10">
+  <Pressure amount="10" />
+  <Points>
+    <Point x="-6.135369" y="-1.115877" />
+    <Point x="-6.135369" y="1.109929" />
+    <Point x="6.122693" y="1.109928" />
+    <Point x="6.114712" y="-1.10398" />
+  </Points>
+  <Springs>
+    <Spring pt1="1" pt2="3" k="100" damp="10" />
+    <Spring pt1="0" pt2="2" k="100" damp="10" />
+  </Springs>
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="2" />
+    <Poly pt0="2" pt1="0" pt2="3" />
+  </Polygons>
+</SoftBody>

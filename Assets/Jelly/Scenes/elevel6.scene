@@ -1,0 +1,25 @@
+<Scene name="Saw">
+  <Objects>
+    <Object name="n_lv1_flat_01" posX="5.597826" posY="-11.49565" angle="0" scaleX="33.81585" scaleY="4.207671" material="0" />
+    <Object name="n_lv1_flat_02" posX="16.90407" posY="-11.78542" angle="0" scaleX="16.11766" scaleY="4.823531" material="0" />
+    <Object name="n_lv1_circle_01" posX="25.68806" posY="-11.83334" angle="0" scaleX="2.083333" scaleY="2" material="0" />
+    <Object name="n_lv1_circle_01" posX="31.93806" posY="-12.08334" angle="0" scaleX="2.083333" scaleY="2" material="0" />
+    <Object name="n_lv1_circle_01" posX="38.43806" posY="-12.08334" angle="0" scaleX="2.083333" scaleY="2" material="0" />
+    <Object name="n_lv1_circle_01" posX="44.43806" posY="-12.33334" angle="0" scaleX="2.083333" scaleY="2" material="0" />
+    <Object name="n_lv1_circle_01" posX="50.31306" posY="-12.58334" angle="0" scaleX="2.083333" scaleY="2" material="0" />
+    <Object name="n_lv1_circle_01" posX="56.18806" posY="-12.83334" angle="0" scaleX="2.083333" scaleY="2" material="0" />
+    <Object name="n_lv1_sponge_01" posX="42.75" posY="-24.25" angle="0" scaleX="51.625" scaleY="6.25" material="0" />
+    <Object name="n_lv1_movingflat_01" posX="106.2" posY="-31" angle="0" scaleX="14" scaleY="4" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="-30" offsetY="0" secondsPerLoop="30" startOffset="0" />
+      </KinematicControls>
+    </Object>
+    <Object name="n_lv1_flat_03" posX="127" posY="-37.4" angle="0" scaleX="24.8" scaleY="14.2" material="0" />
+    <Object name="itemstick" posX="130.6174" posY="-39.90435" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="n_lv1_flat_04" posX="160.9424" posY="-32.92989" angle="0" scaleX="43" scaleY="5.2" material="0" />
+    <Object name="itemballoon" posX="178.8166" posY="-28.91667" angle="0" scaleX="1" scaleY="1" material="5" />
+    <Object name="n_lv1_flat_05" posX="200.4" posY="-9.8" angle="0" scaleX="23.4" scaleY="6" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-5" posY="-6" />
+  <Settings finishX="200" finishY="-4" fallLine="-60" />
+</Scene>

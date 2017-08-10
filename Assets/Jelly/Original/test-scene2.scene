@@ -1,0 +1,36 @@
+<Scene name="Forest">
+  <Objects>
+    <Object name="kinematic_obj0" posX="-54" posY="0" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="kinematic_obj0" posX="-100" posY="0" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="kinematic_bridge" posX="-77" posY="-1" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_static1" posX="-40.5" posY="-1" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_static2" posX="0" posY="0" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_frond" posX="33" posY="9" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_trunk" posX="-12" posY="4" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_frond" posX="12" posY="9" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_trunk" posX="0" posY="4" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_frond" posX="0" posY="9" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_trunk" posX="12" posY="4" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_island" posX="22" posY="5" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_static2" posX="45" posY="0" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_trunk" posX="33" posY="4" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_frond" posX="-12" posY="9" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_trunk" posX="45" posY="4.55" angle="0" scaleX="1" scaleY="1.11" material="0" />
+    <Object name="scene2_frond" posX="45" posY="10" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_trunk" posX="57" posY="5.1" angle="0" scaleX="1" scaleY="1.23" material="0" />
+    <Object name="scene2_frond" posX="57" posY="11" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_static3" posX="68" posY="5" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_static4" posX="108" posY="10" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_static4" posX="118" posY="10" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_static4" posX="128" posY="10" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_static4" posX="138" posY="10" angle="0" scaleX="1" scaleY="1" material="0" />
+    <Object name="scene2_pressureCircle" posX="103.3502" posY="13.89401" angle="0" scaleX="2" scaleY="2" material="1" />
+    <Object name="scene2_pressureCircle" posX="113.5385" posY="13.84616" angle="0" scaleX="2" scaleY="2" material="1" />
+    <Object name="scene2_pressureCircle" posX="123.4615" posY="13.92308" angle="0" scaleX="2" scaleY="2" material="1" />
+    <Object name="scene2_pressureCircle" posX="133.8" posY="13.79999" angle="0" scaleX="2" scaleY="2" material="0" />
+    <Object name="scene2_static1" posX="147.5144" posY="4.485711" angle="320" scaleX="1" scaleY="1" material="0" />
+    <Object name="kinematic_obj0" posX="181.1691" posY="-6.138458" angle="0" scaleX="1.5" scaleY="1" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-100" posY="4" />
+  <Settings finishX="186" finishY="-4" fallLine="-25" />
+</Scene>

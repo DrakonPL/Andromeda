@@ -1,0 +1,58 @@
+<SoftBody name="h_lv12_mickey_head" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.6784314" colorG="1" colorB="0.1803922" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-8.354429E-05" y="0.2961573" />
+    <Point x="0.001615585" y="0.493996" />
+    <Point x="0.3946903" y="0.7463985" />
+    <Point x="0.5406408" y="0.8412535" />
+    <Point x="0.6561809" y="0.7386322" />
+    <Point x="0.7557496" y="0.6548607" />
+    <Point x="0.909632" y="0.415415" />
+    <Point x="0.9898214" y="0.1423147" />
+    <Point x="0.9898214" y="-0.142315" />
+    <Point x="0.909632" y="-0.4154151" />
+    <Point x="0.7557495" y="-0.6548609" />
+    <Point x="0.5406408" y="-0.8412536" />
+    <Point x="0.2817324" y="-0.959493" />
+    <Point x="-8.742278E-08" y="-1" />
+    <Point x="-0.2817326" y="-0.959493" />
+    <Point x="-0.5406407" y="-0.8412536" />
+    <Point x="-0.7557495" y="-0.6548609" />
+    <Point x="-0.909632" y="-0.4154151" />
+    <Point x="-0.9898214" y="-0.142315" />
+    <Point x="-0.9898214" y="0.142315" />
+    <Point x="-0.909632" y="0.4154151" />
+    <Point x="-0.7557493" y="0.6548611" />
+    <Point x="-0.6612827" y="0.7438921" />
+    <Point x="-0.5406401" y="0.841254" />
+    <Point x="-0.413998" y="0.7685373" />
+    <Point x="-2.758345E-05" y="0.4934116" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="11" pt1="7" pt2="10" />
+    <Poly pt0="10" pt1="6" pt2="9" />
+    <Poly pt0="9" pt1="5" pt2="8" />
+    <Poly pt0="8" pt1="3" pt2="7" />
+    <Poly pt0="7" pt1="2" pt2="6" />
+    <Poly pt0="6" pt1="5" pt2="2" />
+    <Poly pt0="10" pt1="13" pt2="11" />
+    <Poly pt0="10" pt1="14" pt2="11" />
+    <Poly pt0="11" pt1="15" pt2="12" />
+    <Poly pt0="12" pt1="16" pt2="13" />
+    <Poly pt0="13" pt1="17" pt2="14" />
+    <Poly pt0="14" pt1="18" pt2="15" />
+    <Poly pt0="15" pt1="19" pt2="16" />
+    <Poly pt0="16" pt1="20" pt2="17" />
+    <Poly pt0="17" pt1="21" pt2="18" />
+    <Poly pt0="18" pt1="22" pt2="19" />
+    <Poly pt0="19" pt1="24" pt2="20" />
+    <Poly pt0="20" pt1="21" pt2="24" />
+    <Poly pt0="24" pt1="23" pt2="21" />
+    <Poly pt0="22" pt1="0" pt2="25" />
+    <Poly pt0="25" pt1="23" pt2="22" />
+    <Poly pt0="0" pt1="3" pt2="1" />
+    <Poly pt0="0" pt1="4" pt2="3" />
+    <Poly pt0="5" pt1="2" pt2="3" />
+    <Poly pt0="18" pt1="23" pt2="19" />
+  </Polygons>
+</SoftBody>

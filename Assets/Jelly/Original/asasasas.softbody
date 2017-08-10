@@ -1,0 +1,13 @@
+<SoftBody name="asasasas" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.5019608" colorG="0.2509804" colorB="0" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-1.990385" y="-0.009615324" />
+    <Point x="-2" y="1.01923" />
+    <Point x="1.990384" y="0.9999997" />
+    <Point x="1.992635" y="-0.0156107" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="2" pt2="0" />
+    <Poly pt0="0" pt1="2" pt2="3" />
+  </Polygons>
+</SoftBody>

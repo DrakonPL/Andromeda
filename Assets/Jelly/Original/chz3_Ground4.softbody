@@ -1,0 +1,17 @@
+<SoftBody name="chz3_Ground4" massPerPoint="0" edgeK="100" edgeDamping="10" colorR="0.6784314" colorG="1" colorB="0.1843137" kinematic="False" shapeMatching="True" shapeK="100" shapeDamping="10">
+  <Points>
+    <Point x="-9.830731" y="-125.2479" />
+    <Point x="-0.6428571" y="0.5" />
+    <Point x="9.49999" y="0.5000001" />
+    <Point x="19.16611" y="19.55638" />
+    <Point x="23.45182" y="16.98493" />
+    <Point x="19.50636" y="-125.2878" />
+  </Points>
+  <Springs />
+  <Polygons>
+    <Poly pt0="1" pt1="0" pt2="2" />
+    <Poly pt0="2" pt1="5" pt2="0" />
+    <Poly pt0="5" pt1="3" pt2="2" />
+    <Poly pt0="3" pt1="4" pt2="5" />
+  </Polygons>
+</SoftBody>

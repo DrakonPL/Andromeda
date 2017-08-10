@@ -1,0 +1,58 @@
+<Scene name="Ride The Wave">
+  <Objects>
+    <Object name="scene9_movingplat1" posX="-1" posY="0" angle="5" scaleX="5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="16" secondsPerLoop="12" startOffset="1" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene9_01" posX="-15" posY="0" angle="0" scaleX="22" scaleY="2" material="0" />
+    <Object name="scene9_movingplat1" posX="4.2" posY="0.5" angle="5" scaleX="5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="16" secondsPerLoop="12" startOffset="0.9" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene9_movingplat1" posX="9.4" posY="1" angle="5" scaleX="5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="16" secondsPerLoop="12" startOffset="0.8" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene9_movingplat1" posX="14.6" posY="1.5" angle="5" scaleX="5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="16" secondsPerLoop="12" startOffset="0.7" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene9_movingplat1" posX="19.8" posY="2" angle="5" scaleX="5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="16" secondsPerLoop="12" startOffset="0.6" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene9_movingplat1" posX="25" posY="2.5" angle="5" scaleX="5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="16" secondsPerLoop="12" startOffset="0.5" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene9_movingplat1" posX="30.2" posY="3" angle="5" scaleX="5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="16" secondsPerLoop="12" startOffset="0.4" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene9_movingplat1" posX="35.4" posY="3.5" angle="5" scaleX="5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="16" secondsPerLoop="12" startOffset="0.3" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene9_movingplat1" posX="40.4" posY="4" angle="5" scaleX="5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="16" secondsPerLoop="12" startOffset="0.2" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene9_movingplat1" posX="45.6" posY="4.5" angle="5" scaleX="5" scaleY="2" material="0">
+      <KinematicControls>
+        <PlatformMotion offsetX="0" offsetY="16" secondsPerLoop="12" startOffset="0.1" />
+      </KinematicControls>
+    </Object>
+    <Object name="scene9_01" posX="60" posY="21" angle="0" scaleX="22" scaleY="1" material="0" />
+  </Objects>
+  <Car name="car_and_truck" posX="-18" posY="3" />
+  <Settings finishX="70" finishY="23" fallLine="-15" />
+</Scene>
