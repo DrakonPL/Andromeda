@@ -16,12 +16,13 @@ namespace Andromeda
 
 		void GlfwGameLoader::Run()
 		{
-			Utils::Logger::Instance()->Log("Start\n");
+			Utils::Logger_Info("Start\n");
+			Utils::Logger::Logger_Info("Start\n");
 
 			//init library
 			if (!glfwInit())
 			{
-				Utils::Logger::Instance()->Log("Failed to create initialize GLFW\n");
+				Utils::Logger_Info("Failed to create initialize GLFW\n");
 				return;
 			}
 
@@ -103,7 +104,7 @@ namespace Andromeda
 			_renderManager->Finish();
 
 			//log exit
-			Utils::Logger::Instance()->Log("Exit\n");
+			Utils::Logger_Info("Exit\n");
 
 			//exit
 			glfwTerminate();

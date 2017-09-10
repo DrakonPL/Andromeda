@@ -15,7 +15,7 @@ namespace Andromeda
 		{
 			if (WSAStartup(MAKEWORD(2, 2), &wsa) != 0)
 			{
-				Utils::Logger::Instance()->Log("Failed. Error Code : %d", WSAGetLastError());
+				Utils::Logger_Info("Failed. Error Code : %d", WSAGetLastError());
 				return false;
 			}
 

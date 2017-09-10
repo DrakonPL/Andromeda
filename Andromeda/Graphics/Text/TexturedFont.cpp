@@ -33,7 +33,7 @@ namespace Andromeda
 			file->Open(FileSystem::Read, FileSystem::Binary);
 
 			int dataSize = 0;
-			unsigned char* _buffer = file->GetData(dataSize);
+			_buffer = file->GetData(dataSize);
 
 			file->Close();
 			delete file;
@@ -46,6 +46,8 @@ namespace Andromeda
 		{
 			//delete font structure
 			texture_font_delete(_font);
+
+			delete[] _buffer;
 
 			//delete vertex buffer
 			delete _vertexArray;

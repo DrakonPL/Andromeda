@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Basic">
+      <UniqueIdentifier>{1c72c3cf-bdde-473c-a2c4-54a1464e17c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FreeTypeTests">
+      <UniqueIdentifier>{be8aa5dc-2714-4618-9ba2-67996bcf1b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{4aa4fd37-5e23-4110-ac25-eb41fdfae490}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lightening">
+      <UniqueIdentifier>{d5c1e41b-1109-47b3-a419-d5999945f9ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models">
+      <UniqueIdentifier>{c7a2c6f8-8ff0-4f13-8cda-1c3a09f80609}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tests\Andromeda.cpp" />
+    <ClCompile Include="Tests\ExampleGameManager.cpp" />
+    <ClCompile Include="Tests\TestHelper.cpp" />
+    <ClCompile Include="Tests\Basic\Test1.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Basic\Test2.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Basic\Test3.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Basic\Test4.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Basic\Test5.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Basic\Test6.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Basic\TestCam3d.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Basic\TestSprite.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Basic\TestToTexture.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Basic\VitaTest.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\FreeTypeTests\TestFreeTypeAtlas.cpp">
+      <Filter>FreeTypeTests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\FreeTypeTests\TestFreeTypeFont.cpp">
+      <Filter>FreeTypeTests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Input\TouchTest.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Lightening\TestLight1.cpp">
+      <Filter>Lightening</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Lightening\TestLight2.cpp">
+      <Filter>Lightening</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Lightening\TestLight3.cpp">
+      <Filter>Lightening</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Lightening\TestLight4.cpp">
+      <Filter>Lightening</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Models\TestObjModel.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\InputHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Tests\ExampleGameManager.h" />
+    <ClInclude Include="Tests\TestHelper.h" />
+    <ClInclude Include="Tests\Basic\Test1.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Basic\Test2.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Basic\Test3.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Basic\Test4.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Basic\Test5.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Basic\Test6.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Basic\TestCam3d.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Basic\TestSprite.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Basic\TestToTexture.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Basic\VitaTest.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\FreeTypeTests\TestFreeTypeAtlas.h">
+      <Filter>FreeTypeTests</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\FreeTypeTests\TestFreeTypeFont.h">
+      <Filter>FreeTypeTests</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Input\TouchTest.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Lightening\TestLight1.h">
+      <Filter>Lightening</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Lightening\TestLight2.h">
+      <Filter>Lightening</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Lightening\TestLight3.h">
+      <Filter>Lightening</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Lightening\TestLight4.h">
+      <Filter>Lightening</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Models\TestObjModel.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\InputHelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
+</Project>

@@ -1,9 +1,0 @@
-<Scene name="carcustom">
-  <Objects>
-    <Object name="custom_ground01" posX="27.92856" posY="2.58646" angle="0" scaleX="19" scaleY="1" material="0" />
-    <Object name="custom_ground01" posX="0.4883355" posY="2.58657" angle="0" scaleX="19" scaleY="1" material="0" />
-    <Object name="custom_ground01" posX="-26.95181" posY="2.586669" angle="0" scaleX="19" scaleY="1" material="0" />
-  </Objects>
-  <Car name="car_and_truck" posX="-22" posY="5" />
-  <Settings finishX="22" finishY="3" fallLine="-10" />
-</Scene>

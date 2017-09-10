@@ -23,9 +23,19 @@ namespace Andromeda
 		Logger::Logger()
 		{
 			_active = true;
+			_debug = false;
+
+#ifdef _DEBUG
+			_debug = true;
+#endif // DEBUG
+
+			_debug = true;
+
+			std::string logTime = GetTime();
 
 			//create filename
-			_fileName = "Log" + GetTime() + ".txt";
+			_fileName = "Info" + logTime + ".txt";
+			_errorFileName = "Error" + logTime + ".txt";
 
 			#ifdef ANDROMEDA_VITA
 			{
@@ -72,6 +82,75 @@ namespace Andromeda
 				delete file;
 			}
 		}
+
+		void Logger::Info(const char* file, const char* function, int line, const char *message, ...)
+		{
+			if (_active)
+			{
+				va_list argList;
+				char cbuffer[1024];
+				va_start(argList, message);
+				vsnprintf(cbuffer, 1024, message, argList);
+				va_end(argList);
+
+				std::string logMessage = "";
+
+				if (_debug)
+				{
+					logMessage = GetTime() + " " + std::string(file) + "(" + to_string(line) + ") " + std::string(function) + " : " + std::string(cbuffer);
+				}
+				else
+				{
+					logMessage = std::string(cbuffer);
+				}
+
+				FileSystem::BaseFile* file = FileSystem::FileManager::Instance()->GetFile(_fileName, true);
+
+				if (file == 0)
+					return;
+
+				file->Open(FileSystem::Append, FileSystem::Text);
+				file->Write((void*)logMessage.c_str(), sizeof(char), logMessage.length());
+				file->Close();
+
+				delete file;
+			}
+		}
+
+		void Logger::Error(const char* file, const char* function,int line, const char *message, ...)
+		{
+			if (_active)
+			{
+				va_list argList;
+				char cbuffer[1024];
+				va_start(argList, message);
+				vsnprintf(cbuffer, 1024, message, argList);
+				va_end(argList);
+
+				std::string logMessage = "";
+
+				if (_debug)
+				{
+					logMessage = GetTime() + " " + std::string(file) + "(" + to_string(line) + ") " + std::string(function) + " : " + std::string(cbuffer);
+				}
+				else
+				{
+					logMessage = std::string(cbuffer);
+				}
+
+				FileSystem::BaseFile* file = FileSystem::FileManager::Instance()->GetFile(_errorFileName, true);
+
+				if (file == 0)
+					return;
+
+				file->Open(FileSystem::Append, FileSystem::Text);
+				file->Write((void*)logMessage.c_str(), sizeof(char), logMessage.length());
+				file->Close();
+
+				delete file;
+			}
+		}
+
 
 		void Logger::NetLog(const char *message, ...)
 		{

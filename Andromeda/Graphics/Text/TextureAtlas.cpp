@@ -36,7 +36,13 @@ namespace Andromeda
 				_texture = TextureManager::Instance()->CreateEmpty("", _width, _height, TextureFilerType::LinearFilter);
 
 				//convert data to rgba
-				_texture->CopyImageData(Convert(_atlas->data, 1, 4, _width, _height));
+				unsigned char* newData = Convert(_atlas->data, 1, 4, _width, _height);
+
+				//set image data
+				_texture->CopyImageData(newData);
+
+				//delete converted data
+				delete[] newData;
 
 				//save test image
 				//stbi_write_png("atlas.png", _width, _height, 4, texture->GetImageData(), _width * 4);
@@ -105,6 +111,8 @@ namespace Andromeda
 			}
 
 			//free(data);
+			//data = NULL;
+
 			return good;
 		}
 	}

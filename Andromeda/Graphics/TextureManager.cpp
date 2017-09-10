@@ -39,14 +39,14 @@ namespace Andromeda
 					//add to collection
 					_images.insert(std::pair<std::string, Texture*>(fileName, image));
 
-					Utils::Logger::Instance()->Log("Loaded texture: %s \n", fileName.c_str());
+					Utils::Logger_Info("Loaded texture: %s \n", fileName.c_str());
 
 					return image;
 				}
 				else
 				{
 					//error
-					Utils::Logger::Instance()->Log("Can't load texture: %s \n", fileName.c_str());
+					Utils::Logger_Info("Can't load texture: %s \n", fileName.c_str());
 					return 0;
 				}
 			}
@@ -67,14 +67,14 @@ namespace Andromeda
 					//add to collection
 					_images.insert(std::pair<std::string, Texture*>(newName, image));
 
-					Utils::Logger::Instance()->Log("Loaded texture: %s \n", newName.c_str());
+					Utils::Logger_Info("Loaded texture: %s \n", newName.c_str());
 
 					return image;
 				}
 				else
 				{
 					//error
-					Utils::Logger::Instance()->Log("Can't load texture: %s \n", newName.c_str());
+					Utils::Logger_Info("Can't load texture: %s \n", newName.c_str());
 					return 0;
 				}
 			}
@@ -101,13 +101,13 @@ namespace Andromeda
 				image->_filterType = filterType;
 				image->_textureColor = textureColor;
 
-				//allocate memoty to that texture
+				//allocate memory to that texture
 				System::MemoryManager::Instance()->AllocTexture(image);
 
 				//add to collection
 				_images.insert(std::pair<std::string, Texture*>(name, image));
 
-				Utils::Logger::Instance()->Log("Created texture: %s \n", name.c_str());
+				Utils::Logger_Info("Created texture: %s \n", name.c_str());
 
 				return image;
 			}
@@ -156,6 +156,8 @@ namespace Andromeda
 				return;
 			}
 
+			Utils::Logger_Info("Delete texture: %s \n", it->first.c_str());
+
 			delete image;
 			_images.erase(it);
 		}
@@ -166,6 +168,8 @@ namespace Andromeda
 
 			for (iter = _images.begin(); iter != _images.end(); ++iter)
 			{
+				Utils::Logger_Info("Delete texture: %s \n", iter->first.c_str());
+
 				delete iter->second;
 			}
 

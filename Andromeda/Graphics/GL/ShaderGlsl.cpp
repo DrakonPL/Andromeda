@@ -94,8 +94,11 @@ namespace Andromeda
 			if (!success)
 			{
 				glGetShaderInfoLog(shader, 512, NULL, infoLog);
-				Utils::Logger::Instance()->Log("Shader: %s compilation error: %s\n", fileName, infoLog);
+				Utils::Logger_Info("Shader: %s compilation error: %s\n", fileName, infoLog);
 			}
+
+			//delete text
+			delete[] shaderCode;
 
 			return shader;
 		}
@@ -129,7 +132,7 @@ namespace Andromeda
 			if (!success)
 			{
 				glGetShaderInfoLog(shader, 512, NULL, infoLog);
-				Utils::Logger::Instance()->Log("Shader: %s compilation error: %s\n", shaderString.c_str(), infoLog);
+				Utils::Logger_Info("Shader: %s compilation error: %s\n", shaderString.c_str(), infoLog);
 			}
 
 			return shader;
@@ -154,7 +157,7 @@ namespace Andromeda
 			if (!success)
 			{
 				glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
-				Utils::Logger::Instance()->Log("Shader link error: %s\n", infoLog);
+				Utils::Logger_Info("Shader link error: %s\n", infoLog);
 			}
 
 			//detach shader

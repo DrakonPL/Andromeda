@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tests\Andromeda.cpp" />
+    <ClCompile Include="Tests\Basic\Test1.cpp" />
+    <ClCompile Include="Tests\Basic\Test2.cpp" />
+    <ClCompile Include="Tests\Basic\Test3.cpp" />
+    <ClCompile Include="Tests\Basic\Test4.cpp" />
+    <ClCompile Include="Tests\Basic\Test5.cpp" />
+    <ClCompile Include="Tests\Basic\Test6.cpp" />
+    <ClCompile Include="Tests\Basic\TestCam3d.cpp" />
+    <ClCompile Include="Tests\Basic\TestSprite.cpp" />
+    <ClCompile Include="Tests\Basic\TestToTexture.cpp" />
+    <ClCompile Include="Tests\Basic\VitaTest.cpp" />
+    <ClCompile Include="Tests\ExampleGameManager.cpp" />
+    <ClCompile Include="Tests\FreeTypeTests\TestFreeTypeAtlas.cpp" />
+    <ClCompile Include="Tests\FreeTypeTests\TestFreeTypeFont.cpp" />
+    <ClCompile Include="Tests\InputHelper.cpp" />
+    <ClCompile Include="Tests\Input\TouchTest.cpp" />
+    <ClCompile Include="Tests\Lightening\TestLight1.cpp" />
+    <ClCompile Include="Tests\Lightening\TestLight2.cpp" />
+    <ClCompile Include="Tests\Lightening\TestLight3.cpp" />
+    <ClCompile Include="Tests\Lightening\TestLight4.cpp" />
+    <ClCompile Include="Tests\Models\TestObjModel.cpp" />
+    <ClCompile Include="Tests\TestHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Tests\Basic\Test1.h" />
+    <ClInclude Include="Tests\Basic\Test2.h" />
+    <ClInclude Include="Tests\Basic\Test3.h" />
+    <ClInclude Include="Tests\Basic\Test4.h" />
+    <ClInclude Include="Tests\Basic\Test5.h" />
+    <ClInclude Include="Tests\Basic\Test6.h" />
+    <ClInclude Include="Tests\Basic\TestCam3d.h" />
+    <ClInclude Include="Tests\Basic\TestSprite.h" />
+    <ClInclude Include="Tests\Basic\TestToTexture.h" />
+    <ClInclude Include="Tests\Basic\VitaTest.h" />
+    <ClInclude Include="Tests\ExampleGameManager.h" />
+    <ClInclude Include="Tests\FreeTypeTests\TestFreeTypeAtlas.h" />
+    <ClInclude Include="Tests\FreeTypeTests\TestFreeTypeFont.h" />
+    <ClInclude Include="Tests\InputHelper.h" />
+    <ClInclude Include="Tests\Input\TouchTest.h" />
+    <ClInclude Include="Tests\Lightening\TestLight1.h" />
+    <ClInclude Include="Tests\Lightening\TestLight2.h" />
+    <ClInclude Include="Tests\Lightening\TestLight3.h" />
+    <ClInclude Include="Tests\Lightening\TestLight4.h" />
+    <ClInclude Include="Tests\Models\TestObjModel.h" />
+    <ClInclude Include="Tests\TestHelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1A8AD747-39B6-4205-AD55-9B95BB241C03}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Andromeda_Tests</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>ANDROMEDA_PC;ANDROMEDA_GLFW;ANDROMEDA_GL3;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\;..\..\..\Libs;..\..\..\Libs\freetype\include;..\..\..\Libs\freetype_gl;..\..\..\Libs\glew\include;..\..\..\Libs\glfw\include;..\..\..\Libs\glm;..\..\..\Libs\stb;..\..\..\Libs\tiny_obj_loader;..\..\..\Libs\JellyPhysic;..\..\..\Libs\tinyxml;..\..\..\Libs\dirent;..\..\..\Libs\irrKlang\include;..\..\..\Libs\ffmpeg\include;..\..\..\Libs\portaudio\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\..\Libs\glew\lib;..\..\..\Libs\glfw\lib;..\..\..\Libs\freetype\lib;..\..\..\Libs\irrKlang\lib;..\..\..\Libs\ffmpeg\lib;..\..\..\Libs\portaudio\Debug;..\..\..\Build\Andromeda\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;freetype263.lib;irrKlang.lib;avcodec.lib;avformat.lib;avutil.lib;avdevice.lib;avfilter.lib;postproc.lib;swresample.lib;swscale.lib;portaudio_x86.lib;Andromeda.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ENTRY:"mainCRTStartup" %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>ANDROMEDA_PC;ANDROMEDA_GLFW;ANDROMEDA_GL3;WIN32;NDEBUG;_WINDOWS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\;..\..\..\Libs;..\..\..\Libs\freetype\include;..\..\..\Libs\freetype_gl;..\..\..\Libs\glew\include;..\..\..\Libs\glfw\include;..\..\..\Libs\glm;..\..\..\Libs\stb;..\..\..\Libs\tiny_obj_loader;..\..\..\Libs\JellyPhysic;..\..\..\Libs\tinyxml;..\..\..\Libs\dirent;..\..\..\Libs\irrKlang\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;freetype263.lib;irrKlang.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Libs\glew\lib;..\..\..\Libs\glfw\lib;..\..\..\Libs\freetype\lib;..\..\..\Libs\irrKlang\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ENTRY:"mainCRTStartup" %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

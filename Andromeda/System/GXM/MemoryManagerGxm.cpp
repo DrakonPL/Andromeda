@@ -20,7 +20,7 @@ namespace Andromeda
 		void MemoryManagerGxm::FreeTexture(Graphics::Texture* texture)
 		{
 			Graphics::GxmMemoryUtil::FreeGpu((SceUID)texture->GetId());
-			texture->SetImageData(0);
+			//texture->SetImageData(0);
 		}
 	}
 }

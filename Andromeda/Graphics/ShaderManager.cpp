@@ -1,5 +1,6 @@
 #include <Andromeda/Graphics/ShaderManager.h>
 #include <Andromeda/Graphics/RenderManager.h>
+#include <Andromeda/Utils/Logger.h>
 
 namespace Andromeda
 {
@@ -89,6 +90,7 @@ namespace Andromeda
 
 			for (iter = _shaders.begin(); iter != _shaders.end(); ++iter)
 			{
+				Utils::Logger_Info("Delete shader: %s \n", iter->first.c_str());
 				delete iter->second;
 			}
 

@@ -27,9 +27,10 @@ namespace Andromeda
 
 		Texture::~Texture()
 		{
+			RenderManager::Instance()->DestroyTexture(this);
+
 			if (_pixels != 0)
 			{
-				RenderManager::Instance()->DestroyTexture(this);
 				System::MemoryManager::Instance()->FreeTexture(this);
 			}
 		}

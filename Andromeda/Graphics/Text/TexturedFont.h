@@ -30,6 +30,9 @@ namespace Andromeda
 			//vertex array
 			VertexArrayObject* _vertexArray;
 
+			//memory buffer
+			unsigned char* _buffer;
+
 			//shader
 			Shader* _shader;
 

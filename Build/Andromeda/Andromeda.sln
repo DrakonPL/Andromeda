@@ -10,6 +10,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JellyCar", "..\..\Games\Jel
 		{CDD70FEF-A453-450C-813C-E7ADFC640A24} = {CDD70FEF-A453-450C-813C-E7ADFC640A24}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Andromeda_Tests", "..\..\Tests\Tests\Andromeda_Tests\Andromeda_Tests.vcxproj", "{1A8AD747-39B6-4205-AD55-9B95BB241C03}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CDD70FEF-A453-450C-813C-E7ADFC640A24} = {CDD70FEF-A453-450C-813C-E7ADFC640A24}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -30,6 +35,12 @@ Global
 		{419D2A84-9838-41C6-AEC7-2897156519BD}.Release|Win32.ActiveCfg = Release|Win32
 		{419D2A84-9838-41C6-AEC7-2897156519BD}.Release|Win32.Build.0 = Release|Win32
 		{419D2A84-9838-41C6-AEC7-2897156519BD}.Release|x64.ActiveCfg = Release|Win32
+		{1A8AD747-39B6-4205-AD55-9B95BB241C03}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1A8AD747-39B6-4205-AD55-9B95BB241C03}.Debug|Win32.Build.0 = Debug|Win32
+		{1A8AD747-39B6-4205-AD55-9B95BB241C03}.Debug|x64.ActiveCfg = Debug|Win32
+		{1A8AD747-39B6-4205-AD55-9B95BB241C03}.Release|Win32.ActiveCfg = Release|Win32
+		{1A8AD747-39B6-4205-AD55-9B95BB241C03}.Release|Win32.Build.0 = Release|Win32
+		{1A8AD747-39B6-4205-AD55-9B95BB241C03}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

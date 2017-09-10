@@ -14,8 +14,11 @@ namespace Andromeda
 
 		void MemoryManagerGlfw::FreeTexture(Graphics::Texture* texture)
 		{
-			delete[] texture->GetImageData();
-			texture->SetImageData(0);
+			if (texture->GetImageData() != 0)
+			{
+				delete[] texture->GetImageData();
+				texture->SetImageData(0);
+			}
 		}
 	}
 }

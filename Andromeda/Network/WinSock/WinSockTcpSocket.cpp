@@ -11,7 +11,7 @@ namespace Andromeda
 
 			if (_socket == INVALID_SOCKET)
 			{
-				Utils::Logger::Instance()->Log("Failed. Error Code : %d", WSAGetLastError());
+				Utils::Logger_Info("Failed. Error Code : %d", WSAGetLastError());
 				_created = false;
 			}
 			else
@@ -45,7 +45,7 @@ namespace Andromeda
 			//Connect to remote server
 			if (connect(_socket, (struct sockaddr *)&_server, sizeof(_server)) < 0)
 			{
-				Utils::Logger::Instance()->Log("Connect error: %d", WSAGetLastError());
+				Utils::Logger_Info("Connect error: %d", WSAGetLastError());
 				return false;
 			}
 
@@ -63,7 +63,7 @@ namespace Andromeda
 
 			if (send(_socket, data, size, 0) < 0)
 			{
-				Utils::Logger::Instance()->Log("Send error: %d", WSAGetLastError());
+				Utils::Logger_Info("Send error: %d", WSAGetLastError());
 				return false;
 			}
 
@@ -81,7 +81,7 @@ namespace Andromeda
 
 			if ((recvSize = recv(_socket, data, size, 0)) == SOCKET_ERROR)
 			{
-				Utils::Logger::Instance()->Log("Receive error: %d", WSAGetLastError());
+				Utils::Logger_Info("Receive error: %d", WSAGetLastError());
 				return -1;
 			}
 
@@ -104,7 +104,7 @@ namespace Andromeda
 
 			if (bind(_socket, (struct sockaddr *)&_server, sizeof(_server)) == SOCKET_ERROR)
 			{
-				Utils::Logger::Instance()->Log("Bind failed with error code : %d", WSAGetLastError());
+				Utils::Logger_Info("Bind failed with error code : %d", WSAGetLastError());
 				return false;
 			}
 
@@ -122,7 +122,7 @@ namespace Andromeda
 
 			if (listen(_socket, 3) != 0)
 			{
-				Utils::Logger::Instance()->Log("Listen failed with error code : %d", WSAGetLastError());
+				Utils::Logger_Info("Listen failed with error code : %d", WSAGetLastError());
 				return false;
 			}
 

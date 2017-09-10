@@ -5,6 +5,8 @@
 #include <Andromeda/Graphics/GL/ShaderGlsl.h>
 #include <Andromeda/Graphics/VertexTypes.h>
 
+#include <Andromeda/System/MemoryManager.h>
+
 #define GLEW_STATIC
 #include <GL/glew.h>
 
@@ -125,6 +127,9 @@ namespace Andromeda
 
 				// Unbind texture when done, so we won't accidentily mess up our texture.
 				glBindTexture(GL_TEXTURE_2D, 0);
+
+				//remove image data
+				System::MemoryManager::Instance()->FreeTexture(image);
 			}
 		}
 
@@ -186,7 +191,7 @@ namespace Andromeda
 
 		void RenderManagerGL3::UseTexture(Texture* image)
 		{
-			if(image != 0 && _lastTextureId != image->GetId())
+			if(image != 0 /*&& _lastTextureId != image->GetId()*/)
 			{
 				glBindTexture(GL_TEXTURE_2D, image->GetId());
 				_lastTextureId = image->GetId();
