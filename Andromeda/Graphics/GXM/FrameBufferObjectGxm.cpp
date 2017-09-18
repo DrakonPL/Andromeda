@@ -29,6 +29,8 @@ namespace Andromeda
 		FrameBufferObjectGxm::~FrameBufferObjectGxm()
 		{
 			sceGxmDestroyRenderTarget(_renderTarget);
+			
+			TextureManager::Instance()->Remove(_texture);
 
 			GxmMemoryUtil::FreeGpu(_depthBufferUid);
 		}

@@ -44,12 +44,6 @@ TestHelper::TestHelper()
 {
 	_currentTest = 0;
 
-	_tests.push_back(new TestObjModel());
-	_tests.push_back(new TestObjModel());
-	_tests.push_back(new TestObjModel());
-	_tests.push_back(new TestObjModel());
-	_tests.push_back(new TestObjModel());
-
 	_tests.push_back(new TestFreeTypeFont());
 	_tests.push_back(new TestFreeTypeAtlas());
 
