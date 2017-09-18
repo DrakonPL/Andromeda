@@ -126,7 +126,7 @@ void TestHelper::ShowInfoText()
 
 	std::string nextTest = "Press " + InputHelper::Instance()->InputName(InputAction::Next) + " to change test";
 
-	_font->AddText(nextTest, RenderManager::Instance()->GetWidth() / 2, RenderManager::Instance()->GetHeight() - 2, glm::vec3(1.0f, 1.0f, 1.0f), FontCenter);
+	_font->AddText(nextTest, RenderManager::Instance()->GetWidth() / 2, RenderManager::Instance()->GetHeight() - 5, glm::vec3(1.0f, 1.0f, 1.0f), FontCenter);
 
 	_font->Draw(projection);
 

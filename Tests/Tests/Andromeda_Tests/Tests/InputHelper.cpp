@@ -116,6 +116,7 @@ InputHelper::InputHelper()
 	else
 	{
 		PrepareGamepadMapping();
+		PrepareNameGamepadMapping();
 	}	
 
 	//touch devices
