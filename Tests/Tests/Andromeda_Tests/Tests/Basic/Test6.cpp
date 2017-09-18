@@ -141,9 +141,10 @@ void Test6::Enter()
 
 void Test6::CleanUp()
 {
-	_shaderManager->RemoveAll();
-	_textureManager->RemoveAll();
 	delete _arrayObject;
+
+	_shaderManager->Remove(_shader);
+	_textureManager->Remove(_texture);
 }
 
 void Test6::Pause()
@@ -234,6 +235,9 @@ void Test6::Draw(GameManager* manager)
 
 	//draw vertices
 	_arrayObject->Draw();
+
+	//draw test info
+	TestHelper::Instance()->ShowInfoText();
 
 	//end frame
 	_renderManager->EndFrame();

@@ -6,12 +6,9 @@
 #include <Andromeda/Graphics/TextureManager.h>
 #include <Andromeda/Graphics/Shader.h>
 #include <Andromeda/Graphics/VertexTypes.h>
-#include <Andromeda/Input/KeyboardDevice.h>
-#include <Andromeda/Input/InputManager.h>
 
 using namespace Andromeda::System;
 using namespace Andromeda::Graphics;
-using namespace Andromeda::Input;
 
 class Test4 : public GameState
 {
@@ -34,11 +31,6 @@ private:
 
 	//texture
 	Texture* _texture;
-
-	//input
-	InputManager* _inputManager;
-	KeyboardDevice* _keyboard;
-	GamepadDevice* _gamepad;
 
 public:
 

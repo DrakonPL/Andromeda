@@ -6,6 +6,10 @@
 #include <Andromeda/System/GameManager.h>
 #include <Andromeda/System/GameState.h>
 
+#include <Andromeda/Graphics/Text/TextureAtlas.h>
+#include <Andromeda/Graphics/Text/TexturedFont.h>
+
+using namespace Andromeda::Graphics;
 using namespace Andromeda::System;
 
 class TestHelper
@@ -18,6 +22,12 @@ private:
 
 	int _currentTest;
 
+	//font
+	TextureAtlas* _fontatlas;
+	TexturedFont* _font;
+	Shader* _fontShader;
+	int _infoLine;
+
 private:
 
 	TestHelper();
@@ -25,9 +35,13 @@ private:
 public:
 
 	static TestHelper* Instance();
+	~TestHelper();
 
 	void NextTest(GameManager* gameManager);
 	GameState* GetCurrentTest();
+
+	void AddInfoText(std::string info);
+	void ShowInfoText();
 
 };
 

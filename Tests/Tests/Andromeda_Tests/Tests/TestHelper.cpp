@@ -1,4 +1,5 @@
 #include "TestHelper.h"
+#include "InputHelper.h"
 
 #include "FreeTypeTests/TestFreeTypeFont.h"
 #include "FreeTypeTests/TestFreeTypeAtlas.h"
@@ -24,6 +25,9 @@
 #include "Lightening/TestLight3.h"
 #include "Lightening/TestLight4.h"
 
+#include <Andromeda/Graphics/ShaderManager.h>
+#include <Andromeda/Graphics/RenderManager.h>
+
 TestHelper* TestHelper::_testHelper = NULL;
 
 TestHelper* TestHelper::Instance()
@@ -40,11 +44,11 @@ TestHelper::TestHelper()
 {
 	_currentTest = 0;
 
-	_tests.push_back(new TestToTexture());
-
-	_tests.push_back(new TestLight1());
-	_tests.push_back(new TestLight2());
-	_tests.push_back(new TestLight3());
+	_tests.push_back(new TestObjModel());
+	_tests.push_back(new TestObjModel());
+	_tests.push_back(new TestObjModel());
+	_tests.push_back(new TestObjModel());
+	_tests.push_back(new TestObjModel());
 
 	_tests.push_back(new TestFreeTypeFont());
 	_tests.push_back(new TestFreeTypeAtlas());
@@ -61,8 +65,37 @@ TestHelper::TestHelper()
 	_tests.push_back(new TestSprite());
 	_tests.push_back(new TestCam3d());
 	_tests.push_back(new TestObjModel());
+	_tests.push_back(new TestToTexture());
+
+	_tests.push_back(new TestLight1());
+	_tests.push_back(new TestLight2());
+	_tests.push_back(new TestLight3());
 
 
+	//init font
+	//chars to cache
+	const char * cache = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
+
+	_fontShader = Andromeda::Graphics::ShaderManager::Instance()->LoadFromFile("testfont", "Assets/Shaders/font", "Assets/Shaders/font", TextureColor);
+
+	//common
+	_fontatlas = new TextureAtlas(512, 512);
+
+	_font = new TexturedFont(_fontatlas, 16, "Assets/Fonts/MODES.TTF");
+	_font->CacheGlyphs(cache);
+	_font->SetShader(_fontShader);
+
+	_fontatlas->CreateTexture();
+
+	_infoLine = 1;
+}
+
+TestHelper::~TestHelper()
+{
+	for (size_t i = 0; i < _tests.size(); i++)
+	{
+		delete _tests[i];
+	}
 }
 
 void TestHelper::NextTest(GameManager* gameManager)
@@ -84,3 +117,27 @@ GameState* TestHelper::GetCurrentTest()
 {
 	return _tests[_currentTest];
 }
+
+void TestHelper::AddInfoText(std::string info)
+{
+	_font->AddText(info, RenderManager::Instance()->GetWidth() / 2, 16 * _infoLine, glm::vec3(1.0f, 1.0f, 1.0f), FontCenter);
+	_infoLine++;
+}
+
+void TestHelper::ShowInfoText()
+{
+	RenderManager::Instance()->SetDepth(false);
+
+	glm::mat4 projection = glm::ortho(0.0f, (float)RenderManager::Instance()->GetWidth(), (float)RenderManager::Instance()->GetHeight(), 0.0f, -1.0f, 1.0f);
+
+	std::string nextTest = "Press " + InputHelper::Instance()->InputName(InputAction::Next) + " to change test";
+
+	_font->AddText(nextTest, RenderManager::Instance()->GetWidth() / 2, RenderManager::Instance()->GetHeight() - 2, glm::vec3(1.0f, 1.0f, 1.0f), FontCenter);
+
+	_font->Draw(projection);
+
+	RenderManager::Instance()->SetDepth(true);
+
+	_infoLine = 1;
+}
+

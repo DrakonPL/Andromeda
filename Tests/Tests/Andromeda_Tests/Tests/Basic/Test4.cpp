@@ -51,15 +51,6 @@ void Test4::Init()
 
 	//generate buffer object
 	_arrayObject->Generate();
-
-	//input
-	_inputManager = InputManager::Instance();
-
-	if (_inputManager->GetKayboardCount() > 0)
-		_keyboard = _inputManager->GetKeyboardDevice(0);
-
-	if (_inputManager->GetGamepadCount() > 0)
-		_gamepad = _inputManager->GetGamepadDevice(0);
 }
 
 void Test4::Enter()
@@ -69,9 +60,10 @@ void Test4::Enter()
 
 void Test4::CleanUp()
 {
-	_shaderManager->RemoveAll();
-	_textureManager->RemoveAll();
 	delete _arrayObject;
+
+	_shaderManager->Remove(_shader);
+	_textureManager->Remove(_texture);
 }
 
 void Test4::Pause()
@@ -130,6 +122,9 @@ void Test4::Draw(GameManager* manager)
 
 	//draw vertices
 	_arrayObject->Draw();
+
+	//draw test info
+	TestHelper::Instance()->ShowInfoText();
 
 	//end frame
 	_renderManager->EndFrame();

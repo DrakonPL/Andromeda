@@ -80,11 +80,12 @@ void TestLight1::CleanUp()
 {
 	delete _cube;
 	delete _lamp;
+
 	delete _cam;
 	delete _timer;
 
-	_textureManager->RemoveAll();
-	_shaderManager->RemoveAll();
+	_shaderManager->Remove(_shader);
+	_shaderManager->Remove(_lampShader);
 }
 
 void TestLight1::Pause()
@@ -234,6 +235,9 @@ void TestLight1::Draw(GameManager* manager)
 
 		_lamp->Draw();
 	}
+
+	//draw test info
+	TestHelper::Instance()->ShowInfoText();
 
 	//end frame
 	_renderManager->EndFrame();

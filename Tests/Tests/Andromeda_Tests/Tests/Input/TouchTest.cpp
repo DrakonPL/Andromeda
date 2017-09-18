@@ -24,7 +24,7 @@ void TouchTest::Init()
 	_font->CacheGlyphs(cache);
 	
 	//upload texture
-	_texture = _atlas->CreateTexture();
+	_atlas->CreateTexture();
 
 	//load shader
 	_shader = _shaderManager->LoadFromFile("font", "Assets/Shaders/font", "Assets/Shaders/font", TextureColor);
@@ -63,8 +63,7 @@ void TouchTest::CleanUp()
 	delete _atlas;
 	delete _font;
 
-	_shaderManager->RemoveAll();
-	_textureManager->RemoveAll();
+	_shaderManager->Remove(_shader);
 }
 
 void TouchTest::Pause()
@@ -157,6 +156,11 @@ void TouchTest::Draw(GameManager* manager)
 	}	
 
 	_font->Draw(_projection);
+
+	//draw test info
+	TestHelper::Instance()->ShowInfoText();
+
+	_renderManager->SetDepth(false);
 
 	//end frame
 	_renderManager->EndFrame();

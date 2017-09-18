@@ -54,8 +54,9 @@ void Test1::Enter()
 
 void Test1::CleanUp()
 {
-	_shaderManager->RemoveAll();
 	delete _arrayObject;
+
+	_shaderManager->Remove(_shader);
 }
 
 void Test1::Pause()
@@ -111,6 +112,9 @@ void Test1::Draw(GameManager* manager)
 
 	//draw vertices
 	_arrayObject->Draw();
+
+	//draw test info
+	TestHelper::Instance()->ShowInfoText();
 
 	//end frame
 	_renderManager->EndFrame();

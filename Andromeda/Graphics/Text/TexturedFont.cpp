@@ -47,6 +47,7 @@ namespace Andromeda
 			//delete font structure
 			texture_font_delete(_font);
 
+			//delete font buffer
 			delete[] _buffer;
 
 			//delete vertex buffer

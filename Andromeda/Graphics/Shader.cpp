@@ -10,6 +10,16 @@ namespace Andromeda
 			_fragmentShaderFile = "";
 		}
 
+		void Shader::SetName(std::string name)
+		{
+			_name = name;
+		}
+
+		std::string Shader::GetName()
+		{
+			return _name;
+		}
+
 		Shader::~Shader()
 		{
 

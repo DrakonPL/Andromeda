@@ -60,9 +60,10 @@ void Test5::Enter()
 
 void Test5::CleanUp()
 {
-	_shaderManager->RemoveAll();
-	_textureManager->RemoveAll();
 	delete _arrayObject;
+
+	_shaderManager->Remove(_shader);
+	_textureManager->Remove(_texture);
 }
 
 void Test5::Pause()
@@ -141,6 +142,9 @@ void Test5::Draw(GameManager* manager)
 
 	//draw vertices
 	_arrayObject->Draw();
+
+	//draw test info
+	TestHelper::Instance()->ShowInfoText();
 
 	//end frame
 	_renderManager->EndFrame();

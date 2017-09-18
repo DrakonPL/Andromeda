@@ -10,7 +10,7 @@ void TestFreeTypeAtlas::Init()
 	_textureManager = TextureManager::Instance();
 
 	//atlas
-	_atlas1 = new TextureAtlas(512, 512);
+	_atlas = new TextureAtlas(512, 512);
 
 	//font
 	size_t minsize = 8, maxsize = 30;
@@ -19,7 +19,7 @@ void TestFreeTypeAtlas::Init()
 
 	for (i = minsize; i < maxsize; ++i)
 	{
-		_font = new TexturedFont(_atlas1, i, "Assets/Fonts/Vera.ttf");
+		_font = new TexturedFont(_atlas, i, "Assets/Fonts/Vera.ttf");
 
 		//load some text
 		const char * cache = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
@@ -29,7 +29,7 @@ void TestFreeTypeAtlas::Init()
 	}
 	
 	//upload texture
-	_texture = _atlas1->CreateTexture();
+	_texture = _atlas->CreateTexture();
 
 	//load shader
 	_shader = _shaderManager->LoadFromFile("sprite", "Assets/Shaders/sprite", "Assets/Shaders/sprite", Textured);
@@ -51,11 +51,10 @@ void TestFreeTypeAtlas::Enter()
 
 void TestFreeTypeAtlas::CleanUp()
 {
-	delete _atlas1;
+	delete _atlas;
 	delete _sprite;
 
-	_shaderManager->RemoveAll();
-	_textureManager->RemoveAll();
+	_shaderManager->Remove(_shader);
 }
 
 void TestFreeTypeAtlas::Pause()
@@ -109,6 +108,9 @@ void TestFreeTypeAtlas::Draw(GameManager* manager)
 	//test
 	_sprite->SetSolor(glm::vec4(1.0f, 1.0f, 1.0f, 1.0f));
 	_sprite->Draw(_projection);
+
+	//draw test info
+	TestHelper::Instance()->ShowInfoText();
 
 	//end frame
 	_renderManager->EndFrame();

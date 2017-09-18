@@ -47,8 +47,11 @@ void TestSprite::CleanUp()
 	delete _title;
 	delete _background;
 
-	_shaderManager->RemoveAll();
-	_textureManager->RemoveAll();
+	_textureManager->Remove(_texture);
+	_textureManager->Remove(_warningTexture);
+	_textureManager->Remove(_boxTexture);
+
+	_shaderManager->Remove(_shader);
 }
 
 void TestSprite::Pause()
@@ -132,6 +135,9 @@ void TestSprite::Draw(GameManager* manager)
 
 	//title
 	_title->Draw(_projection);
+
+	//draw test info
+	TestHelper::Instance()->ShowInfoText();
 
 	//end frame
 	_renderManager->EndFrame();

@@ -26,10 +26,6 @@ private:
 	//texture manager
 	TextureManager* _textureManager;
 
-	//
-	TextureAtlas* _fontatlas;
-	TexturedFont* _font;
-
 	//atlas
 	TextureAtlas* _atlas;
 

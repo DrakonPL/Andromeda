@@ -149,6 +149,11 @@ namespace Andromeda
 
 		void TextureManager::Remove(Texture* image)
 		{
+			if (image == 0)
+			{
+				return;
+			}
+
 			std::map<std::string, Texture*>::iterator it = _images.find(image->_fileName);
 
 			if (it == _images.end())

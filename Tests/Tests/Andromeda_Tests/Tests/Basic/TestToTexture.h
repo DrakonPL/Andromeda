@@ -33,23 +33,11 @@ private:
 	//frame object
 	FrameBufferObject* _frameObject;
 
-	//atlas
-	TextureAtlas* _atlas;
-
-	//font
-	TexturedFont* _font;
-
-	Shader* _fontShader;
-
 	// Shaders
 	Shader* _shader;
-	Shader* _spriteShader;
 
 	//texture
 	Texture* _texture;
-	Texture* _fontTexture;
-
-	Sprite* _background;
 
 	//transform
 	float angle = 0.0f;

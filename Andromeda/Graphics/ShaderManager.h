@@ -28,6 +28,7 @@ namespace Andromeda
 			Shader* Get(std::string name);
 
 			void Remove(std::string name);
+			void Remove(Shader* shader);
 			void RemoveAll();
 		};
 	}

@@ -54,8 +54,7 @@ void TestObjModel::CleanUp()
 	delete _cam;
 	delete _timer;
 
-	_textureManager->RemoveAll();
-	_shaderManager->RemoveAll();
+	_shaderManager->Remove(_shader);
 }
 
 void TestObjModel::Pause()
@@ -199,6 +198,9 @@ void TestObjModel::Draw(GameManager* manager)
 
 		_model->Draw();
 	}
+
+	//draw test info
+	TestHelper::Instance()->ShowInfoText();
 
 	//end frame
 	_renderManager->EndFrame();

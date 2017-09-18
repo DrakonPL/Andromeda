@@ -30,7 +30,7 @@ private:
 	TextureManager* _textureManager;
 
 	//atlas
-	TextureAtlas* _atlas1;
+	TextureAtlas* _atlas;
 
 	//font
 	TexturedFont* _font;

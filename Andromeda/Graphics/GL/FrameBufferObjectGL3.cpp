@@ -21,6 +21,8 @@ namespace Andromeda
 		{
 			glDeleteFramebuffers(1, &_frameBuffer);
 			glDeleteRenderbuffers(1, &_renderBuffer);
+			
+			TextureManager::Instance()->Remove(_texture);
 		}
 
 		void FrameBufferObjectGL3::PrepareBuffer()

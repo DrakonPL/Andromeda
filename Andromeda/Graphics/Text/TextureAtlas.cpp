@@ -21,7 +21,14 @@ namespace Andromeda
 
 		TextureAtlas::~TextureAtlas()
 		{
+			//remove atlas
 			texture_atlas_delete(_atlas);
+
+			//remove texture
+			if (_texture != 0)
+			{
+				TextureManager::Instance()->Remove(_texture);
+			}
 		}
 
 		texture_atlas_t* TextureAtlas::GetAtlas()

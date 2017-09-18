@@ -20,6 +20,18 @@ namespace Andromeda
 
 		ModelObj::~ModelObj()
 		{
+			//delete all materials
+			for (size_t i = 0; i < _materials.size(); i++)
+			{
+				if (_materials[i]->Image != 0)
+				{
+  					TextureManager::Instance()->Remove(_materials[i]->Image);
+				}
+
+				delete _materials[i];
+			}
+
+			//delete all meshaes
 			for (size_t i = 0; i < _meshes.size(); i++)
 			{
 				delete _meshes[i]->Mesh;
@@ -335,6 +347,7 @@ namespace Andromeda
 			}
 
 			file->Close();
+			delete file;
 
 			_location = GetFolderFromPath(fileName);
 

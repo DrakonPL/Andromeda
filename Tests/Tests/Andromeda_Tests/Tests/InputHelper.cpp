@@ -71,8 +71,23 @@ void InputHelper::PrepareNameKeyboardMapping()
 
 void InputHelper::PrepareNameGamepadMapping()
 {
+	_nameGamepadMapping.insert(std::pair<Gamepad::Button, std::string>(Gamepad::Button::Up, "Up"));
+	_nameGamepadMapping.insert(std::pair<Gamepad::Button, std::string>(Gamepad::Button::Down, "Down"));
+	_nameGamepadMapping.insert(std::pair<Gamepad::Button, std::string>(Gamepad::Button::Left, "Left"));
+	_nameGamepadMapping.insert(std::pair<Gamepad::Button, std::string>(Gamepad::Button::Right, "Right"));
 
+	_nameGamepadMapping.insert(std::pair<Gamepad::Button, std::string>(Gamepad::Button::Triangle, "Triangle"));
+	_nameGamepadMapping.insert(std::pair<Gamepad::Button, std::string>(Gamepad::Button::Square, "Square"));
+	_nameGamepadMapping.insert(std::pair<Gamepad::Button, std::string>(Gamepad::Button::Circle, "Circle"));
+	_nameGamepadMapping.insert(std::pair<Gamepad::Button, std::string>(Gamepad::Button::Cross, "Cross"));
+
+	_nameGamepadMapping.insert(std::pair<Gamepad::Button, std::string>(Gamepad::Button::Start, "Start"));
+	_nameGamepadMapping.insert(std::pair<Gamepad::Button, std::string>(Gamepad::Button::Select, "Select"));
+
+	_nameGamepadMapping.insert(std::pair<Gamepad::Button, std::string>(Gamepad::Button::LTrigger, "LTrigger"));
+	_nameGamepadMapping.insert(std::pair<Gamepad::Button, std::string>(Gamepad::Button::RTrigger, "RTrigger"));
 }
+
 InputHelper::InputHelper()
 {
 	_inputManager = InputManager::Instance();

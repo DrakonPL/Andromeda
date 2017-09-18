@@ -144,27 +144,6 @@ void TestToTexture::Init()
 	//frame object
 	_frameObject = _renderManager->CreateFrameBufferObject(_renderManager->GetWidth(), _renderManager->GetHeight());
 
-	//create sprite based on frame objects
-	_spriteShader = _shaderManager->LoadFromFile("sprite", "Assets/Shaders/sprite", "Assets/Shaders/sprite", Textured);
-	_background = new Sprite("background", _frameObject->GetTexture(), _spriteShader);
-	_background->SetPosition(glm::vec2(_renderManager->GetWidth() / 2, _renderManager->GetHeight() / 2));
-	_background->SetScale(glm::vec2(0.5f,0.5f));
-
-	//chars to cache
-	const char * cache = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
-
-	_fontShader = _shaderManager->LoadFromFile("font", "Assets/Shaders/font", "Assets/Shaders/font", TextureColor);
-
-	//atlas
-	_atlas = new TextureAtlas(512, 512);
-
-	_font = new TexturedFont(_atlas, 32, "Assets/Fonts/Lobster-Regular.ttf");
-	_font->CacheGlyphs(cache);
-	_font->SetShader(_fontShader);
-
-	//upload texture
-	_fontTexture = _atlas->CreateTexture();
-
 	_renderManager->SetDepth(true);
 
 	Logger::Instance()->Log("Start ToTexture test.");
@@ -180,13 +159,8 @@ void TestToTexture::CleanUp()
 	delete _arrayObject;
 	delete _frameObject;
 
-	delete _atlas;
-	delete _font;
-
-	delete _background;
-
-	_shaderManager->RemoveAll();
-	_textureManager->RemoveAll();
+	_shaderManager->Remove(_shader);
+	_textureManager->Remove(_texture);
 }
 
 void TestToTexture::Pause()
@@ -267,31 +241,6 @@ void TestToTexture::Draw(GameManager* manager)
 
 		//draw vertices
 		_arrayObject->Draw();
-
-		//draw vertices
-		//_arrayObject->Draw();
-
-
-		//projection = glm::perspective(45.0f, (float)_renderManager->GetWidth() / (float)_renderManager->GetHeight(), 0.1f, 100.0f);
-		//glm::mat4 model;
-		//model = glm::rotate(model, angle, glm::vec3(0.5f, 1.0f, 0.0f));
-		//glm::mat4 mvp = projection * view * model;
-
-		//_shader->SetUniform(VertexShader, "mvp", mvp);
-
-		////draw vertices
-		//_arrayObject->Draw();
-
-		////draw 2d
-		//projection = glm::ortho(0.0f, (float)_renderManager->GetWidth(), 0.0f, (float)_renderManager->GetHeight(), -1.0f, 1.0f);
-
-		//_renderManager->SetDepth(false);
-
-		//_font->AddText("TEST", _renderManager->GetWidth() / 2, _renderManager->GetHeight() / 2, glm::vec3(1.0f, 0.0f, 0.0f), FontLeft);
-		//_font->Draw(projection);
-
-		//_renderManager->SetDepth(true);
-
 	}
 	_frameObject->UnBind();
 
@@ -303,7 +252,6 @@ void TestToTexture::Draw(GameManager* manager)
 
 		//use texture
 		_renderManager->UseTexture(_frameObject->GetTexture());
-		//_renderManager->UseTexture(_texture);	
 
 		//use shader
 		_shader->Bind();
@@ -319,18 +267,10 @@ void TestToTexture::Draw(GameManager* manager)
 
 		//draw vertices
 		_arrayObject->Draw();
-
-		////draw 2d
-		//projection = glm::ortho(0.0f, (float)_renderManager->GetWidth(), (float)_renderManager->GetHeight(), 0.0f, -1.0f, 1.0f);
-
-		//_renderManager->SetDepth(false);
-
-		////_background->Draw(projection);
-
-		//_font->AddText("TEST2", _renderManager->GetWidth()/2, _renderManager->GetHeight() / 2 + 40, glm::vec3(0.0f, 0.0f, 1.0f), FontLeft);
-		//_font->Draw(projection);
-
-		//_renderManager->SetDepth(true);
 	}
+
+	//draw test info
+	TestHelper::Instance()->ShowInfoText();
+
 	_renderManager->EndFrame();
 }

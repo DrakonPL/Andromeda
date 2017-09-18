@@ -14,6 +14,8 @@ namespace Andromeda
 			_diffuseTexture = "";
 			_specularTexture = "";
 			_bumpTexture = "";
+
+			Image = 0;
 		}
 
 		void ModelMaterial::SetColor(MaterialColorType type, glm::vec3 color)

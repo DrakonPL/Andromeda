@@ -18,6 +18,8 @@ namespace Andromeda
 		{
 		protected:
 
+			std::string _name;
+
 			std::string _vertexShaderFile;
 			std::string _fragmentShaderFile;
 
@@ -25,9 +27,14 @@ namespace Andromeda
 
 			Shader();
 
+			void SetName(std::string name);
+
 		public :		
 
 			virtual ~Shader();
+
+			//
+			std::string GetName();
 
 			//use this current shader
 			virtual void Bind() = 0;

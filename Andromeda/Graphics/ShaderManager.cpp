@@ -29,11 +29,14 @@ namespace Andromeda
 			{
 				Shader* shader = RenderManager::Instance()->CreateShader();
 
+				//set name
+				shader->SetName(name);
+
 				//here change name based on platform
 				vertexFile = vertexFile + RenderManager::Instance()->GetVertexShaderName();
 				fragmentFile = fragmentFile + RenderManager::Instance()->GetFragmnetShaderName();
 
-				//
+				//load shader
 				shader->LoadFromFile(vertexFile, fragmentFile, vertexType);
 
 				//add to collection
@@ -50,6 +53,11 @@ namespace Andromeda
 			if (_shaders.find(name) == _shaders.end())
 			{
 				Shader* shader = RenderManager::Instance()->CreateShader();
+
+				//set name
+				shader->SetName(name);
+
+				//load shader
 				shader->LoadFromMemory(vertexShader, fragmentShader, vertexType);
 
 				//add to collection
@@ -82,6 +90,11 @@ namespace Andromeda
 
 			delete _shaders[name];
 			_shaders.erase(it);
+		}
+
+		void ShaderManager::Remove(Shader* shader)
+		{
+			Remove(shader->GetName());
 		}
 
 		void ShaderManager::RemoveAll()

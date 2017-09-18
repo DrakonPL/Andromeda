@@ -169,8 +169,8 @@ void TestCam3d::CleanUp()
 
 	_cubePositions.clear();
 
-	_textureManager->RemoveAll();
-	_shaderManager->RemoveAll();
+	_textureManager->Remove(_texture);
+	_shaderManager->Remove(_shader);
 
 }
 
@@ -259,6 +259,9 @@ void TestCam3d::Draw(GameManager* manager)
 
 		_arrayObject->Draw();
 	}
+
+	//draw test info
+	TestHelper::Instance()->ShowInfoText();
 
 	//end frame
 	_renderManager->EndFrame();

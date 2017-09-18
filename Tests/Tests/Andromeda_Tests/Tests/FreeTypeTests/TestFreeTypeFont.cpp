@@ -14,15 +14,6 @@ void TestFreeTypeFont::Init()
 
 	_fontShader = _shaderManager->LoadFromFile("font", "Assets/Shaders/font", "Assets/Shaders/font", TextureColor);
 
-	//common
-	_fontatlas = new TextureAtlas(512, 512);
-
-	_font = new TexturedFont(_fontatlas, 16, "Assets/Fonts/MODES.TTF");
-	_font->CacheGlyphs(cache);
-	_font->SetShader(_fontShader);
-
-	_fontatlas->CreateTexture();
-
 	//atlas
 	_atlas = new TextureAtlas(512, 512);
 
@@ -45,9 +36,6 @@ void TestFreeTypeFont::Init()
 	_projection = glm::ortho(0.0f, (float)_renderManager->GetWidth(), (float)_renderManager->GetHeight(), 0.0f, -1.0f, 1.0f);
 
 	_renderManager->SetDepth(false);
-
-	//input
-
 }
 
 void TestFreeTypeFont::Enter()
@@ -57,17 +45,13 @@ void TestFreeTypeFont::Enter()
 
 void TestFreeTypeFont::CleanUp()
 {
-	delete _font;
-
 	delete _font1;
 	delete _font2;
 	delete _font3;
 
 	delete _atlas;
-	delete _fontatlas;
 
-	_textureManager->RemoveAll();
-	_shaderManager->RemoveAll();
+	_shaderManager->Remove(_fontShader);
 }
 
 void TestFreeTypeFont::Pause()
@@ -127,9 +111,7 @@ void TestFreeTypeFont::Draw(GameManager* manager)
 	_font3->AddText("Font rendering is working!!!", _renderManager->GetWidth() / 2, _renderManager->GetHeight() / 2, glm::vec3(1.0f, 1.0f, 1.0f), FontCenter);
 	_font3->Draw(_projection);
 
-
-	_font->AddText("Press X to change test", _renderManager->GetWidth() / 2, _renderManager->GetHeight() - 2, glm::vec3(1.0f, 1.0f, 1.0f), FontCenter);
-	_font->Draw(_projection);
+	TestHelper::Instance()->ShowInfoText();
 
 	//end frame
 	_renderManager->EndFrame();

@@ -37,12 +37,8 @@ private:
 
 	//font
 	TexturedFont* _font;
-
 	//shader
 	Shader* _shader;
-
-	//texture
-	Texture* _texture;	
 
 	glm::mat4 _projection;
 
