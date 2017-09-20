@@ -9,9 +9,12 @@
 #include <Andromeda/Graphics/VertexTypes.h>
 #include <Andromeda/Graphics/TextureManager.h>
 #include <Andromeda/System/Timer.h>
+#include <Andromeda/Input/KeyboardDevice.h>
+#include <Andromeda/Input/InputManager.h>
 
 using namespace Andromeda::System;
 using namespace Andromeda::Graphics;
+using namespace Andromeda::Input;
 
 class TestCam3d : public GameState
 {
@@ -37,6 +40,17 @@ private:
 
 	//cam
 	Camera3d* _cam;
+
+	bool _useMouse;
+	bool _firstMouse;
+	int moveX;
+	int moveY;
+
+	//input
+	InputManager* _inputManager;
+	KeyboardDevice* _keyboard;
+	GamepadDevice* _gamepad;
+	MouseDevice* _mouse;
 
 	//timer
 	Timer* _timer;

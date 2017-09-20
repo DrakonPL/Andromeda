@@ -252,6 +252,7 @@ void TestLight2::Draw(GameManager* manager)
 	}
 
 	//draw test info
+	TestHelper::Instance()->AddInfoText("Light - some actual light in work.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

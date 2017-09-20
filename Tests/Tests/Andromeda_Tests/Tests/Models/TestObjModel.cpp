@@ -32,15 +32,21 @@ void TestObjModel::Init()
 		_keyboard = _inputManager->GetKeyboardDevice(0);
 
 	if (_inputManager->GetMouseCount() > 0)
+	{
 		_mouse = _inputManager->GetMouseDevice(0);
+
+		//disable cursor
+		_mouse->SetCursorVisible(false);
+
+		_useMouse = true;
+		_firstMouse = true;
+	}
+
 
 	if (_inputManager->GetGamepadCount() > 0)
 		_gamepad = _inputManager->GetGamepadDevice(0);
 
 	_timer = new Timer();
-
-	_firstMouse = true;
-	_useMouse = false;
 }
 
 void TestObjModel::Enter()
@@ -79,6 +85,29 @@ void TestObjModel::GameResume()
 
 void TestObjModel::HandleEvents(GameManager* manager)
 {
+	if (_mouse != 0 && _useMouse)
+	{
+		int posx = _mouse->GetPosX();
+		int posy = _mouse->GetPosY() * -1.0f;
+
+		if (_firstMouse)
+		{
+			moveX = posx;
+			moveY = posy;
+
+			_firstMouse = false;
+		}
+
+		int xoffset = posx - moveX;
+		int yoffset = posy - moveY;
+
+		moveX = posx;
+		moveY = posy;
+
+		_cam->ProcessMouseMovement(xoffset, yoffset, false);
+	}
+
+
 	if (_keyboard != 0)
 	{
 		//update cam
@@ -99,34 +128,6 @@ void TestObjModel::HandleEvents(GameManager* manager)
 			_cam->ProcessMouseMovement(0, 5, false);
 		if (_keyboard->KeyDown(Key::Down))
 			_cam->ProcessMouseMovement(0, -5, false);
-
-		if (_keyboard->KeyDown(Key::M))
-		{
-			_mouse->SetCursorVisible(false);
-			_useMouse = true;
-		}
-	}
-
-	if (_mouse != 0 && _useMouse)
-	{
-		int posx = _mouse->GetPosX();
-		int posy = _mouse->GetPosY() * -1.0f;
-
-		if (_firstMouse)
-		{
-			moveX = posx;
-			moveY = posy;
-
-			_firstMouse = false;
-		}
-
-		int xoffset = posx - moveX;
-		int yoffset = posy - moveY;
-
-		moveX = posx;
-		moveY = posy;
-
-		_cam->ProcessMouseMovement(xoffset, yoffset,false);
 	}
 
 	if (_gamepad != 0)
@@ -200,6 +201,7 @@ void TestObjModel::Draw(GameManager* manager)
 	}
 
 	//draw test info
+	TestHelper::Instance()->AddInfoText("Load OBJ 3d model.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

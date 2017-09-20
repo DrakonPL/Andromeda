@@ -144,6 +144,7 @@ void Test5::Draw(GameManager* manager)
 	_arrayObject->Draw();
 
 	//draw test info
+	TestHelper::Instance()->AddInfoText("Simple triangle - pass transform matrix to shader.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

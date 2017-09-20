@@ -252,6 +252,7 @@ void TestLight3::Draw(GameManager* manager)
 	}
 
 	//draw test info
+	TestHelper::Instance()->AddInfoText("Light - more magic.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

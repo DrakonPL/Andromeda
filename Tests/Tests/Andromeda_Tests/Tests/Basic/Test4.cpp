@@ -124,6 +124,7 @@ void Test4::Draw(GameManager* manager)
 	_arrayObject->Draw();
 
 	//draw test info
+	TestHelper::Instance()->AddInfoText("Simple triangle - using texture.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

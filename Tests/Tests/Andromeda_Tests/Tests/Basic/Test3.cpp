@@ -112,6 +112,7 @@ void Test3::Draw(GameManager* manager)
 	_arrayObject->Draw();
 
 	//draw test info
+	TestHelper::Instance()->AddInfoText("Simple triangle - vertex color.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

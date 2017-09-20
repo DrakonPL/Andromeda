@@ -102,6 +102,8 @@ void TestSprite::Draw(GameManager* manager)
 	//clear screen
 	_renderManager->ClearScreen();
 
+	_renderManager->SetDepth(false);
+
 	//transform
 	angle += 0.05f;
 	alphaScale += scaleFactor;
@@ -123,7 +125,7 @@ void TestSprite::Draw(GameManager* manager)
 	}
 
 	//background
-	for (int i = 0; i < _renderManager->GetWidth() + 144; i += 144)
+	for (int i = 0; i < _renderManager->GetWidth() + 300; i += 144)
 	{
 		_background->SetPosition(glm::vec2(i - position, _renderManager->GetHeight() / 2));
 		_background->Draw(_projection);
@@ -137,6 +139,7 @@ void TestSprite::Draw(GameManager* manager)
 	_title->Draw(_projection);
 
 	//draw test info
+	TestHelper::Instance()->AddInfoText("Drawing some sprites.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

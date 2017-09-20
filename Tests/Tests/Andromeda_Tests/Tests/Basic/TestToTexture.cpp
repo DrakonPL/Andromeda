@@ -270,6 +270,7 @@ void TestToTexture::Draw(GameManager* manager)
 	}
 
 	//draw test info
+	TestHelper::Instance()->AddInfoText("Render to texture.");
 	TestHelper::Instance()->ShowInfoText();
 
 	_renderManager->EndFrame();

@@ -115,9 +115,6 @@ void TouchTest::Draw(GameManager* manager)
 	//clear screen
 	_renderManager->ClearScreen();
 
-	//draw main text
-	_font->AddText("Input Test", _renderManager->GetWidth() / 2, 35, FontCenter);
-
 	if (_gamepad != 0)
 	{
 		int lX = _gamepad->LeftAnalogX();
@@ -151,13 +148,14 @@ void TouchTest::Draw(GameManager* manager)
 		{
 			char buffer[128];
 			sprintf(buffer, "Back touch : %d pos %d %d", i, _backTouch->GetTouchX(i), _backTouch->GetTouchY(i));
-			_font->AddText(buffer, _renderManager->GetWidth() / 2, (i + 2) * 35, FontCenter);
+			_font->AddText(buffer, _renderManager->GetWidth() / 2, (i + 7) * 35, FontCenter);
 		}
 	}	
 
 	_font->Draw(_projection);
 
 	//draw test info
+	TestHelper::Instance()->AddInfoText("Vita input test.");
 	TestHelper::Instance()->ShowInfoText();
 
 	_renderManager->SetDepth(false);

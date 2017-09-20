@@ -114,6 +114,7 @@ void Test2::Draw(GameManager* manager)
 	_arrayObject->Draw();
 
 	//draw test info
+	TestHelper::Instance()->AddInfoText("Simple triangle - pass color as uniform to shader.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

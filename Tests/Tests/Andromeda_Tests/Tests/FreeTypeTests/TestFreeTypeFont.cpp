@@ -102,6 +102,8 @@ void TestFreeTypeFont::Draw(GameManager* manager)
 	//clear screen
 	_renderManager->ClearScreen();
 
+	_renderManager->SetDepth(false);
+
 	_font1->AddText("Font rendering is working!!!", _renderManager->GetWidth() / 2, _renderManager->GetHeight() / 5, glm::vec3(1.0f, 0.0f, 1.0f), FontCenter);
 	_font1->Draw(_projection);
 
@@ -111,6 +113,7 @@ void TestFreeTypeFont::Draw(GameManager* manager)
 	_font3->AddText("Font rendering is working!!!", _renderManager->GetWidth() / 2, _renderManager->GetHeight() / 2, glm::vec3(1.0f, 1.0f, 1.0f), FontCenter);
 	_font3->Draw(_projection);
 
+	TestHelper::Instance()->AddInfoText("Font rendering test.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

@@ -18,19 +18,18 @@ void Test1::Init()
 	_arrayObject = _renderManager->CreateVertexArrayObject(Simple, StaticDraw);
 
 	//create vertices
-	_arrayObject->CreateVertices(4);
+	_arrayObject->CreateVertices(3);
 
 	//get vertices
 	SimpleVertex* _simpleData = static_cast<SimpleVertex*>(_arrayObject->GetVertices());
 
 	//set data
-	_simpleData[0].x = 0.5f;	_simpleData[0].y = 0.5f;	_simpleData[0].z = 0.0f;
+	_simpleData[0].x = -0.5f;	_simpleData[0].y = -0.5f;	_simpleData[0].z = 0.0f;
 	_simpleData[1].x = 0.5f;	_simpleData[1].y = -0.5f;	_simpleData[1].z = 0.0f;
-	_simpleData[2].x = -0.5f;	_simpleData[2].y = -0.5f;	_simpleData[2].z = 0.0f;
-	_simpleData[3].x = -0.5f;	_simpleData[3].y = 0.5f;	_simpleData[3].z = 0.0f;
+	_simpleData[2].x = 0.0f;	_simpleData[2].y = 0.5f;	_simpleData[2].z = 0.0f;
 
 	//create indices
-	_arrayObject->CreateIndices(6);
+	_arrayObject->CreateIndices(3);
 
 	//get indices
 	unsigned short* _indices = static_cast<unsigned short*>(_arrayObject->GetIndices());
@@ -38,10 +37,7 @@ void Test1::Init()
 	//set data
 	_indices[0] = 0;
 	_indices[1] = 1;
-	_indices[2] = 3;
-	_indices[3] = 1;
-	_indices[4] = 2;
-	_indices[5] = 3;
+	_indices[2] = 2;
 
 	//generate buffer object
 	_arrayObject->Generate();
@@ -114,6 +110,7 @@ void Test1::Draw(GameManager* manager)
 	_arrayObject->Draw();
 
 	//draw test info
+	TestHelper::Instance()->AddInfoText("Simple triangle - color in shader.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

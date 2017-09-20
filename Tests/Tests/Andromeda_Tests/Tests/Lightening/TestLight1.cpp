@@ -237,6 +237,7 @@ void TestLight1::Draw(GameManager* manager)
 	}
 
 	//draw test info
+	TestHelper::Instance()->AddInfoText("Light - simple scene.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

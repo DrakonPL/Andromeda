@@ -110,6 +110,7 @@ void TestFreeTypeAtlas::Draw(GameManager* manager)
 	_sprite->Draw(_projection);
 
 	//draw test info
+	TestHelper::Instance()->AddInfoText("Atlas texture test.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

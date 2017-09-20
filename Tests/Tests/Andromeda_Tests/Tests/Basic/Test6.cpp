@@ -229,14 +229,11 @@ void Test6::Draw(GameManager* manager)
 
 	_shader->SetUniform(VertexShader, "mvp", mvp);
 
-	//_shader->SetUniform(VertexShader,"projection", projection);
-	//_shader->SetUniform(VertexShader, "view", view);
-	//_shader->SetUniform(VertexShader, "model", model);
-
 	//draw vertices
 	_arrayObject->Draw();
 
 	//draw test info
+	TestHelper::Instance()->AddInfoText("Textured cube.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

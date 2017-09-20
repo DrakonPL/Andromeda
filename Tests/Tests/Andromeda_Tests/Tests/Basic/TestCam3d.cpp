@@ -152,6 +152,27 @@ void TestCam3d::Init()
 
 	_renderManager->SetDepth(true);
 
+	//input
+	_inputManager = InputManager::Instance();
+
+	if (_inputManager->GetKayboardCount() > 0)
+		_keyboard = _inputManager->GetKeyboardDevice(0);
+
+	if (_inputManager->GetMouseCount() > 0)
+	{
+		_mouse = _inputManager->GetMouseDevice(0);
+
+		//disable cursor
+		_mouse->SetCursorVisible(false);
+
+		_useMouse = true;
+		_firstMouse = true;
+	}
+
+
+	if (_inputManager->GetGamepadCount() > 0)
+		_gamepad = _inputManager->GetGamepadDevice(0);
+
 	_dt = 0;
 	_timer = new Timer();
 }
@@ -196,15 +217,72 @@ void TestCam3d::GameResume()
 
 void TestCam3d::HandleEvents(GameManager* manager)
 {
-	//update cam
-	if (InputHelper::Instance()->ActionHold(InputAction::Up))
-		_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::FORWARD, _dt);
-	if (InputHelper::Instance()->ActionHold(InputAction::Down))
-		_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::BACKWARD, _dt);
-	if (InputHelper::Instance()->ActionHold(InputAction::Left))
-		_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::LEFT, _dt);
-	if (InputHelper::Instance()->ActionHold(InputAction::Right))
-		_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::RIGHT, _dt);
+	if (_mouse != 0 && _useMouse)
+	{
+		int posx = _mouse->GetPosX();
+		int posy = _mouse->GetPosY() * -1.0f;
+
+		if (_firstMouse)
+		{
+			moveX = posx;
+			moveY = posy;
+
+			_firstMouse = false;
+		}
+
+		int xoffset = posx - moveX;
+		int yoffset = posy - moveY;
+
+		moveX = posx;
+		moveY = posy;
+
+		_cam->ProcessMouseMovement(xoffset, yoffset, false);
+	}
+
+
+	if (_keyboard != 0)
+	{
+		//update cam
+		if (_keyboard->KeyDown(Key::W))
+			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::FORWARD, _dt);
+		if (_keyboard->KeyDown(Key::S))
+			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::BACKWARD, _dt);
+		if (_keyboard->KeyDown(Key::A))
+			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::LEFT, _dt);
+		if (_keyboard->KeyDown(Key::D))
+			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::RIGHT, _dt);
+
+		if (_keyboard->KeyDown(Key::Left))
+			_cam->ProcessMouseMovement(-5, 0, false);
+		if (_keyboard->KeyDown(Key::Right))
+			_cam->ProcessMouseMovement(5, 0, false);
+		if (_keyboard->KeyDown(Key::Up))
+			_cam->ProcessMouseMovement(0, 5, false);
+		if (_keyboard->KeyDown(Key::Down))
+			_cam->ProcessMouseMovement(0, -5, false);
+	}
+
+	if (_gamepad != 0)
+	{
+		//update cam
+		if (_gamepad->KeyDown(Gamepad::Up))
+			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::FORWARD, _dt);
+		if (_gamepad->KeyDown(Gamepad::Down))
+			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::BACKWARD, _dt);
+		if (_gamepad->KeyDown(Gamepad::Left))
+			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::LEFT, _dt);
+		if (_gamepad->KeyDown(Gamepad::Right))
+			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::RIGHT, _dt);
+
+		if (_gamepad->KeyDown(Gamepad::Square))
+			_cam->ProcessMouseMovement(-5, 0, false);
+		if (_gamepad->KeyDown(Gamepad::Circle))
+			_cam->ProcessMouseMovement(5, 0, false);
+		if (_gamepad->KeyDown(Gamepad::Triangle))
+			_cam->ProcessMouseMovement(0, 5, false);
+		if (_gamepad->KeyDown(Gamepad::Cross))
+			_cam->ProcessMouseMovement(0, -5, false);
+	}
 
 	if (InputHelper::Instance()->ActionPressed(InputAction::Next))
 	{
@@ -261,6 +339,7 @@ void TestCam3d::Draw(GameManager* manager)
 	}
 
 	//draw test info
+	TestHelper::Instance()->AddInfoText("Cam test - use buttons to move.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame
