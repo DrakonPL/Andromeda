@@ -4,7 +4,7 @@ namespace Andromeda
 {
 	namespace FileSystem
 	{
-		BaseFile::BaseFile()
+		BaseFile::BaseFile():_fileName(""), _loadFileName("")
 		{
 			_fileName = "";
 			_loadFileName = "";
@@ -18,6 +18,11 @@ namespace Andromeda
 			_loadFileName = loadFileName;
 
 			_loaded = false;
+		}
+
+		BaseFile::~BaseFile()
+		{
+
 		}
 	}
 }

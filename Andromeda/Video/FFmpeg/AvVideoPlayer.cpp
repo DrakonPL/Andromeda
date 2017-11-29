@@ -196,11 +196,14 @@ bool AvVideoPlayer::load(string fileName, bool stream){
 		//marcin
 		int numBufferedFrames = 36;// (int)ofClamp(av_q2d(video_stream->r_frame_rate)*1.4, 30.0, 70.0);
 		//ofLogError() << "[AvVideoPlayer] Buffering " << numBufferedFrames << endl;
-		for( int i = 0; i < numBufferedFrames; i++ ){
+		for( int i = 0; i < numBufferedFrames; i++ )
+		{
 			AvVideoData * data = new AvVideoData();
 			int ret = av_image_alloc(data->video_dst_data, data->video_dst_linesize,
 									 video_context->width, video_context->height, video_context->pix_fmt, 1);
-			if (ret < 0) {
+			if (ret < 0)
+			{
+				delete data;
 				die("Could not allocate raw video buffer");
 			}
 			data->video_dst_bufsize = ret;

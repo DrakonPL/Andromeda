@@ -152,7 +152,7 @@ namespace Andromeda
 				unsigned short* _indices = static_cast<unsigned short*>(mesh->GetIndices());
 
 				//set data
-				for (int in = 0; in < shapes[i].mesh.indices.size(); in++)
+				for (unsigned int in = 0; in < shapes[i].mesh.indices.size(); in++)
 				{
 					_indices[in] = shapes[i].mesh.indices[in];
 				}

@@ -39,7 +39,7 @@ namespace JellyPhysics
 		Vector2List ret = mLocalVertices;
 		
 		Vector2 v;
-		for (int i = 0; i < ret.size(); i++)
+		for (unsigned int i = 0; i < ret.size(); i++)
 		{
 			// rotate the point, and then translate.
 			v = ret[i] * scale;

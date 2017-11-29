@@ -11,12 +11,13 @@ namespace Andromeda
 		{
 			_soundSource = 0;
 			_looped = false;
-			_sound = NULL;
+			_sound = 0;
+			_engine = 0;
 		}
 
 		IrrSound::~IrrSound()
 		{
-			if (_soundSource != NULL)
+			if (_soundSource != 0)
 			{
 				_engine->removeSoundSource(_soundSource);
 				delete _soundSource;
@@ -30,7 +31,7 @@ namespace Andromeda
 
 		bool IrrSound::IsPlaying()
 		{
-			if (_sound == NULL)
+			if (_sound == 0)
 			{
 				return false;
 			}
@@ -59,7 +60,7 @@ namespace Andromeda
 
 			_soundSource = _engine->addSoundSourceFromFile(loadName.c_str());
 
-			if (_soundSource == NULL)
+			if (_soundSource == 0)
 				return false;
 
 			return true;
@@ -67,7 +68,7 @@ namespace Andromeda
 
 		void IrrSound::UpdateVolume()
 		{
-			if (_sound != NULL)
+			if (_sound != 0)
 			{
 				_sound->setVolume(_volume);
 			}
@@ -75,7 +76,7 @@ namespace Andromeda
 
 		void IrrSound::Play()
 		{
-			if (_soundSource != NULL)
+			if (_soundSource != 0)
 			{
 				_sound = _engine->play2D(_soundSource, _looped, false, true, true);
 				_sound->setVolume(_volume);
@@ -84,7 +85,7 @@ namespace Andromeda
 
 		void IrrSound::Stop()
 		{
-			if (_sound != NULL)
+			if (_sound != 0)
 			{
 				_sound->stop();
 			}			

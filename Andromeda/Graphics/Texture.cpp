@@ -22,6 +22,11 @@ namespace Andromeda
 			_filterType = TextureFilerType::LinearFilter;
 			_textureColor = TextureColorType::Texture_RGBA;
 
+			_gxmId[0] = 0;
+			_gxmId[1] = 0;
+			_gxmId[2] = 0;
+			_gxmId[3] = 0;
+
 			_fileName = "";
 		}
 
@@ -129,7 +134,10 @@ namespace Andromeda
 					{
 						System::MemoryManager::Instance()->AllocTexture(this);
 
-						memcpy(_pixels, ptr, _width * _height * 4);
+						if (_pixels != 0)
+						{
+							memcpy(_pixels, ptr, _width * _height * 4);
+						}
 					}
 
 					// Free the loaded pixels (they are now in our own pixel buffer)

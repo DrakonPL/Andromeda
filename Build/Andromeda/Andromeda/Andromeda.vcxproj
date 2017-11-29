@@ -54,7 +54,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>ANDROMEDA_PC;ANDROMEDA_GLFW;ANDROMEDA_GL3;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\;..\..\..\Libs;..\..\..\Libs\freetype\include;..\..\..\Libs\freetype_gl;..\..\..\Libs\glew\include;..\..\..\Libs\glfw\include;..\..\..\Libs\glm;..\..\..\Libs\stb;..\..\..\Libs\tiny_obj_loader;..\..\..\Libs\JellyPhysic;..\..\..\Libs\tinyxml;..\..\..\Libs\dirent;..\..\..\Libs\irrKlang\include;..\..\..\Libs\ffmpeg\include;..\..\..\Libs\portaudio\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\;..\..\..\Libs;..\..\..\Libs\freetype\include;..\..\..\Libs\freetype_gl;..\..\..\Libs\glew\include;..\..\..\Libs\glfw\include;..\..\..\Libs\glm;..\..\..\Libs\stb;..\..\..\Libs\tiny_obj_loader;..\..\..\Libs\JellyPhysic;..\..\..\Libs\tinyxml;..\..\..\Libs\dirent;..\..\..\Libs\irrKlang\include;..\..\..\Libs\ffmpeg\include;..\..\..\Libs\portaudio\Include;..\..\..\Libs\tiny_gltf_loader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -277,30 +277,37 @@
     <ClInclude Include="..\..\..\Libs\tiny_obj_loader\tiny_obj_loader.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\Assets\Shaders\font.frag" />
-    <None Include="..\..\..\Assets\Shaders\font.vert" />
-    <None Include="..\..\..\Assets\Shaders\lightening1_cube.frag" />
-    <None Include="..\..\..\Assets\Shaders\lightening1_cube.vert" />
-    <None Include="..\..\..\Assets\Shaders\lightening1_lamp.frag" />
-    <None Include="..\..\..\Assets\Shaders\lightening1_lamp.vert" />
-    <None Include="..\..\..\Assets\Shaders\lightening2_cube.frag" />
-    <None Include="..\..\..\Assets\Shaders\lightening2_cube.vert" />
-    <None Include="..\..\..\Assets\Shaders\simple_color_transform.frag" />
-    <None Include="..\..\..\Assets\Shaders\simple_color_transform.vert" />
-    <None Include="..\..\..\Assets\Shaders\simple_color_uniform.frag" />
-    <None Include="..\..\..\Assets\Shaders\simple_triangle.frag" />
-    <None Include="..\..\..\Assets\Shaders\simple_triangle.vert" />
-    <None Include="..\..\..\Assets\Shaders\sprite.frag" />
-    <None Include="..\..\..\Assets\Shaders\sprite.vert" />
-    <None Include="..\..\..\Assets\Shaders\vertex_color.frag" />
-    <None Include="..\..\..\Assets\Shaders\vertex_color.vert" />
-    <None Include="..\..\..\Assets\Shaders\vertex_color_texture.frag" />
-    <None Include="..\..\..\Assets\Shaders\vertex_color_texture.vert" />
-    <None Include="..\..\..\Assets\Shaders\vertex_color_texture_transform.frag" />
-    <None Include="..\..\..\Assets\Shaders\vertex_color_texture_transform.vert" />
-    <None Include="..\..\..\Assets\Shaders\vertex_color_texture_transform_3d.vert" />
-    <None Include="..\..\..\Assets\Shaders\vertex_texture_transform.frag" />
-    <None Include="..\..\..\Assets\Shaders\vertex_texture_transform.vert" />
+    <None Include="..\..\..\Assets\Shaders\GL\font.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\font.vert" />
+    <None Include="..\..\..\Assets\Shaders\GL\lightening1.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\lightening1.vert" />
+    <None Include="..\..\..\Assets\Shaders\GL\lightening1_cube.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\lightening1_cube.vert" />
+    <None Include="..\..\..\Assets\Shaders\GL\lightening1_lamp.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\lightening1_lamp.vert" />
+    <None Include="..\..\..\Assets\Shaders\GL\lightening2_cube.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\lightening2_cube.vert" />
+    <None Include="..\..\..\Assets\Shaders\GL\lightening2_diffuse.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\lightening2_diffuse.vert" />
+    <None Include="..\..\..\Assets\Shaders\GL\lightening3_cube.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\lightening4_texture.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\lightening4_texture.vert" />
+    <None Include="..\..\..\Assets\Shaders\GL\simple_color_transform.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\simple_color_transform.vert" />
+    <None Include="..\..\..\Assets\Shaders\GL\simple_color_uniform.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\simple_triangle.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\simple_triangle.vert" />
+    <None Include="..\..\..\Assets\Shaders\GL\sprite.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\sprite.vert" />
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_color.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_color.vert" />
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_color_texture.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_color_texture.vert" />
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_color_texture_transform.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_color_texture_transform.vert" />
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_color_texture_transform_3d.vert" />
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_texture_transform.frag" />
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_texture_transform.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

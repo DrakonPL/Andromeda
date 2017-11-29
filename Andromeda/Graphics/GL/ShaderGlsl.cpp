@@ -12,6 +12,9 @@ namespace Andromeda
 		ShaderGlSl::ShaderGlSl() : Shader()
 		{
 			_shaderProgram = -1;
+
+			_vertexShader = -1;
+			_fragmentShader = -1;
 		}
 
 		ShaderGlSl::~ShaderGlSl()

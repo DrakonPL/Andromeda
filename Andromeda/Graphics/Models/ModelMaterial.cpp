@@ -64,6 +64,8 @@ namespace Andromeda
 				return _specularColor;
 				break;
 			}
+
+			return glm::vec3(0.0f, 0.0f, 0.0f);
 		}
 
 		std::string ModelMaterial::GetTextureName(MaterialTextureType type)
@@ -80,6 +82,8 @@ namespace Andromeda
 				return _bumpTexture;
 				break;
 			}
+
+			return "";
 		}
 	}
 }

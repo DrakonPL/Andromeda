@@ -640,76 +640,97 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\Assets\Shaders\font.frag">
+    <None Include="..\..\..\Assets\Shaders\GL\font.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\lightening1_cube.frag">
+    <None Include="..\..\..\Assets\Shaders\GL\font.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\lightening1_lamp.frag">
+    <None Include="..\..\..\Assets\Shaders\GL\lightening1.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\lightening2_cube.frag">
+    <None Include="..\..\..\Assets\Shaders\GL\lightening1.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\simple_color_transform.frag">
+    <None Include="..\..\..\Assets\Shaders\GL\lightening1_cube.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\simple_color_uniform.frag">
+    <None Include="..\..\..\Assets\Shaders\GL\lightening1_cube.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\simple_triangle.frag">
+    <None Include="..\..\..\Assets\Shaders\GL\lightening1_lamp.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\sprite.frag">
+    <None Include="..\..\..\Assets\Shaders\GL\lightening1_lamp.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\vertex_color.frag">
+    <None Include="..\..\..\Assets\Shaders\GL\lightening2_cube.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\vertex_color_texture.frag">
+    <None Include="..\..\..\Assets\Shaders\GL\lightening2_cube.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\vertex_color_texture_transform.frag">
+    <None Include="..\..\..\Assets\Shaders\GL\lightening2_diffuse.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\vertex_texture_transform.frag">
+    <None Include="..\..\..\Assets\Shaders\GL\lightening2_diffuse.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\font.vert">
+    <None Include="..\..\..\Assets\Shaders\GL\lightening3_cube.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\lightening1_cube.vert">
+    <None Include="..\..\..\Assets\Shaders\GL\lightening4_texture.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\lightening1_lamp.vert">
+    <None Include="..\..\..\Assets\Shaders\GL\lightening4_texture.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\lightening2_cube.vert">
+    <None Include="..\..\..\Assets\Shaders\GL\simple_color_transform.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\simple_color_transform.vert">
+    <None Include="..\..\..\Assets\Shaders\GL\simple_color_transform.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\simple_triangle.vert">
+    <None Include="..\..\..\Assets\Shaders\GL\simple_color_uniform.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\sprite.vert">
+    <None Include="..\..\..\Assets\Shaders\GL\simple_triangle.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\vertex_color.vert">
+    <None Include="..\..\..\Assets\Shaders\GL\simple_triangle.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\vertex_color_texture.vert">
+    <None Include="..\..\..\Assets\Shaders\GL\sprite.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\vertex_color_texture_transform.vert">
+    <None Include="..\..\..\Assets\Shaders\GL\sprite.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\vertex_color_texture_transform_3d.vert">
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_color.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="..\..\..\Assets\Shaders\vertex_texture_transform.vert">
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_color.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_color_texture.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_color_texture.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_color_texture_transform.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_color_texture_transform.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_color_texture_transform_3d.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_texture_transform.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\GL\vertex_texture_transform.vert">
       <Filter>Shaders</Filter>
     </None>
   </ItemGroup>

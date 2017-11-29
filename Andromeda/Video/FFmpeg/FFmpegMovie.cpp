@@ -61,12 +61,12 @@ namespace Andromeda
 			
 		}
 
-		void FFmpegMovie::SetPosition(int milisenconds)
+		void FFmpegMovie::SetPosition(long long milisenconds)
 		{
 			_videoPlayer->setPositionMS(milisenconds);
 		}
 
-		int FFmpegMovie::GetPosition()
+		long long FFmpegMovie::GetPosition()
 		{
 			return _videoPlayer->getDurationMs();
 		}

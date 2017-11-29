@@ -11,7 +11,8 @@ namespace Andromeda
 	{
 		GlfwGameLoader::GlfwGameLoader(GameManager* gameManager) : GameLoader(gameManager)
 		{
-			_window = nullptr;
+			_window = 0;
+			_renderManager = 0;
 		}
 
 		void GlfwGameLoader::Run()
@@ -58,7 +59,7 @@ namespace Andromeda
 			}
 
 			//check if window was screated
-			if (_window == nullptr)
+			if (_window == 0)
 			{
 				std::cout << "Failed to create GLFW window" << std::endl;
 				glfwTerminate();

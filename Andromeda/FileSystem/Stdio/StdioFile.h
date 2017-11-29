@@ -21,6 +21,9 @@ namespace Andromeda
 			StdioFile(std::string fileName, std::string loadFileName);
 
 		public:
+
+			~StdioFile();
+
 			bool Open(FileMode fileMode, FileType fileType);
 			void Close();
 

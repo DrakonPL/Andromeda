@@ -58,18 +58,18 @@ namespace Andromeda
 			private:
 
 			//load font from memory
-			void LoadFromMemory(int size, void* memory_font, size_t memory_size);
+			void LoadFromMemory(float size, void* memory_font, size_t memory_size);
 			
 			//create vertex array object
 			void CreateVertexObject();
 
-			int GetTextLenght(std::string text);
+			float GetTextLenght(std::string text);
 
 			void PrepareBuffer();
 
 		public:
 
-			TexturedFont(TextureAtlas* atlas, int size, std::string filename);
+			TexturedFont(TextureAtlas* atlas, float size, std::string filename);
 			~TexturedFont();
 
 			int CacheGlyphs(std::string cache);

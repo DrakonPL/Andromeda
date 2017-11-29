@@ -33,8 +33,8 @@ namespace Andromeda
 			void Stop();
 			void Pause();
 
-			void SetPosition(int milisenconds);
-			int GetPosition();
+			void SetPosition(long long milisenconds);
+			long long GetPosition();
 
 			bool HaveAudio();
 

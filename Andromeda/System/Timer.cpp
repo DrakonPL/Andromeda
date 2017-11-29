@@ -8,6 +8,7 @@ namespace Andromeda
 		Timer::Timer()
 		{
 			lastTime = clock();
+			msec = 0.0f;
 		}
 
 		float Timer::GetDelta()

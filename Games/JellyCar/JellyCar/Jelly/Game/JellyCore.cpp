@@ -4,6 +4,15 @@
 #include <Andromeda/Graphics/ShaderManager.h>
 #include <Andromeda/Graphics/Sprite.h>
 
+JellyCore::JellyCore()
+{
+	_menuAtlas = 0;
+	_menuFont = 0;
+	_smallFont = 0;
+	_titleFont = 0;
+	_spriteShader = 0;
+}
+
 JellyCore::~JellyCore()
 {
 	delete _smallFont;

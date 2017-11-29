@@ -14,6 +14,11 @@ namespace Andromeda
 			_filBuf = 0;
 		}
 
+		StdioFile::~StdioFile()
+		{
+			Close();
+		}
+
 		bool StdioFile::Open(FileMode fileMode, FileType fileType)
 		{
 			if(fileMode == FileSystem::Read)

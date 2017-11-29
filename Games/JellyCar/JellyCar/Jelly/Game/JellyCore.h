@@ -31,6 +31,7 @@ public:
 
 public:
 
+	JellyCore();
 	~JellyCore();
 
 	void Init();

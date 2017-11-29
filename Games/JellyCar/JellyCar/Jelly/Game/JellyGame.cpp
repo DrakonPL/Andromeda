@@ -112,11 +112,11 @@ void JellyGame::Init()
 	_ballonTime = 0.0f;
 	_tireTime = 0.0f;
 
-	_ballonAABB.expandToInclude(Vector2((_renderManager->GetWidth() / 2) + 128 + 64, 450 + 64));
-	_ballonAABB.expandToInclude(Vector2((_renderManager->GetWidth() / 2) + 128 - 64, 450 - 64));
+	_ballonAABB.expandToInclude(Vector2(((float)_renderManager->GetWidth() / 2.0f) + 128.0f + 64.0f, 450.0f + 64.0f));
+	_ballonAABB.expandToInclude(Vector2(((float)_renderManager->GetWidth() / 2.0f) + 128.0f - 64.0f, 450.0f - 64.0f));
 
-	_tireAABB.expandToInclude(Vector2((_renderManager->GetWidth() / 2) - 128 + 64, 450 + 64));
-	_tireAABB.expandToInclude(Vector2((_renderManager->GetWidth() / 2) - 128 - 64, 450 - 64));
+	_tireAABB.expandToInclude(Vector2(((float)_renderManager->GetWidth() / 2.0f) - 128.0f + 64.0f, 450.0f + 64.0f));
+	_tireAABB.expandToInclude(Vector2(((float)_renderManager->GetWidth() / 2.0f) - 128.0f - 64.0f, 450.0f - 64.0f));
 
 	_gamePlayState = GamePlayState::Play;
 }
@@ -202,8 +202,8 @@ bool JellyGame::LoadLevel(LevelManager* levelManager, std::string levelName,std:
 		float sizeX = _wholeMapSize.Y  / 0.56f;
 		float sizeY = _wholeMapSize.Y;
 
-		float startX, startY;
-		float endX, endY;
+		float startX = 0.0f, startY = 0.0f;
+		float endX = 0.0f, endY = 0.0f;
 
 		if (sizeX < _wholeMapSize.X)
 		{
@@ -225,7 +225,7 @@ bool JellyGame::LoadLevel(LevelManager* levelManager, std::string levelName,std:
 	}
 
 	_wholeMapSize.X += 5;
-	_wholeMapSize.Y = (_wholeMapSize.X *0.56) / 2.0f;
+	_wholeMapSize.Y = (_wholeMapSize.X *0.56f) / 2.0f;
 	_wholeMapSize.X = _wholeMapSize.X / 2.0f;
 
 	_levelTarget = _levelManager->GetLevelTarget();
@@ -811,12 +811,12 @@ void JellyGame::Draw(GameManager* manager)
 
 	if (_showMap)
 	{
-		int x = _mapLimits.Min.X - 51;
-		int y = _mapLimits.Min.Y - 51;
+		float x = _mapLimits.Min.X - 51.0f;
+		float y = _mapLimits.Min.Y - 51.0f;
 
-		for (int xx = x; xx <= _mapLimits.Max.X + 51; xx += 51)
+		for (float xx = x; xx <= _mapLimits.Max.X + 51.0f; xx += 51.0f)
 		{
-			for (int yy = y; yy <= _mapLimits.Max.Y + 51; yy += 51)
+			for (float yy = y; yy <= _mapLimits.Max.Y + 51.0f; yy += 51.0f)
 			{
 				_backSprite->SetPosition(glm::vec2(xx, yy));
 				_backSprite->Draw(_jellyProjection);
@@ -825,12 +825,12 @@ void JellyGame::Draw(GameManager* manager)
 	}
 	else
 	{
-		int x = _worldLimits.Min.X - 51;
-		int y = _worldLimits.Min.Y - 51;
+		float x = _worldLimits.Min.X - 51.0f;
+		float y = _worldLimits.Min.Y - 51.0f;
 
-		for (int xx = x; xx <= _worldLimits.Max.X + 51; xx += 51)
+		for (float xx = x; xx <= _worldLimits.Max.X + 51.0f; xx += 51.0f)
 		{
-			for (int yy = y; yy <= _worldLimits.Max.Y + 51; yy += 51)
+			for (float yy = y; yy <= _worldLimits.Max.Y + 51.0f; yy += 51.0f)
 			{
 				_backSprite->SetPosition(glm::vec2(xx, yy));
 				_backSprite->Draw(_jellyProjection);
@@ -839,13 +839,13 @@ void JellyGame::Draw(GameManager* manager)
 	}	
 
 	//camera aabb
-	Vector2 camMin = _car->getPosition() - Vector2(20, 11.2f);
-	Vector2 camMax = _car->getPosition() + Vector2(20, 11.2f);
+	Vector2 camMin = _car->getPosition() - Vector2(20.0f, 11.2f);
+	Vector2 camMax = _car->getPosition() + Vector2(20.0f, 11.2f);
 	JellyPhysics::AABB camAABB(camMin, camMax);
 
 	//ignore aabb
-	Vector2 ignoreMin = _car->getPosition() - Vector2(40, 22.4f);
-	Vector2 ignoreMax = _car->getPosition() + Vector2(40, 22.4f);
+	Vector2 ignoreMin = _car->getPosition() - Vector2(40.0f, 22.4f);
+	Vector2 ignoreMax = _car->getPosition() + Vector2(40.0f, 22.4f);
 	JellyPhysics::AABB ignoreAABB(ignoreMin, ignoreMax);
 
 	//render level bodies

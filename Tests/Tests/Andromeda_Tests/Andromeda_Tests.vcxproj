@@ -31,6 +31,7 @@
     <ClCompile Include="Tests\Lightening\TestLight2.cpp" />
     <ClCompile Include="Tests\Lightening\TestLight3.cpp" />
     <ClCompile Include="Tests\Lightening\TestLight4.cpp" />
+    <ClCompile Include="Tests\Models\TestGltfModel.cpp" />
     <ClCompile Include="Tests\Models\TestObjModel.cpp" />
     <ClCompile Include="Tests\TestHelper.cpp" />
   </ItemGroup>
@@ -54,6 +55,7 @@
     <ClInclude Include="Tests\Lightening\TestLight2.h" />
     <ClInclude Include="Tests\Lightening\TestLight3.h" />
     <ClInclude Include="Tests\Lightening\TestLight4.h" />
+    <ClInclude Include="Tests\Models\TestGltfModel.h" />
     <ClInclude Include="Tests\Models\TestObjModel.h" />
     <ClInclude Include="Tests\TestHelper.h" />
   </ItemGroup>
@@ -61,6 +63,11 @@
     <None Include="Makefile">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Build\Andromeda\Andromeda\Andromeda.vcxproj">
+      <Project>{cdd70fef-a453-450c-813c-e7adfc640a24}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{1A8AD747-39B6-4205-AD55-9B95BB241C03}</ProjectGuid>
@@ -105,13 +112,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>ANDROMEDA_PC;ANDROMEDA_GLFW;ANDROMEDA_GL3;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\;..\..\..\Libs;..\..\..\Libs\freetype\include;..\..\..\Libs\freetype_gl;..\..\..\Libs\glew\include;..\..\..\Libs\glfw\include;..\..\..\Libs\glm;..\..\..\Libs\stb;..\..\..\Libs\tiny_obj_loader;..\..\..\Libs\JellyPhysic;..\..\..\Libs\tinyxml;..\..\..\Libs\dirent;..\..\..\Libs\irrKlang\include;..\..\..\Libs\ffmpeg\include;..\..\..\Libs\portaudio\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\;..\..\..\Libs;..\..\..\Libs\freetype\include;..\..\..\Libs\freetype_gl;..\..\..\Libs\glew\include;..\..\..\Libs\glfw\include;..\..\..\Libs\glm;..\..\..\Libs\stb;..\..\..\Libs\tiny_obj_loader;..\..\..\Libs\JellyPhysic;..\..\..\Libs\tinyxml;..\..\..\Libs\dirent;..\..\..\Libs\irrKlang\include;..\..\..\Libs\ffmpeg\include;..\..\..\Libs\portaudio\Include;..\..\..\Libs\tiny_gltf_loader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\..\Libs\glew\lib;..\..\..\Libs\glfw\lib;..\..\..\Libs\freetype\lib;..\..\..\Libs\irrKlang\lib;..\..\..\Libs\ffmpeg\lib;..\..\..\Libs\portaudio\Debug;..\..\..\Build\Andromeda\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;freetype263.lib;irrKlang.lib;avcodec.lib;avformat.lib;avutil.lib;avdevice.lib;avfilter.lib;postproc.lib;swresample.lib;swscale.lib;portaudio_x86.lib;Andromeda.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\Libs\glew\lib;..\..\..\Libs\glfw\lib;..\..\..\Libs\freetype\lib;..\..\..\Libs\irrKlang\lib;..\..\..\Libs\ffmpeg\lib;..\..\..\Libs\portaudio\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;freetype263.lib;irrKlang.lib;avcodec.lib;avformat.lib;avutil.lib;avdevice.lib;avfilter.lib;postproc.lib;swresample.lib;swscale.lib;portaudio_x86.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>/ENTRY:"mainCRTStartup" %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PostBuildEvent>

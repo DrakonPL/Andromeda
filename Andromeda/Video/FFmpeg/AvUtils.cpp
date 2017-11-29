@@ -70,7 +70,7 @@ bool AvUtils::updateMetadata(std::string filename, std::map<std::string, std::st
 	AVCodec * out_codec = NULL;
 	AVStream * out_stream = NULL;
 	AVCodecContext * out_c = NULL;
-	int i, ret;
+	unsigned int i, ret;
 	int audio_stream_id = -1;
 	AVDictionary *d = NULL;
 	AVPacket * packet = NULL;
@@ -96,7 +96,7 @@ bool AvUtils::updateMetadata(std::string filename, std::map<std::string, std::st
 	// if you can gurarantee that the container contains only the desired
 	// audio stream
 	for (i = 0; i < container->nb_streams; i++) {
-		if (container->streams[i]->codec->codec_type == AVMEDIA_TYPE_AUDIO) {
+		if (container->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_AUDIO) {
 			audio_stream_id = i;
 			break;
 		}

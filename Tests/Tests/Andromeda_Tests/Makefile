@@ -92,6 +92,7 @@ OBJS   = 	../../../Andromeda/FileSystem/FileManager.o \
 			./Tests/Lightening/TestLight1.o \
 			./Tests/Lightening/TestLight2.o \
 			./Tests/Lightening/TestLight3.o \
+			./Tests/Video/VideoTest1.o \
 			./Tests/Andromeda.o
 			
 SHADERS   = ../../../Andromeda/Graphics/GXM/CoreShaders/Compiled/clear_f_gxp.o ../../../Andromeda/Graphics/GXM/CoreShaders/Compiled/clear_v_gxp.o

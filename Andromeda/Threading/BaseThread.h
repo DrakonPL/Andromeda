@@ -9,6 +9,11 @@ namespace Andromeda
 		{
 		public:
 
+			virtual ~BaseThread()
+			{
+
+			}
+
 			virtual void Wait() = 0;
 			virtual void Cancel() = 0;
 		};

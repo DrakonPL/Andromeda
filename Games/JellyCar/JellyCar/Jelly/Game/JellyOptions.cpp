@@ -194,12 +194,12 @@ void JellyOptions::Enter()
 
 void JellyOptions::CleanUp()
 {
-	//clear level
-	_levelManager->ClearLevel(_world);
-
-	//remove level manager
 	if (_levelManager != 0)
 	{
+		//clear level
+		_levelManager->ClearLevel(_world);
+
+		//remove level manager
 		delete _levelManager;
 	}
 

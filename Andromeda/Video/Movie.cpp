@@ -15,6 +15,8 @@ namespace Andromeda
 			_loaded = false;
 			_stream = false;
 			_screenChanged = false;
+
+			_texture = 0;
 		}
 
 		Movie::Movie(std::string name, glm::vec2 position, glm::vec2 size)
@@ -30,6 +32,8 @@ namespace Andromeda
 			_loaded = false;
 			_stream = false;
 			_screenChanged = true;
+
+			_texture = 0;
 		}
 
 		Movie::~Movie()

@@ -96,6 +96,8 @@ namespace JellyPhysics
 		//printf("addMaterial - final results...\n");
 		_logMaterialCollide();
 #endif
+
+		delete[] old;
 		
 		return mMaterialCount - 1;
 	}
@@ -207,7 +209,7 @@ namespace JellyPhysics
 		mBodies.clear();
 	}
 	
-	Body* World::getBody( int index )
+	Body* World::getBody(unsigned int index )
 	{
 		if ((index >= 0) && (index < mBodies.size()))
 			return mBodies[index];

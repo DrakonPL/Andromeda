@@ -8,6 +8,10 @@ namespace Andromeda
 		{
 			_name = name;
 			_volume = 1.0f;
+
+			_stream = false;
+			_looped = false;
+			_loaded = false;
 		}
 
 		Sound::~Sound()

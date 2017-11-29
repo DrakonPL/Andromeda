@@ -60,8 +60,8 @@ Car::Car(std::string xmlFile, World *mWorld, const Vector2& pos, int chassisMat,
 	for (PointNode; PointNode; PointNode = PointNode->NextSiblingElement())
 	{
 		float x = 0.0f, y = 0.0f;
-		x = atof(PointNode->Attribute("x"));
-		y = atof(PointNode->Attribute("y"));
+		x = std::stof(PointNode->Attribute("x"));
+		y = std::stof(PointNode->Attribute("y"));
 		shapeA.addVertex(Vector2(x, y));
 	}
 
@@ -76,8 +76,8 @@ Car::Car(std::string xmlFile, World *mWorld, const Vector2& pos, int chassisMat,
 	for (PointNode2; PointNode2; PointNode2 = PointNode2->NextSiblingElement())
 	{
 		float x = 0.0f, y = 0.0f;
-		x = atof(PointNode2->Attribute("x"));
-		y = atof(PointNode2->Attribute("y"));
+		x = std::stof(PointNode2->Attribute("x"));
+		y = std::stof(PointNode2->Attribute("y"));
 		shapeB.addVertex(Vector2(x, y));
 	}
 
@@ -93,11 +93,11 @@ Car::Car(std::string xmlFile, World *mWorld, const Vector2& pos, int chassisMat,
 	pElem = hRoot.FirstChild("Chassis").Element();
 	if (pElem != NULL)
 	{
-		massPerPoint = atof(pElem->Attribute("MassPerPoint"));
-		shapeK = atof(pElem->Attribute("ShapeK"));
-		shapeDamp = atof(pElem->Attribute("ShapeDamp"));
-		edgeK = atof(pElem->Attribute("EdgeK"));
-		edgeDamp = atof(pElem->Attribute("EdgeDamp"));
+		massPerPoint = std::stof(pElem->Attribute("MassPerPoint"));
+		shapeK = std::stof(pElem->Attribute("ShapeK"));
+		shapeDamp = std::stof(pElem->Attribute("ShapeDamp"));
+		edgeK = std::stof(pElem->Attribute("EdgeK"));
+		edgeDamp = std::stof(pElem->Attribute("EdgeDamp"));
 
 	}
 	else
@@ -117,8 +117,8 @@ Car::Car(std::string xmlFile, World *mWorld, const Vector2& pos, int chassisMat,
 		float k, damp;
 		pt1 = atoi(SpingNode->Attribute("ptA"));
 		pt2 = atoi(SpingNode->Attribute("ptB"));
-		k = atof(SpingNode->Attribute("springK"));
-		damp = atof(SpingNode->Attribute("springDamp"));
+		k = std::stof(SpingNode->Attribute("springK"));
+		damp = std::stof(SpingNode->Attribute("springDamp"));
 
 		mChassis->addInternalSpring(pt1, pt2, k, damp);
 	}
@@ -168,24 +168,24 @@ Car::Car(std::string xmlFile, World *mWorld, const Vector2& pos, int chassisMat,
 			float maxO2 = 10.0f;
 
 			//load
-			drive = atof(TireNode->Attribute("Drive"));
-			tire_offset.X = atof(TireNode->Attribute("PosX"));
-			tire_offset.Y = atof(TireNode->Attribute("PosY"));
+			drive = std::stof(TireNode->Attribute("Drive"));
+			tire_offset.X = std::stof(TireNode->Attribute("PosX"));
+			tire_offset.Y = std::stof(TireNode->Attribute("PosY"));
 			segments = atoi(TireNode->Attribute("Segments"));
-			tire_rad = atof(TireNode->Attribute("Radius"));
-			tire_mass_per_point = atof(TireNode->Attribute("MassPerPoint"));
-			pressure1 = atof(TireNode->Attribute("Pressure1"));
-			pressure2 = atof(TireNode->Attribute("Pressure2"));
-			shapeK = atof(TireNode->Attribute("ShapeK"));
-			shapeDamp = atof(TireNode->Attribute("ShapeDamp"));
-			edgeK1 = atof(TireNode->Attribute("EdgeK1"));
-			edgeDamp1 = atof(TireNode->Attribute("EdgeDamp1"));
-			edgeK2 = atof(TireNode->Attribute("EdgeK2"));
-			edgeDamp2 = atof(TireNode->Attribute("EdgeDamp2"));
-			t1 = atof(TireNode->Attribute("Torque1"));
-			t2 = atof(TireNode->Attribute("Torque2"));
-			maxO1 = atof(TireNode->Attribute("MaxOmega1"));
-			maxO2 = atof(TireNode->Attribute("MaxOmega2"));
+			tire_rad = std::stof(TireNode->Attribute("Radius"));
+			tire_mass_per_point = std::stof(TireNode->Attribute("MassPerPoint"));
+			pressure1 = std::stof(TireNode->Attribute("Pressure1"));
+			pressure2 = std::stof(TireNode->Attribute("Pressure2"));
+			shapeK = std::stof(TireNode->Attribute("ShapeK"));
+			shapeDamp = std::stof(TireNode->Attribute("ShapeDamp"));
+			edgeK1 = std::stof(TireNode->Attribute("EdgeK1"));
+			edgeDamp1 = std::stof(TireNode->Attribute("EdgeDamp1"));
+			edgeK2 = std::stof(TireNode->Attribute("EdgeK2"));
+			edgeDamp2 = std::stof(TireNode->Attribute("EdgeDamp2"));
+			t1 = std::stof(TireNode->Attribute("Torque1"));
+			t2 = std::stof(TireNode->Attribute("Torque2"));
+			maxO1 = std::stof(TireNode->Attribute("MaxOmega1"));
+			maxO2 = std::stof(TireNode->Attribute("MaxOmega2"));
 
 
 			ClosedShape fws;//= new ClosedShape();
@@ -208,12 +208,12 @@ Car::Car(std::string xmlFile, World *mWorld, const Vector2& pos, int chassisMat,
 			{
 
 				int pm = atoi(TireElements->Attribute("PointMassID"));
-				float shockD1 = atof(TireElements->Attribute("SpringD1"));
-				float shockD2 = atof(TireElements->Attribute("SpringD2"));
-				float shockK1 = atof(TireElements->Attribute("SpringK1"));
-				float shockK2 = atof(TireElements->Attribute("SpringK2"));
-				float shockDamp1 = atof(TireElements->Attribute("SpringDamp1"));
-				float shockDamp2 = atof(TireElements->Attribute("SpringDamp2"));
+				float shockD1 = std::stof(TireElements->Attribute("SpringD1"));
+				float shockD2 = std::stof(TireElements->Attribute("SpringD2"));
+				float shockK1 = std::stof(TireElements->Attribute("SpringK1"));
+				float shockK2 = std::stof(TireElements->Attribute("SpringK2"));
+				float shockDamp1 = std::stof(TireElements->Attribute("SpringDamp1"));
+				float shockDamp2 = std::stof(TireElements->Attribute("SpringDamp2"));
 
 				mChassis->AddShock(pm, t, shockD1, shockD2, shockK1, shockK2, shockDamp1, shockDamp2);
 
@@ -224,29 +224,29 @@ Car::Car(std::string xmlFile, World *mWorld, const Vector2& pos, int chassisMat,
 	}
 
 	ballonShape.begin();
-	ballonShape.addVertex(Vector2(0, 1));
-	ballonShape.addVertex(Vector2(0.309017, 0.9510565));
-	ballonShape.addVertex(Vector2(0.5877852, 0.809017));
-	ballonShape.addVertex(Vector2(0.809017, 0.5877852));
-	ballonShape.addVertex(Vector2(0.9510565, 0.309017));
-	ballonShape.addVertex(Vector2(1, 1.216796E-08));
-	ballonShape.addVertex(Vector2(0.9510565, -0.309017));
-	ballonShape.addVertex(Vector2(0.809017, -0.5877852));
-	ballonShape.addVertex(Vector2(0.5877852, -0.809017));
-	ballonShape.addVertex(Vector2(0.309017, -0.9510565));
-	ballonShape.addVertex(Vector2(0.03797042, -0.9984476));
-	ballonShape.addVertex(Vector2(0.03687066, -1.33094));
-	ballonShape.addVertex(Vector2(-0.03791077, -1.330736));
-	ballonShape.addVertex(Vector2(-0.03825687, -0.9984476));
-	ballonShape.addVertex(Vector2(-0.309017, -0.9510565));
-	ballonShape.addVertex(Vector2(-0.5877852, -0.809017));
-	ballonShape.addVertex(Vector2(-0.809017, -0.5877853));
-	ballonShape.addVertex(Vector2(-0.9510565, -0.309017));
-	ballonShape.addVertex(Vector2(-1, -3.65039E-08));
-	ballonShape.addVertex(Vector2(-0.9510565, 0.3090169));
-	ballonShape.addVertex(Vector2(-0.809017, 0.5877852));
-	ballonShape.addVertex(Vector2(-0.5877853, 0.8090169));
-	ballonShape.addVertex(Vector2(-0.309017, 0.9510565));
+	ballonShape.addVertex(Vector2(0.0f, 1.0f));
+	ballonShape.addVertex(Vector2(0.309017f, 0.9510565f));
+	ballonShape.addVertex(Vector2(0.5877852f, 0.809017f));
+	ballonShape.addVertex(Vector2(0.809017f, 0.5877852f));
+	ballonShape.addVertex(Vector2(0.9510565f, 0.309017f));
+	ballonShape.addVertex(Vector2(1.0f, 1.216796E-08f));
+	ballonShape.addVertex(Vector2(0.9510565f, -0.309017f));
+	ballonShape.addVertex(Vector2(0.809017f, -0.5877852f));
+	ballonShape.addVertex(Vector2(0.5877852f, -0.809017f));
+	ballonShape.addVertex(Vector2(0.309017f, -0.9510565f));
+	ballonShape.addVertex(Vector2(0.03797042f, -0.9984476f));
+	ballonShape.addVertex(Vector2(0.03687066f, -1.33094f));
+	ballonShape.addVertex(Vector2(-0.03791077f, -1.330736f));
+	ballonShape.addVertex(Vector2(-0.03825687f, -0.9984476f));
+	ballonShape.addVertex(Vector2(-0.309017f, -0.9510565f));
+	ballonShape.addVertex(Vector2(-0.5877852f, -0.809017f));
+	ballonShape.addVertex(Vector2(-0.809017f, -0.5877853f));
+	ballonShape.addVertex(Vector2(-0.9510565f, -0.309017f));
+	ballonShape.addVertex(Vector2(-1.0f, -3.65039E-08f));
+	ballonShape.addVertex(Vector2(-0.9510565f, 0.3090169f));
+	ballonShape.addVertex(Vector2(-0.809017f, 0.5877852f));
+	ballonShape.addVertex(Vector2(-0.5877853f, 0.8090169f));
+	ballonShape.addVertex(Vector2(-0.309017f, 0.9510565f));
 	ballonShape.finish();
 
 	ballon = false;
@@ -268,7 +268,7 @@ Car::~Car()
 
 void Car::clearForces()
 {
-	for (int i = 0; i < mTires.size(); i++)
+	for (unsigned int i = 0; i < mTires.size(); i++)
 		mTires[i]->SetShockForce(Vector2::Zero);
 
 	if (ballon)
@@ -277,7 +277,7 @@ void Car::clearForces()
 
 void Car::setTorque(float t)
 {
-	for (int i = 0; i < mTires.size(); i++)
+	for (unsigned int i = 0; i < mTires.size(); i++)
 		mTires[i]->SetTorque(t * mTires[i]->GetDrive());
 
 	if (ballon)
@@ -325,7 +325,7 @@ void Car::update(float elapsed)
 		if (mShapeD < 0.0f) { mShapeDelta = 0.0f; mShapeD = 0.0f; TransformStatus = Normal; }
 
 		mChassis->InterpolateShape(mShapeD);
-		for (int i = 0; i < mTires.size(); i++)
+		for (unsigned int i = 0; i < mTires.size(); i++)
 			mTires[i]->InterpolatePressure(mShapeD);
 	}
 
@@ -356,7 +356,7 @@ void Car::Draw(glm::mat4 &proj)
 		mChassis->Draw(proj, bigChassisTexture);
 	}	
 
-	for (int i = 0; i < mTires.size(); i++)
+	for (unsigned int i = 0; i < mTires.size(); i++)
 	{
 		if (!mChassis->smallBig)
 		{
@@ -378,7 +378,7 @@ void Car::UseNearestGracity(bool state)
 {
 	mChassis->UseNearestGracity(state);
 
-	for (int i = 0; i < mTires.size(); i++)
+	for (unsigned int i = 0; i < mTires.size(); i++)
 	{
 		mTires[i]->UseNearestGracity(state);
 	}
@@ -419,28 +419,28 @@ void Car::activateBallon()
 		ballonBody = new GameBallonBody(mainWorld, ballonShape, 1.0f, 300.0f, 15.0f, 300.0f, 15.0f, ballPosition, 0.0f, Vector2(1, 1), false);
 		ballonBody->setMaterial(3);
 
-		ballonBody->addInternalSpring(22, 1, 100, 10);
-		ballonBody->addInternalSpring(2, 21, 100, 10);
-		ballonBody->addInternalSpring(20, 3, 100, 10);
-		ballonBody->addInternalSpring(4, 19, 100, 10);
-		ballonBody->addInternalSpring(18, 5, 100, 10);
-		ballonBody->addInternalSpring(6, 17, 100, 10);
-		ballonBody->addInternalSpring(16, 7, 100, 10);
-		ballonBody->addInternalSpring(8, 15, 100, 10);
-		ballonBody->addInternalSpring(14, 9, 100, 10);
-		ballonBody->addInternalSpring(10, 13, 100, 10);
-		ballonBody->addInternalSpring(0, 10, 100, 10);
-		ballonBody->addInternalSpring(0, 13, 100, 10);
-		ballonBody->addInternalSpring(13, 11, 100, 10);
-		ballonBody->addInternalSpring(12, 10, 100, 10);
-		ballonBody->addInternalSpring(22, 9, 100, 10);
-		ballonBody->addInternalSpring(14, 1, 100, 10);
-		ballonBody->addInternalSpring(21, 8, 100, 10);
-		ballonBody->addInternalSpring(15, 2, 100, 10);
-		ballonBody->addInternalSpring(3, 16, 100, 10);
-		ballonBody->addInternalSpring(17, 4, 100, 10);
-		ballonBody->addInternalSpring(6, 19, 100, 10);
-		ballonBody->addInternalSpring(20, 7, 100, 10);
+		ballonBody->addInternalSpring(22, 1, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(2, 21, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(20, 3, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(4, 19, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(18, 5, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(6, 17, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(16, 7, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(8, 15, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(14, 9, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(10, 13, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(0, 10, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(0, 13, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(13, 11, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(12, 10, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(22, 9, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(14, 1, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(21, 8, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(15, 2, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(3, 16, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(17, 4, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(6, 19, 100.0f, 10.0f);
+		ballonBody->addInternalSpring(20, 7, 100.0f, 10.0f);
 
 		ballonBody->AddTriangle(22, 0, 10);
 		ballonBody->AddTriangle(13, 10, 22);

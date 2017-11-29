@@ -16,7 +16,7 @@ namespace Andromeda
 		public:
 
 			Mutex();
-			~Mutex();
+			virtual ~Mutex();
 
 			void Lock();
 			void Unlock();

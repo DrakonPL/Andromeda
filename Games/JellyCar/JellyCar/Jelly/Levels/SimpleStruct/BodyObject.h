@@ -6,7 +6,7 @@
 #include "BodyPolygon.h"
 #include "BodyObjectInfo.h"
 
-typedef struct BodyObject
+struct BodyObject
 {
 	BodyObjectInfo info;
 

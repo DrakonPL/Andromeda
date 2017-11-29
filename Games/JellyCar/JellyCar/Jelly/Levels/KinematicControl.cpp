@@ -5,6 +5,11 @@ KinematicControl::KinematicControl(Body* body)
 	_body = body;
 }
 
+KinematicControl::~KinematicControl()
+{
+
+}
+
 void KinematicControl::Update(float elapsed)
 {
 

@@ -63,7 +63,7 @@ void Chassis::accumulateExternalForces()
 		mPointMasses[5].Force.Y += 450;
 
 		//shocks
-		shockForce /= mPointCount;
+		shockForce /= (float)mPointCount;
 		for (int i = 0; i < mPointCount; i++)
 		{
 			mPointMasses[i].Force += shockForce;// / mPointCount);
@@ -85,7 +85,7 @@ void Chassis::accumulateExternalForces()
 	}
 
 	// shock forces!
-	for (int i = 0; i < mShocks.size(); i++)
+	for (unsigned int i = 0; i < mShocks.size(); i++)
 	{
 		Vector2 pmp = mPointMasses[mShocks[i].mChassisPM].Position;
 		Vector2 pmv = mPointMasses[mShocks[i].mChassisPM].Velocity;
@@ -119,18 +119,18 @@ void Chassis::accumulateExternalForces()
 
 void Chassis::InterpolateShape(float x)
 {
-	for (int i = 0; i < mBaseShape.getVertices().size(); i++)
+	for (unsigned int i = 0; i < mBaseShape.getVertices().size(); i++)
 		mBaseShape.getVertices()[i] = mShapeA.getVertices()[i].slerp(mShapeB.getVertices()[i], x);
 
 	// now update internal springs.
-	for (int i = 0; i < mSprings.size(); i++)
+	for (unsigned int i = 0; i < mSprings.size(); i++)
 	{
 		float newD = (mBaseShape.getVertices()[mSprings[i].pointMassA] - mBaseShape.getVertices()[mSprings[i].pointMassB]).length();
 		mSprings[i].springD = newD;
 	}
 
 	// now update shocks.
-	for (int i = 0; i < mShocks.size(); i++)
+	for (unsigned int i = 0; i < mShocks.size(); i++)
 		mShocks[i].interpolateD(x);
 }
 
@@ -144,12 +144,10 @@ float Chassis::GetTorque() { return torque; }
 void Chassis::SetShockForce(const Vector2& f)
 {
 	shockForce = f;
-	shockForce = shockForce;
 }
 void Chassis::AddShockForce(const Vector2& f)
 {
 	shockForce += f;
-	shockForce = shockForce;
 }
 
 void Chassis::SetBallonState(bool state)
@@ -177,7 +175,7 @@ void Chassis::AddPoly(int a, int b, int c)
 void Chassis::EndPolys()
 {
 	mIndices = new int[mPolys.size()];
-	for (int i = 0; i < mPolys.size(); i++)
+	for (unsigned int i = 0; i < mPolys.size(); i++)
 		mIndices[i] = (int)mPolys[i];
 
 	mIndexCount = mPolys.size();
@@ -276,20 +274,20 @@ void Chassis::GenerateVertices()
 		//get vertices
 		TextureVertex* _simpleData = static_cast<TextureVertex*>(_vertexObject->GetVertices());
 
-		_simpleData[0].x = -3.8;	_simpleData[0].y = -1.6;	_simpleData[0].z = 0.0f;
-		_simpleData[1].x = -3.8;	_simpleData[1].y = 0.4;		_simpleData[1].z = 0.0f;
-		_simpleData[2].x = -2.6;	_simpleData[2].y = 1.6;		_simpleData[2].z = 0.0f;
-		_simpleData[3].x = -1.4;	_simpleData[3].y = 1.6;		_simpleData[3].z = 0.0f;
-		_simpleData[4].x = 0;		_simpleData[4].y = 1.6;		_simpleData[4].z = 0.0f;
-		_simpleData[5].x = 1.4;		_simpleData[5].y = 1.6;		_simpleData[5].z = 0.0f;
-		_simpleData[6].x = 2.2;		_simpleData[6].y = 0.4;		_simpleData[6].z = 0.0f;
-		_simpleData[7].x = 4.2;		_simpleData[7].y = 0;		_simpleData[7].z = 0.0f;
-		_simpleData[8].x = 3.8;		_simpleData[8].y = -1.6;	_simpleData[8].z = 0.0f;
-		_simpleData[9].x = 2.6;		_simpleData[9].y = -1.6;	_simpleData[9].z = 0.0f;
-		_simpleData[10].x = 1.4;	_simpleData[10].y = -1.6;	_simpleData[10].z = 0.0f;
-		_simpleData[11].x = 0;		_simpleData[11].y = -1.6;	_simpleData[11].z = 0.0f;
-		_simpleData[12].x = -1.4;	_simpleData[12].y = -1.6;	_simpleData[12].z = 0.0f;
-		_simpleData[13].x = -2.6;	_simpleData[13].y = -1.6;	_simpleData[13].z = 0.0f;
+		_simpleData[0].x = -3.8f;		_simpleData[0].y = -1.6f;		_simpleData[0].z = 0.0f;
+		_simpleData[1].x = -3.8f;		_simpleData[1].y = 0.4f;		_simpleData[1].z = 0.0f;
+		_simpleData[2].x = -2.6f;		_simpleData[2].y = 1.6f;		_simpleData[2].z = 0.0f;
+		_simpleData[3].x = -1.4f;		_simpleData[3].y = 1.6f;		_simpleData[3].z = 0.0f;
+		_simpleData[4].x = 0.0f;		_simpleData[4].y = 1.6f;		_simpleData[4].z = 0.0f;
+		_simpleData[5].x = 1.4f;		_simpleData[5].y = 1.6f;		_simpleData[5].z = 0.0f;
+		_simpleData[6].x = 2.2f;		_simpleData[6].y = 0.4f;		_simpleData[6].z = 0.0f;
+		_simpleData[7].x = 4.2f;		_simpleData[7].y = 0.0f;		_simpleData[7].z = 0.0f;
+		_simpleData[8].x = 3.8f;		_simpleData[8].y = -1.6f;		_simpleData[8].z = 0.0f;
+		_simpleData[9].x = 2.6f;		_simpleData[9].y = -1.6f;		_simpleData[9].z = 0.0f;
+		_simpleData[10].x = 1.4f;		_simpleData[10].y = -1.6f;		_simpleData[10].z = 0.0f;
+		_simpleData[11].x = 0.0f;		_simpleData[11].y = -1.6f;		_simpleData[11].z = 0.0f;
+		_simpleData[12].x = -1.4f;		_simpleData[12].y = -1.6f;		_simpleData[12].z = 0.0f;
+		_simpleData[13].x = -2.6f;		_simpleData[13].y = -1.6f;		_simpleData[13].z = 0.0f;
 
 		_simpleData[0].u = 0.01f;	_simpleData[0].v = 0.975f;
 		_simpleData[1].u = 0.01f;	_simpleData[1].v = 0.35f;

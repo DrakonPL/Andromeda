@@ -1,7 +1,7 @@
 #ifndef GameObject_H
 #define GameObject_H
 
-typedef struct GameObject
+struct GameObject
 {
 	char name[64];
 	float posX;

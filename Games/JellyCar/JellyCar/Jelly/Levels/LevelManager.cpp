@@ -305,7 +305,6 @@ bool LevelManager::LoadCompiledLevel(World *world, std::string levelName, std::s
 	loadFile->Open(FileSystem::Read, FileSystem::Binary);
 
 	//object container
-	std::vector<GameObject> gameObjects;
 	std::vector<BodyObject> bodyObjects;
 
 	//load body objects and info
@@ -313,7 +312,7 @@ bool LevelManager::LoadCompiledLevel(World *world, std::string levelName, std::s
 	loadFile->Read(&number, sizeof(int), 1);
 
 	//save info of each body
-	for (size_t i = 0; i < number; i++)
+	for (int i = 0; i < number; i++)
 	{
 		BodyObject bodyObject;
 		memset(&bodyObject.info, 0, sizeof(BodyObjectInfo));
@@ -348,7 +347,7 @@ bool LevelManager::LoadCompiledLevel(World *world, std::string levelName, std::s
 	loadFile->Read(objectsArray, sizeof(GameObject), objectsCount);
 
 	//create game level bodies
-	for (size_t i = 0; i < objectsCount; i++)
+	for (int i = 0; i < objectsCount; i++)
 	{
 		ObjectInfo bodyInfo;
 
@@ -549,7 +548,7 @@ bool LevelManager::LoadLevel(World *world, std::string levelName, std::string ca
 		bool znalazlem = false;
 		int numerek = 0;
 
-		for (int i = 0; i < gameBodiesNames.size(); i++)
+		for (unsigned int i = 0; i < gameBodiesNames.size(); i++)
 		{
 			if (name.compare(gameBodiesNames[i]) == 0)
 			{
@@ -1009,7 +1008,7 @@ void LevelManager::ReadLevelData(std::string levelName)
 
 		bool haveBody = false;
 
-		for (int i = 0; i < gameBodiesNames.size(); i++)
+		for (unsigned int i = 0; i < gameBodiesNames.size(); i++)
 		{
 			if (name.compare(gameBodiesNames[i]) == 0)
 			{
@@ -1065,7 +1064,7 @@ void LevelManager::ReadLevelData(std::string levelName)
 		saveFile->Write(&number, sizeof(int), 1);
 
 		//save info of each body
-		for (size_t i = 0; i < number; i++)
+		for (int i = 0; i < number; i++)
 		{
 			//save info struct
 			saveFile->Write(&bodyObjects[i].info, sizeof(BodyObjectInfo), 1);
@@ -1138,7 +1137,7 @@ void LevelManager::ReadLevelData(std::string levelName)
 		}
 
 		//save info of each body
-		for (size_t i = 0; i < number; i++)
+		for (int i = 0; i < number; i++)
 		{
 			BodyObject bodyObject;
 			memset(&bodyObject.info, 0, sizeof(BodyObjectInfo));
@@ -1325,7 +1324,7 @@ BodyObject LevelManager::ReadBodyData(std::string bodyName)
 
 	bodyObject.springs = bodySprings.size();
 	bodyObject.bodySprings = new BodySpring[bodyObject.springs];
-	for (size_t i = 0; i < bodyObject.springs; i++)
+	for (int i = 0; i < bodyObject.springs; i++)
 	{
 		bodyObject.bodySprings[i] = bodySprings[i];
 	}
@@ -1347,7 +1346,7 @@ BodyObject LevelManager::ReadBodyData(std::string bodyName)
 
 	bodyObject.polygons = bodyPolygons.size();
 	bodyObject.bodyPolygons = new BodyPolygon[bodyObject.polygons];
-	for (size_t i = 0; i < bodyObject.polygons; i++)
+	for (int i = 0; i < bodyObject.polygons; i++)
 	{
 		bodyObject.bodyPolygons[i] = bodyPolygons[i];
 	}

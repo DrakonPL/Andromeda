@@ -9,7 +9,7 @@ namespace JellyPhysics
 	
 	void Body::BodyBoundary::log()
 	{
-		printf("%s(%d)[%4.2f] |", ((type == Begin) ? "B" : ((type == End) ? "E" : "V")), body, value); 
+		//printf("%s(%d)[%4.2f] |", ((type == Begin) ? "B" : ((type == End) ? "E" : "V")), body, value); 
 	}
 	
 	//--------------------------------------------------------------------

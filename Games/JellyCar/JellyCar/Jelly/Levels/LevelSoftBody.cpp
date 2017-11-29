@@ -3,6 +3,7 @@
 #include "GamePressureBody.h"
 
 #include "tinyxml.h"
+#include <string>
 
 #include <Andromeda/FileSystem/FileManager.h>
 using namespace Andromeda;
@@ -61,16 +62,16 @@ LevelSoftBody::LevelSoftBody(std::string fileName, World *mWorld, const Vector2&
 	//bool kinematic,shapeMatching;
 
 	//basic info
-	massPerPoint = atof(pElem->Attribute("massPerPoint"));
-	edgeK = atof(pElem->Attribute("edgeK"));
-	edgeDamping = atof(pElem->Attribute("edgeDamping"));
+	massPerPoint = std::stof(pElem->Attribute("massPerPoint"));
+	edgeK = std::stof(pElem->Attribute("edgeK"));
+	edgeDamping = std::stof(pElem->Attribute("edgeDamping"));
 
 	//load color of the body
 	if (pElem->Attribute("colorR") != NULL)
 	{
-		colorR = atof(pElem->Attribute("colorR"));
-		colorG = atof(pElem->Attribute("colorG"));
-		colorB = atof(pElem->Attribute("colorB"));
+		colorR = std::stof(pElem->Attribute("colorR"));
+		colorG = std::stof(pElem->Attribute("colorG"));
+		colorB = std::stof(pElem->Attribute("colorB"));
 	}
 
 	//is body kinematic
@@ -90,8 +91,8 @@ LevelSoftBody::LevelSoftBody(std::string fileName, World *mWorld, const Vector2&
 		if (strcmp(sShapeMatching, "True") == 0)
 		{
 			shapeMatching = true;
-			shapeK = atof(pElem->Attribute("shapeK"));
-			shapeDamping = atof(pElem->Attribute("shapeDamping"));
+			shapeK = std::stof(pElem->Attribute("shapeK"));
+			shapeDamping = std::stof(pElem->Attribute("shapeDamping"));
 		}
 	}
 
@@ -103,7 +104,7 @@ LevelSoftBody::LevelSoftBody(std::string fileName, World *mWorld, const Vector2&
 	if (pElem)
 	{
 		pressureized = true;
-		pressure = atof(pElem->Attribute("amount"));
+		pressure = std::stof(pElem->Attribute("amount"));
 	}
 
 	//SHAPE
@@ -116,15 +117,15 @@ LevelSoftBody::LevelSoftBody(std::string fileName, World *mWorld, const Vector2&
 	for (PointNode; PointNode; PointNode = PointNode->NextSiblingElement())
 	{
 		float x = 0.0f, y = 0.0f;
-		x = atof(PointNode->Attribute("x"));
-		y = atof(PointNode->Attribute("y"));
+		x = std::stof(PointNode->Attribute("x"));
+		y = std::stof(PointNode->Attribute("y"));
 		shape.addVertex(Vector2(x, y));
 
 		if (PointNode->Attribute("mass") != NULL)
 		{
 			MassID m;
 			m._id = _id;
-			m._mass = atof(PointNode->Attribute("mass"));
+			m._mass = std::stof(PointNode->Attribute("mass"));
 
 			massExceptions.push_back(m);
 		}
@@ -168,8 +169,8 @@ LevelSoftBody::LevelSoftBody(std::string fileName, World *mWorld, const Vector2&
 		float k, damp;
 		pt1 = atoi(SpingNode->Attribute("pt1"));
 		pt2 = atoi(SpingNode->Attribute("pt2"));
-		k = atof(SpingNode->Attribute("k"));
-		damp = atof(SpingNode->Attribute("damp"));
+		k = std::stof(SpingNode->Attribute("k"));
+		damp = std::stof(SpingNode->Attribute("damp"));
 
 		if (!pressureized)
 		{
@@ -182,7 +183,6 @@ LevelSoftBody::LevelSoftBody(std::string fileName, World *mWorld, const Vector2&
 	}
 
 	//Polygons
-	std::vector<int> ind;
 	TiXmlElement* PolygonNode = hRoot.FirstChild("Polygons").FirstChild().Element();
 	for (PolygonNode; PolygonNode; PolygonNode = PolygonNode->NextSiblingElement())
 	{
@@ -239,7 +239,7 @@ LevelSoftBody::LevelSoftBody(LevelSoftBody *exBody, World *mWorld, const Vector2
 	//Points
 	shape.begin();
 
-	for (int i = 0; i < exBody->mBody->mBaseShape.getVertices().size(); i++)
+	for (unsigned int i = 0; i < exBody->mBody->mBaseShape.getVertices().size(); i++)
 	{
 		shape.addVertex(exBody->mBody->mBaseShape.getVertices()[i]);
 	}
@@ -288,7 +288,7 @@ LevelSoftBody::LevelSoftBody(LevelSoftBody *exBody, World *mWorld, const Vector2
 	}
 
 	//Polygons
-	for (int i = 0; i < exBody->mIndexList.size(); i++)
+	for (unsigned int i = 0; i < exBody->mIndexList.size(); i++)
 	{
 		mIndexList.push_back(exBody->mIndexList[i]);
 	}
@@ -338,7 +338,7 @@ LevelSoftBody::LevelSoftBody(BodyObject *exBody, World *mWorld, const Vector2& p
 	shape.begin();
 	int _id = 0;
 
-	for (size_t i = 0; i < exBody->points; i++)
+	for (int i = 0; i < exBody->points; i++)
 	{
 		shape.addVertex(Vector2(exBody->bodyPoints[i].x, exBody->bodyPoints[i].y));
 		if (exBody->bodyPoints[i].mass != -1)
@@ -381,7 +381,7 @@ LevelSoftBody::LevelSoftBody(BodyObject *exBody, World *mWorld, const Vector2& p
 	}
 
 	//Springs
-	for (size_t i = 0; i < exBody->springs; i++)
+	for (int i = 0; i < exBody->springs; i++)
 	{
 		int pt1, pt2;
 		float k, damp;
@@ -402,7 +402,7 @@ LevelSoftBody::LevelSoftBody(BodyObject *exBody, World *mWorld, const Vector2& p
 	}
 
 	//polygons
-	for (size_t i = 0; i <  exBody->polygons; i++)
+	for (int i = 0; i <  exBody->polygons; i++)
 	{
 		int pt0 = 0, pt1 = 0, pt2 = 0;
 

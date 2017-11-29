@@ -10,7 +10,7 @@ namespace Andromeda
 {
 	namespace Graphics
 	{
-		TexturedFont::TexturedFont(TextureAtlas* atlas, int size, std::string filename)
+		TexturedFont::TexturedFont(TextureAtlas* atlas, float size, std::string filename)
 		{
 			_atlas = atlas;
 			_shader = 0;
@@ -54,7 +54,7 @@ namespace Andromeda
 			delete _vertexArray;
 		}
 
-		void TexturedFont::LoadFromMemory( int size, void* memory_font, size_t memory_size)
+		void TexturedFont::LoadFromMemory(float size, void* memory_font, size_t memory_size)
 		{
 			_font = texture_font_new_from_memory(_atlas->GetAtlas(), size, memory_font, memory_size);
 		}
@@ -162,9 +162,9 @@ namespace Andromeda
 			_textParts.push_back(part);
 		}
 
-		int TexturedFont::GetTextLenght(std::string text)
+		float TexturedFont::GetTextLenght(std::string text)
 		{
-			int lenght = 0;
+			float lenght = 0;
 
 			const char * chartext = text.c_str();
 			int charCount = text.length();
@@ -200,7 +200,7 @@ namespace Andromeda
 
 			std::string wholeText;
 
-			for (int i = 0;i < _textParts.size();i++)
+			for (unsigned int i = 0;i < _textParts.size();i++)
 			{
 				textLenght += _textParts[i].Text.length();
 				wholeText += _textParts[i].Text;
@@ -232,7 +232,7 @@ namespace Andromeda
 
 			if(checkHash || checkSize || bufferNull || checkColor || checkPosition)
 			{
-				TextureColorVertex* _simpleData;
+				TextureColorVertex* _simpleData = NULL;
 				unsigned short* _indices;
 
 				int verts = textLenght * 4;
@@ -266,6 +266,11 @@ namespace Andromeda
 					_vertexArray->CreateVertices(verts);
 					_vertexArray->CreateIndices(indices);
 
+					if (_simpleData != NULL)
+					{
+						delete[] _simpleData;
+					}
+
 					_simpleData = static_cast<TextureColorVertex*>(_vertexArray->GetVertices());
 					_indices = static_cast<unsigned short*>(_vertexArray->GetIndices());
 				}
@@ -273,11 +278,11 @@ namespace Andromeda
 				int verCount = 0;
 				int indiConut = 0;
 
-				for (int i = 0; i < _textParts.size(); i++)
+				for (unsigned int i = 0; i < _textParts.size(); i++)
 				{
 					const char * text = _textParts[i].Text.c_str();
 					int charCount = _textParts[i].Text.length();
-					int textLenght = GetTextLenght(_textParts[i].Text);
+					float textLenght = GetTextLenght(_textParts[i].Text);
 
 					glm::vec2 position;
 					glm::vec3 color = _textParts[i].Color;
@@ -290,7 +295,7 @@ namespace Andromeda
 
 					if (_textParts[i].FontAlign == FontCenter)
 					{
-						position = glm::vec2(_textParts[i].Position.x - (textLenght / 2), _textParts[i].Position.y);
+						position = glm::vec2(_textParts[i].Position.x - (textLenght / 2.0f), _textParts[i].Position.y);
 					}
 
 					if (_textParts[i].FontAlign == FontRight)
@@ -312,10 +317,10 @@ namespace Andromeda
 
 							position.x += kerning;
 
-							int x0 = (int)(position.x + glyph->offset_x);
-							int y0 = (int)(position.y - glyph->offset_y);
-							int x1 = (int)(x0 + glyph->width);
-							int y1 = (int)(y0 + glyph->height);
+							float x0 = (position.x + glyph->offset_x);
+							float y0 = (position.y - glyph->offset_y);
+							float x1 = (x0 + glyph->width);
+							float y1 = (y0 + glyph->height);
 
 							float s0 = glyph->s0;
 							float t0 = glyph->t0;

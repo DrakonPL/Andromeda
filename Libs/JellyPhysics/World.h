@@ -85,7 +85,7 @@ namespace JellyPhysics
 		void addBody( Body* b );
 		void removeBody( Body* b );
 		void removeAllBodies();
-		Body* getBody( int index );
+		Body* getBody( unsigned int index );
 		
 		void getClosestPointMass( const Vector2& pt, int& bodyID, int& pmID );
 		Vector2 getClosestBodyPointToBody(Body* body);

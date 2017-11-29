@@ -62,8 +62,8 @@ namespace Andromeda
 			virtual void Stop() = 0;
 			virtual void Pause() = 0;
 
-			virtual void SetPosition(int milisenconds) = 0;
-			virtual int GetPosition() = 0;
+			virtual void SetPosition(long long milisenconds) = 0;
+			virtual long long GetPosition() = 0;
 
 			virtual bool HaveAudio() = 0;
 

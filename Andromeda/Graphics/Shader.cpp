@@ -8,6 +8,8 @@ namespace Andromeda
 		{
 			_vertexShaderFile = "";
 			_fragmentShaderFile = "";
+
+			_vertexType = VertexType::Simple;
 		}
 
 		void Shader::SetName(std::string name)

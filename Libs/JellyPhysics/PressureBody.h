@@ -22,6 +22,7 @@ namespace JellyPhysics
 		{
 			mGasAmount = gasPressure;
 			mNormalList = new Vector2[mPointCount];
+			mVolume = 0.0f;
 		}
 		
 		~PressureBody();

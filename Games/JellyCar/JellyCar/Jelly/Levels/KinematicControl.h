@@ -13,6 +13,7 @@ protected:
 public:
 
 	KinematicControl(Body* body);
+	virtual ~KinematicControl();
 
 	virtual void Update(float elapsed);
 	virtual float GetPeriod();

@@ -1,7 +1,7 @@
 #ifndef BodyPoint_H
 #define BodyPoint_H
 
-typedef struct BodyPoint
+struct BodyPoint
 {
 	float x;
 	float y;

@@ -13,6 +13,13 @@ namespace Andromeda
 			_vertexSize = 0;
 			_verticesCount = 0;
 			_indicesCount = 0;
+
+			_vertices = 0;
+			_indices = 0;
+
+			_vertexType = VertexType::Simple;
+			_vertexPrimitive = VertexPrimitive::Triangle;
+			_vertexBufferDrawType = VertexBufferDrawType::StaticDraw;
 		}
 
 		VertexArrayObject::~VertexArrayObject()

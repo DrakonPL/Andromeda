@@ -46,7 +46,7 @@ namespace Andromeda
 			bool IsFullScreen();
 
 			void SetWindowSize(int width, int height);
-			void SetFullScreen(int state);
+			void SetFullScreen(bool state);
 
 		public:
 

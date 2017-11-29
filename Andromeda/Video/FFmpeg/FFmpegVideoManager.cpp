@@ -8,12 +8,15 @@ namespace Andromeda
 	{
 		FFmpegVideoManager::FFmpegVideoManager()
 		{
-
+			_paStream = 0;
 		}
 
 		FFmpegVideoManager::~FFmpegVideoManager()
 		{
-
+			if (_paStream != 0)
+			{
+				Pa_CloseStream(_paStream);
+			}
 		}
 
 		bool FFmpegVideoManager::Init()
@@ -33,7 +36,7 @@ namespace Andromeda
 				return false;
 			};
 			
-			int numDevices = Pa_GetDeviceCount();
+			unsigned int numDevices = Pa_GetDeviceCount();
 			for (size_t i = 0; i < numDevices; i++)
 			{
 				const   PaDeviceInfo *deviceInfo = Pa_GetDeviceInfo(i);
@@ -88,7 +91,7 @@ namespace Andromeda
 			
 			FFmpegVideoManager* manager = (FFmpegVideoManager*)userData;
 
-			for (int i = 0; i < manager->GetMovies().size(); i++)
+			for (unsigned int i = 0; i < manager->GetMovies().size(); i++)
 			{
 				if (manager->GetMovies()[i]->IsPlaying() && manager->GetMovies()[i]->HaveAudio())
 				{
@@ -119,7 +122,7 @@ namespace Andromeda
 
 		void FFmpegVideoManager::Update(float dt)
 		{
-			for (int i = 0; i < _movies.size(); i++)
+			for (unsigned int i = 0; i < _movies.size(); i++)
 			{
 				_movies[i]->Update(dt);
 			}

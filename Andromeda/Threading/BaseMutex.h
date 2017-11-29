@@ -9,6 +9,8 @@ namespace Andromeda
 		{
 		public:
 
+			virtual ~BaseMutex(){}
+
 			virtual void Lock() = 0;
 			virtual void Unlock() = 0;
 		};

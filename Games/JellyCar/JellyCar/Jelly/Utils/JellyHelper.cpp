@@ -6,6 +6,8 @@ JellyHellper::JellyHellper()
 {
 	_colorShader = 0;
 	_textureShader = 0;
+
+	_arrayObject = 0;
 }
 
 void JellyHellper::LoadShaders()
@@ -29,8 +31,8 @@ JellyHellper* JellyHellper::Instance()
 
 void JellyHellper::UpdateLines(VertexArrayObject* vertexArray, std::vector<PointMass> &pointMasses, bool create)
 {
-	int vertsCount = pointMasses.size();
-	int indicesCount = pointMasses.size() * 2;
+	unsigned int vertsCount = pointMasses.size();
+	unsigned int indicesCount = pointMasses.size() * 2;
 
 	SimpleVertex* _simpleData;
 	unsigned short* _indices;
@@ -49,7 +51,7 @@ void JellyHellper::UpdateLines(VertexArrayObject* vertexArray, std::vector<Point
 	}
 
 	//update verts
-	for (size_t i = 0; i < pointMasses.size(); i++)
+	for (unsigned int i = 0; i < pointMasses.size(); i++)
 	{
 		_simpleData[i].x = pointMasses[i].Position.X;
 		_simpleData[i].y = pointMasses[i].Position.Y;
@@ -61,7 +63,7 @@ void JellyHellper::UpdateLines(VertexArrayObject* vertexArray, std::vector<Point
 	{
 		int counter = 0;
 
-		for (size_t i = 0; i < pointMasses.size(); i++)
+		for (unsigned int i = 0; i < pointMasses.size(); i++)
 		{
 			if (i == 0)
 			{
@@ -107,7 +109,7 @@ void JellyHellper::DrawLines(VertexArrayObject* vertexArray, glm::mat4 &proj, gl
 
 void JellyHellper::UpdateSpringShape(VertexArrayObject* vertexArray, std::vector<PointMass> &pointMasses, int *mIndices, int mIndicesCount, bool create)
 {
-	int vertsCount = pointMasses.size();
+	unsigned int vertsCount = pointMasses.size();
 	int indicesCount = mIndicesCount;
 
 	SimpleVertex* _simpleData;
@@ -127,7 +129,7 @@ void JellyHellper::UpdateSpringShape(VertexArrayObject* vertexArray, std::vector
 	}
 
 	//update verts
-	for (size_t i = 0; i < pointMasses.size(); i++)
+	for (unsigned int i = 0; i < pointMasses.size(); i++)
 	{
 		_simpleData[i].x = pointMasses[i].Position.X;
 		_simpleData[i].y = pointMasses[i].Position.Y;
@@ -137,7 +139,7 @@ void JellyHellper::UpdateSpringShape(VertexArrayObject* vertexArray, std::vector
 	//create indices
 	if (create)
 	{
-		for (size_t i = 0; i < indicesCount; i++)
+		for (int i = 0; i < indicesCount; i++)
 		{
 			_indices[i] = mIndices[i];
 		}
@@ -156,8 +158,8 @@ void JellyHellper::UpdateSpringShape(VertexArrayObject* vertexArray, std::vector
 
 void JellyHellper::UpdateBlobShape(VertexArrayObject* vertexArray, std::vector<Vector2> &points, int count, bool create)
 {
-	int vertsCount = points.size();
-	int indicesCount = points.size();
+	unsigned int vertsCount = points.size();
+	unsigned int indicesCount = points.size();
 
 	SimpleVertex* _simpleData;
 	unsigned short* _indices;
@@ -176,7 +178,7 @@ void JellyHellper::UpdateBlobShape(VertexArrayObject* vertexArray, std::vector<V
 	}
 
 	//update verts
-	for (size_t i = 0; i < points.size(); i++)
+	for (unsigned int i = 0; i < points.size(); i++)
 	{
 		_simpleData[i].x = points[i].X;
 		_simpleData[i].y = points[i].Y;
@@ -186,7 +188,7 @@ void JellyHellper::UpdateBlobShape(VertexArrayObject* vertexArray, std::vector<V
 	//create indices
 	if (create)
 	{
-		for (size_t i = 0; i < indicesCount; i++)
+		for (unsigned int i = 0; i < indicesCount; i++)
 		{
 			_indices[i] = i;
 		}
@@ -239,7 +241,7 @@ std::vector<Vector2> JellyHellper::GetTexturePositions(const AABB& aabb, const B
 
 void JellyHellper::UpdateTextured(VertexArrayObject* vertexArray, std::vector<PointMass> &pointMasses, std::vector<Vector2> &mTextureList, int *mIndices, int mIndicesCount, bool create)
 {
-	int vertsCount = pointMasses.size();
+	unsigned int vertsCount = pointMasses.size();
 	int indicesCount = mIndicesCount;
 
 	TextureVertex* _simpleData;
@@ -259,7 +261,7 @@ void JellyHellper::UpdateTextured(VertexArrayObject* vertexArray, std::vector<Po
 	}
 
 	//update verts
-	for (size_t i = 0; i < pointMasses.size(); i++)
+	for (unsigned int i = 0; i < pointMasses.size(); i++)
 	{
 		_simpleData[i].x = pointMasses[i].Position.X;
 		_simpleData[i].y = pointMasses[i].Position.Y;
@@ -272,7 +274,7 @@ void JellyHellper::UpdateTextured(VertexArrayObject* vertexArray, std::vector<Po
 	//create indices
 	if (create)
 	{
-		for (size_t i = 0; i < indicesCount; i++)
+		for (int i = 0; i < indicesCount; i++)
 		{
 			_indices[i] = mIndices[i];
 		}
@@ -292,8 +294,8 @@ void JellyHellper::UpdateTextured(VertexArrayObject* vertexArray, std::vector<Po
 
 void JellyHellper::UpdateTexturedBlob(VertexArrayObject* vertexArray, std::vector<Vector2> &points, int count, std::vector<Vector2> &mTetxure, bool create)
 {
-	int vertsCount = points.size();
-	int indicesCount = points.size();
+	unsigned int vertsCount = points.size();
+	unsigned int indicesCount = points.size();
 
 	TextureVertex* _simpleData;
 	unsigned short* _indices;
@@ -312,7 +314,7 @@ void JellyHellper::UpdateTexturedBlob(VertexArrayObject* vertexArray, std::vecto
 	}
 
 	//update verts
-	for (size_t i = 0; i < points.size(); i++)
+	for (unsigned int i = 0; i < points.size(); i++)
 	{
 		_simpleData[i].x = points[i].X;
 		_simpleData[i].y = points[i].Y;
@@ -325,7 +327,7 @@ void JellyHellper::UpdateTexturedBlob(VertexArrayObject* vertexArray, std::vecto
 	//create indices
 	if (create)
 	{
-		for (size_t i = 0; i < indicesCount; i++)
+		for (unsigned int i = 0; i < indicesCount; i++)
 		{
 			_indices[i] = i;
 		}

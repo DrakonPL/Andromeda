@@ -1,7 +1,7 @@
 #ifndef BodyPolygon_H
 #define BodyPolygon_H
 
-typedef struct BodyPolygon
+struct BodyPolygon
 {
 	float x;
 	float y;

@@ -15,7 +15,7 @@ namespace JellyPhysics {
 		
 	public:
 		ClosedShape() {}
-		ClosedShape( Vector2List input ) { mLocalVertices = input; finish(); }
+		ClosedShape( Vector2List input ):mLocalVertices(input) {finish(); }
 		
 		void begin();
 		int addVertex( const Vector2& vec );

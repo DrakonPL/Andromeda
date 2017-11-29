@@ -1,7 +1,7 @@
 #ifndef BodyObjectInfo_H
 #define BodyObjectInfo_H
 
-typedef struct BodyObjectInfo
+struct BodyObjectInfo
 {
 	char name[64];
 

@@ -99,7 +99,7 @@ namespace Andromeda
 			_height = height;
 		}
 
-		void RenderManager::SetFullScreen(int state)
+		void RenderManager::SetFullScreen(bool state)
 		{
 			_fullScreen = state;
 		}

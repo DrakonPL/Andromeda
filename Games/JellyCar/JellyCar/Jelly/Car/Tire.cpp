@@ -95,7 +95,7 @@ void Tire::InterpolatePressure(float x)
 	mGasAmount = p1 + ((p2 - p1) * x);
 
 	// update edge springs.
-	for (int i = 0; i < mSprings.size(); i++)
+	for (unsigned int i = 0; i < mSprings.size(); i++)
 	{
 		mSprings[i].springK = ek1 + ((ek2 - ek1) * x);
 		mSprings[i].damping = ed1 + ((ed2 - ed1) * x);
