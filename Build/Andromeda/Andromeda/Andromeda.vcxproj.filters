@@ -294,9 +294,6 @@
     <ClCompile Include="..\..\..\Andromeda\Audio\IrrKlang\IrrSound.cpp">
       <Filter>Andromeda\Audio\IrrKlang</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Libs\tiny_obj_loader\tiny_obj_loader.cpp">
-      <Filter>Libs\tiny_obj_loader</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Andromeda\Network\TcpSocket.cpp">
       <Filter>Andromeda\Network</Filter>
     </ClCompile>
@@ -335,6 +332,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\Andromeda\Graphics\Models\ModelMaterial.cpp">
       <Filter>Andromeda\Graphics\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\tiny_obj_loader\tiny_obj_loader.cpp">
+      <Filter>Libs\tiny_obj_loader</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

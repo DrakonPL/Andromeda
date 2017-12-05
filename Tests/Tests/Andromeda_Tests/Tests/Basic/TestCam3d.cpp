@@ -318,7 +318,7 @@ void TestCam3d::Draw(GameManager* manager)
 
 	//transform
 
-  	for (int i = 0; i < _cubePositions.size();i++)
+  	for (size_t i = 0; i < _cubePositions.size();i++)
 	{
 		glm::mat4 model;
 		glm::mat4 view;

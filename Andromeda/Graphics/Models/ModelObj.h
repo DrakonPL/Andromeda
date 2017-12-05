@@ -49,7 +49,7 @@ namespace Andromeda
 			std::string GetFileFromPath(std::string& fileName);
 
 			void LoadModel(std::vector<tinyobj::shape_t> &shapes, std::vector<tinyobj::material_t> &materials, std::string fileName);
-			
+
 		public:
 
 			ModelObj();

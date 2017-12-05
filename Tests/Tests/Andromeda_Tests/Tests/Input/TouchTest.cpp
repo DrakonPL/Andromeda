@@ -134,7 +134,7 @@ void TouchTest::Draw(GameManager* manager)
 
 	if (_frontTouch != 0)
 	{
-		for (size_t i = 0; i < _frontTouch->GetTouchCount(); i++)
+		for (int i = 0; i < _frontTouch->GetTouchCount(); i++)
 		{
 			char buffer[128];
 			sprintf(buffer, "Front touch : %d pos %d %d", i, _frontTouch->GetTouchX(i), _frontTouch->GetTouchY(i));
@@ -144,7 +144,7 @@ void TouchTest::Draw(GameManager* manager)
 
 	if (_backTouch != 0)
 	{
-		for (size_t i = 0; i < _backTouch->GetTouchCount(); i++)
+		for (int i = 0; i < _backTouch->GetTouchCount(); i++)
 		{
 			char buffer[128];
 			sprintf(buffer, "Back touch : %d pos %d %d", i, _backTouch->GetTouchX(i), _backTouch->GetTouchY(i));

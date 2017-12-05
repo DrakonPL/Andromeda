@@ -6557,7 +6557,7 @@ static float *stbi__hdr_load(stbi__context *s, int *x, int *y, int *comp, int re
             stbi__hdr_convert(hdr_data, rgbe, req_comp);
             i = 1;
             j = 0;
-            //STBI_FREE(scanline);
+            STBI_FREE(scanline);
             goto main_decode_loop; // yes, this makes no sense
          }
          len <<= 8;
