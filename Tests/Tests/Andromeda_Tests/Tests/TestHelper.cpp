@@ -17,13 +17,15 @@
 #include "Basic/Test6.h"
 
 #include "Models/TestObjModel.h"
-#include "Models/TestGltfModel.h"
+//#include "Models/TestGltfModel.h"
 
 #include "Input/TouchTest.h"
 
 #include "Lightening/TestLight1.h"
 #include "Lightening/TestLight2.h"
 #include "Lightening/TestLight3.h"
+
+#include "Scripts/TestLua1.h"
 
 #include <Andromeda/Graphics/ShaderManager.h>
 #include <Andromeda/Graphics/RenderManager.h>
@@ -44,7 +46,7 @@ TestHelper::TestHelper()
 {
 	_currentTest = 0;
 
-	//_tests.push_back(new TestGltfModel());
+	_tests.push_back(new TestLua1());
 
 	_tests.push_back(new TestFreeTypeFont());
 	_tests.push_back(new TestFreeTypeAtlas());

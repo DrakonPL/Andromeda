@@ -54,7 +54,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>ANDROMEDA_PC;ANDROMEDA_GLFW;ANDROMEDA_GL3;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\;..\..\..\Libs;..\..\..\Libs\freetype\include;..\..\..\Libs\freetype_gl;..\..\..\Libs\glew\include;..\..\..\Libs\glfw\include;..\..\..\Libs\glm;..\..\..\Libs\stb;..\..\..\Libs\tiny_obj_loader;..\..\..\Libs\JellyPhysic;..\..\..\Libs\tinyxml;..\..\..\Libs\dirent;..\..\..\Libs\irrKlang\include;..\..\..\Libs\ffmpeg\include;..\..\..\Libs\portaudio\Include;..\..\..\Libs\tiny_gltf_loader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\;..\..\..\Libs;..\..\..\Libs\freetype\include;..\..\..\Libs\freetype_gl;..\..\..\Libs\glew\include;..\..\..\Libs\glfw\include;..\..\..\Libs\glm;..\..\..\Libs\stb;..\..\..\Libs\tiny_obj_loader;..\..\..\Libs\JellyPhysic;..\..\..\Libs\tinyxml;..\..\..\Libs\dirent;..\..\..\Libs\irrKlang\include;..\..\..\Libs\ffmpeg\include;..\..\..\Libs\portaudio\Include;..\..\..\Libs\tiny_gltf_loader;..\..\..\Libs\luabind;..\..\..\Libs\lua\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -168,6 +168,27 @@
     <ClCompile Include="..\..\..\Libs\JellyPhysics\Vector2.cpp" />
     <ClCompile Include="..\..\..\Libs\JellyPhysics\VectorTools.cpp" />
     <ClCompile Include="..\..\..\Libs\JellyPhysics\World.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\class.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\class_info.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\class_registry.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\class_rep.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\create_class.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\error.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\exception_handler.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\function.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\function_introspection.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\headertest.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\inheritance.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\link_compatibility.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\object_rep.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\open.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\operator.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\pcall.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\scope.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\set_package_preload.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\stack_content_by_name.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\weak_ref.cpp" />
+    <ClCompile Include="..\..\..\Libs\luabind\src\wrapper_base.cpp" />
     <ClCompile Include="..\..\..\Libs\tinyxml\tinystr.cpp" />
     <ClCompile Include="..\..\..\Libs\tinyxml\tinyxml.cpp" />
     <ClCompile Include="..\..\..\Libs\tinyxml\tinyxmlerror.cpp" />

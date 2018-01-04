@@ -73,6 +73,27 @@ OBJS   = 	../../../Andromeda/FileSystem/FileManager.o \
 			../../../Libs/JellyPhysics/VectorTools.o \
 			../../../Libs/JellyPhysics/World.o \
 			../../../Libs/tiny_obj_loader/tiny_obj_loader.o \
+			../../../Libs/luabind/src/class.o \
+			../../../Libs/luabind/src/class_info.o \
+			../../../Libs/luabind/src/class_registry.o \
+			../../../Libs/luabind/src/class_rep.o \
+			../../../Libs/luabind/src/create_class.o \
+			../../../Libs/luabind/src/error.o \
+			../../../Libs/luabind/src/exception_handler.o \
+			../../../Libs/luabind/src/function.o \
+			../../../Libs/luabind/src/function_introspection.o \
+			../../../Libs/luabind/src/headertest.o \
+			../../../Libs/luabind/src/inheritance.o \
+			../../../Libs/luabind/src/link_compatibility.o \
+			../../../Libs/luabind/src/object_rep.o \
+			../../../Libs/luabind/src/open.o \
+			../../../Libs/luabind/src/operator.o \
+			../../../Libs/luabind/src/pcall.o \
+			../../../Libs/luabind/src/scope.o \
+			../../../Libs/luabind/src/set_package_preload.o \
+			../../../Libs/luabind/src/stack_content_by_name.o \
+			../../../Libs/luabind/src/weak_ref.o \
+			../../../Libs/luabind/src/wrapper_base.o \
 			./Tests/ExampleGameManager.o \
 			./Tests/TestHelper.o \
 			./Tests/InputHelper.o \
@@ -92,7 +113,8 @@ OBJS   = 	../../../Andromeda/FileSystem/FileManager.o \
 			./Tests/Lightening/TestLight1.o \
 			./Tests/Lightening/TestLight2.o \
 			./Tests/Lightening/TestLight3.o \
-			./Tests/Video/VideoTest1.o \
+			./Tests/Scripts/TestLua1.o \
+			./Tests/Scripts/AndromedaBindings.o \
 			./Tests/Andromeda.o
 			
 SHADERS   = ../../../Andromeda/Graphics/GXM/CoreShaders/Compiled/clear_f_gxp.o ../../../Andromeda/Graphics/GXM/CoreShaders/Compiled/clear_v_gxp.o
@@ -105,8 +127,8 @@ PREFIX  	= arm-vita-eabi
 CC      	= $(PREFIX)-gcc
 CXX      	= $(PREFIX)-g++
 STRIP 		= $(PREFIX)-strip
-CXXFLAGS  	= -Wl,-q -O3 -std=gnu++11 -fpermissive -DANDROMEDA_VITA -DHAVE_OGGVORBIS -DWANT_FASTWAV -DHAVE_LIBSPEEXDSP -DUSE_AUDIO_RESAMPLER -I../../../ -I../../../Libs -I../../../Libs/glm -I../../../Libs/freetype/include -I../../../Libs/freetype_gl -I../../../Libs/JellyPhysics -I../../../Libs/tinyxml -I../../../Libs/stb -I../../../Libs/nogg -I../../../Libs/tiny_obj_loader
-CFLAGS  	= -Wl,-q -O3 -std=c99 -fpermissive -DANDROMEDA_VITA -DHAVE_OGGVORBIS -DWANT_FASTWAV  -DHAVE_LIBSPEEXDSP -DUSE_AUDIO_RESAMPLER -I../../../ -I../../../Libs -I../../../Libs/glm -I../../../Libs/freetype/include -I../../../Libs/freetype_gl -I../../../Libs/JellyPhysics -I../../../Libs/tinyxml -I../../../Libs/stb -I../../../Libs/nogg -I../../../Libs/tiny_obj_loader
+CXXFLAGS  	= -Wl,-q -O3 -std=gnu++11 -fpermissive -DANDROMEDA_VITA -DHAVE_OGGVORBIS -DWANT_FASTWAV -DHAVE_LIBSPEEXDSP -DUSE_AUDIO_RESAMPLER -I../../../ -I../../../Libs -I../../../Libs/glm -I../../../Libs/freetype/include -I../../../Libs/freetype_gl -I../../../Libs/JellyPhysics -I../../../Libs/tinyxml -I../../../Libs/stb -I../../../Libs/nogg -I../../../Libs/tiny_obj_loader -I../../../Libs/luabind
+CFLAGS  	= -Wl,-q -O3 -std=c99 -fpermissive -DANDROMEDA_VITA -DHAVE_OGGVORBIS -DWANT_FASTWAV  -DHAVE_LIBSPEEXDSP -DUSE_AUDIO_RESAMPLER -I../../../ -I../../../Libs -I../../../Libs/glm -I../../../Libs/freetype/include -I../../../Libs/freetype_gl -I../../../Libs/JellyPhysics -I../../../Libs/tinyxml -I../../../Libs/stb -I../../../Libs/nogg -I../../../Libs/tiny_obj_loader -I../../../Libs/luabind
 ASFLAGS 	= $(CFLAGS)
 
 all: $(TARGET).velf

@@ -16,6 +16,9 @@
     <Filter Include="Models">
       <UniqueIdentifier>{c7a2c6f8-8ff0-4f13-8cda-1c3a09f80609}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{f97ba686-7539-40d8-8a09-90b6965a5b37}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Tests\Andromeda.cpp" />
@@ -79,6 +82,12 @@
     <ClCompile Include="Tests\Models\TestGltfModel.cpp">
       <Filter>Models</Filter>
     </ClCompile>
+    <ClCompile Include="Tests\Scripts\TestLua1.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Scripts\AndromedaBindings.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Tests\ExampleGameManager.h" />
@@ -140,6 +149,12 @@
     <ClInclude Include="Tests\InputHelper.h" />
     <ClInclude Include="Tests\Models\TestGltfModel.h">
       <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Scripts\TestLua1.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Scripts\AndromedaBindings.h">
+      <Filter>Script</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

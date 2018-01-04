@@ -79,6 +79,9 @@
     <Filter Include="Andromeda\Video\FFmpeg">
       <UniqueIdentifier>{abbab878-3844-4929-a078-231fbf6c54c6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Libs\LuaBind">
+      <UniqueIdentifier>{cba9df10-8707-4bfb-99a0-89838085e3cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Andromeda\System\GameManager.cpp">
@@ -335,6 +338,69 @@
     </ClCompile>
     <ClCompile Include="..\..\..\Libs\tiny_obj_loader\tiny_obj_loader.cpp">
       <Filter>Libs\tiny_obj_loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\class.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\class_info.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\class_registry.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\class_rep.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\create_class.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\error.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\exception_handler.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\function.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\function_introspection.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\headertest.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\inheritance.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\link_compatibility.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\object_rep.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\open.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\operator.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\pcall.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\scope.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\set_package_preload.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\stack_content_by_name.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\weak_ref.cpp">
+      <Filter>Libs\LuaBind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libs\luabind\src\wrapper_base.cpp">
+      <Filter>Libs\LuaBind</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
