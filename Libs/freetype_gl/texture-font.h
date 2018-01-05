@@ -1,7 +1,35 @@
-/* Freetype GL - A C OpenGL Freetype engine
+/* ============================================================================
+ * Freetype GL - A C OpenGL Freetype engine
+ * Platform:    Any
+ * WWW:         https://github.com/rougier/freetype-gl
+ * ----------------------------------------------------------------------------
+ * Copyright 2011,2012 Nicolas P. Rougier. All rights reserved.
  *
- * Distributed under the OSI-approved BSD 2-Clause License.  See accompanying
- * file `LICENSE` for more details.
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *  1. Redistributions of source code must retain the above copyright notice,
+ *     this list of conditions and the following disclaimer.
+ *
+ *  2. Redistributions in binary form must reproduce the above copyright
+ *     notice, this list of conditions and the following disclaimer in the
+ *     documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY NICOLAS P. ROUGIER ''AS IS'' AND ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+ * EVENT SHALL NICOLAS P. ROUGIER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+ * INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * The views and conclusions contained in the software and documentation are
+ * those of the authors and should not be interpreted as representing official
+ * policies, either expressed or implied, of Nicolas P. Rougier.
+ * ============================================================================
  */
 #ifndef __TEXTURE_FONT_H__
 #define __TEXTURE_FONT_H__
@@ -41,18 +69,6 @@ namespace ftgl {
  * @{
  */
 
-
-/**
- * A list of possible ways to render a glyph.
- */
-typedef enum rendermode_t
-{
-    RENDER_NORMAL,
-    RENDER_OUTLINE_EDGE,
-    RENDER_OUTLINE_POSITIVE,
-    RENDER_OUTLINE_NEGATIVE,
-    RENDER_SIGNED_DISTANCE_FIELD
-} rendermode_t;
 
 
 /**
@@ -185,9 +201,9 @@ typedef struct texture_glyph_t
     vector_t * kerning;
 
     /**
-     * Mode this glyph was rendered
+     * Glyph outline type (0 = None, 1 = line, 2 = inner, 3 = outer)
      */
-    rendermode_t rendermode;
+    int outline_type;
 
     /**
      * Glyph outline thickness
@@ -247,9 +263,9 @@ typedef struct texture_font_t
     int hinting;
 
     /**
-     * Mode the font is rendering its next glyph
+     * Outline type (0 = None, 1 = line, 2 = inner, 3 = outer)
      */
-    rendermode_t rendermode;
+    int outline_type;
 
     /**
      * Outline thickness
@@ -391,29 +407,6 @@ typedef struct texture_font_t
   texture_font_get_glyph( texture_font_t * self,
                           const char * codepoint );
 
-/** 
- * Request an already loaded glyph from the font. 
- * 
- * @param self      A valid texture font
- * @param codepoint Character codepoint to be found in UTF-8 encoding.
- *
- * @return A pointer on the glyph or 0 if the glyph is not loaded
- */
- texture_glyph_t *
- texture_font_find_glyph( texture_font_t * self,
-                          const char * codepoint );
-    
-/**
- * Request the loading of a given glyph.
- *
- * @param self       A valid texture font
- * @param codepoints Character codepoint to be loaded in UTF-8 encoding.
- *
- * @return One if the glyph could be loaded, zero if not.
- */
-  int
-  texture_font_load_glyph( texture_font_t * self,
-                           const char * codepoint );
 
 /**
  * Request the loading of several glyphs at once.
@@ -428,18 +421,7 @@ typedef struct texture_font_t
   size_t
   texture_font_load_glyphs( texture_font_t * self,
                             const char * codepoints );
-  /*
-   *Increases the size of a fonts texture atlas
-   *Invalidates all pointers to font->atlas->data
-   *Changes the UV Coordinates of existing glyphs in the font
-   *
-   *@param self A valid texture font
-   *@param width_new Width of the texture atlas after resizing (must be bigger or equal to current width)
-   *@param height_new Height of the texture atlas after resizing (must be bigger or equal to current height)
-   */
-  void
-  texture_font_enlarge_atlas( texture_font_t * self, size_t width_new,
-							  size_t height_new);
+
 /**
  * Get the kerning between two horizontal glyphs.
  *

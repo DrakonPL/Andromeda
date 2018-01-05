@@ -63,6 +63,8 @@ extern "C" {
 #endif
 
 
+#include <math.h>
+
 #ifdef __cplusplus
 namespace ftgl {
 #endif

@@ -46,8 +46,8 @@ OBJS   = 	../../../Andromeda/FileSystem/FileManager.o \
 			../../../Andromeda/System/SystemManager.o \
 			../../../Andromeda/System/MemoryManager.o \
 			../../../Andromeda/System/Timer.o \
-			../../../Andromeda/System/Gxm/GameLoaderGxm.o \
-			../../../Andromeda/System/Gxm/MemoryManagerGxm.o \
+			../../../Andromeda/System/GXM/GameLoaderGxm.o \
+			../../../Andromeda/System/GXM/MemoryManagerGxm.o \
 			../../../Andromeda/Utils/Logger.o \
 			../../../Andromeda/Utils/debugnet.o \
 			../../../Libs/freetype_gl/distance-field.o \
@@ -89,6 +89,7 @@ OBJS   = 	../../../Andromeda/FileSystem/FileManager.o \
 			./Tests/FreeTypeTests/TestFreeTypeAtlas.o \
 			./Tests/FreeTypeTests/TestFreeTypeFont.o \
 			./Tests/Models/TestObjModel.o \
+			./Tests/Models/TestObjKart.o \
 			./Tests/Lightening/TestLight1.o \
 			./Tests/Lightening/TestLight2.o \
 			./Tests/Lightening/TestLight3.o \
@@ -105,7 +106,7 @@ CC      	= $(PREFIX)-gcc
 CXX      	= $(PREFIX)-g++
 STRIP 		= $(PREFIX)-strip
 CXXFLAGS  	= -Wl,-q -O3 -std=gnu++11 -fpermissive -DANDROMEDA_VITA -DHAVE_OGGVORBIS -DWANT_FASTWAV -DHAVE_LIBSPEEXDSP -DUSE_AUDIO_RESAMPLER -I../../../ -I../../../Libs -I../../../Libs/glm -I../../../Libs/freetype/include -I../../../Libs/freetype_gl -I../../../Libs/JellyPhysics -I../../../Libs/tinyxml -I../../../Libs/stb -I../../../Libs/nogg -I../../../Libs/tiny_obj_loader -I../../../Libs/luabind
-CFLAGS  	= -Wl,-q -O3 -std=c99 -fpermissive -DANDROMEDA_VITA -DHAVE_OGGVORBIS -DWANT_FASTWAV  -DHAVE_LIBSPEEXDSP -DUSE_AUDIO_RESAMPLER -I../../../ -I../../../Libs -I../../../Libs/glm -I../../../Libs/freetype/include -I../../../Libs/freetype_gl -I../../../Libs/JellyPhysics -I../../../Libs/tinyxml -I../../../Libs/stb -I../../../Libs/nogg -I../../../Libs/tiny_obj_loader -I../../../Libs/luabind
+CFLAGS  	= -Wl,-q -O3 -std=c99 -DANDROMEDA_VITA -DHAVE_OGGVORBIS -DWANT_FASTWAV  -DHAVE_LIBSPEEXDSP -DUSE_AUDIO_RESAMPLER -I../../../ -I../../../Libs -I../../../Libs/glm -I../../../Libs/freetype/include -I../../../Libs/freetype_gl -I../../../Libs/JellyPhysics -I../../../Libs/tinyxml -I../../../Libs/stb -I../../../Libs/nogg -I../../../Libs/tiny_obj_loader -I../../../Libs/luabind
 ASFLAGS 	= $(CFLAGS)
 
 all: $(TARGET).velf

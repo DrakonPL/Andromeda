@@ -17,6 +17,7 @@
 #include "Basic/Test6.h"
 
 #include "Models/TestObjModel.h"
+#include "Models/TestObjKart.h"
 
 #include "Input/TouchTest.h"
 
@@ -60,8 +61,12 @@ TestHelper::TestHelper()
 	_tests.push_back(new TouchTest());
 
 	_tests.push_back(new TestSprite());
+
 	_tests.push_back(new TestCam3d());
+
 	_tests.push_back(new TestObjModel());
+	_tests.push_back(new TestObjKart());
+
 	_tests.push_back(new TestToTexture());
 
 	_tests.push_back(new TestLight1());

@@ -32,6 +32,7 @@
     <ClCompile Include="Tests\Lightening\TestLight3.cpp" />
     <ClCompile Include="Tests\Lightening\TestLight4.cpp" />
     <ClCompile Include="Tests\Models\TestGltfModel.cpp" />
+    <ClCompile Include="Tests\Models\TestObjKart.cpp" />
     <ClCompile Include="Tests\Models\TestObjModel.cpp" />
     <ClCompile Include="Tests\Scripts\AndromedaBindings.cpp" />
     <ClCompile Include="Tests\Scripts\TestLua1.cpp" />
@@ -58,6 +59,7 @@
     <ClInclude Include="Tests\Lightening\TestLight3.h" />
     <ClInclude Include="Tests\Lightening\TestLight4.h" />
     <ClInclude Include="Tests\Models\TestGltfModel.h" />
+    <ClInclude Include="Tests\Models\TestObjKart.h" />
     <ClInclude Include="Tests\Models\TestObjModel.h" />
     <ClInclude Include="Tests\Scripts\AndromedaBindings.h" />
     <ClInclude Include="Tests\Scripts\TestLua1.h" />

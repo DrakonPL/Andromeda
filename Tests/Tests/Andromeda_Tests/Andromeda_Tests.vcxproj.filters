@@ -19,6 +19,9 @@
     <Filter Include="Script">
       <UniqueIdentifier>{f97ba686-7539-40d8-8a09-90b6965a5b37}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Bullet">
+      <UniqueIdentifier>{9eb9c19f-c19f-4c89-8f43-46541ce2de28}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Tests\Andromeda.cpp" />
@@ -88,6 +91,9 @@
     <ClCompile Include="Tests\Scripts\AndromedaBindings.cpp">
       <Filter>Script</Filter>
     </ClCompile>
+    <ClCompile Include="Tests\Models\TestObjKart.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Tests\ExampleGameManager.h" />
@@ -155,6 +161,9 @@
     </ClInclude>
     <ClInclude Include="Tests\Scripts\AndromedaBindings.h">
       <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Models\TestObjKart.h">
+      <Filter>Models</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
