@@ -94,6 +94,9 @@
     <ClCompile Include="Tests\Models\TestObjKart.cpp">
       <Filter>Models</Filter>
     </ClCompile>
+    <ClCompile Include="Tests\Bullet\TestBullet1.cpp">
+      <Filter>Bullet</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Tests\ExampleGameManager.h" />
@@ -164,6 +167,9 @@
     </ClInclude>
     <ClInclude Include="Tests\Models\TestObjKart.h">
       <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Bullet\TestBullet1.h">
+      <Filter>Bullet</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

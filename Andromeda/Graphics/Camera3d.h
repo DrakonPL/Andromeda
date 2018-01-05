@@ -50,6 +50,7 @@ namespace Andromeda
 			Camera3d(float posX, float posY, float posZ, float upX, float upY, float upZ, float yaw, float pitch);
 
 			glm::mat4 GetViewMatrix();
+			glm::vec3 GetFrontVector();
 
 			void ProcessKeyboard(CameraMovementEnum direction, float deltaTime);
 			void ProcessMouseMovement(float xoffset, float yoffset, bool constrainPitch);

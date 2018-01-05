@@ -27,6 +27,11 @@ namespace Andromeda
 			return glm::lookAt(Position, Position + Front, Up);
 		}
 
+		glm::vec3 Camera3d::GetFrontVector()
+		{
+			return Front;
+		}
+
 		void Camera3d::ProcessKeyboard(CameraMovementEnum direction, float deltaTime)
 		{
 			float velocity = this->MovementSpeed * deltaTime;

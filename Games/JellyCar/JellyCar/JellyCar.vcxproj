@@ -56,6 +56,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>ANDROMEDA_PC;ANDROMEDA_GLFW;ANDROMEDA_GL3;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\;..\..\..\Libs;..\..\..\Libs\freetype\include;..\..\..\Libs\freetype_gl;..\..\..\Libs\glew\include;..\..\..\Libs\glfw\include;..\..\..\Libs\glm;..\..\..\Libs\stb;..\..\..\Libs\tiny_obj_loader;..\..\..\Libs\JellyPhysic;..\..\..\Libs\tinyxml;..\..\..\Libs\dirent;..\..\..\Libs\irrKlang\include;..\..\..\Libs\ffmpeg\include;..\..\..\Libs\portaudio\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

@@ -85,6 +85,7 @@ OBJS   = 	../../../Andromeda/FileSystem/FileManager.o \
 			./Tests/Basic/TestSprite.o \
 			./Tests/Basic/TestCam3d.o \
 			./Tests/Basic/TestToTexture.o \
+			./Tests/Bullet/TestBullet1.o \
 			./Tests/Input/TouchTest.o \
 			./Tests/FreeTypeTests/TestFreeTypeAtlas.o \
 			./Tests/FreeTypeTests/TestFreeTypeFont.o \
@@ -99,14 +100,14 @@ SHADERS   = ../../../Andromeda/Graphics/GXM/CoreShaders/Compiled/clear_f_gxp.o .
 			
 
 			
-LIBS =  -lvorbisfile -lvorbisenc -lvorbis -lspeexdsp -logg -lSceDisplay_stub -lSceGxm_stub -lSceCommonDialog_stub -lSceCtrl_stub -lSceSysmodule_stub -lSceTouch_stub -lSceAudio_stub -lSceNet_stub -lSceNetCtl_stub -lSceAvPlayer_stub -lfreetype -lm -lc -lpng -lz
+LIBS =  -lBulletDynamics -lBulletCollision -lLinearMath -lvorbisfile -lvorbisenc -lvorbis -lspeexdsp -logg -lSceDisplay_stub -lSceGxm_stub -lSceCommonDialog_stub -lSceCtrl_stub -lSceSysmodule_stub -lSceTouch_stub -lSceAudio_stub -lSceNet_stub -lSceNetCtl_stub -lSceAvPlayer_stub -lfreetype -lm -lc -lpng -lz
 
 PREFIX  	= arm-vita-eabi
 CC      	= $(PREFIX)-gcc
 CXX      	= $(PREFIX)-g++
 STRIP 		= $(PREFIX)-strip
-CXXFLAGS  	= -Wl,-q -O3 -std=gnu++11 -fpermissive -DANDROMEDA_VITA -DHAVE_OGGVORBIS -DWANT_FASTWAV -DHAVE_LIBSPEEXDSP -DUSE_AUDIO_RESAMPLER -I../../../ -I../../../Libs -I../../../Libs/glm -I../../../Libs/freetype/include -I../../../Libs/freetype_gl -I../../../Libs/JellyPhysics -I../../../Libs/tinyxml -I../../../Libs/stb -I../../../Libs/nogg -I../../../Libs/tiny_obj_loader -I../../../Libs/luabind
-CFLAGS  	= -Wl,-q -O3 -std=c99 -DANDROMEDA_VITA -DHAVE_OGGVORBIS -DWANT_FASTWAV  -DHAVE_LIBSPEEXDSP -DUSE_AUDIO_RESAMPLER -I../../../ -I../../../Libs -I../../../Libs/glm -I../../../Libs/freetype/include -I../../../Libs/freetype_gl -I../../../Libs/JellyPhysics -I../../../Libs/tinyxml -I../../../Libs/stb -I../../../Libs/nogg -I../../../Libs/tiny_obj_loader -I../../../Libs/luabind
+CXXFLAGS  	= -Wl,-q -O3 -std=gnu++11 -fpermissive -DANDROMEDA_VITA -DHAVE_OGGVORBIS -DWANT_FASTWAV -DHAVE_LIBSPEEXDSP -DUSE_AUDIO_RESAMPLER -I../../../ -I../../../Libs -I../../../Libs/glm -I../../../Libs/freetype/include -I../../../Libs/freetype_gl -I../../../Libs/JellyPhysics -I../../../Libs/tinyxml -I../../../Libs/stb -I../../../Libs/nogg -I../../../Libs/tiny_obj_loader -I../../../Libs/bullet/include/bullet
+CFLAGS  	= -Wl,-q -O3 -std=c99 -DANDROMEDA_VITA -DHAVE_OGGVORBIS -DWANT_FASTWAV  -DHAVE_LIBSPEEXDSP -DUSE_AUDIO_RESAMPLER -I../../../ -I../../../Libs -I../../../Libs/glm -I../../../Libs/freetype/include -I../../../Libs/freetype_gl -I../../../Libs/JellyPhysics -I../../../Libs/tinyxml -I../../../Libs/stb -I../../../Libs/nogg -I../../../Libs/tiny_obj_loader -I../../../Libs/bullet/include/bullet
 ASFLAGS 	= $(CFLAGS)
 
 all: $(TARGET).velf

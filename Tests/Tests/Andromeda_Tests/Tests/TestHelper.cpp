@@ -19,6 +19,8 @@
 #include "Models/TestObjModel.h"
 #include "Models/TestObjKart.h"
 
+#include "Bullet/TestBullet1.h"
+
 #include "Input/TouchTest.h"
 
 #include "Lightening/TestLight1.h"
@@ -47,6 +49,8 @@ TestHelper* TestHelper::Instance()
 TestHelper::TestHelper()
 {
 	_currentTest = 0;
+
+	_tests.push_back(new TestBullet1());
 
 	_tests.push_back(new TestFreeTypeFont());
 	_tests.push_back(new TestFreeTypeAtlas());
