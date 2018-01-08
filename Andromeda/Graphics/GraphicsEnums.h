@@ -43,6 +43,14 @@ namespace Andromeda
 			LinearFilter
 		};
 
+		enum TextureWrapType
+		{
+			Repeat,
+			MirroredRepeat,
+			ClampToEdge,
+			ClampToBorder
+		};
+
 		enum VertexBufferDrawType
 		{
 			StaticDraw,

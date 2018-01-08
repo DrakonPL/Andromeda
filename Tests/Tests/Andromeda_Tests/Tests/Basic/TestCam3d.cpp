@@ -192,7 +192,6 @@ void TestCam3d::CleanUp()
 
 	_textureManager->Remove(_texture);
 	_shaderManager->Remove(_shader);
-
 }
 
 void TestCam3d::Pause()

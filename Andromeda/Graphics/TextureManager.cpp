@@ -26,12 +26,12 @@ namespace Andromeda
 			return _textureManager;
 		}
 
-		Texture* TextureManager::LoadFromFile(std::string fileName, TextureFilerType filterType, TextureColorType textureColor)
+		Texture* TextureManager::LoadFromFile(std::string fileName, TextureFilerType filterType, TextureColorType textureColor, TextureWrapType textureWrap, int mipLevel)
 		{
 			if (_images.find(fileName) == _images.end())
 			{
 				Texture* image = new Texture();
-				if (image->LoadFromFile(fileName, textureColor, filterType))
+				if (image->LoadFromFile(fileName, textureColor, filterType, textureWrap, mipLevel))
 				{
 					//generate texture
 					RenderManager::Instance()->CreateTexture(image);
@@ -54,12 +54,12 @@ namespace Andromeda
 			return _images[fileName];
 		}
 
-		Texture* TextureManager::LoadFromMemory(std::string newName, unsigned char *data, std::size_t size, TextureFilerType filterType, TextureColorType textureColor)
+		Texture* TextureManager::LoadFromMemory(std::string newName, unsigned char *data, std::size_t size, TextureFilerType filterType, TextureColorType textureColor, TextureWrapType textureWrap, int mipLevel)
 		{
 			if (_images.find(newName) == _images.end())
 			{
 				Texture* image = new Texture();
-				if (image->LoadFromMemory(newName, data, size, textureColor, filterType))
+				if (image->LoadFromMemory(newName, data, size, textureColor, filterType, textureWrap, mipLevel))
 				{
 					//generate texture
 					RenderManager::Instance()->CreateTexture(image);
@@ -82,7 +82,7 @@ namespace Andromeda
 			return _images[newName];
 		}
 
-		Texture* TextureManager::CreateEmpty(std::string name, int width, int height, TextureFilerType filterType, TextureColorType textureColor)
+		Texture* TextureManager::CreateEmpty(std::string name, int width, int height, TextureFilerType filterType, TextureColorType textureColor, TextureWrapType textureWrap)
 		{
 			if (name.length() == 0)
 			{

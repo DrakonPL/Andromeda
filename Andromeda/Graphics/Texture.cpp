@@ -19,8 +19,10 @@ namespace Andromeda
 			_textureWidth = 0;
 			_id = 0;
 			_pixels = 0;
+
 			_filterType = TextureFilerType::LinearFilter;
 			_textureColor = TextureColorType::Texture_RGBA;
+			_textureWrap = TextureWrapType::ClampToEdge;
 
 			_gxmId[0] = 0;
 			_gxmId[1] = 0;
@@ -40,7 +42,7 @@ namespace Andromeda
 			}
 		}
 
-		bool Texture::LoadFromFile(std::string fileName, TextureColorType textureColor, TextureFilerType filterType)
+		bool Texture::LoadFromFile(std::string fileName, TextureColorType textureColor, TextureFilerType filterType, TextureWrapType textureWrap, int mipLevel)
 		{
 			_fileName = fileName;
 
@@ -62,10 +64,10 @@ namespace Andromeda
 			file->Close();
 			delete file;
 
-			return LoadFromMemory(fileName, _buffer, dataSize, textureColor, filterType);
+			return LoadFromMemory(fileName, _buffer, dataSize, textureColor, filterType, textureWrap,mipLevel);
 		}
 
-		bool Texture::LoadFromMemory(std::string newName, unsigned char* data, std::size_t size, TextureColorType textureColor, TextureFilerType filterType)
+		bool Texture::LoadFromMemory(std::string newName, unsigned char* data, std::size_t size, TextureColorType textureColor, TextureFilerType filterType, TextureWrapType textureWrap, int mipLevel)
 		{
 			if (data && size)
 			{
@@ -89,6 +91,9 @@ namespace Andromeda
 
 					_filterType = filterType;
 					_textureColor = textureColor;
+					_textureWrap = textureWrap;
+
+					_mipLevel = mipLevel;
 
 					_textureWidth = _width;
 					_textureHeight = _height;
@@ -175,6 +180,16 @@ namespace Andromeda
 			return _textureHeight;
 		}
 
+		void Texture::SetMipLevel(int mipLevel)
+		{
+			_mipLevel = mipLevel;
+		}
+
+		int Texture::GetMipLevel()
+		{
+			return _mipLevel;
+		}
+
 		bool Texture::Resized()
 		{
 			return _width != _textureWidth || _height != _textureHeight;
@@ -188,6 +203,11 @@ namespace Andromeda
 		TextureColorType Texture::GetColorType()
 		{
 			return _textureColor;
+		}
+
+		TextureWrapType Texture::GetWrapType()
+		{
+			return _textureWrap;
 		}
 
 		unsigned int* Texture::GetIdPointer()

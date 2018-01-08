@@ -18,9 +18,11 @@ namespace Andromeda
 			int _height;
 			int _textureWidth;
 			int _textureHeight;
+			int _mipLevel;
 
 			TextureFilerType _filterType;
 			TextureColorType _textureColor;
+			TextureWrapType _textureWrap;
 
 			//opengl
 			unsigned int _id;			
@@ -55,10 +57,10 @@ namespace Andromeda
 			unsigned int _gxmId[4];
 
 			//load image from file
-			bool LoadFromFile(std::string fileName, TextureColorType textureColor, TextureFilerType filterType);
+			bool LoadFromFile(std::string fileName, TextureColorType textureColor, TextureFilerType filterType, TextureWrapType textureWrap, int mipLevel);
 
 			//load image from memory
-			bool LoadFromMemory(std::string newName, unsigned char *data, std::size_t size, TextureColorType textureColor, TextureFilerType filterType);
+			bool LoadFromMemory(std::string newName, unsigned char *data, std::size_t size, TextureColorType textureColor, TextureFilerType filterType, TextureWrapType textureWrap, int mipLevel);
 
 			bool Resized();
 
@@ -68,8 +70,12 @@ namespace Andromeda
 			int GetTextureWidth();
 			int GetTextureHeight();
 
+			void SetMipLevel(int mipLevel);
+			int GetMipLevel();
+
 			TextureFilerType GetFilterType();
 			TextureColorType GetColorType();
+			TextureWrapType GetWrapType();
 
 			unsigned int* GetIdPointer();
 			unsigned int GetId();

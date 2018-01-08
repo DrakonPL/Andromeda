@@ -41,8 +41,13 @@ private:
 	// Shaders
 	Shader* _shader;
 
+	//texture
+	Texture* _cubeTexture;
+	Texture* _floorTexture;
+
 	//model
-	ModelObj* _model;
+	VertexArrayObject* _cubeModel;
+	VertexArrayObject* _floorModel;
 
 	//cam
 	Camera3d* _cam;
@@ -78,7 +83,9 @@ private:
 
 private:
 
+	void InitModels();
 	void InitPhysic();
+
 	glm::mat4 btScalar2glmMat4(btScalar* matrix);
 
 public:

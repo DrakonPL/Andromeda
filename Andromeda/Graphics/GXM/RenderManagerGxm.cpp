@@ -567,13 +567,73 @@ namespace Andromeda
 					break;
 				}
 
-
-				//create texture
-				sceGxmTextureInitLinear((SceGxmTexture *)image->_gxmId, image->GetImageData(),SCE_GXM_TEXTURE_FORMAT_A8B8G8R8, image->GetWidth(), image->GetHeight(), 1);
+				if(image->GetMipLevel() > 0)
+				{
+					//generate all mip map levels
+					uint32_t *currentLevelData	= (uint32_t *)image->GetImageData();
+					uint32_t currentLevelWidth	= image->GetWidth();
+					uint32_t currentLevelHeight	= image->GetHeight();
+					
+					for(int i = 0; i < image->GetMipLevel(); i++)
+					{
+						// pointer to the next level of mip data
+						uint32_t *nextLevelData = currentLevelData + (currentLevelWidth * currentLevelHeight);
+						
+						// downscale from current level to next level
+						int err = sceGxmTransferDownscale(
+								SCE_GXM_TRANSFER_FORMAT_U8U8U8U8_ABGR,			// srcFormat
+								currentLevelData,								// srcAddress
+								0, 0, currentLevelWidth, currentLevelHeight,	// srcX, srcY, srcWidth, srcHeight
+								currentLevelWidth * sizeof(uint32_t),			// srcStride
+								SCE_GXM_TRANSFER_FORMAT_U8U8U8U8_ABGR,			// destFormat	
+								nextLevelData,									// destAddress
+								0, 0,											// destX, destY
+								(currentLevelWidth / 2) * sizeof(uint32_t),		// destStride
+								NULL,											// syncObject
+								SCE_GXM_TRANSFER_FRAGMENT_SYNC,					// syncFlags
+								NULL);	
+								
+						// update 	
+						currentLevelData	= nextLevelData;
+						currentLevelWidth	= currentLevelWidth / 2;
+						currentLevelHeight	= currentLevelHeight / 2;
+					}
+					
+					//create texture
+					sceGxmTextureInitLinear((SceGxmTexture *)image->_gxmId, image->GetImageData(),SCE_GXM_TEXTURE_FORMAT_A8B8G8R8, image->GetWidth(), image->GetHeight(), image->GetMipLevel());
+				}
+				else
+				{
+					//create texture
+					sceGxmTextureInitLinear((SceGxmTexture *)image->_gxmId, image->GetImageData(),SCE_GXM_TEXTURE_FORMAT_A8B8G8R8, image->GetWidth(), image->GetHeight(), 1);
+				}
 
 				// Set the texture wrapping parameters
-				sceGxmTextureSetUAddrMode((SceGxmTexture *)image->_gxmId, SCE_GXM_TEXTURE_ADDR_REPEAT);
-				sceGxmTextureSetVAddrMode((SceGxmTexture *)image->_gxmId, SCE_GXM_TEXTURE_ADDR_REPEAT);
+				// Set texture wrapping to REPEAT (usually basic wrapping method)
+				int wrapType = SCE_GXM_TEXTURE_ADDR_REPEAT;
+
+				switch (image->GetWrapType())
+				{
+				case TextureWrapType::ClampToBorder:
+					wrapType = SCE_GXM_TEXTURE_ADDR_CLAMP_FULL_BORDER;
+					break;
+				case TextureWrapType::ClampToEdge:
+					wrapType = SCE_GXM_TEXTURE_ADDR_CLAMP;
+					break;
+				case TextureWrapType::Repeat:
+					wrapType = SCE_GXM_TEXTURE_ADDR_REPEAT;
+					break;
+				case TextureWrapType::MirroredRepeat:
+					wrapType = SCE_GXM_TEXTURE_ADDR_MIRROR;
+					break;
+
+				default:
+					wrapType = SCE_GXM_TEXTURE_ADDR_REPEAT;
+					break;
+				}
+				
+				sceGxmTextureSetUAddrMode((SceGxmTexture *)image->_gxmId, wrapType);
+				sceGxmTextureSetVAddrMode((SceGxmTexture *)image->_gxmId, wrapType);
 
 				// Set texture filtering parameters
 				if (image->GetFilterType() == TextureFilerType::LinearFilter)
@@ -600,8 +660,30 @@ namespace Andromeda
 				sceGxmTextureInitLinear((SceGxmTexture *)image->_gxmId, image->GetImageData(), SCE_GXM_TEXTURE_FORMAT_A8B8G8R8, image->GetWidth(), image->GetHeight(), 1);
 
 				// Set the texture wrapping parameters
-				sceGxmTextureSetUAddrMode((SceGxmTexture *)image->_gxmId, SCE_GXM_TEXTURE_ADDR_REPEAT);
-				sceGxmTextureSetVAddrMode((SceGxmTexture *)image->_gxmId, SCE_GXM_TEXTURE_ADDR_REPEAT);
+				// Set texture wrapping to REPEAT (usually basic wrapping method)
+				int wrapType = SCE_GXM_TEXTURE_ADDR_REPEAT;
+
+				switch (image->GetWrapType())
+				{
+				case TextureWrapType::ClampToBorder:
+					wrapType = SCE_GXM_TEXTURE_ADDR_CLAMP_FULL_BORDER;
+					break;
+				case TextureWrapType::ClampToEdge:
+					wrapType = SCE_GXM_TEXTURE_ADDR_CLAMP;
+					break;
+				case TextureWrapType::Repeat:
+					wrapType = SCE_GXM_TEXTURE_ADDR_REPEAT;
+					break;
+				case TextureWrapType::MirroredRepeat:
+					wrapType = SCE_GXM_TEXTURE_ADDR_MIRROR;
+					break;
+
+				default:
+					wrapType = SCE_GXM_TEXTURE_ADDR_REPEAT;
+					break;
+				}
+				sceGxmTextureSetUAddrMode((SceGxmTexture *)image->_gxmId, wrapType);
+				sceGxmTextureSetVAddrMode((SceGxmTexture *)image->_gxmId, wrapType);
 
 				// Set texture filtering parameters
 				if (image->GetFilterType() == TextureFilerType::LinearFilter)

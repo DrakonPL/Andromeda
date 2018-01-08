@@ -92,20 +92,30 @@ namespace Andromeda
 				
 				// Set the texture wrapping parameters
 				// Set texture wrapping to GL_REPEAT (usually basic wrapping method)
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+				int wrapType = GL_REPEAT;
 
-				// Set texture filtering parameters
-				if (image->GetFilterType() == TextureFilerType::LinearFilter)
+				switch (image->GetWrapType())
 				{
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+					case TextureWrapType::ClampToBorder:
+						wrapType = GL_CLAMP_TO_BORDER;
+						break;
+					case TextureWrapType::ClampToEdge:
+						wrapType = GL_CLAMP_TO_EDGE;
+						break;
+					case TextureWrapType::Repeat:
+						wrapType = GL_REPEAT;
+						break;
+					case TextureWrapType::MirroredRepeat:
+						wrapType = GL_MIRRORED_REPEAT;
+						break;
+
+					default:
+						wrapType = GL_REPEAT;
+						break;
 				}
-				else
-				{
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-				}
+
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, wrapType);
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, wrapType);
 
 				int textureFormat = GL_RGBA;
 
@@ -122,8 +132,39 @@ namespace Andromeda
 					break;
 				}
 
+				//upload texture to gpu memory
 				glTexImage2D(GL_TEXTURE_2D, 0, textureFormat, image->GetWidth(), image->GetHeight(), 0, textureFormat, GL_UNSIGNED_BYTE, image->GetImageData());
-				//glGenerateMipmap(GL_TEXTURE_2D);
+				
+				if (image->GetMipLevel() > 0)
+				{
+					if (image->GetFilterType() == TextureFilerType::LinearFilter)
+					{
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+					}
+					else
+					{
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_NEAREST);
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+					}
+
+					//generate mipmaps
+					glGenerateMipmap(GL_TEXTURE_2D);
+				}
+				else
+				{
+					// Set texture filtering parameters
+					if (image->GetFilterType() == TextureFilerType::LinearFilter)
+					{
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+					}
+					else
+					{
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+					}
+				}
 
 				// Unbind texture when done, so we won't accidentily mess up our texture.
 				glBindTexture(GL_TEXTURE_2D, 0);
@@ -144,20 +185,30 @@ namespace Andromeda
 
 				// Set the texture wrapping parameters
 				// Set texture wrapping to GL_REPEAT (usually basic wrapping method)
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+				int wrapType = GL_REPEAT;
 
-				// Set texture filtering parameters
-				if (image->GetFilterType() == TextureFilerType::LinearFilter)
+				switch (image->GetWrapType())
 				{
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+				case TextureWrapType::ClampToBorder:
+					wrapType = GL_CLAMP_TO_BORDER;
+					break;
+				case TextureWrapType::ClampToEdge:
+					wrapType = GL_CLAMP_TO_EDGE;
+					break;
+				case TextureWrapType::Repeat:
+					wrapType = GL_REPEAT;
+					break;
+				case TextureWrapType::MirroredRepeat:
+					wrapType = GL_MIRRORED_REPEAT;
+					break;
+
+				default:
+					wrapType = GL_REPEAT;
+					break;
 				}
-				else
-				{
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-				}
+
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, wrapType);
+				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, wrapType);
 
 				int textureFormat = GL_RGBA;
 
@@ -174,7 +225,39 @@ namespace Andromeda
 					break;
 				}
 
+				//upload texture to gpu memory
 				glTexImage2D(GL_TEXTURE_2D, 0, textureFormat, image->GetWidth(), image->GetHeight(), 0, textureFormat, GL_UNSIGNED_BYTE, 0);
+				
+				if (image->GetMipLevel() > 0)
+				{
+					if (image->GetFilterType() == TextureFilerType::LinearFilter)
+					{
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+					}
+					else
+					{
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_NEAREST);
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+					}
+
+					//generate mipmaps
+					glGenerateMipmap(GL_TEXTURE_2D);
+				}
+				else
+				{
+					// Set texture filtering parameters
+					if (image->GetFilterType() == TextureFilerType::LinearFilter)
+					{
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+					}
+					else
+					{
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+						glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+					}
+				}
 
 				// Unbind texture when done, so we won't accidentily mess up our texture.
 				glBindTexture(GL_TEXTURE_2D, 0);
