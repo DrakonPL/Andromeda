@@ -86,6 +86,8 @@ OBJS   = 	../../../Andromeda/FileSystem/FileManager.o \
 			./Tests/Basic/TestCam3d.o \
 			./Tests/Basic/TestToTexture.o \
 			./Tests/Bullet/TestBullet1.o \
+			./Tests/Bullet/TestBullet2.o \
+			./Tests/Bullet/BasicCar.o \
 			./Tests/Input/TouchTest.o \
 			./Tests/FreeTypeTests/TestFreeTypeAtlas.o \
 			./Tests/FreeTypeTests/TestFreeTypeFont.o \

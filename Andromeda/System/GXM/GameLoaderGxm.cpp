@@ -10,7 +10,6 @@
 #include <psp2/io/dirent.h>
 #include <psp2/io/fcntl.h>
 
-
 namespace Andromeda
 {
 	namespace System

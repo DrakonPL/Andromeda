@@ -1,10 +1,14 @@
-#include "TestBullet1.h"
+#include "TestBullet2.h"
 
 #include "../TestHelper.h"
 #include "../InputHelper.h"
 
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
-void TestBullet1::Init()
+
+void TestBullet2::Init()
 {
 	_renderManager = RenderManager::Instance();
 	_shaderManager = ShaderManager::Instance();
@@ -13,12 +17,27 @@ void TestBullet1::Init()
 	//load shader
 	_shader = _shaderManager->LoadFromFile("simple", "Assets/Shaders/vertex_color_texture_transform_3d", "Assets/Shaders/vertex_color_texture", TextureColor);
 
-	//textures
-	_cubeTexture = _textureManager->LoadFromFile("Assets/Images/container.png", Andromeda::Graphics::TextureFilerType::LinearFilter, Andromeda::Graphics::TextureColorType::Texture_RGBA, Andromeda::Graphics::TextureWrapType::Repeat);
-	_floorTexture = _textureManager->LoadFromFile("Assets/Images/wood.png",Andromeda::Graphics::TextureFilerType::LinearFilter, Andromeda::Graphics::TextureColorType::Texture_RGBA, Andromeda::Graphics::TextureWrapType::Repeat,7);
+	_cubeTexture = _textureManager->LoadFromFile("Assets/Images/container.png");
+	_floorTexture = _textureManager->LoadFromFile("Assets/Images/wood.png", Andromeda::Graphics::TextureFilerType::LinearFilter, Andromeda::Graphics::TextureColorType::Texture_RGBA, Andromeda::Graphics::TextureWrapType::Repeat, 7);
+
+	//load car model
+	_carModel = new ModelObj();
+	_carModel->LoadBinary("Assets/Models/Obj/WillyKart/willy3.objb");
+	_carModel->SetShader(_shader);
+
+	//load wheel model
+	_wheelModel = new ModelObj();
+	_wheelModel->LoadBinary("Assets/Models/Obj/WillyKart/wheel3.objb");
+	_wheelModel->SetShader(_shader);
+
+	//wheel positions	
+	_wheelPositions.push_back(glm::vec3(1.0f, 0.65f, 1.0f));
+	_wheelPositions.push_back(glm::vec3(1.0f, 0.65f, -0.75f));
+	_wheelPositions.push_back(glm::vec3(-1.0f, 0.65f, 1.0f));
+	_wheelPositions.push_back(glm::vec3(-1.0f, 0.65f, -0.75f));
 
 	//cam
-	_cam = new Camera3d(glm::vec3(0.0f, 1.0f, 4.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f);
+	_cam = new Camera3d(glm::vec3(0.0f, 4.0f, 4.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f);
 
 	//
 	_projection = glm::perspective(45.0f, (float)_renderManager->GetWidth() / (float)_renderManager->GetHeight(), 0.1f, 100.0f);
@@ -49,7 +68,7 @@ void TestBullet1::Init()
 	_timer = new Timer();
 }
 
-void TestBullet1::InitModels()
+void TestBullet2::InitModels()
 {
 	//init cube model
 	{
@@ -221,7 +240,7 @@ void TestBullet1::InitModels()
 	}
 }
 
-void TestBullet1::InitPhysic()
+void TestBullet2::InitPhysic()
 {
 	btVector3 worldAabbMin(-1000, -1000, -1000);
 	btVector3 worldAabbMax(1000, 1000, 1000);
@@ -290,9 +309,17 @@ void TestBullet1::InitPhysic()
 		physBoxBody->activate();
 		physBoxBody->setActivationState(DISABLE_DEACTIVATION);
 	}
+
+	//init car
+	{
+		btVector3 carPos(0, 2.0f, 0);
+
+		_car = new BasicCar();
+		_car->Create(_carModel,_wheelModel,_shader, physDynamicsWorld, carPos, 650.0f);
+	}
 }
 
-glm::mat4 TestBullet1::btScalar2glmMat4(btScalar* matrix)
+glm::mat4 TestBullet2::btScalar2glmMat4(btScalar* matrix)
 {
 	return glm::mat4(
 		matrix[0], matrix[1], matrix[2], matrix[3],
@@ -301,13 +328,16 @@ glm::mat4 TestBullet1::btScalar2glmMat4(btScalar* matrix)
 		matrix[12], matrix[13], matrix[14], matrix[15]);
 }
 
-void TestBullet1::Enter()
+void TestBullet2::Enter()
 {
 
 }
 
-void TestBullet1::CleanUp()
+void TestBullet2::CleanUp()
 {
+	delete _carModel;
+	delete _wheelModel;
+
 	delete _cubeModel;
 	delete _floorModel;
 
@@ -320,6 +350,9 @@ void TestBullet1::CleanUp()
 
 	//remove shader
 	_shaderManager->Remove(_shader);
+
+	//remove bullet car
+	delete _car;
 
 	//bullet
 	physDynamicsWorld->removeRigidBody(physBoxBody);
@@ -341,95 +374,28 @@ void TestBullet1::CleanUp()
 	delete physGroundBody;
 }
 
-void TestBullet1::Pause()
+void TestBullet2::Pause()
 {
 
 }
 
-void TestBullet1::Resume()
+void TestBullet2::Resume()
 {
 
 }
 
-void TestBullet1::GamePause()
+void TestBullet2::GamePause()
 {
 
 }
 
-void TestBullet1::GameResume()
+void TestBullet2::GameResume()
 {
 
 }
 
-void TestBullet1::HandleEvents(GameManager* manager)
+void TestBullet2::HandleEvents(GameManager* manager)
 {
-	if (_mouse != 0 && _useMouse)
-	{
-		int posx = _mouse->GetPosX();
-		int posy = _mouse->GetPosY() * -1.0f;
-
-		if (_firstMouse)
-		{
-			moveX = posx;
-			moveY = posy;
-
-			_firstMouse = false;
-		}
-
-		int xoffset = posx - moveX;
-		int yoffset = posy - moveY;
-
-		moveX = posx;
-		moveY = posy;
-
-		_cam->ProcessMouseMovement(xoffset, yoffset, false);
-	}
-
-
-	if (_keyboard != 0)
-	{
-		//update cam
-		if (_keyboard->KeyDown(Key::W))
-			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::FORWARD, _dt);
-		if (_keyboard->KeyDown(Key::S))
-			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::BACKWARD, _dt);
-		if (_keyboard->KeyDown(Key::A))
-			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::LEFT, _dt);
-		if (_keyboard->KeyDown(Key::D))
-			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::RIGHT, _dt);
-
-		if (_keyboard->KeyDown(Key::Left))
-			_cam->ProcessMouseMovement(-5, 0, false);
-		if (_keyboard->KeyDown(Key::Right))
-			_cam->ProcessMouseMovement(5, 0, false);
-		if (_keyboard->KeyDown(Key::Up))
-			_cam->ProcessMouseMovement(0, 5, false);
-		if (_keyboard->KeyDown(Key::Down))
-			_cam->ProcessMouseMovement(0, -5, false);
-	}
-
-	if (_gamepad != 0)
-	{
-		//update cam
-		if (_gamepad->KeyDown(Gamepad::Up))
-			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::FORWARD, _dt);
-		if (_gamepad->KeyDown(Gamepad::Down))
-			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::BACKWARD, _dt);
-		if (_gamepad->KeyDown(Gamepad::Left))
-			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::LEFT, _dt);
-		if (_gamepad->KeyDown(Gamepad::Right))
-			_cam->ProcessKeyboard(Camera3d::CameraMovementEnum::RIGHT, _dt);
-
-		if (_gamepad->KeyDown(Gamepad::Square))
-			_cam->ProcessMouseMovement(-5, 0, false);
-		if (_gamepad->KeyDown(Gamepad::Circle))
-			_cam->ProcessMouseMovement(5, 0, false);
-		if (_gamepad->KeyDown(Gamepad::Triangle))
-			_cam->ProcessMouseMovement(0, 5, false);
-		if (_gamepad->KeyDown(Gamepad::Cross))
-			_cam->ProcessMouseMovement(0, -5, false);
-	}
-
 	if (InputHelper::Instance()->ActionPressed(InputAction::Next))
 	{
 		TestHelper::Instance()->NextTest(manager);
@@ -443,16 +409,19 @@ void TestBullet1::HandleEvents(GameManager* manager)
 	InputHelper::Instance()->Update();
 }
 
-void TestBullet1::Update(GameManager* manager)
+void TestBullet2::Update(GameManager* manager)
 {
 	_dt = _timer->GetDelta();
 
 	//physic update
 	if (physDynamicsWorld && _dt < 0.1f)
 		physDynamicsWorld->stepSimulation(_dt);
+
+	if (physDynamicsWorld && _dt < 0.1f)
+		_car->Update(_keyboard,_gamepad,_dt);
 }
 
-void TestBullet1::Draw(GameManager* manager)
+void TestBullet2::Draw(GameManager* manager)
 {
 	//start frame
 	_renderManager->StartFrame();
@@ -466,17 +435,17 @@ void TestBullet1::Draw(GameManager* manager)
 	//use texture
 	_renderManager->UseTexture(_floorTexture);
 
+
+	//cam view
+	glm::mat4 camView = glm::lookAt(_cam->Position, glm::vec3(_car->GetWorldTransform().getOrigin()[0], _car->GetWorldTransform().getOrigin()[1],_car->GetWorldTransform().getOrigin()[2]), _cam->Up);
+
 	//draw floor
 	{
 		glm::mat4 model;
-		glm::mat4 view;
 		glm::mat4 mvp;
 
-		//get view matrix from camera
-		view = _cam->GetViewMatrix();
-
 		//
-		mvp = _projection * view * model;
+		mvp = _projection * camView * model;
 
 		_shader->SetUniform(VertexShader, "mvp", mvp);
 
@@ -489,11 +458,7 @@ void TestBullet1::Draw(GameManager* manager)
 	//draw box
 	{
 		glm::mat4 model;
-		glm::mat4 view;
 		glm::mat4 mvp;
-
-		//get view matrix from camera
-		view = _cam->GetViewMatrix();
 
 		//get box matrix from bullet object
 		float cubeMatrix[16];
@@ -504,15 +469,20 @@ void TestBullet1::Draw(GameManager* manager)
 		model = btScalar2glmMat4(cubeMatrix);
 
 		//
-		mvp = _projection * view * model;
+		mvp = _projection * camView * model;
 
 		_shader->SetUniform(VertexShader, "mvp", mvp);
 
 		_cubeModel->Draw();
 	}
 
+	//draw car
+	{
+		_car->Render(_cam, _projection);
+	}
+
 	//draw test info
-	TestHelper::Instance()->AddInfoText("Bullet and mipmapping test.");
+	TestHelper::Instance()->AddInfoText("Bullet and model test.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

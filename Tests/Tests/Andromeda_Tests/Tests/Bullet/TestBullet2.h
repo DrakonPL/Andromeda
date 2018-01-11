@@ -13,6 +13,10 @@
 #include <Andromeda/Input/KeyboardDevice.h>
 #include <Andromeda/Input/InputManager.h>
 
+using namespace Andromeda::System;
+using namespace Andromeda::Graphics;
+using namespace Andromeda::Input;
+
 //bullet
 #include "bullet/LinearMath/btVector3.h"
 #include "bullet/LinearMath/btMatrix3x3.h"
@@ -21,11 +25,9 @@
 #include "bullet/LinearMath/btAlignedObjectArray.h"
 #include "bullet/btBulletDynamicsCommon.h"
 
-using namespace Andromeda::System;
-using namespace Andromeda::Graphics;
-using namespace Andromeda::Input;
+#include "BasicCar.h"
 
-class TestBullet1 : public GameState
+class TestBullet2 : public GameState
 {
 private:
 
@@ -41,13 +43,18 @@ private:
 	// Shaders
 	Shader* _shader;
 
-	//texture
-	Texture* _cubeTexture;
-	Texture* _floorTexture;
-
 	//model
+	ModelObj* _carModel;
+	ModelObj* _wheelModel;
+
 	VertexArrayObject* _cubeModel;
 	VertexArrayObject* _floorModel;
+
+	Texture* _floorTexture;
+	Texture* _cubeTexture;
+
+	//wheek positions
+	std::vector<glm::vec3> _wheelPositions;
 
 	//cam
 	Camera3d* _cam;
@@ -83,6 +90,9 @@ private:
 
 	btCollisionShape* physGroundShape;
 	btRigidBody* physGroundBody;
+
+	//car
+	BasicCar* _car;
 
 private:
 

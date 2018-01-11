@@ -97,6 +97,12 @@
     <ClCompile Include="Tests\Bullet\TestBullet1.cpp">
       <Filter>Bullet</Filter>
     </ClCompile>
+    <ClCompile Include="Tests\Bullet\TestBullet2.cpp">
+      <Filter>Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Bullet\BasicCar.cpp">
+      <Filter>Bullet</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Tests\ExampleGameManager.h" />
@@ -169,6 +175,12 @@
       <Filter>Models</Filter>
     </ClInclude>
     <ClInclude Include="Tests\Bullet\TestBullet1.h">
+      <Filter>Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Bullet\TestBullet2.h">
+      <Filter>Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Bullet\BasicCar.h">
       <Filter>Bullet</Filter>
     </ClInclude>
   </ItemGroup>

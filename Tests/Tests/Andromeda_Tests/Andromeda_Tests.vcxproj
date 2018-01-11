@@ -22,7 +22,9 @@
     <ClCompile Include="Tests\Basic\TestSprite.cpp" />
     <ClCompile Include="Tests\Basic\TestToTexture.cpp" />
     <ClCompile Include="Tests\Basic\VitaTest.cpp" />
+    <ClCompile Include="Tests\Bullet\BasicCar.cpp" />
     <ClCompile Include="Tests\Bullet\TestBullet1.cpp" />
+    <ClCompile Include="Tests\Bullet\TestBullet2.cpp" />
     <ClCompile Include="Tests\ExampleGameManager.cpp" />
     <ClCompile Include="Tests\FreeTypeTests\TestFreeTypeAtlas.cpp" />
     <ClCompile Include="Tests\FreeTypeTests\TestFreeTypeFont.cpp" />
@@ -50,7 +52,9 @@
     <ClInclude Include="Tests\Basic\TestSprite.h" />
     <ClInclude Include="Tests\Basic\TestToTexture.h" />
     <ClInclude Include="Tests\Basic\VitaTest.h" />
+    <ClInclude Include="Tests\Bullet\BasicCar.h" />
     <ClInclude Include="Tests\Bullet\TestBullet1.h" />
+    <ClInclude Include="Tests\Bullet\TestBullet2.h" />
     <ClInclude Include="Tests\ExampleGameManager.h" />
     <ClInclude Include="Tests\FreeTypeTests\TestFreeTypeAtlas.h" />
     <ClInclude Include="Tests\FreeTypeTests\TestFreeTypeFont.h" />
@@ -120,7 +124,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>ANDROMEDA_PC;ANDROMEDA_GLFW;ANDROMEDA_GL3;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\;..\..\..\Libs;..\..\..\Libs\freetype\include;..\..\..\Libs\freetype_gl;..\..\..\Libs\glew\include;..\..\..\Libs\glfw\include;..\..\..\Libs\glm;..\..\..\Libs\stb;..\..\..\Libs\tiny_obj_loader;..\..\..\Libs\JellyPhysic;..\..\..\Libs\tinyxml;..\..\..\Libs\dirent;..\..\..\Libs\irrKlang\include;..\..\..\Libs\ffmpeg\include;..\..\..\Libs\portaudio\Include;..\..\..\Libs\tiny_gltf_loader;..\..\..\Libs\luabind;..\..\..\Libs\lua\include;..\..\..\Libs\bullet\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\;..\..\..\Libs;..\..\..\Libs\freetype\include;..\..\..\Libs\freetype_gl;..\..\..\Libs\glew\include;..\..\..\Libs\glfw\include;..\..\..\Libs\glm;..\..\..\Libs\stb;..\..\..\Libs\tiny_obj_loader;..\..\..\Libs\JellyPhysic;..\..\..\Libs\tinyxml;..\..\..\Libs\dirent;..\..\..\Libs\irrKlang\include;..\..\..\Libs\ffmpeg\include;..\..\..\Libs\portaudio\Include;..\..\..\Libs\tiny_gltf_loader;..\..\..\Libs\luabind;..\..\..\Libs\lua\include;..\..\..\Libs\bullet\include;..\..\..\Libs\bullet\include\bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>

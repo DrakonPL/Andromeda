@@ -20,6 +20,7 @@
 #include "Models/TestObjKart.h"
 
 #include "Bullet/TestBullet1.h"
+#include "Bullet/TestBullet2.h"
 
 #include "Input/TouchTest.h"
 
@@ -51,6 +52,7 @@ TestHelper::TestHelper()
 	_currentTest = 0;
 
 	_tests.push_back(new TestBullet1());
+	_tests.push_back(new TestBullet2());
 
 	_tests.push_back(new TestFreeTypeFont());
 	_tests.push_back(new TestFreeTypeAtlas());

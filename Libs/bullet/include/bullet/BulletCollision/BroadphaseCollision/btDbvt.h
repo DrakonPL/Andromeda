@@ -91,12 +91,7 @@ subject to the following restrictions:
 #define DBVT_CHECKTYPE
 #endif
 
-#if DBVT_USE_MEMMOVE
-#if !defined( __CELLOS_LV2__) && !defined(__MWERKS__)
-#include <memory.h>
-#endif
 #include <string.h>
-#endif
 
 #ifndef DBVT_USE_TEMPLATE
 #error "DBVT_USE_TEMPLATE undefined"
