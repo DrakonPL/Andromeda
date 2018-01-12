@@ -37,6 +37,11 @@
     <ClCompile Include="Tests\Models\TestGltfModel.cpp" />
     <ClCompile Include="Tests\Models\TestObjKart.cpp" />
     <ClCompile Include="Tests\Models\TestObjModel.cpp" />
+    <ClCompile Include="Tests\Other\FontTest.cpp" />
+    <ClCompile Include="Tests\Other\ObjModelTest.cpp" />
+    <ClCompile Include="Tests\Other\ShaderTest.cpp" />
+    <ClCompile Include="Tests\Other\TextureTest.cpp" />
+    <ClCompile Include="Tests\Other\VertexArrayTest.cpp" />
     <ClCompile Include="Tests\Scripts\AndromedaBindings.cpp" />
     <ClCompile Include="Tests\Scripts\TestLua1.cpp" />
     <ClCompile Include="Tests\TestHelper.cpp" />
@@ -67,6 +72,11 @@
     <ClInclude Include="Tests\Models\TestGltfModel.h" />
     <ClInclude Include="Tests\Models\TestObjKart.h" />
     <ClInclude Include="Tests\Models\TestObjModel.h" />
+    <ClInclude Include="Tests\Other\FontTest.h" />
+    <ClInclude Include="Tests\Other\ObjModelTest.h" />
+    <ClInclude Include="Tests\Other\ShaderTest.h" />
+    <ClInclude Include="Tests\Other\TextureTest.h" />
+    <ClInclude Include="Tests\Other\VertexArrayTest.h" />
     <ClInclude Include="Tests\Scripts\AndromedaBindings.h" />
     <ClInclude Include="Tests\Scripts\TestLua1.h" />
     <ClInclude Include="Tests\TestHelper.h" />

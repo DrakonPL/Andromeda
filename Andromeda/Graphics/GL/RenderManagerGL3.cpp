@@ -228,7 +228,7 @@ namespace Andromeda
 				//upload texture to gpu memory
 				glTexImage2D(GL_TEXTURE_2D, 0, textureFormat, image->GetWidth(), image->GetHeight(), 0, textureFormat, GL_UNSIGNED_BYTE, 0);
 				
-				if (image->GetMipLevel() > 0)
+ 				if (image->GetMipLevel() > 0)
 				{
 					if (image->GetFilterType() == TextureFilerType::LinearFilter)
 					{

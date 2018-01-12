@@ -91,6 +91,7 @@ namespace Andromeda
 			int err;
 			UNUSED(err);
 
+			Utils::Logger::Instance()->Log("CreateGxmContext::vdmRingBuffer\n");
 			void *vdmRingBuffer = GxmMemoryUtil::AllocGpu(
 				SCE_KERNEL_MEMBLOCK_TYPE_USER_RW_UNCACHE,
 				SCE_GXM_DEFAULT_VDM_RING_BUFFER_SIZE,
@@ -98,6 +99,7 @@ namespace Andromeda
 				SCE_GXM_MEMORY_ATTRIB_READ,
 				&vdmRingBufferUid);
 
+			Utils::Logger::Instance()->Log("CreateGxmContext::vertexRingBuffer\n");	
 			void *vertexRingBuffer = GxmMemoryUtil::AllocGpu(
 				SCE_KERNEL_MEMBLOCK_TYPE_USER_RW_UNCACHE,
 				SCE_GXM_DEFAULT_VERTEX_RING_BUFFER_SIZE,
@@ -105,6 +107,7 @@ namespace Andromeda
 				SCE_GXM_MEMORY_ATTRIB_READ,
 				&vertexRingBufferUid);
 
+			Utils::Logger::Instance()->Log("CreateGxmContext::fragmentRingBuffer\n");	
 			void *fragmentRingBuffer = GxmMemoryUtil::AllocGpu(
 				SCE_KERNEL_MEMBLOCK_TYPE_USER_RW_UNCACHE,
 				SCE_GXM_DEFAULT_FRAGMENT_RING_BUFFER_SIZE,
@@ -112,6 +115,7 @@ namespace Andromeda
 				SCE_GXM_MEMORY_ATTRIB_READ,
 				&fragmentRingBufferUid);
 
+			Utils::Logger::Instance()->Log("CreateGxmContext::fragmentUsseRingBuffer\n");	
 			unsigned int fragmentUsseRingBufferOffset;
 			void *fragmentUsseRingBuffer = GxmMemoryUtil::AllocFragmentUsse(
 				SCE_GXM_DEFAULT_FRAGMENT_USSE_RING_BUFFER_SIZE,
@@ -405,7 +409,6 @@ namespace Andromeda
 		{
 			Utils::Logger::Instance()->Log("Init GXM start\n");
 
-			//use lib2d right now to init gxm
 			InitGxm();
 			CreateGxmContext();
 			CreateRenderTarget();

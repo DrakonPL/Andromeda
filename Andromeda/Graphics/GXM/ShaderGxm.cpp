@@ -19,6 +19,9 @@ namespace Andromeda
 
 			sceGxmShaderPatcherUnregisterProgram(_shaderPatcher, _fragmentProgramId);
 			sceGxmShaderPatcherUnregisterProgram(_shaderPatcher, _vertexProgramId);
+			
+			delete _gxmVertexProgram;
+			delete _gxmFragmentProgram;
 		}
 
 		void ShaderGxm::LoadFromFile(std::string vertexFile, std::string fragmentFile, VertexType vertexType)
@@ -64,6 +67,7 @@ namespace Andromeda
 			}
 
 			file->Close();
+			delete file;
 
 			if(shaderType == VertexShader)
 			{

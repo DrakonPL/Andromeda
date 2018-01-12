@@ -23,21 +23,10 @@ void ExampleGameManager::Configure()
 void ExampleGameManager::Init()
 {
 	//init whatever you need
-	exampleState = TestHelper::Instance()->GetCurrentTest();
-	exampleState->Init();
-
-	ChangeState(exampleState);
+	ChangeState(TestHelper::Instance()->GetCurrentTest());
 }
 
 void ExampleGameManager::CleanUp()
 {
-	//Andromeda::Utils::Logger_Info("GameManager - Clean up\n");
-	//exampleState->CleanUp();
-
-	//Andromeda::Utils::Logger_Info("GameManager - Delete state\n");
-	delete exampleState;
-
-	//tests
-	//Andromeda::Utils::Logger_Info("Sprites count: %d\n", Andromeda::Graphics::Sprite::GetObjectCount());
-	//Andromeda::Utils::Logger_Info("VertexArray count: %d\n", Andromeda::Graphics::VertexArrayObject::GetObjectCount());
+	delete TestHelper::Instance();
 }

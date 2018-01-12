@@ -22,6 +22,9 @@
     <Filter Include="Bullet">
       <UniqueIdentifier>{9eb9c19f-c19f-4c89-8f43-46541ce2de28}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{5f8f60e5-16ba-4539-aa41-a6184955497d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Tests\Andromeda.cpp" />
@@ -103,6 +106,21 @@
     <ClCompile Include="Tests\Bullet\BasicCar.cpp">
       <Filter>Bullet</Filter>
     </ClCompile>
+    <ClCompile Include="Tests\Other\TextureTest.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Other\ShaderTest.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Other\VertexArrayTest.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Other\ObjModelTest.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\Other\FontTest.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Tests\ExampleGameManager.h" />
@@ -182,6 +200,21 @@
     </ClInclude>
     <ClInclude Include="Tests\Bullet\BasicCar.h">
       <Filter>Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Other\TextureTest.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Other\ShaderTest.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Other\VertexArrayTest.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Other\ObjModelTest.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Other\FontTest.h">
+      <Filter>Other</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

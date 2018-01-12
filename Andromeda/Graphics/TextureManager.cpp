@@ -30,6 +30,8 @@ namespace Andromeda
 		{
 			if (_images.find(fileName) == _images.end())
 			{
+				Utils::Logger::Instance()->Log("TextureManager::LoadFromFile: %s \n", fileName.c_str());
+
 				Texture* image = new Texture();
 				if (image->LoadFromFile(fileName, textureColor, filterType, textureWrap, mipLevel))
 				{
@@ -39,14 +41,14 @@ namespace Andromeda
 					//add to collection
 					_images.insert(std::pair<std::string, Texture*>(fileName, image));
 
-					Utils::Logger_Info("Loaded texture: %s \n", fileName.c_str());
+					Utils::Logger::Instance()->Log("TextureManager::LoadFromFile: Load success\n");
 
 					return image;
 				}
 				else
 				{
 					//error
-					Utils::Logger_Info("Can't load texture: %s \n", fileName.c_str());
+					Utils::Logger::Instance()->Log("TextureManager::LoadFromFile: Load failure!\n");
 					return 0;
 				}
 			}
@@ -58,6 +60,8 @@ namespace Andromeda
 		{
 			if (_images.find(newName) == _images.end())
 			{
+				Utils::Logger::Instance()->Log("TextureManager::LoadFromMemory: %s \n", newName.c_str());
+
 				Texture* image = new Texture();
 				if (image->LoadFromMemory(newName, data, size, textureColor, filterType, textureWrap, mipLevel))
 				{
@@ -67,14 +71,14 @@ namespace Andromeda
 					//add to collection
 					_images.insert(std::pair<std::string, Texture*>(newName, image));
 
-					Utils::Logger_Info("Loaded texture: %s \n", newName.c_str());
+					Utils::Logger::Instance()->Log("TextureManager::LoadFromMemory: Load success\n");
 
 					return image;
 				}
 				else
 				{
 					//error
-					Utils::Logger_Info("Can't load texture: %s \n", newName.c_str());
+					Utils::Logger::Instance()->Log("TextureManager::LoadFromMemory: Load failuer!\n");
 					return 0;
 				}
 			}
@@ -91,6 +95,8 @@ namespace Andromeda
 
 			if (_images.find(name) == _images.end())
 			{
+				Utils::Logger::Instance()->Log("TextureManager::CreateEmpty: %s \n", name.c_str());
+
 				Texture* image = new Texture();
 
 				image->_fileName = name;
@@ -107,7 +113,7 @@ namespace Andromeda
 				//add to collection
 				_images.insert(std::pair<std::string, Texture*>(name, image));
 
-				Utils::Logger_Info("Created texture: %s \n", name.c_str());
+				Utils::Logger::Instance()->Log("TextureManager::CreateEmpty: Load success!\n");
 
 				return image;
 			}
@@ -143,6 +149,8 @@ namespace Andromeda
 				return;
 			}
 
+			Utils::Logger::Instance()->Log("TextureManager::Remove: %s \n", fileName.c_str());
+
 			delete _images[fileName];
 			_images.erase(it);
 		}
@@ -161,7 +169,7 @@ namespace Andromeda
 				return;
 			}
 
-			Utils::Logger_Info("Delete texture: %s \n", it->first.c_str());
+			Utils::Logger::Instance()->Log("TextureManager::Remove: %s \n", it->first.c_str());
 
 			delete image;
 			_images.erase(it);

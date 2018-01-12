@@ -45,7 +45,7 @@ namespace Andromeda
 
 		RenderManager::~RenderManager()
 		{
-			delete _renderManager;
+
 		}
 
 		size_t RenderManager::GetVertexSize(VertexType vertexType)

@@ -14,5 +14,8 @@ int main(int argc, char *argv[])
 
 	loader->Run();
 
+	delete loader;
+	delete exampleGame;
+
 	return 0;
 }

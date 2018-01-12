@@ -14,6 +14,10 @@ namespace Andromeda
 	{
 		class GxmMemoryUtil
 		{
+		private:
+			
+			static  long _gpuMem;
+			
 		public:
 
 			static void *AllocGpu(SceKernelMemBlockType type, unsigned int size, unsigned int alignment, SceGxmMemoryAttribFlags attribs, SceUID *uid);

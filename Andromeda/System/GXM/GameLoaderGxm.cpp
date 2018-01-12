@@ -84,6 +84,9 @@ namespace Andromeda
 			Utils::Logger::Instance()->Log("Finish render manager\n");
 			_renderManager->Finish();
 
+			//remove render manager
+			delete _renderManager;
+			
 			//log exit
 			Utils::Logger::Instance()->Log("Exit\n");
 			sceKernelExitProcess(0);

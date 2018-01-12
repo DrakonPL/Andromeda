@@ -20,9 +20,7 @@ namespace Andromeda
 			SceUID _verticesUid;
 			SceUID _indicesUid;
 
-			SceGxmContext* _gxmContext;
-
-			
+			SceGxmContext* _gxmContext;			
 
 		public:
 

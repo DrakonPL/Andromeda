@@ -25,7 +25,7 @@ namespace Andromeda
 
 			// store and init the new state
 			_states.push_back(state);
-			_states.back()->Enter();
+			_states.back()->Init();
 		}
 
 		void GameManager::PushState(GameState* state)
@@ -38,7 +38,7 @@ namespace Andromeda
 
 			// store and init the new state
 			_states.push_back(state);
-			_states.back()->Enter();
+			_states.back()->Init();
 		}
 
 		void GameManager::PopState()

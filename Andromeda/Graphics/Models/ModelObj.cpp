@@ -35,7 +35,11 @@ namespace Andromeda
 			for (size_t i = 0; i < _meshes.size(); i++)
 			{
 				delete _meshes[i]->Mesh;
+				delete _meshes[i];
 			}
+
+			_materials.clear();
+			_meshes.clear();
 		}
 
 		std::string ModelObj::GetFolderFromPath(std::string& fileName)

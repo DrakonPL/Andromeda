@@ -18,7 +18,6 @@ namespace Andromeda
 		void GlfwGameLoader::Run()
 		{
 			Utils::Logger_Info("Start\n");
-			Utils::Logger::Logger_Info("Start\n");
 
 			//init library
 			if (!glfwInit())
@@ -104,11 +103,17 @@ namespace Andromeda
 			//finish render manager;
 			_renderManager->Finish();
 
-			//log exit
-			Utils::Logger_Info("Exit\n");
+			//remove render manager
+			delete _renderManager;
+
+			//destroy window
+			glfwDestroyWindow(_window);
 
 			//exit
 			glfwTerminate();
+
+			//log exit
+			Utils::Logger_Info("Exit\n");
 		}
 
 	}

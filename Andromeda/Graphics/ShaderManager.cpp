@@ -27,6 +27,8 @@ namespace Andromeda
 		{
 			if (_shaders.find(name) == _shaders.end())
 			{
+				Utils::Logger::Instance()->Log("ShaderManager::LoadFromFile: %s \n", name.c_str());
+
 				Shader* shader = RenderManager::Instance()->CreateShader();
 
 				//set name
@@ -52,6 +54,8 @@ namespace Andromeda
 		{
 			if (_shaders.find(name) == _shaders.end())
 			{
+				Utils::Logger::Instance()->Log("ShaderManager::LoadFromMemory: %s \n", name.c_str());
+
 				Shader* shader = RenderManager::Instance()->CreateShader();
 
 				//set name
@@ -87,6 +91,8 @@ namespace Andromeda
 			{
 				return;
 			}
+
+			Utils::Logger::Instance()->Log("ShaderManager::Remove: %s \n", name.c_str());
 
 			delete _shaders[name];
 			_shaders.erase(it);

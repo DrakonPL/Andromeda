@@ -11,7 +11,6 @@ namespace Andromeda
 		{
 		public:
 			virtual void Init() = 0;
-			virtual void Enter() = 0;
 			virtual void CleanUp() = 0;
 
 			virtual void Pause() = 0;
