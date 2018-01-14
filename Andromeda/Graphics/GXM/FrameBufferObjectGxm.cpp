@@ -10,7 +10,7 @@
 #define DISPLAY_HEIGHT				544
 #define OFFSCREEN_COLOR_FORMAT		SCE_GXM_COLOR_FORMAT_A8B8G8R8
 #define OFFSCREEN_TEXTURE_FORMAT	SCE_GXM_TEXTURE_FORMAT_A8B8G8R8
-#define MSAA_MODE					SCE_GXM_MULTISAMPLE_4X
+#define MSAA_MODE					SCE_GXM_MULTISAMPLE_NONE
 
 namespace Andromeda
 {
@@ -37,8 +37,6 @@ namespace Andromeda
 
 		void FrameBufferObjectGxm::PrepareBuffer()
 		{
-			Utils::Logger::Instance()->Log("PrepareBuffer\n");
-			
 			//create empty texture
 			_texture = TextureManager::Instance()->CreateEmpty("", _width, _height, TextureFilerType::LinearFilter);
 
@@ -68,8 +66,8 @@ namespace Andromeda
 				_texture->GetImageData());
 
 			// create the depth/stencil surface
-			const uint32_t alignedWidth = ALIGN(_width, SCE_GXM_TILE_SIZEX);
-			const uint32_t alignedHeight = ALIGN(_height, SCE_GXM_TILE_SIZEY);
+			const uint32_t alignedWidth = ALIGN(DISPLAY_WIDTH, SCE_GXM_TILE_SIZEX);
+			const uint32_t alignedHeight = ALIGN(DISPLAY_HEIGHT, SCE_GXM_TILE_SIZEY);
 
 			uint32_t sampleCount = alignedWidth*alignedHeight;
 			uint32_t depthStrideInSamples = alignedWidth;
@@ -116,8 +114,6 @@ namespace Andromeda
 			params.driverMemBlock = -1;
 
 			sceGxmCreateRenderTarget(&params, &_renderTarget);
-			
-			Utils::Logger::Instance()->Log("PrepareBuffer end\n");
 		}
 
 		void FrameBufferObjectGxm::Bind()

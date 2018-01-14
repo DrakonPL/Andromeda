@@ -19,6 +19,7 @@ namespace Andromeda
 			_textureWidth = 0;
 			_id = 0;
 			_pixels = 0;
+			_mipLevel = 0;
 
 			_filterType = TextureFilerType::LinearFilter;
 			_textureColor = TextureColorType::Texture_RGBA;

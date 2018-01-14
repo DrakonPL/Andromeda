@@ -659,9 +659,62 @@ namespace Andromeda
 		{
 			if (image != 0)
 			{
-				//create texture
-				sceGxmTextureInitLinear((SceGxmTexture *)image->_gxmId, image->GetImageData(), SCE_GXM_TEXTURE_FORMAT_A8B8G8R8, image->GetWidth(), image->GetHeight(), 1);
+				SceGxmTextureFormat textureFormat = SCE_GXM_TEXTURE_FORMAT_A8B8G8R8;
 
+				switch (image->GetColorType())
+				{
+				case TextureColorType::Texture_RGB:
+					textureFormat = SCE_GXM_TEXTURE_FORMAT_A8B8G8R8;
+					break;
+				case TextureColorType::Texture_RGBA:
+					textureFormat = SCE_GXM_TEXTURE_FORMAT_A8B8G8R8;
+					break;
+				default:
+					textureFormat = SCE_GXM_TEXTURE_FORMAT_A8B8G8R8;
+					break;
+				}
+				
+				if(image->GetMipLevel() > 0)
+				{
+					//generate all mip map levels
+					uint32_t *currentLevelData	= (uint32_t *)image->GetImageData();
+					uint32_t currentLevelWidth	= image->GetWidth();
+					uint32_t currentLevelHeight	= image->GetHeight();
+					
+					for(int i = 0; i < image->GetMipLevel(); i++)
+					{
+						// pointer to the next level of mip data
+						uint32_t *nextLevelData = currentLevelData + (currentLevelWidth * currentLevelHeight);
+						
+						// downscale from current level to next level
+						int err = sceGxmTransferDownscale(
+								SCE_GXM_TRANSFER_FORMAT_U8U8U8U8_ABGR,			// srcFormat
+								currentLevelData,								// srcAddress
+								0, 0, currentLevelWidth, currentLevelHeight,	// srcX, srcY, srcWidth, srcHeight
+								currentLevelWidth * sizeof(uint32_t),			// srcStride
+								SCE_GXM_TRANSFER_FORMAT_U8U8U8U8_ABGR,			// destFormat	
+								nextLevelData,									// destAddress
+								0, 0,											// destX, destY
+								(currentLevelWidth / 2) * sizeof(uint32_t),		// destStride
+								NULL,											// syncObject
+								SCE_GXM_TRANSFER_FRAGMENT_SYNC,					// syncFlags
+								NULL);	
+								
+						// update 	
+						currentLevelData	= nextLevelData;
+						currentLevelWidth	= currentLevelWidth / 2;
+						currentLevelHeight	= currentLevelHeight / 2;
+					}
+					
+					//create texture
+					sceGxmTextureInitLinear((SceGxmTexture *)image->_gxmId, image->GetImageData(),SCE_GXM_TEXTURE_FORMAT_A8B8G8R8, image->GetWidth(), image->GetHeight(), image->GetMipLevel());
+				}
+				else
+				{
+					//create texture
+					sceGxmTextureInitLinear((SceGxmTexture *)image->_gxmId, image->GetImageData(),SCE_GXM_TEXTURE_FORMAT_A8B8G8R8, image->GetWidth(), image->GetHeight(), 1);
+				}
+				
 				// Set the texture wrapping parameters
 				// Set texture wrapping to REPEAT (usually basic wrapping method)
 				int wrapType = SCE_GXM_TEXTURE_ADDR_REPEAT;
@@ -685,6 +738,7 @@ namespace Andromeda
 					wrapType = SCE_GXM_TEXTURE_ADDR_REPEAT;
 					break;
 				}
+				
 				sceGxmTextureSetUAddrMode((SceGxmTexture *)image->_gxmId, wrapType);
 				sceGxmTextureSetVAddrMode((SceGxmTexture *)image->_gxmId, wrapType);
 
@@ -698,7 +752,7 @@ namespace Andromeda
 				{
 					sceGxmTextureSetMinFilter((SceGxmTexture *)image->_gxmId, SCE_GXM_TEXTURE_FILTER_POINT);
 					sceGxmTextureSetMagFilter((SceGxmTexture *)image->_gxmId, SCE_GXM_TEXTURE_FILTER_POINT);
-				}
+				}				
 
 				//set mip mapping filter
 				sceGxmTextureSetMipFilter((SceGxmTexture *)image->_gxmId, SCE_GXM_TEXTURE_MIP_FILTER_ENABLED);

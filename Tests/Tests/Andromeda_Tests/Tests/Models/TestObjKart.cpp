@@ -30,7 +30,7 @@ void TestObjKart::Init()
 	_wheelPositions.push_back(glm::vec3(-1.0f, -0.35f, -0.75f));
 
 	//cam
-	_cam = new Camera3d(glm::vec3(0.0f, 0.0f, 4.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f);
+	_cam = new Camera3d(glm::vec3(0.0f, 1.0f, 4.5f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f);
 
 	//
 	_projection = glm::perspective(45.0f, (float)_renderManager->GetWidth() / (float)_renderManager->GetHeight(), 0.1f, 100.0f);

@@ -1,35 +1,32 @@
 #include "TestHelper.h"
 #include "InputHelper.h"
 
-//#include "FreeTypeTests/TestFreeTypeFont.h"
-//#include "FreeTypeTests/TestFreeTypeAtlas.h"
-//
-//#include "Basic/TestSprite.h"
-//#include "Basic/TestCam3d.h"
-//
-//#include "Basic/TestToTexture.h"
-//
-//#include "Basic/Test1.h"
-//#include "Basic/Test2.h"
-//#include "Basic/Test3.h"
-//#include "Basic/Test4.h"
-//#include "Basic/Test5.h"
-//#include "Basic/Test6.h"
-//
-//#include "Models/TestObjModel.h"
-//#include "Models/TestObjKart.h"
-//
-//#include "Bullet/TestBullet1.h"
-//#include "Bullet/TestBullet2.h"
-//
-//#include "Input/TouchTest.h"
-//
-//#include "Lightening/TestLight1.h"
-//#include "Lightening/TestLight2.h"
-//#include "Lightening/TestLight3.h"
-//
-//#include <Andromeda/Graphics/ShaderManager.h>
-//#include <Andromeda/Graphics/RenderManager.h>
+#include "FreeTypeTests/TestFreeTypeFont.h"
+#include "FreeTypeTests/TestFreeTypeAtlas.h"
+
+#include "Basic/TestSprite.h"
+#include "Basic/TestCam3d.h"
+
+#include "Basic/TestToTexture.h"
+
+#include "Basic/Test1.h"
+#include "Basic/Test2.h"
+#include "Basic/Test3.h"
+#include "Basic/Test4.h"
+#include "Basic/Test5.h"
+#include "Basic/Test6.h"
+
+#include "Models/TestObjModel.h"
+#include "Models/TestObjKart.h"
+
+#include "Bullet/TestBullet1.h"
+#include "Bullet/TestBullet2.h"
+
+#include "Input/TouchTest.h"
+
+#include "Lightening/TestLight1.h"
+#include "Lightening/TestLight2.h"
+#include "Lightening/TestLight3.h"
 
 //experimental
 //#include "Models/TestGltfModel.h"
@@ -58,19 +55,23 @@ TestHelper::TestHelper()
 {
 	_currentTest = 0;
 
-	_tests.push_back(new TextureTest());
-	_tests.push_back(new ShaderTest());
-	_tests.push_back(new VertexArrayTest());
-	_tests.push_back(new ObjModelTest());
-	_tests.push_back(new FontTest());
-
-
-	/*_tests.push_back(new Test1());
+	_tests.push_back(new Test1());
 	_tests.push_back(new Test2());
 	_tests.push_back(new Test3());
 	_tests.push_back(new Test4());
 	_tests.push_back(new Test5());
 	_tests.push_back(new Test6());
+
+	_tests.push_back(new TestFreeTypeFont());
+	_tests.push_back(new TestFreeTypeAtlas());
+
+	_tests.push_back(new TouchTest());
+	_tests.push_back(new TestSprite());
+	_tests.push_back(new TestCam3d());
+	_tests.push_back(new TestToTexture());
+
+	_tests.push_back(new TestObjModel());
+	_tests.push_back(new TestObjKart());
 
 	_tests.push_back(new TestLight1());
 	_tests.push_back(new TestLight2());
@@ -79,17 +80,12 @@ TestHelper::TestHelper()
 	_tests.push_back(new TestBullet1());
 	_tests.push_back(new TestBullet2());
 
-	_tests.push_back(new TestFreeTypeFont());
-	_tests.push_back(new TestFreeTypeAtlas());
-
-	_tests.push_back(new TouchTest());
-
-	_tests.push_back(new TestSprite());
-
-	_tests.push_back(new TestCam3d());
-
-	_tests.push_back(new TestObjModel());
-	_tests.push_back(new TestObjKart());*/
+	//memory tests
+	//_tests.push_back(new ShaderTest());
+	//_tests.push_back(new TextureTest());
+	//_tests.push_back(new VertexArrayTest());
+	//_tests.push_back(new ObjModelTest());
+	//_tests.push_back(new FontTest());
 
 	//init font
 	//chars to cache

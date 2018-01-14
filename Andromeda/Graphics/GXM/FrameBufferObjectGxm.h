@@ -20,8 +20,6 @@ namespace Andromeda
 			SceGxmContext* _gxmContext;
 
 			void* _depthBufferData;
-
-			//SceUID _colorBufferUid;
 			SceUID _depthBufferUid;			
 			
 			SceGxmTexture _screenTexture;

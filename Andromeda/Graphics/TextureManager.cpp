@@ -86,7 +86,7 @@ namespace Andromeda
 			return _images[newName];
 		}
 
-		Texture* TextureManager::CreateEmpty(std::string name, int width, int height, TextureFilerType filterType, TextureColorType textureColor, TextureWrapType textureWrap)
+		Texture* TextureManager::CreateEmpty(std::string name, int width, int height, TextureFilerType filterType, TextureColorType textureColor, TextureWrapType textureWrap, int mipLevel)
 		{
 			if (name.length() == 0)
 			{
@@ -106,6 +106,7 @@ namespace Andromeda
 				image->_textureHeight = height;
 				image->_filterType = filterType;
 				image->_textureColor = textureColor;
+				image->_mipLevel = mipLevel;
 
 				//allocate memory to that texture
 				System::MemoryManager::Instance()->AllocTexture(image);
