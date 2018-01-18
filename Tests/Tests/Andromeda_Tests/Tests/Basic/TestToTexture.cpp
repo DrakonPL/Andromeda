@@ -146,6 +146,10 @@ void TestToTexture::Init()
 
 	_renderManager->SetDepth(true);
 
+	angle = 0.0f;
+	scale = 0.5f;
+	scaleFactor = 0.01f;
+
 	Logger::Instance()->Log("Start ToTexture test.");
 }
 

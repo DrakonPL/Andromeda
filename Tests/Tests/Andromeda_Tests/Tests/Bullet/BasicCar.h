@@ -77,7 +77,7 @@ public:
 	void Destroy();
 
 	void Update(KeyboardDevice* keyboard, GamepadDevice* gamepad, float elapsedTime);
-	void Render(Camera3d* cam, glm::mat4 &projection);
+	void Render(glm::mat4 &camView, glm::mat4 &projection);
 
 	btScalar GetSpeed() { return mRaycastVehicle->getCurrentSpeedKmHour(); }
 	btScalar GetSteeringValue() { return mSteeringValue; }

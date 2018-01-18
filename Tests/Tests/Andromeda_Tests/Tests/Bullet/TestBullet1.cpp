@@ -512,7 +512,7 @@ void TestBullet1::Draw(GameManager* manager)
 	}
 
 	//draw test info
-	TestHelper::Instance()->AddInfoText("Bullet and mipmapping test.");
+	TestHelper::Instance()->AddInfoText("Bullet and mipmapping test. " + std::to_string(1.0f/_dt));
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

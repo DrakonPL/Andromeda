@@ -21,6 +21,7 @@
 
 #include "Bullet/TestBullet1.h"
 #include "Bullet/TestBullet2.h"
+#include "Bullet/TestBullet3.h"
 
 #include "Input/TouchTest.h"
 
@@ -28,16 +29,12 @@
 #include "Lightening/TestLight2.h"
 #include "Lightening/TestLight3.h"
 
-//experimental
-//#include "Models/TestGltfModel.h"
-//#include "Scripts/TestLua1.h"
-
-//class tests
-#include "Other/TextureTest.h"
+//class and memory tests
+/*#include "Other/TextureTest.h"
 #include "Other/ShaderTest.h"
 #include "Other/VertexArrayTest.h"
 #include "Other/ObjModelTest.h"
-#include "Other/FontTest.h"
+#include "Other/FontTest.h"*/
 
 TestHelper* TestHelper::_testHelper = NULL;
 
@@ -54,6 +51,8 @@ TestHelper* TestHelper::Instance()
 TestHelper::TestHelper()
 {
 	_currentTest = 0;
+
+	_tests.push_back(new TestBullet3());
 
 	_tests.push_back(new Test1());
 	_tests.push_back(new Test2());

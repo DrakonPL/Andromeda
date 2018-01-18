@@ -1,4 +1,4 @@
-#include "TestBullet2.h"
+#include "TestBullet3.h"
 
 #include "../TestHelper.h"
 #include "../InputHelper.h"
@@ -8,7 +8,7 @@
 #include <glm/gtc/type_ptr.hpp>
 
 
-void TestBullet2::Init()
+void TestBullet3::Init()
 {
 	_renderManager = RenderManager::Instance();
 	_shaderManager = ShaderManager::Instance();
@@ -30,14 +30,13 @@ void TestBullet2::Init()
 	_wheelModel->LoadBinary("Assets/Models/Obj/WillyKart/wheel3.objb");
 	_wheelModel->SetShader(_shader);
 
-	//wheel positions	
-	_wheelPositions.push_back(glm::vec3(1.0f, 0.65f, 1.0f));
-	_wheelPositions.push_back(glm::vec3(1.0f, 0.65f, -0.75f));
-	_wheelPositions.push_back(glm::vec3(-1.0f, 0.65f, 1.0f));
-	_wheelPositions.push_back(glm::vec3(-1.0f, 0.65f, -0.75f));
-
 	//cam
 	_cam = new Camera3d(glm::vec3(0.0f, 4.0f, 4.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f);
+
+	//cam settings
+	_cameraHeight = 4.0f;
+	_minCameraDistance = 2.f;
+	_maxCameraDistance = 6.f;
 
 	//
 	_projection = glm::perspective(45.0f, (float)_renderManager->GetWidth() / (float)_renderManager->GetHeight(), 0.1f, 100.0f);
@@ -50,13 +49,8 @@ void TestBullet2::Init()
 
 	if (_inputManager->GetMouseCount() > 0)
 	{
-		_mouse = _inputManager->GetMouseDevice(0);
-
 		//disable cursor
-		_mouse->SetCursorVisible(false);
-
-		_useMouse = true;
-		_firstMouse = true;
+		_inputManager->GetMouseDevice(0)->SetCursorVisible(false);
 	}
 
 	if (_inputManager->GetGamepadCount() > 0)
@@ -68,7 +62,7 @@ void TestBullet2::Init()
 	_timer = new Timer();
 }
 
-void TestBullet2::InitModels()
+void TestBullet3::InitModels()
 {
 	//init cube model
 	{
@@ -240,7 +234,7 @@ void TestBullet2::InitModels()
 	}
 }
 
-void TestBullet2::InitPhysic()
+void TestBullet3::InitPhysic()
 {
 	btVector3 worldAabbMin(-1000, -1000, -1000);
 	btVector3 worldAabbMax(1000, 1000, 1000);
@@ -319,7 +313,7 @@ void TestBullet2::InitPhysic()
 	}
 }
 
-glm::mat4 TestBullet2::btScalar2glmMat4(btScalar* matrix)
+glm::mat4 TestBullet3::btScalar2glmMat4(btScalar* matrix)
 {
 	return glm::mat4(
 		matrix[0], matrix[1], matrix[2], matrix[3],
@@ -328,12 +322,7 @@ glm::mat4 TestBullet2::btScalar2glmMat4(btScalar* matrix)
 		matrix[12], matrix[13], matrix[14], matrix[15]);
 }
 
-void TestBullet2::Enter()
-{
-
-}
-
-void TestBullet2::CleanUp()
+void TestBullet3::CleanUp()
 {
 	delete _carModel;
 	delete _wheelModel;
@@ -374,27 +363,27 @@ void TestBullet2::CleanUp()
 	delete physGroundBody;
 }
 
-void TestBullet2::Pause()
+void TestBullet3::Pause()
 {
 
 }
 
-void TestBullet2::Resume()
+void TestBullet3::Resume()
 {
 
 }
 
-void TestBullet2::GamePause()
+void TestBullet3::GamePause()
 {
 
 }
 
-void TestBullet2::GameResume()
+void TestBullet3::GameResume()
 {
 
 }
 
-void TestBullet2::HandleEvents(GameManager* manager)
+void TestBullet3::HandleEvents(GameManager* manager)
 {
 	if (InputHelper::Instance()->ActionPressed(InputAction::Next))
 	{
@@ -409,19 +398,21 @@ void TestBullet2::HandleEvents(GameManager* manager)
 	InputHelper::Instance()->Update();
 }
 
-void TestBullet2::Update(GameManager* manager)
+void TestBullet3::Update(GameManager* manager)
 {
 	_dt = _timer->GetDelta();
 
+	btScalar fixedTimeStep = 1. / 60.;
+
 	//physic update
-	if (physDynamicsWorld && _dt < 0.1f)
+	if (physDynamicsWorld)
 		physDynamicsWorld->stepSimulation(_dt);
 
-	if (physDynamicsWorld && _dt < 0.1f)
+	if (physDynamicsWorld)
 		_car->Update(_keyboard,_gamepad,_dt);
 }
 
-void TestBullet2::Draw(GameManager* manager)
+void TestBullet3::Draw(GameManager* manager)
 {
 	//start frame
 	_renderManager->StartFrame();
@@ -435,9 +426,31 @@ void TestBullet2::Draw(GameManager* manager)
 	//use texture
 	_renderManager->UseTexture(_floorTexture);
 
+	//camera logic
+	glm::vec3 cameraTargetPosition = glm::vec3(_car->GetWorldTransform().getOrigin()[0], _car->GetWorldTransform().getOrigin()[1], _car->GetWorldTransform().getOrigin()[2]);
+
+	_cam->Position.y = (15.0*_cam->Position.y + cameraTargetPosition.y + _cameraHeight) / 16.0;
+
+	glm::vec3 camToObject = cameraTargetPosition - _cam->Position;
+
+	float cameraDistance = glm::length(camToObject);
+	float correctionFactor = 0.f;
+
+	if (cameraDistance < _minCameraDistance)
+	{
+		correctionFactor = 0.15*(_minCameraDistance - cameraDistance) / cameraDistance;
+	}
+	if (cameraDistance > _maxCameraDistance)
+	{
+		correctionFactor = 0.15*(_maxCameraDistance - cameraDistance) / cameraDistance;
+	}
+
+	_cam->Position.x -= (correctionFactor * camToObject).x;
+	_cam->Position.y -= (correctionFactor * camToObject).y;
+	_cam->Position.z -= (correctionFactor * camToObject).z;
 
 	//cam view
-	glm::mat4 camView = glm::lookAt(_cam->Position, glm::vec3(_car->GetWorldTransform().getOrigin()[0], _car->GetWorldTransform().getOrigin()[1],_car->GetWorldTransform().getOrigin()[2]), _cam->Up);
+	glm::mat4 camView = glm::lookAt(_cam->Position, cameraTargetPosition, _cam->Up);
 
 	//draw floor
 	{
@@ -482,7 +495,7 @@ void TestBullet2::Draw(GameManager* manager)
 	}
 
 	//draw test info
-	TestHelper::Instance()->AddInfoText("Bullet and model test.");
+	TestHelper::Instance()->AddInfoText("Bullet and follow camera test.");
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

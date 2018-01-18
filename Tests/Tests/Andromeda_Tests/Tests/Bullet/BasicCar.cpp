@@ -165,29 +165,21 @@ void BasicCar::Update(KeyboardDevice* keyboard, GamepadDevice* gamepad, float el
 	}
 
 
-	if (right_key)
+	if (right_key || left_key)
 	{
-		mSteeringValue -= mSteeringIncrement;
-		if (mSteeringValue < -mSteeringClamp)
-			mSteeringValue = -mSteeringClamp;
-	}
-	else
-	{
-		// Return wheel to original position
-		if (mSteeringValue <= 0.0f)
+		if (right_key)
+		{
+			mSteeringValue -= mSteeringIncrement;
+			if (mSteeringValue < -mSteeringClamp)
+				mSteeringValue = -mSteeringClamp;
+		}
+
+		if (left_key)
 		{
 			mSteeringValue += mSteeringIncrement;
-
-			if (mSteeringValue > 0.0f)
-				mSteeringValue = 0.0f;
+			if (mSteeringValue > mSteeringClamp)
+				mSteeringValue = mSteeringClamp;
 		}
-	}
-
-	if (left_key)
-	{
-		mSteeringValue += mSteeringIncrement;
-		if (mSteeringValue > mSteeringClamp)
-			mSteeringValue = mSteeringClamp;
 	}
 	else
 	{
@@ -198,29 +190,35 @@ void BasicCar::Update(KeyboardDevice* keyboard, GamepadDevice* gamepad, float el
 			if (mSteeringValue < 0.0f)
 				mSteeringValue = 0.0f;
 		}
+
+		// Return wheel to original position
+		if (mSteeringValue <= 0.0f)
+		{
+			mSteeringValue += mSteeringIncrement;
+
+			if (mSteeringValue > 0.0f)
+				mSteeringValue = 0.0f;
+		}
 	}
 
-	if (up_key)
+	if (up_key || down_key)
 	{
-		mEngineForce = mMaxEngineForce;
-		mBreakingForce = 0.f;
+		if (up_key)
+		{
+			mEngineForce = mMaxEngineForce;
+			mBreakingForce = 0.f;
+		}
+
+		if (down_key)
+		{
+			mEngineForce = -mMaxEngineForce;
+			mBreakingForce = 0.f;
+		}
 	}
 	else
 	{
 		mEngineForce = 0.f;
 	}
-
-	if (down_key)
-	{
-		mEngineForce = -mMaxEngineForce;
-		mBreakingForce = 0.f;
-	}
-	else
-	{
-		mBreakingForce = 0.f;
-	}
-
-
 
 	int wheelIndex = 2;
 	mRaycastVehicle->applyEngineForce(mEngineForce, wheelIndex);
@@ -242,14 +240,11 @@ void BasicCar::Update(KeyboardDevice* keyboard, GamepadDevice* gamepad, float el
 	mForward.normalize();
 }
 
-void BasicCar::Render(Camera3d* cam, glm::mat4 &projection)
+void BasicCar::Render(glm::mat4 &camView, glm::mat4 &projection)
 {
 	btVector3	worldBoundsMin, worldBoundsMax;
 	mDynamicsWorld->getBroadphase()->getBroadphaseAabb(worldBoundsMin, worldBoundsMax);
 
-	//
-	glm::mat4 camView = glm::lookAt(cam->Position, glm::vec3(GetWorldTransform().getOrigin()[0], GetWorldTransform().getOrigin()[1], GetWorldTransform().getOrigin()[2]), cam->Up);
-	
 	//draw chasis
 	{
 		glm::mat4 model;
@@ -259,7 +254,8 @@ void BasicCar::Render(Camera3d* cam, glm::mat4 &projection)
 		//get box matrix from bullet object
 		float cubeMatrix[16];
 		btTransform trn;
-		mRaycastVehicle->getRigidBody()->getMotionState()->getWorldTransform(trn);
+		//mRaycastVehicle->getRigidBody()->getMotionState()->getWorldTransform(trn);
+		trn = mRaycastVehicle->getChassisWorldTransform();
 		trn.getOpenGLMatrix((btScalar*)&cubeMatrix);
 
 		model = btScalar2glmMat4(cubeMatrix);
@@ -275,10 +271,13 @@ void BasicCar::Render(Camera3d* cam, glm::mat4 &projection)
 	for (int i = 0; i<mRaycastVehicle->getNumWheels(); i++)
 	{
 		//synchronize the wheels with the (interpolated) chassis worldtransform
-		mRaycastVehicle->updateWheelTransform(i, true);
+		mRaycastVehicle->updateWheelTransform(i, false);
 
 		float cubeMatrix[16];
-		mRaycastVehicle->getWheelInfo(i).m_worldTransform.getOpenGLMatrix((btScalar*)&cubeMatrix);
+		//mRaycastVehicle->getWheelInfo(i).m_worldTransform.getOpenGLMatrix((btScalar*)&cubeMatrix);
+
+		btTransform trn = mRaycastVehicle->getWheelTransformWS(i);
+		trn.getOpenGLMatrix((btScalar*)&cubeMatrix);
 
 		glm::mat4 model;
 		glm::mat4 mvp;
