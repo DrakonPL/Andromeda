@@ -16,6 +16,9 @@
     <Filter Include="Utils">
       <UniqueIdentifier>{d0514988-7be3-4418-8273-c963c50ca745}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameStates">
+      <UniqueIdentifier>{d550d925-92da-4ddd-9765-14f2aa166f5e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Jelly\Utils\JellyHelper.cpp">
@@ -51,21 +54,6 @@
     <ClCompile Include="Jelly\Game\JellyCore.cpp">
       <Filter>Game</Filter>
     </ClCompile>
-    <ClCompile Include="Jelly\Game\JellyGame.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Jelly\Game\JellyIntro.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Jelly\Game\JellyMenuBetter.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Jelly\Game\JellyOptions.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Jelly\Game\JellySplash.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
     <ClCompile Include="Jelly\Car\Car.cpp">
       <Filter>Car</Filter>
     </ClCompile>
@@ -83,6 +71,21 @@
     </ClCompile>
     <ClCompile Include="JellyCar.cpp" />
     <ClCompile Include="Jelly\JellyGameManager.cpp" />
+    <ClCompile Include="Jelly\Game\JellyGame.cpp">
+      <Filter>GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Jelly\Game\JellyIntro.cpp">
+      <Filter>GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Jelly\Game\JellyMenuBetter.cpp">
+      <Filter>GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Jelly\Game\JellyOptions.cpp">
+      <Filter>GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Jelly\Game\JellySplash.cpp">
+      <Filter>GameStates</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Jelly\Utils\JellyHelper.h">
@@ -148,21 +151,6 @@
     <ClInclude Include="Jelly\Game\JellyCore.h">
       <Filter>Game</Filter>
     </ClInclude>
-    <ClInclude Include="Jelly\Game\JellyGame.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Jelly\Game\JellyIntro.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Jelly\Game\JellyMenuBetter.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Jelly\Game\JellyOptions.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Jelly\Game\JellySplash.h">
-      <Filter>Game</Filter>
-    </ClInclude>
     <ClInclude Include="Jelly\Car\Car.h">
       <Filter>Car</Filter>
     </ClInclude>
@@ -180,6 +168,21 @@
     </ClInclude>
     <ClInclude Include="Jelly\JellyGameManager.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Jelly\Game\JellyGame.h">
+      <Filter>GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Jelly\Game\JellyIntro.h">
+      <Filter>GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Jelly\Game\JellyMenuBetter.h">
+      <Filter>GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Jelly\Game\JellyOptions.h">
+      <Filter>GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Jelly\Game\JellySplash.h">
+      <Filter>GameStates</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="icon1.ico" />

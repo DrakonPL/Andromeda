@@ -101,7 +101,7 @@ void JellySplash::Update(GameManager* manager)
 	if (_splashTimer >= 4.0)
 	{
 		JellyIntro* jelly = new JellyIntro();
-		jelly->Init();
+		//jelly->Init();
 
 		manager->PushState(jelly);
 		_end = true;

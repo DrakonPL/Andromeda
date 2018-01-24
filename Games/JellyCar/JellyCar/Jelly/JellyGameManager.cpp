@@ -22,7 +22,7 @@ void JellyGameManager::Configure()
 void JellyGameManager::Init()
 {
 	exampleState = new JellySplash();
-	exampleState->Init();
+	//exampleState->Init();
 
 	ChangeState(exampleState);
 }

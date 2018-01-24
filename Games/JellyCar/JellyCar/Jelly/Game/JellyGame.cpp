@@ -17,10 +17,16 @@ std::string to_string(const T& value)
 JellyGame::JellyGame(JellyCore* core)
 {
 	_core = core;
+	initialized = false;
 }
 
 void JellyGame::Init()
 {
+	if (initialized)
+	{
+		return;
+	}
+
 	_renderManager = RenderManager::Instance();
 	_shaderManager = ShaderManager::Instance();
 	_textureManager = TextureManager::Instance();
@@ -119,6 +125,8 @@ void JellyGame::Init()
 	_tireAABB.expandToInclude(Vector2(((float)_renderManager->GetWidth() / 2.0f) - 128.0f - 64.0f, 450.0f - 64.0f));
 
 	_gamePlayState = GamePlayState::Play;
+
+	initialized = true;
 }
 
 bool JellyGame::LoadLevel(LevelManager* levelManager, std::string levelName,std::string sceneName, std::string carFileName)
@@ -531,7 +539,7 @@ void JellyGame::HandleEvents(GameManager* manager)
 		if (_inputHelper->ActionPressed(InputAction::Exit))
 		{
 			JellyOptions* jelly = new JellyOptions(_core);
-			jelly->Init();
+			//jelly->Init();
 
 			manager->PushState(jelly);
 			return;

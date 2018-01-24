@@ -159,7 +159,7 @@ void JellyMenuBetter::HandleEvents(GameManager* manager)
 	if (_inputHelper->ActionPressed(InputAction::Pause))
 	{
 		JellyOptions* jelly = new JellyOptions(_core);
-		jelly->Init();
+		//jelly->Init();
 
 		manager->PushState(jelly);
 		return;

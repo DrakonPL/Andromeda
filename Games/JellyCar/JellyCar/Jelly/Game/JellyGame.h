@@ -159,6 +159,8 @@ private:
 	float _ballonTime;
 	float _tireTime;
 
+	bool initialized;
+	
 private:
 
 	void UpdateTransformMeter(float dt);
