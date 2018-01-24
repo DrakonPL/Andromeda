@@ -22,12 +22,12 @@ void TestBullet2::Init()
 
 	//load car model
 	_carModel = new ModelObj();
-	_carModel->LoadBinary("Assets/Models/Obj/WillyKart/willy3.objb");
+	_carModel->LoadBinary("Assets/Models/Obj/WillyKart/willy.objb");
 	_carModel->SetShader(_shader);
 
 	//load wheel model
 	_wheelModel = new ModelObj();
-	_wheelModel->LoadBinary("Assets/Models/Obj/WillyKart/wheel3.objb");
+	_wheelModel->LoadBinary("Assets/Models/Obj/WillyKart/armywheels.objb");
 	_wheelModel->SetShader(_shader);
 
 	//wheel positions	

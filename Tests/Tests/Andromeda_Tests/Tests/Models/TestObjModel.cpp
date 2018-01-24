@@ -23,7 +23,7 @@ void TestObjModel::Init()
 	_cam = new Camera3d(glm::vec3(0.0f, 1.5f, 4.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f);
 
 	//
-	_projection = glm::perspective(45.0f, (float)_renderManager->GetWidth() / (float)_renderManager->GetHeight(), 0.1f, 100.0f);
+	_projection = glm::perspective(45.0f, (float)_renderManager->GetWidth() / (float)_renderManager->GetHeight(), 0.1f, 400.0f);
 
 	//input
 	_inputManager = InputManager::Instance();

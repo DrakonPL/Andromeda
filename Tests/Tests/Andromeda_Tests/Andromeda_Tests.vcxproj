@@ -26,6 +26,7 @@
     <ClCompile Include="Tests\Bullet\TestBullet1.cpp" />
     <ClCompile Include="Tests\Bullet\TestBullet2.cpp" />
     <ClCompile Include="Tests\Bullet\TestBullet3.cpp" />
+    <ClCompile Include="Tests\Bullet\TestBullet4.cpp" />
     <ClCompile Include="Tests\ExampleGameManager.cpp" />
     <ClCompile Include="Tests\FreeTypeTests\TestFreeTypeAtlas.cpp" />
     <ClCompile Include="Tests\FreeTypeTests\TestFreeTypeFont.cpp" />
@@ -62,6 +63,7 @@
     <ClInclude Include="Tests\Bullet\TestBullet1.h" />
     <ClInclude Include="Tests\Bullet\TestBullet2.h" />
     <ClInclude Include="Tests\Bullet\TestBullet3.h" />
+    <ClInclude Include="Tests\Bullet\TestBullet4.h" />
     <ClInclude Include="Tests\ExampleGameManager.h" />
     <ClInclude Include="Tests\FreeTypeTests\TestFreeTypeAtlas.h" />
     <ClInclude Include="Tests\FreeTypeTests\TestFreeTypeFont.h" />

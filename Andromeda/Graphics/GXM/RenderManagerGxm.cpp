@@ -641,8 +641,8 @@ namespace Andromeda
 				// Set texture filtering parameters
 				if (image->GetFilterType() == TextureFilerType::LinearFilter)
 				{
-					sceGxmTextureSetMinFilter((SceGxmTexture *)image->_gxmId, SCE_GXM_TEXTURE_FILTER_LINEAR);
-					sceGxmTextureSetMagFilter((SceGxmTexture *)image->_gxmId, SCE_GXM_TEXTURE_FILTER_LINEAR);
+					sceGxmTextureSetMinFilter((SceGxmTexture *)image->_gxmId, SCE_GXM_TEXTURE_FILTER_ANISO_LINEAR);
+					sceGxmTextureSetMagFilter((SceGxmTexture *)image->_gxmId, SCE_GXM_TEXTURE_FILTER_ANISO_LINEAR);
 				}
 				else
 				{
@@ -745,8 +745,8 @@ namespace Andromeda
 				// Set texture filtering parameters
 				if (image->GetFilterType() == TextureFilerType::LinearFilter)
 				{
-					sceGxmTextureSetMinFilter((SceGxmTexture *)image->_gxmId, SCE_GXM_TEXTURE_FILTER_LINEAR);
-					sceGxmTextureSetMagFilter((SceGxmTexture *)image->_gxmId, SCE_GXM_TEXTURE_FILTER_LINEAR);
+					sceGxmTextureSetMinFilter((SceGxmTexture *)image->_gxmId, SCE_GXM_TEXTURE_FILTER_ANISO_LINEAR);
+					sceGxmTextureSetMagFilter((SceGxmTexture *)image->_gxmId, SCE_GXM_TEXTURE_FILTER_ANISO_LINEAR);
 				}
 				else
 				{

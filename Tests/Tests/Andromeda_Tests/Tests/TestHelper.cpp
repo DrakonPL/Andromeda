@@ -22,6 +22,7 @@
 #include "Bullet/TestBullet1.h"
 #include "Bullet/TestBullet2.h"
 #include "Bullet/TestBullet3.h"
+#include "Bullet/TestBullet4.h"
 
 #include "Input/TouchTest.h"
 
@@ -52,7 +53,7 @@ TestHelper::TestHelper()
 {
 	_currentTest = 0;
 
-	_tests.push_back(new TestBullet3());
+	_tests.push_back(new TestBullet4());
 
 	_tests.push_back(new Test1());
 	_tests.push_back(new Test2());
@@ -78,6 +79,8 @@ TestHelper::TestHelper()
 
 	_tests.push_back(new TestBullet1());
 	_tests.push_back(new TestBullet2());
+	_tests.push_back(new TestBullet3());
+	_tests.push_back(new TestBullet4());
 
 	//memory tests
 	//_tests.push_back(new ShaderTest());

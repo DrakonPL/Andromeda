@@ -23,10 +23,10 @@ namespace Andromeda
 
 			static TextureManager* Instance();
 
-			Texture* LoadFromFile(std::string fileName, TextureFilerType filterType = TextureFilerType::LinearFilter, TextureColorType textureColor = TextureColorType::Texture_RGBA, TextureWrapType textureWrap = TextureWrapType::ClampToEdge, int mipLevel = 0);
-			Texture* LoadFromMemory(std::string newName, unsigned char *data, size_t size, TextureFilerType filterType = TextureFilerType::LinearFilter, TextureColorType textureColor = TextureColorType::Texture_RGBA, TextureWrapType textureWrap = TextureWrapType::ClampToEdge, int mipLevel = 0);
+			Texture* LoadFromFile(std::string fileName, TextureFilerType filterType = TextureFilerType::LinearFilter, TextureColorType textureColor = TextureColorType::Texture_RGBA, TextureWrapType textureWrap = TextureWrapType::Repeat, int mipLevel = 0);
+			Texture* LoadFromMemory(std::string newName, unsigned char *data, size_t size, TextureFilerType filterType = TextureFilerType::LinearFilter, TextureColorType textureColor = TextureColorType::Texture_RGBA, TextureWrapType textureWrap = TextureWrapType::Repeat, int mipLevel = 0);
 			
-			Texture* CreateEmpty(std::string name, int width, int height, TextureFilerType filterType, TextureColorType textureColor = TextureColorType::Texture_RGBA, TextureWrapType textureWrap = TextureWrapType::ClampToEdge, int mipLevel = 0);
+			Texture* CreateEmpty(std::string name, int width, int height, TextureFilerType filterType, TextureColorType textureColor = TextureColorType::Texture_RGBA, TextureWrapType textureWrap = TextureWrapType::Repeat, int mipLevel = 0);
 
 			Texture* Get(std::string fileName);
 

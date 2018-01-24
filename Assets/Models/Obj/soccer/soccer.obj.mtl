@@ -1,0 +1,199 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.1.76522261)
+
+newmtl DefaultMaterial
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+
+newmtl arrows
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd scrollramp.png
+
+newmtl championskybox
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+
+newmtl checker
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd ringtrim.png
+
+newmtl corner
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd cornerpiece.png
+
+newmtl crowd1
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd crowdtex.png
+
+newmtl crowd2
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd crowdtex.png
+
+newmtl floodlights
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd floodlights.png
+
+newmtl girder
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd girder.png
+
+newmtl girder2
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd girder2.png
+
+newmtl glass
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd falloutglass.png
+
+newmtl goal
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd finishline.png
+
+newmtl grass
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd grass2.png
+
+newmtl redsign
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd cube.png
+
+newmtl seats
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd seats2.png
+
+newmtl skyscrapers
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd skyscrapers.png
+
+newmtl stairs
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd stairs.png
+
+newmtl trim
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd trim.png
+
+newmtl wall
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd pipe3.png
+
+newmtl wall2
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd ccpipe.png
+
+newmtl wall3
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd scrolldanger.png
+
+newmtl whitesign
+Kd 0.6 0.6 0.6
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+map_Kd cube2.png
+

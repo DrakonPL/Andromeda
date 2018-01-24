@@ -83,7 +83,6 @@ public:
 	btScalar GetSteeringValue() { return mSteeringValue; }
 	btVector3 GetDirection() { return mForward; }
 	btTransform &GetWorldTransform() { return mRaycastVehicle->getRigidBody()->getWorldTransform(); }
-
 };
 
 

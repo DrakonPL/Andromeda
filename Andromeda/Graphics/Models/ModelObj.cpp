@@ -76,7 +76,7 @@ namespace Andromeda
 				if (materials[i].diffuse_texname != "")
 				{
 					material->SetTextureName(MaterialTextureType::MaterialTextureDiffuse, location + materials[i].diffuse_texname);
-					material->Image = TextureManager::Instance()->LoadFromFile(location + materials[i].diffuse_texname);
+					material->Image = TextureManager::Instance()->LoadFromFile(location + materials[i].diffuse_texname, Andromeda::Graphics::TextureFilerType::LinearFilter, Andromeda::Graphics::TextureColorType::Texture_RGBA, Andromeda::Graphics::TextureWrapType::Repeat, 7);
 				}
 
 				if (materials[i].specular_texname != "")

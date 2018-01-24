@@ -22,21 +22,21 @@ void TestBullet3::Init()
 
 	//load car model
 	_carModel = new ModelObj();
-	_carModel->LoadBinary("Assets/Models/Obj/WillyKart/willy3.objb");
+	_carModel->LoadBinary("Assets/Models/Obj/WillyKart/willy.objb");
 	_carModel->SetShader(_shader);
 
 	//load wheel model
 	_wheelModel = new ModelObj();
-	_wheelModel->LoadBinary("Assets/Models/Obj/WillyKart/wheel3.objb");
+	_wheelModel->LoadBinary("Assets/Models/Obj/WillyKart/armywheels.objb");
 	_wheelModel->SetShader(_shader);
 
 	//cam
 	_cam = new Camera3d(glm::vec3(0.0f, 4.0f, 4.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f);
 
 	//cam settings
-	_cameraHeight = 4.0f;
-	_minCameraDistance = 2.f;
-	_maxCameraDistance = 6.f;
+	_cameraHeight = 2.0f;
+	_minCameraDistance = 1.f;
+	_maxCameraDistance = 3.f;
 
 	//
 	_projection = glm::perspective(45.0f, (float)_renderManager->GetWidth() / (float)_renderManager->GetHeight(), 0.1f, 100.0f);
@@ -494,8 +494,11 @@ void TestBullet3::Draw(GameManager* manager)
 		_car->Render(camView, _projection);
 	}
 
+	float speed = _car->GetSpeed();
+
+
 	//draw test info
-	TestHelper::Instance()->AddInfoText("Bullet and follow camera test.");
+	TestHelper::Instance()->AddInfoText("Bullet and follow camera test." + std::to_string(speed));
 	TestHelper::Instance()->ShowInfoText();
 
 	//end frame

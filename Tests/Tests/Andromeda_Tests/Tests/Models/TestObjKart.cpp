@@ -15,19 +15,22 @@ void TestObjKart::Init()
 
 	//load car model
 	_carModel = new ModelObj();
-	_carModel->LoadBinary("Assets/Models/Obj/WillyKart/willy3.objb");
+	//_carModel->ConvertToBinary("Assets/Models/Obj/WillyKart/willy.obj", "Assets/Models/Obj/WillyKart/willy.objb");
+	_carModel->LoadBinary("Assets/Models/Obj/WillyKart/willy.objb");
 	_carModel->SetShader(_shader);
 
 	//load wheel model
 	_wheelModel = new ModelObj();
-	_wheelModel->LoadBinary("Assets/Models/Obj/WillyKart/wheel3.objb");
+	//_wheelModel->ConvertToBinary("Assets/Models/Obj/WillyKart/armywheels.obj", "Assets/Models/Obj/WillyKart/armywheels.objb");
+	_wheelModel->LoadBinary("Assets/Models/Obj/WillyKart/armywheels.objb");
 	_wheelModel->SetShader(_shader);
 
 	//wheel positions	
-	_wheelPositions.push_back(glm::vec3(1.0f, -0.35f, 1.0f));
-	_wheelPositions.push_back(glm::vec3(1.0f, -0.35f, -0.75f));
-	_wheelPositions.push_back(glm::vec3(-1.0f, -0.35f, 1.0f));
-	_wheelPositions.push_back(glm::vec3(-1.0f, -0.35f, -0.75f));
+	_wheelPositions.push_back(glm::vec3(-0.33f, -0.17f, 0.335f));
+	_wheelPositions.push_back(glm::vec3(-0.33f, -0.17f, -0.26f));
+
+	_wheelPositions.push_back(glm::vec3(0.33f, -0.17f, 0.335f));
+	_wheelPositions.push_back(glm::vec3(0.33f, -0.17f, -0.26f));
 
 	//cam
 	_cam = new Camera3d(glm::vec3(0.0f, 1.0f, 4.5f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f);
@@ -216,6 +219,11 @@ void TestObjKart::Draw(GameManager* manager)
 		glm::mat4 mvp;
 
 		model = glm::translate(model, _wheelPositions[i]);
+
+		if (i > 1)
+		{
+			model = glm::rotate(model, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+		}
 
 		//get view matrix from camera
 		view = _cam->GetViewMatrix();

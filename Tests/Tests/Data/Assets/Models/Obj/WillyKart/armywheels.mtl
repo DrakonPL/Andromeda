@@ -1,15 +1,15 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 28.10.2012 00:34:02
+# File Created: 22.01.2018 23:29:37
 
-newmtl wire_229166215
-Ns 10.0000
+newmtl armywheels_armywheels
+Ns 30.0000
 Ni 1.5000
 d 1.0000
 Tr 0.0000
 Tf 1.0000 1.0000 1.0000 
 illum 2
-Ka 0.5880 0.5880 0.5880
-Kd 0.5880 0.5880 0.5880
+Ka 0.5500 0.5500 0.5500
+Kd 0.5500 0.5500 0.5500
 Ks 0.0000 0.0000 0.0000
 Ke 0.0000 0.0000 0.0000
-map_Kd armywheels_lum.png
+map_Kd armywheels.png

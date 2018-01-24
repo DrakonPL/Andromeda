@@ -8,21 +8,21 @@ BasicCar::BasicCar()
 	mRaycastVehicle = NULL;
 
 	mSteeringValue = 0.f;
-	mMaxEngineForce = 3000.f; // This should be engine/velocity dependent
-	mMaxBreakingForce = 100.f;
+	mMaxEngineForce = 400.f; // This should be engine/velocity dependent
+	mMaxBreakingForce = 100.f / 2.0f;
 	mSteeringIncrement = 0.04f;
 	mSteeringClamp = 0.4f;
 	mEngineForce = 0.f;
 	mBreakingForce = 0.f;
 
-	mSuspensionStiffness = 400.0f;
-	mSuspensionDamping = 100.0f;
-	mSuspensionCompression = 4.2f;
-	mWheelFriction = 20;//1e30f;
-	mRollInfluence = 0.1f;//1.0f;
+	mSuspensionStiffness = 400.0f / 3.0f;
+	mSuspensionDamping = 100.0f / 3.0f;
+	mSuspensionCompression = 4.2f / 3.0f;
+	mWheelFriction = 20 / 3.0f;
+	mRollInfluence = 0.1f;
 
-	mWheelWidth = 0.3f;
-	mWheelRadius = 0.4f;
+	mWheelWidth = 0.3f / 3.0f;
+	mWheelRadius = 0.4f / 2.75f;
 
 	mSize = 1.0f;
 }
@@ -34,6 +34,9 @@ BasicCar::~BasicCar()
 
 bool BasicCar::Create(ModelObj* chasis, ModelObj* wheel, Shader* shader, btDynamicsWorld *dynamicsWorld, btVector3 &position, btScalar mass)
 {
+
+	mass = mass / 3.5f;
+
 	//models
 	_carModel = chasis;
 	_wheelModel = wheel;
@@ -45,8 +48,8 @@ bool BasicCar::Create(ModelObj* chasis, ModelObj* wheel, Shader* shader, btDynam
 	mDynamicsWorld = dynamicsWorld;
 
 	// create a chassis shape that is proportfion to the size	
-	mChassisShape = new btBoxShape(btVector3(0.9045f, 0.5335f, 1.5355f));
-	mSize = 0.7f;
+	mChassisShape = new btBoxShape(btVector3(0.9045f / 2.5f, 0.5335f / 2.5f, 1.5355f / 2.5f));
+	mSize = 0.7f / 2.5f;
 
 	mCompoundShape = new btCompoundShape();
 	//mWheelWidth = 0.4f * mSize;
@@ -54,7 +57,7 @@ bool BasicCar::Create(ModelObj* chasis, ModelObj* wheel, Shader* shader, btDynam
 
 	btTransform localTrans;
 	localTrans.setIdentity();
-	localTrans.setOrigin(btVector3(0.0f, 0.5f, 0.0f));
+	localTrans.setOrigin(btVector3(0.0f, 0.5f / 1.0f, 0.0f));
 
 	mCompoundShape->addChildShape(localTrans, mChassisShape);
 
@@ -72,7 +75,7 @@ bool BasicCar::Create(ModelObj* chasis, ModelObj* wheel, Shader* shader, btDynam
 	int forwardIndex = 2;
 	btVector3 wheelDirectionCS0(0, -1, 0);
 	btVector3 wheelAxleCS(-1, 0, 0);
-	btScalar suspensionRestLength(0.5);
+	btScalar suspensionRestLength(0.5 / 2.5f);
 
 	mVehicleRaycaster = new btDefaultVehicleRaycaster(mDynamicsWorld);
 	mRaycastVehicle = new btRaycastVehicle(mVehicleTuning, mChassisRigidBody, mVehicleRaycaster);
@@ -82,7 +85,7 @@ bool BasicCar::Create(ModelObj* chasis, ModelObj* wheel, Shader* shader, btDynam
 
 	mDynamicsWorld->addVehicle(mRaycastVehicle);
 
-	float connectionHeight = 0.135f;
+	float connectionHeight = 0.135f / 2.75f;
 
 	m_wheelShape = new btCylinderShapeX(btVector3(mWheelWidth, mWheelRadius, mWheelRadius));
 
@@ -90,17 +93,27 @@ bool BasicCar::Create(ModelObj* chasis, ModelObj* wheel, Shader* shader, btDynam
 	//choose coordinate system
 	mRaycastVehicle->setCoordinateSystem(rightIndex, upIndex, forwardIndex);
 
-	btVector3 connectionPointCS0(mSize + (.5f*mWheelWidth), connectionHeight, 2.f*mSize - mWheelRadius);
+	//_wheelPositions.push_back(glm::vec3(-0.33f, -0.17f, 0.335f));
+	//_wheelPositions.push_back(glm::vec3(-0.33f, -0.17f, -0.26f));
+
+	//_wheelPositions.push_back(glm::vec3(0.33f, -0.17f, 0.335f));
+	//_wheelPositions.push_back(glm::vec3(0.33f, -0.17f, -0.26f));
+
+	//btVector3 connectionPointCS0(mSize + (.5f*mWheelWidth), connectionHeight, 2.f*mSize - mWheelRadius);
+	btVector3 connectionPointCS0(0.33f, connectionHeight, 0.335f);
 	mRaycastVehicle->addWheel(connectionPointCS0, wheelDirectionCS0, wheelAxleCS, suspensionRestLength, mWheelRadius, mVehicleTuning, isFrontWheel);
 
-	connectionPointCS0 = btVector3(-mSize - (.5f*mWheelWidth), connectionHeight, 2.f*mSize - mWheelRadius);
+	//connectionPointCS0 = btVector3(-mSize - (.5f*mWheelWidth), connectionHeight, 2.f*mSize - mWheelRadius);
+	connectionPointCS0 = btVector3(-0.33f, connectionHeight, 0.335f);
 	mRaycastVehicle->addWheel(connectionPointCS0, wheelDirectionCS0, wheelAxleCS, suspensionRestLength, mWheelRadius, mVehicleTuning, isFrontWheel);
 
 	isFrontWheel = false;
-	connectionPointCS0 = btVector3(-mSize - (.5f*mWheelWidth), connectionHeight, -1.7f*mSize + mWheelRadius);
+	//connectionPointCS0 = btVector3(-mSize - (.5f*mWheelWidth), connectionHeight, -1.7f*mSize + mWheelRadius);
+	connectionPointCS0 = btVector3(-0.33f, connectionHeight, -0.26f);
 	mRaycastVehicle->addWheel(connectionPointCS0, wheelDirectionCS0, wheelAxleCS, suspensionRestLength, mWheelRadius, mVehicleTuning, isFrontWheel);
 
-	connectionPointCS0 = btVector3(mSize + (.5f*mWheelWidth), connectionHeight, -1.7f*mSize + mWheelRadius);
+	//connectionPointCS0 = btVector3(mSize + (.5f*mWheelWidth), connectionHeight, -1.7f*mSize + mWheelRadius);
+	connectionPointCS0 = btVector3(0.33f, connectionHeight, -0.26f);
 	mRaycastVehicle->addWheel(connectionPointCS0, wheelDirectionCS0, wheelAxleCS, suspensionRestLength, mWheelRadius, mVehicleTuning, isFrontWheel);
 
 	for (int i = 0; i<mRaycastVehicle->getNumWheels(); i++)
@@ -133,6 +146,8 @@ void BasicCar::Destroy()
 
 void BasicCar::Update(KeyboardDevice* keyboard, GamepadDevice* gamepad, float elapsedTime)
 {
+	//mRaycastVehicle->updateVehicle(elapsedTime);
+
 	bool up_key = false;
 	bool down_key = false;
 	bool left_key = false;
@@ -221,16 +236,25 @@ void BasicCar::Update(KeyboardDevice* keyboard, GamepadDevice* gamepad, float el
 	}
 
 	int wheelIndex = 2;
-	mRaycastVehicle->applyEngineForce(mEngineForce, wheelIndex);
+
 	mRaycastVehicle->setBrake(mBreakingForce, wheelIndex);
 	wheelIndex = 3;
-	mRaycastVehicle->applyEngineForce(mEngineForce, wheelIndex);
+
 	mRaycastVehicle->setBrake(mBreakingForce, wheelIndex);
 
-	wheelIndex = 0;
-	mRaycastVehicle->setSteeringValue(mSteeringValue, wheelIndex);
-	wheelIndex = 1;
-	mRaycastVehicle->setSteeringValue(mSteeringValue, wheelIndex);
+	if (mRaycastVehicle->getCurrentSpeedKmHour() < 50)
+	{
+		mRaycastVehicle->applyEngineForce(mEngineForce, 0);
+		mRaycastVehicle->applyEngineForce(mEngineForce, 1);
+	}
+	else
+	{
+		mRaycastVehicle->applyEngineForce(0, 0);
+		mRaycastVehicle->applyEngineForce(0, 1);
+	}
+
+	mRaycastVehicle->setSteeringValue(mSteeringValue, 0);
+	mRaycastVehicle->setSteeringValue(mSteeringValue, 1);
 
 	// Update vehicle direction
 	btWheelInfo& wheel = mRaycastVehicle->getWheelInfo(0);

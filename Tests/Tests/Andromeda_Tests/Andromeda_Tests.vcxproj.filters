@@ -124,6 +124,9 @@
     <ClCompile Include="Tests\Bullet\TestBullet3.cpp">
       <Filter>Bullet</Filter>
     </ClCompile>
+    <ClCompile Include="Tests\Bullet\TestBullet4.cpp">
+      <Filter>Bullet</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Tests\ExampleGameManager.h" />
@@ -220,6 +223,9 @@
       <Filter>Other</Filter>
     </ClInclude>
     <ClInclude Include="Tests\Bullet\TestBullet3.h">
+      <Filter>Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Bullet\TestBullet4.h">
       <Filter>Bullet</Filter>
     </ClInclude>
   </ItemGroup>
