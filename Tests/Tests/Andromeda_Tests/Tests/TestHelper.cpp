@@ -53,8 +53,6 @@ TestHelper::TestHelper()
 {
 	_currentTest = 0;
 
-	_tests.push_back(new TestBullet4());
-
 	_tests.push_back(new Test1());
 	_tests.push_back(new Test2());
 	_tests.push_back(new Test3());
